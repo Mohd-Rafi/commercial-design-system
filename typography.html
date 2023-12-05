@@ -1,0 +1,1719 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Commercial Design Systems</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <aside class="left-sidebar" id="sidebar">
+    <ul class="nav flex-column left-sidebar__column">
+        <li>
+            <a class="nav-link" href="index.html">INDEX</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="color.html">1. Colors</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link nav-link-active" href="javascript:void(0)">2. Typography</a>
+            <ul class="list-unstyled nav-inner d-block">
+              <li class="nav-inner__list">
+                <a href="#typo-light"  class="nav-inner__list--text">Typography</a>
+              </li>
+              <li class="nav-inner__list">
+                <a href="#typo-dark" class="nav-inner__list--text">Font Style Display Dark</a>
+              </li>
+              <li class="nav-inner__list">
+                <a href="#heading-display-style" class="nav-inner__list--text">Heading Display Style</a>
+              </li>
+              <li class="nav-inner__list">
+                <a href="#heading-display-style-dark" class="nav-inner__list--text">Heading Display Style Dark</a>
+              </li>
+              <li class="nav-inner__list">
+                  <a href="#body-copy-display-style" class="nav-inner__list--text">Body Copy Display Style</a>
+              </li>
+              <li class="nav-inner__list">
+                  <a href="#body-copy-display-style-dark" class="nav-inner__list--text">Body Copy Display Style Dark</a>
+              </li>
+              <li class="nav-inner__list">
+                  <a href="#typography-style" class="nav-inner__list--text">Typography Style</a>
+              </li>
+              <li class="nav-inner__list">
+                  <a href="#typography-style-dark" class="nav-inner__list--text">Typography Style Dark</a>
+              </li>              
+          </ul>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="header-banner.html">3. Layout Structure</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="icons.html">4. Icons</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="button.html">5. Buttons, Radio Button</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="input-field.html">6. Input Fields</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="card.html">7. Card</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="loader.html">8. Loader</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="date-picker.html">9. Date Picker</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="checkbox.html">10. Check Box</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="drag-and-drop.html">11. Drag & Drop</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="navigation.html">12. Navigation</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="notification.html">13. Notifications</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="imagery.html">14. Imagery</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="search.html">15. Search</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="switch.html">16. Switch</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="overlays.html">17. Overlays</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="pagination.html">18. Pagination</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="player.html">19. Player</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="player.html">20. Slider</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="slideshow.html">21. Slideshow</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="table.html">22. Table</a>
+        </li>
+        <!-- <li class="nav-item">
+          <a class="nav-link" href="#">23. Response Effect</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">24. Transitions</a>
+        </li> -->
+    </ul>
+</aside>
+    <main class="main" data-bs-spy="scroll" data-bs-target="#sidebar" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true">
+      <div class="d-flex align-items-center page-header" id="page-header">
+        <h1 class="color-palette--title mb-0">Typography</h1>
+        <a href="#" class="btn btn-primary ms-auto">Download More</a>
+        <a class="btn btn-outline-primary ms-4" target="_blank" href="https://www.figma.com/proto/BNspPo1UTQoTvEyBgp5kAY/Commercial-Design-System?type=design&node-id=183-495&t=zTAFhnKrOaWxUeRp-0&scaling=min-zoom&page-id=11%3A4">View Figma File</a>
+      </div>
+        
+        <div id="typo-light">
+          <div class="d-flex typeface-block">
+            <div class="flex-shrink-0 typeface-left">
+                <ul class="list-unstyled list-typeface">
+                    <li class="list-typeface__list">Font Family : Roboto  </li>
+                    <li class="list-typeface__list">Style : Bold</li>
+                </ul>
+              <div class="display-1">
+                Aa
+              </div>
+            </div>
+            <div class="flex-grow-1 typeface-not-left align-self-end">
+              <p class="p-0 typeface-text mb-0">
+                ABCDEFGHIJKLMNOPQRSTUVWXYZ <br>
+                abcdefghijklmnopqrstuvwxyz <br>
+                0123456789 
+              </p>
+            </div>
+        </div>
+        <div class="d-flex typeface-block">
+            <div class="flex-shrink-0 typeface-left">
+                <ul class="list-unstyled list-typeface">
+                    <li class="list-typeface__list">Font Family : Roboto  </li>
+                    <li class="list-typeface__list">Style : Bold Italic</li>
+                </ul>
+              <div class="display-1 fst-italic">
+                Aa
+              </div>
+            </div>
+            <div class="flex-grow-1 typeface-not-left align-self-end">
+              <p class="p-0 typeface-text mb-0 fst-italic">
+                ABCDEFGHIJKLMNOPQRSTUVWXYZ <br>
+                abcdefghijklmnopqrstuvwxyz <br>
+                0123456789 
+              </p>
+            </div>
+        </div>
+        <div class="d-flex typeface-block">
+            <div class="flex-shrink-0 typeface-left">
+                <ul class="list-unstyled list-typeface">
+                    <li class="list-typeface__list">Font Family : Roboto  </li>
+                    <li class="list-typeface__list">Style : Medium</li>
+                </ul>
+              <div class="display-1 fw-medium">
+                Aa
+              </div>
+            </div>
+            <div class="flex-grow-1 typeface-not-left align-self-end">
+              <p class="p-0 typeface-text mb-0 fw-medium">
+                ABCDEFGHIJKLMNOPQRSTUVWXYZ <br>
+                abcdefghijklmnopqrstuvwxyz <br>
+                0123456789 
+              </p>
+            </div>
+        </div>
+        <div class="d-flex typeface-block">
+            <div class="flex-shrink-0 typeface-left">
+                <ul class="list-unstyled list-typeface">
+                    <li class="list-typeface__list">Font Family : Roboto  </li>
+                    <li class="list-typeface__list">Style : Medium Italic</li>
+                </ul>
+              <div class="display-1 fw-medium fst-italic">
+                Aa
+              </div>
+            </div>
+            <div class="flex-grow-1 typeface-not-left align-self-end">
+              <p class="p-0 typeface-text mb-0 fw-medium fst-italic">
+                ABCDEFGHIJKLMNOPQRSTUVWXYZ <br>
+                abcdefghijklmnopqrstuvwxyz <br>
+                0123456789 
+              </p>
+            </div>
+        </div>
+        <div class="d-flex typeface-block">
+            <div class="flex-shrink-0 typeface-left">
+                <ul class="list-unstyled list-typeface">
+                    <li class="list-typeface__list">Font Family : Roboto  </li>
+                    <li class="list-typeface__list">Style : Regular</li>
+                </ul>
+              <div class="display-1 fw-normal">
+                Aa
+              </div>
+            </div>
+            <div class="flex-grow-1 typeface-not-left align-self-end">
+              <p class="p-0 typeface-text mb-0 fw-normal">
+                ABCDEFGHIJKLMNOPQRSTUVWXYZ <br>
+                abcdefghijklmnopqrstuvwxyz <br>
+                0123456789 
+              </p>
+            </div>
+        </div>
+        <div class="d-flex typeface-block">
+            <div class="flex-shrink-0 typeface-left">
+                <ul class="list-unstyled list-typeface">
+                    <li class="list-typeface__list">Font Family : Roboto  </li>
+                    <li class="list-typeface__list">Style : Italic</li>
+                </ul>
+              <div class="display-1 fw-normal fst-italic">
+                Aa
+              </div>
+            </div>
+            <div class="flex-grow-1 typeface-not-left align-self-end">
+              <p class="p-0 typeface-text mb-0 fw-normal fst-italic">
+                ABCDEFGHIJKLMNOPQRSTUVWXYZ <br>
+                abcdefghijklmnopqrstuvwxyz <br>
+                0123456789 
+              </p>
+            </div>
+        </div>
+        <div class="d-flex typeface-block">
+            <div class="flex-shrink-0 typeface-left">
+                <ul class="list-unstyled list-typeface">
+                    <li class="list-typeface__list">Font Family : Roboto  </li>
+                    <li class="list-typeface__list">Style : Light</li>
+                </ul>
+              <div class="display-1 fw-light">
+                Aa
+              </div>
+            </div>
+            <div class="flex-grow-1 typeface-not-left align-self-end">
+              <p class="p-0 typeface-text mb-0 fw-light">
+                ABCDEFGHIJKLMNOPQRSTUVWXYZ <br>
+                abcdefghijklmnopqrstuvwxyz <br>
+                0123456789 
+              </p>
+            </div>
+        </div>
+        <div class="d-flex typeface-block">
+            <div class="flex-shrink-0 typeface-left">
+                <ul class="list-unstyled list-typeface">
+                    <li class="list-typeface__list">Font Family : Roboto  </li>
+                    <li class="list-typeface__list">Style : Light Italic</li>
+                </ul>
+              <div class="display-1 fw-light fst-italic">
+                Aa
+              </div>
+            </div>
+            <div class="flex-grow-1 typeface-not-left align-self-end">
+              <p class="p-0 typeface-text mb-0 fw-light fst-italic">
+                ABCDEFGHIJKLMNOPQRSTUVWXYZ <br>
+                abcdefghijklmnopqrstuvwxyz <br>
+                0123456789 
+              </p>
+            </div>
+        </div>
+        </div>
+
+
+        <!-- font style display dark -->
+        <div class="bg-black typo-block" id="typo-dark">
+          <h2 class="h1 text-white" style="margin-bottom:50px;">Font Style</h2>
+          <div class="d-flex typeface-block">
+              <div class="flex-shrink-0 typeface-left">
+                  <ul class="list-unstyled list-typeface">
+                      <li class="list-typeface__list">Font Family : Roboto  </li>
+                      <li class="list-typeface__list">Style : Bold</li>
+                  </ul>
+                <div class="display-1 text-white">
+                  Aa
+                </div>
+              </div>
+              <div class="flex-grow-1 typeface-not-left align-self-end">
+                <p class="p-0 typeface-text mb-0 text-white">
+                  ABCDEFGHIJKLMNOPQRSTUVWXYZ <br>
+                  abcdefghijklmnopqrstuvwxyz <br>
+                  0123456789 
+                </p>
+              </div>
+          </div>
+          <div class="d-flex typeface-block">
+              <div class="flex-shrink-0 typeface-left">
+                  <ul class="list-unstyled list-typeface">
+                      <li class="list-typeface__list">Font Family : Roboto  </li>
+                      <li class="list-typeface__list">Style : Bold Italic</li>
+                  </ul>
+                <div class="display-1 fst-italic text-white">
+                  Aa
+                </div>
+              </div>
+              <div class="flex-grow-1 typeface-not-left align-self-end">
+                <p class="p-0 typeface-text mb-0 fst-italic text-white">
+                  ABCDEFGHIJKLMNOPQRSTUVWXYZ <br>
+                  abcdefghijklmnopqrstuvwxyz <br>
+                  0123456789 
+                </p>
+              </div>
+          </div>
+          <div class="d-flex typeface-block">
+              <div class="flex-shrink-0 typeface-left">
+                  <ul class="list-unstyled list-typeface">
+                      <li class="list-typeface__list">Font Family : Roboto  </li>
+                      <li class="list-typeface__list">Style : Medium</li>
+                  </ul>
+                <div class="display-1 fw-medium text-white">
+                  Aa
+                </div>
+              </div>
+              <div class="flex-grow-1 typeface-not-left align-self-end">
+                <p class="p-0 typeface-text mb-0 fw-medium text-white">
+                  ABCDEFGHIJKLMNOPQRSTUVWXYZ <br>
+                  abcdefghijklmnopqrstuvwxyz <br>
+                  0123456789 
+                </p>
+              </div>
+          </div>
+          <div class="d-flex typeface-block">
+              <div class="flex-shrink-0 typeface-left">
+                  <ul class="list-unstyled list-typeface">
+                      <li class="list-typeface__list">Font Family : Roboto  </li>
+                      <li class="list-typeface__list">Style : Medium Italic</li>
+                  </ul>
+                <div class="display-1 fw-medium fst-italic text-white">
+                  Aa
+                </div>
+              </div>
+              <div class="flex-grow-1 typeface-not-left align-self-end">
+                <p class="p-0 typeface-text mb-0 fw-medium fst-italic text-white">
+                  ABCDEFGHIJKLMNOPQRSTUVWXYZ <br>
+                  abcdefghijklmnopqrstuvwxyz <br>
+                  0123456789 
+                </p>
+              </div>
+          </div>
+          <div class="d-flex typeface-block">
+              <div class="flex-shrink-0 typeface-left">
+                  <ul class="list-unstyled list-typeface">
+                      <li class="list-typeface__list">Font Family : Roboto  </li>
+                      <li class="list-typeface__list">Style : Regular</li>
+                  </ul>
+                <div class="display-1 fw-normal text-white">
+                  Aa
+                </div>
+              </div>
+              <div class="flex-grow-1 typeface-not-left align-self-end">
+                <p class="p-0 typeface-text mb-0 fw-normal text-white">
+                  ABCDEFGHIJKLMNOPQRSTUVWXYZ <br>
+                  abcdefghijklmnopqrstuvwxyz <br>
+                  0123456789 
+                </p>
+              </div>
+          </div>
+          <div class="d-flex typeface-block">
+              <div class="flex-shrink-0 typeface-left">
+                  <ul class="list-unstyled list-typeface">
+                      <li class="list-typeface__list">Font Family : Roboto  </li>
+                      <li class="list-typeface__list">Style : Italic</li>
+                  </ul>
+                <div class="display-1 fw-normal fst-italic text-white">
+                  Aa
+                </div>
+              </div>
+              <div class="flex-grow-1 typeface-not-left align-self-end">
+                <p class="p-0 typeface-text mb-0 fw-normal fst-italic text-white">
+                  ABCDEFGHIJKLMNOPQRSTUVWXYZ <br>
+                  abcdefghijklmnopqrstuvwxyz <br>
+                  0123456789 
+                </p>
+              </div>
+          </div>
+          <div class="d-flex typeface-block">
+              <div class="flex-shrink-0 typeface-left">
+                  <ul class="list-unstyled list-typeface">
+                      <li class="list-typeface__list">Font Family : Roboto  </li>
+                      <li class="list-typeface__list">Style : Light</li>
+                  </ul>
+                <div class="display-1 fw-light text-white">
+                  Aa
+                </div>
+              </div>
+              <div class="flex-grow-1 typeface-not-left align-self-end">
+                <p class="p-0 typeface-text mb-0 fw-light text-white">
+                  ABCDEFGHIJKLMNOPQRSTUVWXYZ <br>
+                  abcdefghijklmnopqrstuvwxyz <br>
+                  0123456789 
+                </p>
+              </div>
+          </div>
+          <div class="d-flex typeface-block">
+              <div class="flex-shrink-0 typeface-left">
+                  <ul class="list-unstyled list-typeface">
+                      <li class="list-typeface__list">Font Family : Roboto  </li>
+                      <li class="list-typeface__list">Style : Light Italic</li>
+                  </ul>
+                <div class="display-1 fw-light fst-italic text-white">
+                  Aa
+                </div>
+              </div>
+              <div class="flex-grow-1 typeface-not-left align-self-end">
+                <p class="p-0 typeface-text mb-0 fw-light fst-italic text-white">
+                  ABCDEFGHIJKLMNOPQRSTUVWXYZ <br>
+                  abcdefghijklmnopqrstuvwxyz <br>
+                  0123456789 
+                </p>
+              </div>
+          </div>
+        </div>
+
+        <!-- Heading display style -->
+        <div class="typo-block" id="heading-display-style">
+          <h2 class="h1 fw-bold" style="margin-bottom:50px;">Desktop</h2>
+          <div class="row g-0 heading-style">
+            <div class="col heading-block">
+              <ul class="list-unstyled list-heading mb-0">
+                <li class="list-heading__item">Banner Heading</li>
+                <li class="list-heading__item">Font: Roboto  </li>
+                <li class="list-heading__item">Weight: Bold </li>
+                <li class="list-heading__item">Size: 40px </li>
+                <li class="list-heading__item">Line height: 47px </li>
+                <li class="list-heading__item">Char Spacing: -0.015em</li>
+              </ul>
+            </div>
+            <div class="col">
+              <ul class="list-unstyled list-content mb-0">
+                <li class="list-content__item">Uncommon Design.</li>
+                <li class="list-content__item">Unprecedented</li>
+                <li class="list-content__item">Engineering</li>
+              </ul>
+            </div>
+          </div>
+          <div class="row g-0 heading-style">
+            <div class="col heading-block">
+              <ul class="list-unstyled list-heading mb-0">
+                <li class="list-heading__item">Heading 1</li>
+                <li class="list-heading__item">Font: Roboto  </li>
+                <li class="list-heading__item">Weight: Medium Italic  </li>
+                <li class="list-heading__item">Size: 30px </li>
+                <li class="list-heading__item">Line height: 35px </li>
+                <li class="list-heading__item">Char Spacing: -0.015em</li>
+              </ul>
+            </div>
+            <div class="col">
+              <ul class="list-unstyled list-content list-content__lg mb-0">
+                <li class="list-content__item">Uncommon Design.</li>
+                <li class="list-content__item">Unprecedented</li>
+                <li class="list-content__item">Engineering</li>
+              </ul>
+            </div>
+          </div>
+          <div class="row g-0 heading-style">
+            <div class="col heading-block">
+              <ul class="list-unstyled list-heading mb-0">
+                <li class="list-heading__item">Heading 1 Light Italic</li>
+                <li class="list-heading__item">Font: Roboto  </li>
+                <li class="list-heading__item">Weight: Light Italic </li>
+                <li class="list-heading__item">Size: 30px </li>
+                <li class="list-heading__item">Line height: 35px </li>
+                <li class="list-heading__item">Char Spacing: -0.015em</li>
+              </ul>
+            </div>
+            <div class="col">
+              <ul class="list-unstyled list-content list-content__lg mb-0">
+                <li class="list-content__item fw-light">Uncommon Design.</li>
+                <li class="list-content__item fw-light">Unprecedented</li>
+                <li class="list-content__item fw-light">Engineering</li>
+              </ul>
+            </div>
+          </div>
+          <div class="row g-0 heading-style">
+            <div class="col heading-block">
+              <ul class="list-unstyled list-heading mb-0">
+                <li class="list-heading__item">Heading 2</li>
+                <li class="list-heading__item">Font: Roboto  </li>
+                <li class="list-heading__item">Weight: Medium </li>
+                <li class="list-heading__item">Size: 30px </li>
+                <li class="list-heading__item">Line height: 35px </li>
+                <li class="list-heading__item">Char Spacing: -0.015em</li>
+              </ul>
+            </div>
+            <div class="col align-self-center">
+              <ul class="list-unstyled list-content list-content__medium mb-0">
+                <li class="list-content__item">Uncommon Design.</li>
+                <li class="list-content__item">Unprecedented</li>
+                <li class="list-content__item">Engineering</li>
+              </ul>
+            </div>
+          </div>
+          <div class="row g-0 heading-style">
+            <div class="col heading-block">
+              <ul class="list-unstyled list-heading mb-0">
+                <li class="list-heading__item">Heading 3</li>
+                <li class="list-heading__item">Font: Roboto  </li>
+                <li class="list-heading__item">Weight: Medium </li>
+                <li class="list-heading__item">Size: 30px </li>
+                <li class="list-heading__item">Line height: 35px </li>
+                <li class="list-heading__item">Char Spacing: -0.015em</li>
+              </ul>
+            </div>
+            <div class="col align-self-center">
+              <ul class="list-unstyled list-content list-content__small mb-0">
+                <li class="list-content__item">Uncommon Design.</li>
+                <li class="list-content__item">Unprecedented</li>
+                <li class="list-content__item">Engineering</li>
+              </ul>
+            </div>
+          </div>
+          <div class="row g-0 heading-style">
+            <div class="col heading-block">
+              <ul class="list-unstyled list-heading mb-0">
+                <li class="list-heading__item">Heading 4</li>
+                <li class="list-heading__item">Font: Roboto  </li>
+                <li class="list-heading__item">Weight: Bold </li>
+                <li class="list-heading__item">Size: 20px </li>
+                <li class="list-heading__item">Line height: 22px </li>
+                <li class="list-heading__item">Char Spacing: -0.015em</li>
+              </ul>
+            </div>
+            <div class="col align-self-center">
+              <ul class="list-unstyled list-content list-content__base mb-0">
+                <li class="list-content__item">Uncommon Design.</li>
+                <li class="list-content__item">Unprecedented</li>
+                <li class="list-content__item">Engineering</li>
+              </ul>
+            </div>
+          </div>
+          <div class="row g-0 heading-style">
+            <div class="col heading-block">
+              <ul class="list-unstyled list-heading mb-0">
+                <li class="list-heading__item">Heading </li>
+                <li class="list-heading__item">Font: Roboto  </li>
+                <li class="list-heading__item">Weight: Bold Italic </li>
+                <li class="list-heading__item">Size: 22px </li>
+                <li class="list-heading__item">Line height: 26px </li>
+                <li class="list-heading__item">Char Spacing: -12%</li>
+              </ul>
+            </div>
+            <div class="col align-self-center">
+              <ul class="list-unstyled list-content list-content__base mb-0">
+                <li class="list-content__item">
+                  <img src="images/features-img.png" alt="" title="" width="171" height="47">
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- Mobile -->
+          <div class="typo-block-mobile">
+            <h2 class="h1 fw-bold" style="margin-bottom:50px;">Mobile</h2>
+            <div class="row g-0 heading-style">
+              <div class="col heading-block">
+                <ul class="list-unstyled list-heading mb-0">
+                  <li class="list-heading__item">Banner Heading</li>
+                  <li class="list-heading__item">Font: Roboto  </li>
+                  <li class="list-heading__item">Weight: Bold </li>
+                  <li class="list-heading__item">Size: 23px </li>
+                  <li class="list-heading__item">Line height: 27px </li>
+                  <li class="list-heading__item">Char Spacing: -0.015em</li>
+                </ul>
+              </div>
+              <div class="col align-self-center">
+                <ul class="list-unstyled list-content__mobile mb-0">
+                  <li class="list-content__item">Uncommon Design.</li>
+                  <li class="list-content__item">Unprecedented</li>
+                  <li class="list-content__item">Engineering</li>
+                </ul>
+              </div>
+            </div>
+            <div class="row g-0 heading-style">
+              <div class="col heading-block">
+                <ul class="list-unstyled list-heading mb-0">
+                  <li class="list-heading__item">Heading 1</li>
+                  <li class="list-heading__item">Font: Roboto  </li>
+                  <li class="list-heading__item">Weight: Medium Italic  </li>
+                  <li class="list-heading__item">Size: 24px </li>
+                  <li class="list-heading__item">Line height: 28px </li>
+                  <li class="list-heading__item">Char Spacing: -0.015em</li>
+                </ul>
+              </div>
+              <div class="col align-self-center">
+                <ul class="list-unstyled list-content__mobile mb-0">
+                  <li class="list-content__item fw-medium fst-italic">Uncommon Design.</li>
+                  <li class="list-content__item fw-medium fst-italic">Unprecedented</li>
+                  <li class="list-content__item fw-medium fst-italic">Engineering</li>
+                </ul>
+              </div>
+            </div>
+            <div class="row g-0 heading-style">
+              <div class="col heading-block">
+                <ul class="list-unstyled list-heading mb-0">
+                  <li class="list-heading__item">Heading 1 Light Italic</li>
+                  <li class="list-heading__item">Font: Roboto  </li>
+                  <li class="list-heading__item">Weight: Light Italic </li>
+                  <li class="list-heading__item">Size: 24px </li>
+                  <li class="list-heading__item">Line height: 28px </li>
+                  <li class="list-heading__item">Char Spacing: -0.015em</li>
+                </ul>
+              </div>
+              <div class="col align-self-center">
+                <ul class="list-unstyled  list-content__mobile mb-0">
+                  <li class="list-content__item fw-light fst-italic">Uncommon Design.</li>
+                  <li class="list-content__item fw-light fst-italic">Unprecedented</li>
+                  <li class="list-content__item fw-light fst-italic">Engineering</li>
+                </ul>
+              </div>
+            </div>
+            <div class="row g-0 heading-style">
+              <div class="col heading-block">
+                <ul class="list-unstyled list-heading mb-0">
+                  <li class="list-heading__item">Heading 2</li>
+                  <li class="list-heading__item">Font: Roboto  </li>
+                  <li class="list-heading__item">Weight: Medium </li>
+                  <li class="list-heading__item">Size: 24px </li>
+                  <li class="list-heading__item">Line height: 28px </li>
+                  <li class="list-heading__item">Char Spacing: -0.015em</li>
+                </ul>
+              </div>
+              <div class="col align-self-center">
+                <ul class="list-unstyled list-content__mobile mb-0">
+                  <li class="list-content__item">Uncommon Design.</li>
+                  <li class="list-content__item">Unprecedented</li>
+                  <li class="list-content__item">Engineering</li>
+                </ul>
+              </div>
+            </div>
+            <div class="row g-0 heading-style">
+              <div class="col heading-block">
+                <ul class="list-unstyled list-heading mb-0">
+                  <li class="list-heading__item">Heading 3</li>
+                  <li class="list-heading__item">Font: Roboto  </li>
+                  <li class="list-heading__item">Weight: Medium </li>
+                  <li class="list-heading__item">Size: 24px </li>
+                  <li class="list-heading__item">Line height: 28px </li>
+                  <li class="list-heading__item">Char Spacing: -0.015em</li>
+                </ul>
+              </div>
+              <div class="col align-self-center">
+                <ul class="list-unstyled list-content__mobile mb-0">
+                  <li class="list-content__item fw-medium">Uncommon Design.</li>
+                  <li class="list-content__item fw-medium">Unprecedented</li>
+                  <li class="list-content__item fw-medium">Engineering</li>
+                </ul>
+              </div>
+            </div>
+            <div class="row g-0 heading-style">
+              <div class="col heading-block">
+                <ul class="list-unstyled list-heading mb-0">
+                  <li class="list-heading__item">Heading 4</li>
+                  <li class="list-heading__item">Font: Roboto  </li>
+                  <li class="list-heading__item">Weight: Bold </li>
+                  <li class="list-heading__item">Size: 14px </li>
+                  <li class="list-heading__item">Line height: 18px </li>
+                  <li class="list-heading__item">Char Spacing: -0.015em</li>
+                </ul>
+              </div>
+              <div class="col align-self-center">
+                <ul class="list-unstyled list-content__mobile--base mb-0">
+                  <li class="list-content__item">Uncommon Design.</li>
+                  <li class="list-content__item">Unprecedented</li>
+                  <li class="list-content__item">Engineering</li>
+                </ul>
+              </div>
+            </div>
+            <div class="row g-0 heading-style">
+              <div class="col heading-block">
+                <ul class="list-unstyled list-heading mb-0">
+                  <li class="list-heading__item">Heading 5 </li>
+                  <li class="list-heading__item">Font: Roboto  </li>
+                  <li class="list-heading__item">Weight: Bold </li>
+                  <li class="list-heading__item">Size: 18px </li>
+                  <li class="list-heading__item">Line height: 20px </li>
+                  <li class="list-heading__item">Char Spacing: -0.015em</li>
+                </ul>
+              </div>
+              <div class="col align-self-center">
+                <ul class="list-unstyled list-content__mobile--medium mb-0">
+                  <li class="list-content__item">Uncommon Design.</li>
+                  <li class="list-content__item">Unprecedented</li>
+                  <li class="list-content__item">Engineering</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Heading display style Dark -->
+        <div class="bg-black typo-block" id="heading-display-style-dark">
+          <h2 class="h1 fw-bold text-white" style="margin-bottom:50px;">Desktop</h2>
+          <div class="row g-0 heading-style">
+            <div class="col heading-block">
+              <ul class="list-unstyled list-heading mb-0">
+                <li class="list-heading__item">Banner Heading</li>
+                <li class="list-heading__item">Font: Roboto  </li>
+                <li class="list-heading__item">Weight: Bold </li>
+                <li class="list-heading__item">Size: 40px </li>
+                <li class="list-heading__item">Line height: 47px </li>
+                <li class="list-heading__item">Char Spacing: -0.015em</li>
+              </ul>
+            </div>
+            <div class="col">
+              <ul class="list-unstyled list-content mb-0">
+                <li class="list-content__item text-white">Uncommon Design.</li>
+                <li class="list-content__item text-white">Unprecedented</li>
+                <li class="list-content__item text-white">Engineering</li>
+              </ul>
+            </div>
+          </div>
+          <div class="row g-0 heading-style">
+            <div class="col heading-block">
+              <ul class="list-unstyled list-heading mb-0">
+                <li class="list-heading__item">Heading 1</li>
+                <li class="list-heading__item">Font: Roboto  </li>
+                <li class="list-heading__item">Weight: Medium Italic  </li>
+                <li class="list-heading__item">Size: 30px </li>
+                <li class="list-heading__item">Line height: 35px </li>
+                <li class="list-heading__item">Char Spacing: -0.015em</li>
+              </ul>
+            </div>
+            <div class="col">
+              <ul class="list-unstyled list-content list-content__lg mb-0">
+                <li class="list-content__item text-white">Uncommon Design.</li>
+                <li class="list-content__item text-white">Unprecedented</li>
+                <li class="list-content__item text-white">Engineering</li>
+              </ul>
+            </div>
+          </div>
+          <div class="row g-0 heading-style">
+            <div class="col heading-block">
+              <ul class="list-unstyled list-heading mb-0">
+                <li class="list-heading__item">Heading 1 Light Italic</li>
+                <li class="list-heading__item">Font: Roboto  </li>
+                <li class="list-heading__item">Weight: Light Italic </li>
+                <li class="list-heading__item">Size: 30px </li>
+                <li class="list-heading__item">Line height: 35px </li>
+                <li class="list-heading__item">Char Spacing: -0.015em</li>
+              </ul>
+            </div>
+            <div class="col">
+              <ul class="list-unstyled list-content list-content__lg mb-0">
+                <li class="list-content__item fw-light text-white">Uncommon Design.</li>
+                <li class="list-content__item fw-light text-white">Unprecedented</li>
+                <li class="list-content__item fw-light text-white">Engineering</li>
+              </ul>
+            </div>
+          </div>
+          <div class="row g-0 heading-style">
+            <div class="col heading-block">
+              <ul class="list-unstyled list-heading mb-0">
+                <li class="list-heading__item">Heading 2</li>
+                <li class="list-heading__item">Font: Roboto  </li>
+                <li class="list-heading__item">Weight: Medium </li>
+                <li class="list-heading__item">Size: 30px </li>
+                <li class="list-heading__item">Line height: 35px </li>
+                <li class="list-heading__item">Char Spacing: -0.015em</li>
+              </ul>
+            </div>
+            <div class="col align-self-center">
+              <ul class="list-unstyled list-content list-content__medium mb-0">
+                <li class="list-content__item text-white">Uncommon Design.</li>
+                <li class="list-content__item text-white">Unprecedented</li>
+                <li class="list-content__item text-white">Engineering</li>
+              </ul>
+            </div>
+          </div>
+          <div class="row g-0 heading-style">
+            <div class="col heading-block">
+              <ul class="list-unstyled list-heading mb-0">
+                <li class="list-heading__item">Heading 3</li>
+                <li class="list-heading__item">Font: Roboto  </li>
+                <li class="list-heading__item">Weight: Medium </li>
+                <li class="list-heading__item">Size: 30px </li>
+                <li class="list-heading__item">Line height: 35px </li>
+                <li class="list-heading__item">Char Spacing: -0.015em</li>
+              </ul>
+            </div>
+            <div class="col align-self-center">
+              <ul class="list-unstyled list-content list-content__small mb-0">
+                <li class="list-content__item text-white">Uncommon Design.</li>
+                <li class="list-content__item text-white">Unprecedented</li>
+                <li class="list-content__item text-white">Engineering</li>
+              </ul>
+            </div>
+          </div>
+          <div class="row g-0 heading-style">
+            <div class="col heading-block">
+              <ul class="list-unstyled list-heading mb-0">
+                <li class="list-heading__item">Heading 4</li>
+                <li class="list-heading__item">Font: Roboto  </li>
+                <li class="list-heading__item">Weight: Bold </li>
+                <li class="list-heading__item">Size: 20px </li>
+                <li class="list-heading__item">Line height: 22px </li>
+                <li class="list-heading__item">Char Spacing: -0.015em</li>
+              </ul>
+            </div>
+            <div class="col align-self-center">
+              <ul class="list-unstyled list-content list-content__base mb-0">
+                <li class="list-content__item text-white">Uncommon Design.</li>
+                <li class="list-content__item text-white">Unprecedented</li>
+                <li class="list-content__item text-white">Engineering</li>
+              </ul>
+            </div>
+          </div>
+          <div class="row g-0 heading-style">
+            <div class="col heading-block">
+              <ul class="list-unstyled list-heading mb-0">
+                <li class="list-heading__item">Heading </li>
+                <li class="list-heading__item">Font: Roboto  </li>
+                <li class="list-heading__item">Weight: Bold Italic </li>
+                <li class="list-heading__item">Size: 22px </li>
+                <li class="list-heading__item">Line height: 26px </li>
+                <li class="list-heading__item">Char Spacing: -12%</li>
+              </ul>
+            </div>
+            <div class="col align-self-center">
+              <ul class="list-unstyled list-content list-content__base mb-0">
+                <li class="list-content__item">
+                  <img src="images/features-img.png" alt="" title="" width="171" height="47">
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- Mobile -->
+          <div class="typo-block-mobile mt-5 pt-5">
+            <h2 class="h1 fw-bold text-white" style="margin-bottom:50px;">Mobile</h2>
+            <div class="row g-0 heading-style">
+              <div class="col heading-block">
+                <ul class="list-unstyled list-heading mb-0">
+                  <li class="list-heading__item">Banner Heading</li>
+                  <li class="list-heading__item">Font: Roboto  </li>
+                  <li class="list-heading__item">Weight: Bold </li>
+                  <li class="list-heading__item">Size: 23px </li>
+                  <li class="list-heading__item">Line height: 27px </li>
+                  <li class="list-heading__item">Char Spacing: -0.015em</li>
+                </ul>
+              </div>
+              <div class="col align-self-center">
+                <ul class="list-unstyled list-content__mobile mb-0">
+                  <li class="list-content__item text-white">Uncommon Design.</li>
+                  <li class="list-content__item text-white">Unprecedented</li>
+                  <li class="list-content__item text-white">Engineering</li>
+                </ul>
+              </div>
+            </div>
+            <div class="row g-0 heading-style">
+              <div class="col heading-block">
+                <ul class="list-unstyled list-heading mb-0">
+                  <li class="list-heading__item">Heading 1</li>
+                  <li class="list-heading__item">Font: Roboto  </li>
+                  <li class="list-heading__item">Weight: Medium Italic  </li>
+                  <li class="list-heading__item">Size: 24px </li>
+                  <li class="list-heading__item">Line height: 28px </li>
+                  <li class="list-heading__item">Char Spacing: -0.015em</li>
+                </ul>
+              </div>
+              <div class="col align-self-center">
+                <ul class="list-unstyled list-content__mobile mb-0">
+                  <li class="list-content__item fw-medium fst-italic text-white">Uncommon Design.</li>
+                  <li class="list-content__item fw-medium fst-italic text-white">Unprecedented</li>
+                  <li class="list-content__item fw-medium fst-italic text-white">Engineering</li>
+                </ul>
+              </div>
+            </div>
+            <div class="row g-0 heading-style">
+              <div class="col heading-block">
+                <ul class="list-unstyled list-heading mb-0">
+                  <li class="list-heading__item">Heading 1 Light Italic</li>
+                  <li class="list-heading__item">Font: Roboto  </li>
+                  <li class="list-heading__item">Weight: Light Italic </li>
+                  <li class="list-heading__item">Size: 24px </li>
+                  <li class="list-heading__item">Line height: 28px </li>
+                  <li class="list-heading__item">Char Spacing: -0.015em</li>
+                </ul>
+              </div>
+              <div class="col align-self-center">
+                <ul class="list-unstyled  list-content__mobile mb-0">
+                  <li class="list-content__item fw-light fst-italic text-white">Uncommon Design.</li>
+                  <li class="list-content__item fw-light fst-italic text-white">Unprecedented</li>
+                  <li class="list-content__item fw-light fst-italic text-white">Engineering</li>
+                </ul>
+              </div>
+            </div>
+            <div class="row g-0 heading-style">
+              <div class="col heading-block">
+                <ul class="list-unstyled list-heading mb-0">
+                  <li class="list-heading__item">Heading 2</li>
+                  <li class="list-heading__item">Font: Roboto  </li>
+                  <li class="list-heading__item">Weight: Medium </li>
+                  <li class="list-heading__item">Size: 24px </li>
+                  <li class="list-heading__item">Line height: 28px </li>
+                  <li class="list-heading__item">Char Spacing: -0.015em</li>
+                </ul>
+              </div>
+              <div class="col align-self-center">
+                <ul class="list-unstyled list-content__mobile mb-0">
+                  <li class="list-content__item text-white">Uncommon Design.</li>
+                  <li class="list-content__item text-white">Unprecedented</li>
+                  <li class="list-content__item text-white">Engineering</li>
+                </ul>
+              </div>
+            </div>
+            <div class="row g-0 heading-style">
+              <div class="col heading-block">
+                <ul class="list-unstyled list-heading mb-0">
+                  <li class="list-heading__item">Heading 3</li>
+                  <li class="list-heading__item">Font: Roboto  </li>
+                  <li class="list-heading__item">Weight: Medium </li>
+                  <li class="list-heading__item">Size: 24px </li>
+                  <li class="list-heading__item">Line height: 28px </li>
+                  <li class="list-heading__item">Char Spacing: -0.015em</li>
+                </ul>
+              </div>
+              <div class="col align-self-center">
+                <ul class="list-unstyled list-content__mobile mb-0">
+                  <li class="list-content__item fw-medium text-white">Uncommon Design.</li>
+                  <li class="list-content__item fw-medium text-white">Unprecedented</li>
+                  <li class="list-content__item fw-medium text-white">Engineering</li>
+                </ul>
+              </div>
+            </div>
+            <div class="row g-0 heading-style">
+              <div class="col heading-block">
+                <ul class="list-unstyled list-heading mb-0">
+                  <li class="list-heading__item">Heading 4</li>
+                  <li class="list-heading__item">Font: Roboto  </li>
+                  <li class="list-heading__item">Weight: Bold </li>
+                  <li class="list-heading__item">Size: 14px </li>
+                  <li class="list-heading__item">Line height: 18px </li>
+                  <li class="list-heading__item">Char Spacing: -0.015em</li>
+                </ul>
+              </div>
+              <div class="col align-self-center">
+                <ul class="list-unstyled list-content__mobile--base mb-0">
+                  <li class="list-content__item text-white">Uncommon Design.</li>
+                  <li class="list-content__item text-white">Unprecedented</li>
+                  <li class="list-content__item text-white">Engineering</li>
+                </ul>
+              </div>
+            </div>
+            <div class="row g-0 heading-style">
+              <div class="col heading-block">
+                <ul class="list-unstyled list-heading mb-0">
+                  <li class="list-heading__item">Heading 5 </li>
+                  <li class="list-heading__item">Font: Roboto  </li>
+                  <li class="list-heading__item">Weight: Bold </li>
+                  <li class="list-heading__item">Size: 18px </li>
+                  <li class="list-heading__item">Line height: 20px </li>
+                  <li class="list-heading__item">Char Spacing: -0.015em</li>
+                </ul>
+              </div>
+              <div class="col align-self-center">
+                <ul class="list-unstyled list-content__mobile--medium mb-0">
+                  <li class="list-content__item text-white">Uncommon Design.</li>
+                  <li class="list-content__item text-white">Unprecedented</li>
+                  <li class="list-content__item text-white">Engineering</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Body Copy Display Style -->
+        <div class="typo-block" id="body-copy-display-style">
+          <h2 class="h1 fw-bold" style="margin-bottom:50px;">Desktop</h2>
+          <div class="row g-0 heading-style">
+            <div class="col heading-block">
+              <ul class="list-unstyled list-heading mb-0">
+                <li class="list-heading__item">Body copy Normal</li>
+                <li class="list-heading__item">Font: Roboto  </li>
+                <li class="list-heading__item">Weight: Regular </li>
+                <li class="list-heading__item">Size: 16px </li>
+                <li class="list-heading__item">Line height: 24px </li>
+                <li class="list-heading__item">Char Spacing: -0.015em</li>
+              </ul>
+            </div>
+            <div class="col align-self-center">
+              <p class="mb-0 bc-content">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam <br> malesuada diam a ante cursus, sed mollis erat condimentum. <br> Suspendisse imperdiet consequat cursus. Maecenas sagittis mi <br> nisi, at rutrum sem ullamcorper quis. Nam eu nunc id.
+              </p>
+            </div>
+          </div>
+          <div class="row g-0 heading-style">
+            <div class="col heading-block">
+              <ul class="list-unstyled list-heading mb-0">
+                <li class="list-heading__item">Body copy Bold</li>
+                <li class="list-heading__item">Font: Roboto  </li>
+                <li class="list-heading__item">Weight: Bold </li>
+                <li class="list-heading__item">Size: 16px </li>
+                <li class="list-heading__item">Line height: 24px </li>
+                <li class="list-heading__item">Char Spacing: -0.015em</li>
+              </ul>
+            </div>
+            <div class="col align-self-center">
+              <p class="mb-0 bc-content fw-bold">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam <br> malesuada diam a ante cursus, sed mollis erat condimentum. <br> Suspendisse imperdiet consequat cursus. Maecenas sagittis mi <br> nisi, at rutrum sem ullamcorper quis. Nam eu nunc id.
+              </p>
+            </div>
+          </div>
+          <div class="row g-0 heading-style">
+            <div class="col heading-block">
+              <ul class="list-unstyled list-heading mb-0">
+                <li class="list-heading__item">Body copy  Small</li>
+                <li class="list-heading__item">Font: Roboto  </li>
+                <li class="list-heading__item">Weight: Regular  </li>
+                <li class="list-heading__item">Size: 14px </li>
+                <li class="list-heading__item">Line height: 20px </li>
+                <li class="list-heading__item">Char Spacing: -0.015em</li>
+              </ul>
+            </div>
+            <div class="col align-self-center">
+              <p class="mb-0 bc-content-sm">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam <br> malesuada diam a ante cursus, sed mollis erat condimentum. <br> Suspendisse imperdiet consequat cursus. Maecenas sagittis mi <br> nisi, at rutrum sem ullamcorper quis. Nam eu nunc id.
+              </p>
+            </div>
+          </div>
+          <div class="row g-0 heading-style">
+            <div class="col heading-block">
+              <ul class="list-unstyled list-heading mb-0">
+                <li class="list-heading__item">Body Disclaimer </li>
+                <li class="list-heading__item">Font: Roboto  </li>
+                <li class="list-heading__item">Weight: Regular  </li>
+                <li class="list-heading__item">Size: 12px </li>
+                <li class="list-heading__item">Line height: 20px </li>
+                <li class="list-heading__item">Char Spacing: -0.015em</li>
+              </ul>
+            </div>
+            <div class="col align-self-center">
+              <p class="mb-0 bc-content-xsm">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam <br> malesuada diam a ante cursus, sed mollis erat condimentum. <br> Suspendisse imperdiet consequat cursus. Maecenas sagittis mi <br> nisi, at rutrum sem ullamcorper quis. Nam eu nunc id.
+              </p>
+            </div>
+          </div>
+          <div class="row g-0 heading-style">
+            <div class="col heading-block">
+              <ul class="list-unstyled list-heading mb-0">
+                <li class="list-heading__item">Big Points</li>
+                <li class="list-heading__item">Font: Roboto  </li>
+                <li class="list-heading__item">Weight: Medium  </li>
+                <li class="list-heading__item">Size: 18px </li>
+                <li class="list-heading__item">Line height: 35px </li>
+                <li class="list-heading__item">Char Spacing: -0.015em</li>
+              </ul>
+            </div>
+            <div class="col align-self-center">
+              <ul class="list-unstyled bc__list">
+                <li class="list-content__item">1. Lorem ipsum dolor </li>
+                <li class="list-content__item">2. Lorem ipsum dolor</li>
+                <li class="list-content__item">3. Lorem ipsum dolor </li>
+                <li class="list-content__item">4. Lorem ipsum dolor</li>
+              </ul>
+            </div>
+          </div>
+
+
+          <!-- Mobile -->
+          <div class="typo-block-mobile">
+            <h2 class="h1 fw-bold" style="margin-bottom:50px;">Mobile</h2>
+            <div class="row g-0 heading-style">
+              <div class="col heading-block">
+                <ul class="list-unstyled list-heading mb-0">
+                  <li class="list-heading__item">Body copy Normal</li>
+                  <li class="list-heading__item">Font: Roboto  </li>
+                  <li class="list-heading__item">Weight: Regular </li>
+                  <li class="list-heading__item">Size: 14px </li>
+                  <li class="list-heading__item">Line height: 20px </li>
+                  <li class="list-heading__item">Char Spacing: -0.015em</li>
+                </ul>
+              </div>
+              <div class="col align-self-center">
+                <p class="mb-0 bc-content-mobile">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam <br> malesuada diam a ante cursus, sed mollis erat condimentum. <br> Suspendisse imperdiet consequat cursus. Maecenas sagittis mi <br> nisi, at rutrum sem ullamcorper quis. Nam eu nunc id.
+                </p>
+              </div>
+            </div>
+            <div class="row g-0 heading-style">
+              <div class="col heading-block">
+                <ul class="list-unstyled list-heading mb-0">
+                  <li class="list-heading__item">Body copy Bold</li>
+                  <li class="list-heading__item">Font: Roboto  </li>
+                  <li class="list-heading__item">Weight: Bold </li>
+                  <li class="list-heading__item">Size: 14px </li>
+                  <li class="list-heading__item">Line height: 20px </li>
+                  <li class="list-heading__item">Char Spacing: -0.015em</li>
+                </ul>
+              </div>
+              <div class="col align-self-center">
+                <p class="mb-0 bc-content-mobile fw-bold">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam <br> malesuada diam a ante cursus, sed mollis erat condimentum. <br> Suspendisse imperdiet consequat cursus. Maecenas sagittis mi <br> nisi, at rutrum sem ullamcorper quis. Nam eu nunc id.
+                </p>
+              </div>
+            </div>
+            <div class="row g-0 heading-style">
+              <div class="col heading-block">
+                <ul class="list-unstyled list-heading mb-0">
+                  <li class="list-heading__item">Body copy  Small</li>
+                  <li class="list-heading__item">Font: Roboto  </li>
+                  <li class="list-heading__item">Weight: Regular  </li>
+                  <li class="list-heading__item">Size: 14px </li>
+                  <li class="list-heading__item">Line height: 20px </li>
+                  <li class="list-heading__item">Char Spacing: -0.015em</li>
+                </ul>
+              </div>
+              <div class="col align-self-center">
+                <p class="mb-0 bc-content-sm">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam <br> malesuada diam a ante cursus, sed mollis erat condimentum. <br> Suspendisse imperdiet consequat cursus. Maecenas sagittis mi <br> nisi, at rutrum sem ullamcorper quis. Nam eu nunc id.
+                </p>
+              </div>
+            </div>
+            <div class="row g-0 heading-style">
+              <div class="col heading-block">
+                <ul class="list-unstyled list-heading mb-0">
+                  <li class="list-heading__item">Body Disclaimer </li>
+                  <li class="list-heading__item">Font: Roboto  </li>
+                  <li class="list-heading__item">Weight: Regular  </li>
+                  <li class="list-heading__item">Size: 10px </li>
+                  <li class="list-heading__item">Line height: 20px </li>
+                  <li class="list-heading__item">Char Spacing: -0.015em</li>
+                </ul>
+              </div>
+              <div class="col align-self-center">
+                <p class="mb-0 bc-content-xsm--mobile">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam <br> malesuada diam a ante cursus, sed mollis erat condimentum. <br> Suspendisse imperdiet consequat cursus. Maecenas sagittis mi <br> nisi, at rutrum sem ullamcorper quis. Nam eu nunc id.
+                </p>
+              </div>
+            </div>
+            <div class="row g-0 heading-style">
+              <div class="col heading-block">
+                <ul class="list-unstyled list-heading mb-0">
+                  <li class="list-heading__item">Big Points</li>
+                  <li class="list-heading__item">Font: Roboto  </li>
+                  <li class="list-heading__item">Weight: Medium  </li>
+                  <li class="list-heading__item">Size: 16px </li>
+                  <li class="list-heading__item">Line height: 35px </li>
+                  <li class="list-heading__item">Char Spacing: -0.015em</li>
+                </ul>
+              </div>
+              <div class="col align-self-center">
+                <ul class="list-unstyled bc__list bc__list--mobile mb-0">
+                  <li class="list-content__item">1. Lorem ipsum dolor </li>
+                  <li class="list-content__item">2. Lorem ipsum dolor</li>
+                  <li class="list-content__item">3. Lorem ipsum dolor </li>
+                  <li class="list-content__item">4. Lorem ipsum dolor</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Body Copy Display Style Dark -->
+        <div class="bg-black typo-block" id="body-copy-display-style-dark">
+          <h2 class="h1 fw-bold text-white" style="margin-bottom:50px;">Desktop</h2>
+          <div class="row g-0 heading-style">
+            <div class="col heading-block">
+              <ul class="list-unstyled list-heading mb-0">
+                <li class="list-heading__item">Body copy Normal</li>
+                <li class="list-heading__item">Font: Roboto  </li>
+                <li class="list-heading__item">Weight: Regular </li>
+                <li class="list-heading__item">Size: 16px </li>
+                <li class="list-heading__item">Line height: 24px </li>
+                <li class="list-heading__item">Char Spacing: -0.015em</li>
+              </ul>
+            </div>
+            <div class="col align-self-center">
+              <p class="mb-0 bc-content text-white">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam <br> malesuada diam a ante cursus, sed mollis erat condimentum. <br> Suspendisse imperdiet consequat cursus. Maecenas sagittis mi <br> nisi, at rutrum sem ullamcorper quis. Nam eu nunc id.
+              </p>
+            </div>
+          </div>
+          <div class="row g-0 heading-style">
+            <div class="col heading-block">
+              <ul class="list-unstyled list-heading mb-0">
+                <li class="list-heading__item">Body copy Bold</li>
+                <li class="list-heading__item">Font: Roboto  </li>
+                <li class="list-heading__item">Weight: Bold </li>
+                <li class="list-heading__item">Size: 16px </li>
+                <li class="list-heading__item">Line height: 24px </li>
+                <li class="list-heading__item">Char Spacing: -0.015em</li>
+              </ul>
+            </div>
+            <div class="col align-self-center">
+              <p class="mb-0 bc-content fw-bold text-white">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam <br> malesuada diam a ante cursus, sed mollis erat condimentum. <br> Suspendisse imperdiet consequat cursus. Maecenas sagittis mi <br> nisi, at rutrum sem ullamcorper quis. Nam eu nunc id.
+              </p>
+            </div>
+          </div>
+          <div class="row g-0 heading-style">
+            <div class="col heading-block">
+              <ul class="list-unstyled list-heading mb-0">
+                <li class="list-heading__item">Body copy  Small</li>
+                <li class="list-heading__item">Font: Roboto  </li>
+                <li class="list-heading__item">Weight: Regular  </li>
+                <li class="list-heading__item">Size: 14px </li>
+                <li class="list-heading__item">Line height: 20px </li>
+                <li class="list-heading__item">Char Spacing: -0.015em</li>
+              </ul>
+            </div>
+            <div class="col align-self-center">
+              <p class="mb-0 bc-content-sm text-white">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam <br> malesuada diam a ante cursus, sed mollis erat condimentum. <br> Suspendisse imperdiet consequat cursus. Maecenas sagittis mi <br> nisi, at rutrum sem ullamcorper quis. Nam eu nunc id.
+              </p>
+            </div>
+          </div>
+          <div class="row g-0 heading-style">
+            <div class="col heading-block">
+              <ul class="list-unstyled list-heading mb-0">
+                <li class="list-heading__item">Body Disclaimer </li>
+                <li class="list-heading__item">Font: Roboto  </li>
+                <li class="list-heading__item">Weight: Regular  </li>
+                <li class="list-heading__item">Size: 12px </li>
+                <li class="list-heading__item">Line height: 20px </li>
+                <li class="list-heading__item">Char Spacing: -0.015em</li>
+              </ul>
+            </div>
+            <div class="col align-self-center">
+              <p class="mb-0 bc-content-xsm text-white">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam <br> malesuada diam a ante cursus, sed mollis erat condimentum. <br> Suspendisse imperdiet consequat cursus. Maecenas sagittis mi <br> nisi, at rutrum sem ullamcorper quis. Nam eu nunc id.
+              </p>
+            </div>
+          </div>
+          <div class="row g-0 heading-style">
+            <div class="col heading-block">
+              <ul class="list-unstyled list-heading mb-0">
+                <li class="list-heading__item">Big Points</li>
+                <li class="list-heading__item">Font: Roboto  </li>
+                <li class="list-heading__item">Weight: Medium  </li>
+                <li class="list-heading__item">Size: 18px </li>
+                <li class="list-heading__item">Line height: 35px </li>
+                <li class="list-heading__item">Char Spacing: -0.015em</li>
+              </ul>
+            </div>
+            <div class="col align-self-center">
+              <ul class="list-unstyled bc__list">
+                <li class="list-content__item text-white">1. Lorem ipsum dolor </li>
+                <li class="list-content__item text-white">2. Lorem ipsum dolor</li>
+                <li class="list-content__item text-white">3. Lorem ipsum dolor </li>
+                <li class="list-content__item text-white">4. Lorem ipsum dolor</li>
+              </ul>
+            </div>
+          </div>
+
+
+          <!-- Mobile -->
+          <div class="typo-block-mobile">
+            <h2 class="h1 fw-bold text-white" style="margin-bottom:50px;">Mobile</h2>
+            <div class="row g-0 heading-style">
+              <div class="col heading-block">
+                <ul class="list-unstyled list-heading mb-0">
+                  <li class="list-heading__item">Body copy Normal</li>
+                  <li class="list-heading__item">Font: Roboto  </li>
+                  <li class="list-heading__item">Weight: Regular </li>
+                  <li class="list-heading__item">Size: 14px </li>
+                  <li class="list-heading__item">Line height: 20px </li>
+                  <li class="list-heading__item">Char Spacing: -0.015em</li>
+                </ul>
+              </div>
+              <div class="col align-self-center">
+                <p class="mb-0 bc-content-mobile text-white">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam <br> malesuada diam a ante cursus, sed mollis erat condimentum. <br> Suspendisse imperdiet consequat cursus. Maecenas sagittis mi <br> nisi, at rutrum sem ullamcorper quis. Nam eu nunc id.
+                </p>
+              </div>
+            </div>
+            <div class="row g-0 heading-style">
+              <div class="col heading-block">
+                <ul class="list-unstyled list-heading mb-0">
+                  <li class="list-heading__item">Body copy Bold</li>
+                  <li class="list-heading__item">Font: Roboto  </li>
+                  <li class="list-heading__item">Weight: Bold </li>
+                  <li class="list-heading__item">Size: 14px </li>
+                  <li class="list-heading__item">Line height: 20px </li>
+                  <li class="list-heading__item">Char Spacing: -0.015em</li>
+                </ul>
+              </div>
+              <div class="col align-self-center">
+                <p class="mb-0 bc-content-mobile fw-bold text-white">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam <br> malesuada diam a ante cursus, sed mollis erat condimentum. <br> Suspendisse imperdiet consequat cursus. Maecenas sagittis mi <br> nisi, at rutrum sem ullamcorper quis. Nam eu nunc id.
+                </p>
+              </div>
+            </div>
+            <div class="row g-0 heading-style">
+              <div class="col heading-block">
+                <ul class="list-unstyled list-heading mb-0">
+                  <li class="list-heading__item">Body copy  Small</li>
+                  <li class="list-heading__item">Font: Roboto  </li>
+                  <li class="list-heading__item">Weight: Regular  </li>
+                  <li class="list-heading__item">Size: 14px </li>
+                  <li class="list-heading__item">Line height: 20px </li>
+                  <li class="list-heading__item">Char Spacing: -0.015em</li>
+                </ul>
+              </div>
+              <div class="col align-self-center">
+                <p class="mb-0 bc-content-sm text-white">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam <br> malesuada diam a ante cursus, sed mollis erat condimentum. <br> Suspendisse imperdiet consequat cursus. Maecenas sagittis mi <br> nisi, at rutrum sem ullamcorper quis. Nam eu nunc id.
+                </p>
+              </div>
+            </div>
+            <div class="row g-0 heading-style">
+              <div class="col heading-block">
+                <ul class="list-unstyled list-heading mb-0">
+                  <li class="list-heading__item">Body Disclaimer </li>
+                  <li class="list-heading__item">Font: Roboto  </li>
+                  <li class="list-heading__item">Weight: Regular  </li>
+                  <li class="list-heading__item">Size: 10px </li>
+                  <li class="list-heading__item">Line height: 20px </li>
+                  <li class="list-heading__item">Char Spacing: -0.015em</li>
+                </ul>
+              </div>
+              <div class="col align-self-center">
+                <p class="mb-0 bc-content-xsm--mobile text-white">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam <br> malesuada diam a ante cursus, sed mollis erat condimentum. <br> Suspendisse imperdiet consequat cursus. Maecenas sagittis mi <br> nisi, at rutrum sem ullamcorper quis. Nam eu nunc id.
+                </p>
+              </div>
+            </div>
+            <div class="row g-0 heading-style">
+              <div class="col heading-block">
+                <ul class="list-unstyled list-heading mb-0">
+                  <li class="list-heading__item">Big Points</li>
+                  <li class="list-heading__item">Font: Roboto  </li>
+                  <li class="list-heading__item">Weight: Medium  </li>
+                  <li class="list-heading__item">Size: 16px </li>
+                  <li class="list-heading__item">Line height: 35px </li>
+                  <li class="list-heading__item">Char Spacing: -0.015em</li>
+                </ul>
+              </div>
+              <div class="col align-self-center">
+                <ul class="list-unstyled bc__list bc__list--mobile mb-0">
+                  <li class="list-content__item text-white">1. Lorem ipsum dolor </li>
+                  <li class="list-content__item text-white">2. Lorem ipsum dolor</li>
+                  <li class="list-content__item text-white">3. Lorem ipsum dolor </li>
+                  <li class="list-content__item text-white">4. Lorem ipsum dolor</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Typography Style -->
+        <div class="typo-style" id="typography-style">
+          <h2 class="h1 fw-bold mb-3">Typography Style</h2>
+          <p class="typo-style--text">
+            The ratio between the rings and the headline is flexible. As such, there are no specifications or fixed ratios in terms of line thickness and size between rings and <br> headline. If the headline is located directly above or below the rings, it is aligned with the inner edge of the ring at the defined minimum spacing.
+          </p>
+          <div class="row g-0 g-50 row-typo-style">
+            <div class="col-6">
+              <div class="card card-typo rounded-0 border-0">
+                <div class="card-typo__text">
+                  Big Heading with Subline and Body copy with  CTA
+                </div>
+                <div class="card-body p-0">
+                  <h3 class="card-title card-typo__title">Banner Heading</h3>
+                  <h5 class="card-typo__subline">Add this a Subline</h5>
+                  <p class="card-text card-typo--text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris <br> eu eleifend massa. Donec mattis tellus vel sem sollicitudin <br> vehicula.
+                  </p>
+                  <a href="javascript:void(0)" class="btn btn-primary btn-cta">Call to action</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="card card-typo rounded-0 border-0">
+                <div class="card-typo__text">
+                  Big Heading with Top Heading and Body copy
+                </div>
+                <div class="card-body p-0">
+                  <h5 class="card-typo__topHeading">The Top Heading</h5>
+                  <h3 class="card-title card-typo__title">Banner Heading</h3>
+                  <p class="card-text card-typo--text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris <br> eu eleifend massa. Donec mattis tellus vel sem sollicitudin <br> vehicula.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="card card-typo rounded-0 border-0">
+                <div class="card-typo__text">
+                  Heading1 with Heading1 Light Italic Style and Body copy
+                </div>
+                <div class="card-body p-0">
+                  <h3 class="card-title card-typo__title-lg text-uppercase fst-italic mb-0">Headline 1</h3>
+                  <h5 class="card-typo__title-lg text-uppercase fst-italic fw-light mb-0">Headline 1 Light Italic</h5>
+                  <p class="card-text card-typo--text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do <br> eiusmod tempor. incididunt. accumsan lacus vel facilisis. 
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="card card-typo rounded-0 border-0">
+                <div class="card-typo__text">
+                  Heading 1 with Features Heading and Body copy
+                </div>
+                <div class="card-body p-0">
+                  <img src="images/features-img1.png" width="171" height="47" alt="" class="mb-4">
+                  <h3 class="card-title card-typo__title-lg text-uppercase fst-italic mb-0">Headline 1</h3>
+                  <p class="card-text card-typo--text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do <br> eiusmod tempor. incididunt. accumsan lacus vel facilisis. 
+                  </p>
+                  
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="card card-typo rounded-0 border-0">
+                <div class="card-typo__text">
+                  Heading1 with Body copy
+                </div>
+                <div class="card-body p-0">
+                  <h3 class="card-title card-typo__title-lg text-uppercase fst-italic mb-0">Headline 1</h3>
+                  <p class="card-text card-typo--text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do <br> eiusmod tempor. incididunt. accumsan lacus vel facilisis. 
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="card card-typo rounded-0 border-0">
+                <div class="card-typo__text">
+                  Heading2 with Body copy
+                </div>
+                <div class="card-body p-0">
+                  <h3 class="card-title card-typo__title--hh2 text-uppercase mb-0">Headline H2</h3>
+                  <p class="card-text card-typo--text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do <br> eiusmod tempor. incididunt. accumsan lacus vel facilisis. 
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="card card-typo rounded-0 border-0">
+                <div class="card-typo__text">
+                  Heading2 with Body copy and CTA
+                </div>
+                <div class="card-body p-0">
+                  <h3 class="card-title card-typo__title--hh2 text-uppercase mb-2">Headline H2</h3>
+                  <p class="card-text card-typo--text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris <br> eu eleifend massa. Donec mattis tellus vel sem sollicitudin <br> vehicula.
+                  </p>
+                  <a href="javascript:void(0)" class="btn btn-primary btn-cta">Call to action</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="card card-typo rounded-0 border-0">
+                <div class="card-typo__text">
+                  Heading2 with Body copy and CTA
+                </div>
+                <div class="card-body p-0">
+                  <h3 class="card-title card-typo__title--medium text-uppercase mb-2">Headline H3</h3>
+                  <p class="card-text card-typo--text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris <br> eu eleifend massa. Donec mattis tellus vel sem sollicitudin <br> vehicula.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="card card-typo rounded-0 border-0">
+                <div class="card-typo__text">
+                  Heading5 with Small Body copy (mobile Body Copy)
+                </div>
+                <div class="card-body p-0">
+                  <h3 class="card-title card-typo__title--mobile mb-2">Headline 4</h3>
+                  <p class="card-text card-typo--text-mobile">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod <br> tempor. incididunt. accumsan lacus vel facilisis.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="card card-typo rounded-0 border-0">
+                <div class="card-typo__text">
+                  Heading5 with Small Body copy (mobile Body Copy)
+                </div>
+                <div class="card-body p-0">
+                  <h3 class="card-title card-typo__title--mobile1 mb-2 text-uppercase">Headline 5</h3>
+                  <p class="card-text card-typo--text-mobile">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod <br> tempor. incididunt. accumsan lacus vel facilisis.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="card card-typo rounded-0 border-0">
+                <div class="card-typo__text">
+                  Bold Body Copy with Body copy
+                </div>
+                <div class="card-body p-0">
+                  <h3 class="card-title card-typo__title--base-bold mb-2">Bold Body Copy Heading</h3>
+                  <p class="card-text card-typo--text-baseMobile">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do <br> eiusmod tempor. incididunt. accumsan lacus vel facilisis. 
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row g-0 g-50 second-row">
+            <div class="col-6">
+              <div class="card card-typo rounded-0 border-0">
+                <div class="card-typo__text">
+                  Bold Body Copy with Body copy on image
+                </div>
+                <div class="card-body p-0">
+                  <img src="images/card-img1.webp" width="384" height="419" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="card card-typo rounded-0 border-0">
+                <div class="card-typo__text">
+                  Bold Body Copy with Body copy on image hover effect
+                </div>
+                <div class="card-body p-0">
+                  <img src="images/card-img2.webp" width="384" height="420" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Typography Style Dark -->
+        <div class="typo-style bg-black typo-style-black" id="typography-style-dark">
+          <h2 class="h1 fw-bold mb-3 text-white">Typography Style Dark Theme</h2>
+          <p class="typo-style--text typo-style--dark">
+            The ratio between the rings and the headline is flexible. As such, there are no specifications or fixed ratios in terms of line thickness and size between rings and <br> headline. If the headline is located directly above or below the rings, it is aligned with the inner edge of the ring at the defined minimum spacing.
+          </p>
+          <div class="row g-0 g-50 row-typo-style">
+            <div class="col-6">
+              <div class="card card-typo rounded-0 border-0 bg-black">
+                <div class="card-typo__text">
+                  Big Heading with Subline and Body copy with  CTA
+                </div>
+                <div class="card-body p-0">
+                  <h3 class="card-title card-typo__title text-white">Banner Heading</h3>
+                  <h5 class="card-typo__subline text-white">Add this a Subline</h5>
+                  <p class="card-text card-typo--text text-white">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris <br> eu eleifend massa. Donec mattis tellus vel sem sollicitudin <br> vehicula.
+                  </p>
+                  <a href="javascript:void(0)" class="btn btn-primary btn-cta bg-white text-primary border-white">Call to action</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="card card-typo rounded-0 border-0 bg-black">
+                <div class="card-typo__text">
+                  Big Heading with Top Heading and Body copy
+                </div>
+                <div class="card-body p-0">
+                  <h5 class="card-typo__topHeading text-white">The Top Heading</h5>
+                  <h3 class="card-title card-typo__title text-white">Banner Heading</h3>
+                  <p class="card-text card-typo--text text-white">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris <br> eu eleifend massa. Donec mattis tellus vel sem sollicitudin <br> vehicula.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="card card-typo rounded-0 border-0 bg-black">
+                <div class="card-typo__text">
+                  Heading1 with Heading1 Light Italic Style and Body copy
+                </div>
+                <div class="card-body p-0">
+                  <h3 class="card-title card-typo__title-lg text-uppercase fst-italic mb-0 text-white">Headline 1</h3>
+                  <h5 class="card-typo__title-lg text-uppercase fst-italic fw-light mb-0 text-white">Headline 1 Light Italic</h5>
+                  <p class="card-text card-typo--text text-white">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do <br> eiusmod tempor. incididunt. accumsan lacus vel facilisis. 
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="card card-typo rounded-0 border-0 bg-black">
+                <div class="card-typo__text">
+                  Heading 1 with Features Heading and Body copy
+                </div>
+                <div class="card-body p-0">
+                  <img src="images/features-img1.png" width="171" height="47" alt="" class="mb-4">
+                  <h3 class="card-title card-typo__title-lg text-uppercase fst-italic mb-0 text-white">Headline 1</h3>
+                  <p class="card-text card-typo--text text-white">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do <br> eiusmod tempor. incididunt. accumsan lacus vel facilisis. 
+                  </p>
+                  
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="card card-typo rounded-0 border-0 bg-black">
+                <div class="card-typo__text">
+                  Heading1 with Body copy
+                </div>
+                <div class="card-body p-0">
+                  <h3 class="card-title card-typo__title-lg text-uppercase fst-italic mb-0 text-white">Headline 1</h3>
+                  <p class="card-text card-typo--text text-white">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do <br> eiusmod tempor. incididunt. accumsan lacus vel facilisis. 
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="card card-typo rounded-0 border-0 bg-black">
+                <div class="card-typo__text">
+                  Heading2 with Body copy
+                </div>
+                <div class="card-body p-0">
+                  <h3 class="card-title card-typo__title--hh2 text-uppercase mb-0 text-white">Headline H2</h3>
+                  <p class="card-text card-typo--text text-white">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do <br> eiusmod tempor. incididunt. accumsan lacus vel facilisis. 
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="card card-typo rounded-0 border-0 bg-black">
+                <div class="card-typo__text">
+                  Heading2 with Body copy and CTA
+                </div>
+                <div class="card-body p-0">
+                  <h3 class="card-title card-typo__title--hh2 text-uppercase mb-2 text-white">Headline H2</h3>
+                  <p class="card-text card-typo--text text-white">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris <br> eu eleifend massa. Donec mattis tellus vel sem sollicitudin <br> vehicula.
+                  </p>
+                  <a href="javascript:void(0)" class="btn btn-primary btn-cta bg-white text-primary border-white">Call to action</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="card card-typo rounded-0 border-0 bg-black">
+                <div class="card-typo__text">
+                  Heading2 with Body copy and CTA
+                </div>
+                <div class="card-body p-0">
+                  <h3 class="card-title card-typo__title--medium text-uppercase mb-2 text-white">Headline H3</h3>
+                  <p class="card-text card-typo--text text-white">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris <br> eu eleifend massa. Donec mattis tellus vel sem sollicitudin <br> vehicula.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="card card-typo rounded-0 border-0 bg-black">
+                <div class="card-typo__text">
+                  Heading5 with Small Body copy (mobile Body Copy)
+                </div>
+                <div class="card-body p-0">
+                  <h3 class="card-title card-typo__title--mobile mb-2 text-white">Headline 4</h3>
+                  <p class="card-text card-typo--text-mobile text-white">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod <br> tempor. incididunt. accumsan lacus vel facilisis.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="card card-typo rounded-0 border-0 bg-black">
+                <div class="card-typo__text">
+                  Heading5 with Small Body copy (mobile Body Copy)
+                </div>
+                <div class="card-body p-0">
+                  <h3 class="card-title card-typo__title--mobile1 mb-2 text-uppercase text-white">Headline 5</h3>
+                  <p class="card-text card-typo--text-mobile text-white">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod <br> tempor. incididunt. accumsan lacus vel facilisis.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="card card-typo rounded-0 border-0 bg-black">
+                <div class="card-typo__text">
+                  Bold Body Copy with Body copy
+                </div>
+                <div class="card-body p-0">
+                  <h3 class="card-title card-typo__title--base-bold mb-2 text-white">Bold Body Copy Heading</h3>
+                  <p class="card-text card-typo--text-baseMobile text-white">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do <br> eiusmod tempor. incididunt. accumsan lacus vel facilisis. 
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script>
+      const pageHeader = document.getElementById('page-header')
+      const mainTag = document.getElementsByTagName('main')[0]
+      const leftSidebarInnerLink = document.querySelectorAll('.nav-inner li')
+      document.addEventListener("scroll", (event) => {
+          const topScroll = window.pageYOffset
+          
+          console.log(topScroll)
+          if(topScroll > 100){
+              pageHeader.classList.add('page-header-sticky')
+          }else{
+              pageHeader.classList.remove('page-header-sticky')
+              mainTag.style.marginTop = '0px'
+          }
+      });
+      leftSidebarInnerLink.forEach(function (element) {
+            element.addEventListener('click', function (e) {
+                e.preventDefault()
+                
+                if(pageHeader.classList.contains('page-header-sticky')){
+                    mainTag.style.marginTop = '70px'
+                }else{
+                    mainTag.style.marginTop = '0px'
+                }
+                
+            })
+        })
+  </script>
+</body>
+</html>

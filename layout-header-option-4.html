@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Commercial Design Systems</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+</head>
+<body>
+      <!-- gallery start -->
+      <div class="msc-gallery msc-gallery--fourth">
+        <div class="msc-gallery__wrapper msc-js-gallery">
+          <div class="msc-gallery__item">
+            <picture>
+              <source media="(min-width:1200px)" srcset="images/banner-img-1.png">
+              <source media="(max-width:575px)" srcset="images/banner-img-mobile.png" width="430" height="932">
+              <img src="images/banner-img-1.png" width="1513" height="667" alt="" class="msc-gallery__image">
+            </picture>
+            <!-- <img src="images/banner-img-1.png" width="1513" height="667" alt="" class="msc-gallery__image"> -->
+            <div class="msc-gallery__image-container">
+              <h4 class="msc-gallery__title"> Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit.</h4>
+              <div class="msc-gallery__button">
+                <a href="#" class="msc-button msc-button--primary">Primary</a>
+                <a href="#" class="msc-button msc-button--outline-primary">Secondary</a>
+              </div>
+            </div>
+          </div>
+          <div class="msc-gallery__item">
+            <picture>
+              <source media="(min-width:1200px)" srcset="images/banner-img-1.png">
+              <source media="(max-width:575px)" srcset="images/banner-img-mobile.png" width="430" height="932">
+              <img src="images/banner-img-1.png" width="1513" height="667" alt="" class="msc-gallery__image">
+            </picture>
+            <div class="msc-gallery__image-container">
+              <h4 class="msc-gallery__title"> Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit.</h4>
+              <div class="msc-gallery__button">
+                <a href="#" class="msc-button msc-button--primary">Primary</a>
+                <a href="#" class="msc-button msc-button--outline-primary">Secondary</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+      <script>
+        $(document).ready(function () {
+          if ($('.msc-js-gallery').length) {
+            $('.msc-js-gallery').slick({
+              dots: false,
+              arrows: true,
+            });
+          }
+        })
+
+
+      </script>
+</body>
+</html>

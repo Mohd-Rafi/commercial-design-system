@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Commercial Design Systems</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+</head>
+<body>
+  <!-- sec-block sec-wwe -->
+  <div class="sec-block sec-wwe py-md-4 p-lg-0" style="min-height:unset;">
+    <h2 class="text-center text-uppercase">Who We Are</h2>
+    <p class="sub-line text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. incididunt.
+      accumsan lacus vel facilisis. </p>
+      <div class="sec-block1__content component component-xgap wware-sec1">
+        <div class="component__column">
+          <div class="card__image">
+            <picture>
+              <source media="(min-width:1200px)" srcset="images/placeholder-img1.png" width="265" height="296">
+              <source media="(max-width:767px)" srcset="images/placeholder-img1-mobile.png" width="349" height="235">
+              <img src="images/placeholder-img1.png" alt="" width="265" height="296" class="card__image--image">
+            </picture>
+            
+          </div>
+        </div>
+        <div class="component__column">
+          <div class="component__intro">
+            <div class="list">
+              <i class="list-icon-1"></i>
+              <div>
+                <h6 class="list-title">XXX XX+</h6>
+                <p class="list-text">Lorem ipsum dolor sit ametonsectetur <br> adipiscing elit, sed iusmod</p>
+              </div>
+            </div>
+            <div class="list">
+              <i class="list-icon-2"></i>
+              <div>
+                <h6 class="list-title">XXX XX+</h6>
+                <p class="list-text">Lorem ipsum dolor sit ametonsectetur <br> adipiscing elit, sed iusmod</p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="component__column">
+          <div class="component__intro">
+            <div class="list">
+              <i class="list-icon-3"></i>
+              <div>
+                <h6 class="list-title">XXX XX+</h6>
+                <p class="list-text">Lorem ipsum dolor sit ametonsectetur <br> adipiscing elit, sed iusmod</p>
+              </div>
+
+            </div>
+            <div class="outlets-block">
+              <div class="outlets-block__digit">
+                370+
+              </div>
+              <div class="outlets-block__text">
+                Commercial <br> outlets
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+      <script>
+          // tab code
+          $('.tab-list__item').click(function () {
+            $('.tab-list__item .tab-list__item--link').removeClass('tab__list--link-active');
+            $(this).children().addClass('tab__list--link-active');
+          });
+          let tabList = document.querySelectorAll(".tab-list__item--link");
+          for (const tab of tabList) {
+            tab.addEventListener("click", () => {
+              tabPane();
+              const carouselOne = document.querySelector('#carousel-3');
+              const carouselTwo = document.querySelector('#carousel-4');
+              const option = {
+                dots: false,
+                arrows: true,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                centerMode: true,
+                centerPadding: '0px',
+                focusOnSelect: true,
+                variableWidth: true,
+                infinite: true,
+                cssEase: 'linear',
+              }
+              $(carouselOne).slick('unslick');
+              $(carouselTwo).slick('unslick');
+              $(carouselOne).slick(option);
+              $(carouselTwo).slick(option);
+
+            });
+          }
+          $(document).ready(function () {
+
+            $("#carousel-5").slick({
+              dots: false,
+              arrows: true,
+              slidesToShow: 2,
+              slidesToScroll: 2,
+              focusOnSelect: true,
+              variableWidth: false,
+              infinite: true,
+              cssEase: 'linear',
+            });
+          })
+      </script>
+</body>
+</html>

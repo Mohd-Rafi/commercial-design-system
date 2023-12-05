@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Commercial Design Systems</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/custom.css" />
+    <!-- <link rel="stylesheet" href="css/layout.css" /> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    />
+  </head>
+  <body>
+    
+    <div class="sec-block sec-wwe sec-block1-quick-action">
+      <div class="quick-action-slider">
+      <div class="quick-action-slider-content">
+        <h2 class="quick-action-slider-title">Quick Actions</h2>
+        <p class="quick-action-slider-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. incididunt.
+accumsan lacus vel facilisis. </p>
+        <div class="msc-gallery__arrow">
+          <button class="msc-gallery__arrow-prev slick-arrow" style=""> &nbsp; </button>
+          <button class="msc-gallery__arrow-next slick-arrow" style=""> &nbsp; </button>
+        </div>
+      </div>
+
+      <div class="sec-block2__content qa-slider">
+        <!-- slider start -->
+        <div class="msc-gallery">
+          <div class="msc-gallery__wrapper" id="quick-action">
+            <div class="msc-gallery__item">
+              <div class="qa-slider-space">
+                <div class="quick-action-box quick-action-box__full">
+                  <div class="quick-action-image quick-action__full">
+                    <img src="images/location.png" />
+                  </div>
+                  <div class="quick-action-content quick-action-content__full">
+                    <div class="quick-action-title">
+                      Lorem ipsum
+                    </div>
+                    <div class="quick-action-text">
+                      Lorem ipsum dolor sit amet dolor sit.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="msc-gallery__item">
+              <div class="qa-slider-space">
+              <div class="quick-action-box quick-action-box__full">
+                <div class="quick-action-image quick-action__full">
+                  <img src="images/calc.png" />
+                </div>
+                <div class="quick-action-content quick-action-content__full">
+                  <div class="quick-action-title">
+                    Lorem ipsum
+                  </div>
+                  <div class="quick-action-text">
+                    Lorem ipsum dolor sit amet dolor sit.
+                  </div>
+                </div>
+              </div>
+            </div>
+            </div>
+            <div class="msc-gallery__item">
+              <div class="qa-slider-space">
+              <div class="quick-action-box quick-action-box__full">
+                <div class="quick-action-image quick-action__full">
+                  <img src="images/whatsapp.png" />
+                </div>
+                <div class="quick-action-content quick-action-content__full">
+                  <div class="quick-action-title">
+                    Lorem ipsum
+                  </div>
+                  <div class="quick-action-text">
+                    Lorem ipsum dolor sit amet dolor sit.
+                  </div>
+                </div>
+              </div>
+            </div>
+            </div>
+            <div class="msc-gallery__item">
+              <div class="qa-slider-space">
+              <div class="quick-action-box quick-action-box__full">
+                <div class="quick-action-image quick-action__full">
+                  <img src="images/phone.png" />
+                </div>
+                <div class="quick-action-content quick-action-content__full">
+                  <div class="quick-action-title">
+                    Lorem ipsum
+                  </div>
+                  <div class="quick-action-text">
+                    Lorem ipsum dolor sit amet dolor sit.
+                  </div>
+                </div>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- slider end -->
+      </div>
+    </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+    ></script>
+
+    <script>
+      if ($(".msc-js-gallery").length) {
+        $(".msc-js-gallery").slick({
+          dots: false,
+          arrows: true,
+        });
+      }
+
+      $("#quick-action").slick({
+        dots: false,
+        arrows: true,
+        margin:10,
+        slidesToShow: 2.5,
+        slidesToScroll: 1, 
+        focusOnSelect: true,
+        infinite: false,
+        cssEase: "linear",
+        prevArrow: $('.msc-gallery__arrow-prev'),
+        nextArrow: $('.msc-gallery__arrow-next'),
+      });
+
+      
+
+      
+
+      
+
+       
+    </script>
+  </body>
+</html>

@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Commercial Design Systems</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/style-new.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <aside class="left-sidebar" id="sidebar">
+        <ul class="nav flex-column left-sidebar__column">
+            <li>
+                <a class="nav-link" href="index.html">INDEX</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="color.html">1. Colors</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="typography.html">2. Typography</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="header-banner.html">3. Layout Structure</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="icons.html">4. Icons</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="button.html">5. Buttons, Radio Button</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="input-field.html">6. Input Fields</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="card.html">7. Card</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="loader.html">8. Loader</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="date-picker.html">9. Date Picker</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-link-active" href="javascript:void(0)">10. Check Box</a>
+              <ul class="list-unstyled nav-inner" style="display: block;">
+                <li class="nav-inner__list">
+                  <a href="#checkbox-with-text"  class="nav-inner__list--text">Checkbox with Text</a>
+                </li>
+                <li class="nav-inner__list">
+                  <a href="#checkbox-group" class="nav-inner__list--text">Checkbox group</a>
+                </li>
+                <li class="nav-inner__list">
+                  <a href="#disabled-checkbox" class="nav-inner__list--text">Disabled checkbox</a>
+                </li>
+                <li class="nav-inner__list">
+                  <a href="#disabled-checkbox-group" class="nav-inner__list--text">Disabled checkbox group</a>
+                </li>
+            </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="drag-and-drop.html">11. Drag & Drop</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="navigation.html">12. Navigation</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="notification.html">13. Notifications</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="imagery.html">14. Imagery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="search.html">15. Search</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="switch.html">16. Switch</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="overlays.html">17. Overlays</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pagination.html">18. Pagination</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="player.html">19. Player</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="slider.html">20. Slider</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="slideshow.html">21. Slideshow</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="table.html">22. Table</a>
+            </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link" href="#">23. Response Effect</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">24. Transitions</a>
+            </li> -->
+        </ul>
+    </aside>
+    <main class="main" data-bs-spy="scroll" data-bs-target="#sidebar" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true">
+        <div class="d-flex align-items-center page-header" id="page-header">
+          <h1 class="color-palette--title mb-0">Check Box</h1>
+          <a href="#" class="btn btn-primary ms-auto">Download More</a>
+          <a class="btn btn-outline-primary ms-4" href="https://www.figma.com/proto/BNspPo1UTQoTvEyBgp5kAY/Commercial-Design-System?type=design&node-id=1412-4314&t=zTAFhnKrOaWxUeRp-0&scaling=min-zoom&page-id=11%3A12" target="_blank">View Figma File</a>
+        </div>
+        
+        <p class="subline"> A Checkbox is a form element that enables a binary choice and a Checkbox Group is a collection of Checkboxes.</p>
+        <div class="mt-5" id="checkbox-with-text">
+            <h4 class="h4 fw-bold mb-3">Checkbox with Text</h4>
+            <p class="subline">The Checkbox and Checkbox Group are used to enable binary choices. These can either be used for an individual choice or to form a collection of choices.</p>
+        </div> 
+        
+        <!-- Checkbox with Text -->
+        <div class="checkbox-block mt-4 mb-5">
+            <div class="container">
+                <div class="row pt-2">
+                    <div class="col-6">
+                        <h4 class="h4 fw-bold mb-4">Checkbox</h4>
+                        <div class="form-check">
+                            <input class="form-check-input form-check-input-custom form-check-input-redtick" type="checkbox" value="" id="filcheck00" >
+                            <label class="form-check-label form-check-label-custom" for="filcheck00">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <h4 class="h4 fw-bold mb-4">Fill Checkbox</h4>
+                        <div class="form-check">
+                            <input class="form-check-input form-check-input-custom form-check-input-custom-bgred" type="checkbox" value="" id="filcheck0" >
+                            <label class="form-check-label form-check-label-custom" for="filcheck0">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-6 checkbox-block-help-text">
+                        <h4 class="h4 fw-bold mb-4">Checkbox with Helping Text</h4>
+                        <div class="form-check">
+                            <input class="form-check-input form-check-input-custom form-check-input-redtick" type="checkbox" value="" id="filcheck1" >
+                            <label class="form-check-label form-check-label-custom" for="filcheck1">
+                                <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                <small class="form-check-label-smalltext">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</small>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-6 checkbox-block-help-text">
+                        <h4 class="h4 fw-bold mb-4">Fill Checkbox with Helping Text</h4>
+                        <div class="form-check">
+                            <input class="form-check-input form-check-input-custom form-check-input-custom-bgred" type="checkbox" value="" id="filcheck2" >
+                            <label class="form-check-label form-check-label-custom" for="filcheck2">
+                              <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                              <small class="form-check-label-smalltext">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</small>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Checkbox Group with Text -->
+        <div class="pt-5" id="checkbox-group">
+            <h4 class="h4 fw-bold mb-3">Checkbox group</h4>
+            <p class="subline">Multiple checkboxes and their labels are grouped together with a common group component. The group legend must be the first element inside the group. It must appear before any checkboxes or other content.</p>
+        </div> 
+        
+        <!-- Checkbox Group -->
+        <div class="mt-4 mb-5">
+          <div class="row gx-3 pt-2">
+              <div class="col-6">
+                <div class="checkbox-group">
+                  <h4 class="h4 fw-bold mb-4">Group</h4>
+                  <div class="form-check mt-5">
+                      <input class="form-check-input form-check-input-custom form-check-input-redtick" type="checkbox" value="" id="check-group11">
+                      <label class="form-check-label form-check-label-custom" for="check-group11"> Lorem ipsum dolor sit amet, 
+                      </label>
+                  </div>
+                  <div class="form-check mt-3">
+                      <input class="form-check-input form-check-input-custom form-check-input-redtick" type="checkbox" value="" id="check-group22" checked>
+                      <label class="form-check-label form-check-label-custom" for="check-group22"> Lorem ipsum dolor sit amet, 
+                      </label>
+                  </div>
+                  <div class="form-check mt-3">
+                      <input class="form-check-input form-check-input-custom form-check-input-redtick" type="checkbox" value="" id="check-group33">
+                      <label class="form-check-label form-check-label-custom" for="check-group33"> Lorem ipsum dolor sit amet, 
+                      </label>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="checkbox-group-text">
+                <h4 class="h4 fw-bold mb-4">Checkbox group with help text </h4>
+                <div class="form-check mt-5 pb-2">
+                    <input class="form-check-input form-check-input-custom" type="checkbox" value="" id="check-group1" checked>
+                    <label class="form-check-label form-check-label-custom" for="check-group1"> 
+                      <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                      <small class="form-check-label-smalltext">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</small> 
+                    </label>
+                </div>
+                <div class="form-check mt-4">
+                    <input class="form-check-input form-check-input-custom" type="checkbox" value="" id="check-group2" checked>
+                    <label class="form-check-label form-check-label-custom" for="check-group2">
+                      <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                      <small class="form-check-label-smalltext">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</small> 
+                    </label>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+
+      <!-- Disabled checkbox -->
+      <div class="pt-4">
+        <h4 class="h4 fw-bold mb-3" id="disabled-checkbox">Disabled checkbox</h4>
+        <p class="subline">Use a disabled checkbox to indicate that a particular option cannot be interacted with or can be safely ignored.</p>
+      </div> 
+
+      <div class="disabled-chekbox mb-5">
+        <div class="container">
+          <div class="row">
+              <div class="col-6 disabled-check-block">
+                  <div class="form-check">
+                      <input class="form-check-input form-check-input-custom" type="checkbox" value="" id="dis-check1" disabled>
+                      <label class="form-check-label form-check-label-custom" for="dis-check1">
+                        <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <small class="form-check-label-smalltext">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</small>
+                      </label>
+                  </div>
+              </div>
+              <div class="col-6 disabled-check-block disabled-checkBox-black-bg">
+                  <div class="form-check">
+                      <input class="form-check-input form-check-input-custom form-check-input-custom-bgred" type="checkbox" value="" id="dis-check2" disabled>
+                      <label class="form-check-label form-check-label-custom" for="dis-check2">
+                        <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <small class="form-check-label-smalltext">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</small>
+                      </label>
+                  </div>
+              </div>
+          </div>
+      </div>
+      </div>
+   
+       <!-- Disabled checkbox Group -->
+       <div class="pt-4" id="disabled-checkbox-group">
+        <h4 class="h4 fw-bold mb-3">Disabled checkbox group </h4>
+        <p class="subline">Use a disabled checkbox group to indicate that all options cannot be interacted with, with each checkbox individually disabled. </p>
+      </div> 
+
+      <div class="disabled-chekbox mb-5">
+        <div class="container">
+          <div class="row">
+              <div class="col-4 disabled-check-block">
+                  <div class="form-check">
+                      <input class="form-check-input form-check-input-custom" type="checkbox" value="" id="dis-check-group1" disabled>
+                      <label class="form-check-label form-check-label-custom" for="dis-check-group1">
+                        Lorem ipsum dolor sit amet, 
+                      </label>
+                  </div>
+              </div>
+              <div class="col-4 disabled-check-block">
+                <div class="form-check">
+                    <input class="form-check-input form-check-input-custom" type="checkbox" value="" id="dis-check-group2" disabled>
+                    <label class="form-check-label form-check-label-custom" for="dis-check-group2">
+                      Lorem ipsum dolor sit amet, 
+                    </label>
+                </div>
+            </div>
+            <div class="col-4 disabled-check-block">
+              <div class="form-check">
+                  <input class="form-check-input form-check-input-custom" type="checkbox" value="" id="dis-check-group3" disabled>
+                  <label class="form-check-label form-check-label-custom" for="dis-check-group3">
+                    Lorem ipsum dolor sit amet, 
+                  </label>
+              </div>
+          </div>
+          </div>
+      </div>
+      </div>
+
+
+        
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="script/custom.js"></script>
+    <script>
+      const pageHeader = document.getElementById('page-header')
+      const mainTag = document.getElementsByTagName('main')[0]
+        const leftSidebarInnerLink = document.querySelectorAll('.nav-inner li')
+      document.addEventListener("scroll", (event) => {
+          const topScroll = window.pageYOffset
+          
+          console.log(topScroll)
+          if(topScroll > 100){
+              pageHeader.classList.add('page-header-sticky')
+          }else{
+              pageHeader.classList.remove('page-header-sticky')
+              mainTag.style.marginTop = '0px'
+          }
+      })
+      leftSidebarInnerLink.forEach(function (element) {
+            element.addEventListener('click', function (e) {
+                e.preventDefault()
+                if(pageHeader.classList.contains('page-header-sticky')){
+                    mainTag.style.marginTop = '100px'
+                }else{
+                    mainTag.style.marginTop = '0px'
+                }
+                
+            })
+        })
+  </script>
+</body>
+</html>

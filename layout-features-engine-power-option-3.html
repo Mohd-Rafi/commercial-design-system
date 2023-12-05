@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Commercial Design Systems</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/custom.css" />
+    <!-- <link rel="stylesheet" href="css/layout.css" /> -->
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    />
+  </head>
+  <body>
+    
+    <div class="sec-block sec-wwe sec-block1-testimonial">
+          
+        <div class="more-power-section more-power-section2">
+            <div class="pr-feature-logo"><img src="images/features-img1.png" /></div>
+            <div class="pr-featue-content">
+                <div class="pr-featue-content-title">More Power</div>
+                <div class="pr-featue-content-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. incididunt. accumsan lacus vel facilisis. </div>
+            </div>
+        </div>
+          
+        <div class="sec-block2__content">
+            <!-- slider start -->
+            <div class="msc-gallery">
+              <div
+                class="msc-gallery__wrapper msc-gallery__arrow" id="features-carousel3">
+                <div class="msc-gallery__item">
+                  <div class="pr-feature2-block pr-feature-carousel3">
+                    <div class="pr-feature2-image">
+                      <img class="pr-feature2-block-img" src="images/feature-img2.png" />
+                    </div>
+                    <h3 class="pr-feature2__title">Lorem ipsum</h3>
+                    <p class="pr-feature2__text"> Lorem ipsum dolor sit ametonsectetur adipiscing elit, sed iusmod Lorem ipsum dolor sit ametonsectetur adipiscing elit, sed iusmod</p>
+                  </div>
+                </div>
+                <div class="msc-gallery__item">
+                    <div class="pr-feature2-block pr-feature-carousel3">
+                      <div class="pr-feature2-image">
+                        <img class="pr-feature2-block-img" src="images/feature-img2.png" />
+                      </div>
+                      <h3 class="pr-feature2__title">Lorem ipsum</h3>
+                      <p class="pr-feature2__text"> Lorem ipsum dolor sit ametonsectetur adipiscing elit, sed iusmod Lorem ipsum dolor sit ametonsectetur adipiscing elit, sed iusmod</p>
+                    </div>
+                  </div>
+                  <div class="msc-gallery__item">
+                    <div class="pr-feature2-block pr-feature-carousel3">
+                      <div class="pr-feature2-image">
+                        <img class="pr-feature2-block-img" src="images/feature-img2.png" />
+                      </div>
+                      <h3 class="pr-feature2__title">Lorem ipsum</h3>
+                      <p class="pr-feature2__text"> Lorem ipsum dolor sit ametonsectetur adipiscing elit, sed iusmod Lorem ipsum dolor sit ametonsectetur adipiscing elit, sed iusmod</p>
+                    </div>
+                  </div>
+                  <div class="msc-gallery__item">
+                    <div class="pr-feature2-block pr-feature-carousel3">
+                      <div class="pr-feature2-image">
+                        <img class="pr-feature2-block-img" src="images/feature-img2.png" />
+                      </div>
+                      <h3 class="pr-feature2__title">Lorem ipsum</h3>
+                      <p class="pr-feature2__text"> Lorem ipsum dolor sit ametonsectetur adipiscing elit, sed iusmod Lorem ipsum dolor sit ametonsectetur adipiscing elit, sed iusmod</p>
+                    </div>
+                  </div>
+              </div>
+            </div>
+            <!-- slider end -->
+          </div>
+        </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+    ></script>
+
+    <script>
+      if ($(".msc-js-gallery").length) {
+        $(".msc-js-gallery").slick({
+          dots: false,
+          arrows: true,
+        });
+      }
+
+      $("#features-carousel3").slick({
+        dots: false,
+        arrows: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        focusOnSelect: true,
+        //   variableWidth: true,
+        infinite: true,
+        cssEase: "linear",
+        mobileFirst: true,
+          responsive: [
+            {
+              breakpoint: 1024,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+              }
+            },
+            {
+              breakpoint: 600,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+              }
+            },
+            {
+              breakpoint: 320,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                dots: true,
+              }
+            }
+          ]
+      });
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,184 @@
+  .feature-block1-about {
+    padding: 50px 100px;
+    height: inherit;
+  }
+
+  /* core value page */
+  .feature-grid {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 8px;
+    grid-row-gap: 8px;
+  }
+
+
+  .feature-img {
+    grid-column: span 4/span 4;
+    /* order: 2; */
+  }
+
+  .features-list {
+    grid-column: span 2/span 2;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+
+  .features-align-items-enter {
+    align-items: center;
+    /* order: 3; */
+  }
+
+  /* points */
+  .feature-point {
+    padding: calc(.75rem + .5vw) 0;
+  }
+
+  .feature-point-title {
+    color: #DA251D;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 20px;
+    /* 133.333% */
+    margin: 0;
+    text-transform: uppercase;
+  }
+
+  .feature-point-text {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 0;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+    vertical-align: bottom;
+    display: inline-flex;
+    align-items: center;
+  }
+
+  .feature-point-text span {
+    color: #000;
+    margin-right: 3px;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  /* pints end */
+  .mileage-note {
+    grid-column: span 6/span 6;
+    margin-top: 2rem;
+  }
+
+  .mileage-note {
+    display: flex;
+    align-items: center;
+  }
+
+  .mileage-note-icon {
+    mix-blend-mode: multiply;
+    margin-right: 1rem;
+  }
+
+  .tnc-note {
+    grid-column: span 4/span 4;
+    padding-top: 1rem;
+  }
+
+  .tnc-note p {
+    color: #000;
+    font-family: Roboto;
+    font-size: 12px;
+    margin-bottom: 0;
+    font-weight: 400;
+    line-height: 20px;
+    text-transform: capitalize;
+  }
+
+  .engine-types {
+    grid-column: span 4/span 4;
+    justify-self: right;
+  }
+
+  .engine-types img {
+    display: inline-block;
+  }
+
+  /* feature-grid_circles */
+  .feature-grid_circles {
+    justify-items: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+ 
+  .feature-img-circle {
+    grid-column: span 8/span 3; 
+    justify-content: center;
+    aspect-ratio: 4/3; 
+  }
+
+  .features-list-circle {
+    position: absolute;
+    inset: 0;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 8px;
+    grid-row-gap: 8px;
+    grid-column: unset;
+
+  }
+ 
+  .feature-grid_circles .feature-point{
+    display: grid; align-content: center;
+  }
+  .feature-grid_circles .feature-point:nth-child(odd) { justify-content:  end; } 
+  .feature-grid_circles .feature-point:nth-child(even) {  justify-content:  start; } 
+  .feature-grid_circles .feature-point:nth-child(1) {
+    grid-column: span 3/ 4;
+  }
+
+  .feature-grid_circles .feature-point:nth-child(2) {
+    grid-column: span 3/ 13;
+  }
+
+  .feature-grid_circles .feature-point:nth-child(3) {
+    grid-column: span 3/ 5;
+  }
+
+  .feature-grid_circles .feature-point:nth-child(4) {
+    grid-column: span 3/ 12;
+  }
+
+  .feature-grid_circles .feature-point:nth-child(5) {
+    grid-column: span 3/ 6; 
+  }
+
+  .feature-grid_circles .feature-point:nth-child(6) {
+    grid-column: span 3/ 11;
+  }
+
+  .feature-justify-self-end {
+    justify-self: self-end;
+  }
+
+  .feature-justify-self-center {
+    justify-self: self-center;
+  }
+
+  
+@media (min-width: 1280px) and (max-width: 1439px){
+  .responsive-iframe_feature-engine{
+    padding-bottom:78%;
+  }
+}
+@media (min-width: 1440px) and (max-width: 1680px) {
+  .responsive-iframe_feature-engine{
+    padding-bottom:68%;
+  }
+}
+@media (min-device-width: 1280px) and (max-device-width: 1680px) {
+  .feature-block1-about{padding: 20px 50px; }
+}

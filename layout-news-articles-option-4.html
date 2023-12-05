@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Commercial Design Systems</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/custom.css" />
+    <!-- <link rel="stylesheet" href="css/layout.css" /> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    />
+  </head>
+  <body>
+    
+    <div class="sec-block sec-wwe news-article-thumb-section">
+      <div class="article-content article-content__full">
+        <h2 class="article-content__title">News & Articles</h2>
+        <p class="article-content__text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor. incididunt. accumsan lacus vel facilisis.
+        </p>
+        <div class="msc-gallery__arrow msc-gallery__arrow-right">
+          <button class="msc-gallery__arrow-prev5 slick-arrow" style=""> &nbsp; </button>
+          <button class="msc-gallery__arrow-next5 slick-arrow" style=""> &nbsp; </button>
+        </div>
+      </div>
+
+      <div class="sec-block2__content article-carausel article-carausel-full">
+        <!-- slider start -->
+        <div class="msc-gallery">
+          <div class="msc-gallery__wrapper" id="news-article5">
+            <div class="msc-gallery__item">
+              <div class="msc-col-article5">
+                <div class="msc-col-article5-date">04/08/2021</div>
+                <h4 class="msc-col-article5-title">Lorem ipsum dolor sit amet</h4>
+                <p class="msc-col-article5-text">Donec massa tortor, tincidunt in tristique nec,vestibulum et ante.</p>
+              </div>
+            </div>
+            <div class="msc-gallery__item">
+              <div class="msc-col-article5">
+                <div class="msc-col-article5-date">04/08/2021</div>
+                <h4 class="msc-col-article5-title">Lorem ipsum dolor sit amet</h4>
+                <p class="msc-col-article5-text">Donec massa tortor, tincidunt in tristique nec,vestibulum et ante.</p>
+              </div>
+            </div>
+            <div class="msc-gallery__item">
+              <div class="msc-col-article5">
+                <div class="msc-col-article5-date">04/08/2021</div>
+                <h4 class="msc-col-article5-title">Lorem ipsum dolor sit amet</h4>
+                <p class="msc-col-article5-text">Donec massa tortor, tincidunt in tristique nec,vestibulum et ante.</p>
+              </div>
+            </div>
+            <div class="msc-gallery__item">
+              <div class="msc-col-article5">
+                <div class="msc-col-article5-date">04/08/2021</div>
+                <h4 class="msc-col-article5-title">Lorem ipsum dolor sit amet</h4>
+                <p class="msc-col-article5-text">Donec massa tortor, tincidunt in tristique nec,vestibulum et ante.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- slider end -->
+      </div>
+      <div class="msc-gallery__arrow msc-gallery__arrow-mobile">
+        <button class="msc-gallery__arrow-prev5 slick-arrow" style=""> &nbsp; </button>
+        <button class="msc-gallery__arrow-next5 slick-arrow" style=""> &nbsp; </button>
+      </div>
+
+    </div>
+    
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+      integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script>
+      if ($(".msc-js-gallery").length) {
+        $(".msc-js-gallery").slick({
+          dots: false,
+          arrows: true,
+        });
+      }
+
+      $("#news-article5").slick({
+        dots: false,
+        arrows: true,
+        margin:10,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        focusOnSelect: true,
+        infinite: true,
+        cssEase: "linear",
+        prevArrow: $('.msc-gallery__arrow-prev5'),
+        nextArrow: $('.msc-gallery__arrow-next5'),
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 1,
+              infinite: true,
+              dots: false
+            }
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              centerMode : true,
+              centerPadding : "8rem",
+            }
+          }
+        ]
+      });      
+
+    </script>
+  </body>
+</html>

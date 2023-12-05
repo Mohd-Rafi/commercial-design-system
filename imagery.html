@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Commercial Design Systems</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/bootstrap-datepicker.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <aside class="left-sidebar" id="sidebar">
+        <ul class="nav flex-column left-sidebar__column">
+            <li>
+                <a class="nav-link" href="index.html">INDEX</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="color.html">1. Colors</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="typography.html">2. Typography</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="header-banner.html">3. Layout Structure</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="icons.html">4. Icons</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="button.html">5. Buttons, Radio Button</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="input-field.html">6. Input Fields</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="card.html">7. Card</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="loader.html">8. Loader</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="date-picker.html">9. Date Picker</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="checkbox.html">10. Check Box</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="drag-and-drop.html">11. Drag & Drop</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="navigation.html">12. Navigation</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="notification.html">13. Notifications</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-link-active" href="javascript:void(0)">14. Imagery</a>
+              <!-- <ul class="list-unstyled nav-inner">
+                <li class="nav-inner__list">
+                  <a href="#color-palette-1"  class="nav-inner__list--text">Color Palette</a>
+                </li>
+                <li class="nav-inner__list">
+                  <a href="#color-palette-2" class="nav-inner__list--text">Grey Palette</a>
+                </li>
+                <li class="nav-inner__list">
+                  <a href="#color-palette-3" class="nav-inner__list--text">Signal Palette</a>
+                </li>
+                <li class="nav-inner__list">
+                  <a href="#color-palette-4" class="nav-inner__list--text">EV Palette</a>
+                </li>
+                <li class="nav-inner__list">
+                    <a href="#color-palette-5" class="nav-inner__list--text">Background colors</a>
+                </li>
+                <li class="nav-inner__list">
+                    <a href="#color-palette-6" class="nav-inner__list--text">Text and Heading Colors</a>
+                </li>
+                <li class="nav-inner__list">
+                    <a href="#color-palette-7" class="nav-inner__list--text">Icon colors</a>
+                </li>
+                <li class="nav-inner__list">
+                    <a href="#color-palette-8" class="nav-inner__list--text">Border colors</a>
+                </li>
+                <li class="nav-inner__list">
+                    <a href="#color-palette-9" class="nav-inner__list--text">Shadows Usage</a>
+                </li>
+                <li class="nav-inner__list">
+                    <a href="#color-palette-10" class="nav-inner__list--text">Interactive colors</a>
+                </li>
+                <li class="nav-inner__list">
+                    <a href="#color-palette-11" class="nav-inner__list--text">Interactive colors on Dark</a>
+                </li>
+            </ul> -->
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="search.html">15. Search</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="switch.html">16. Switch</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="overlays.html">17. Overlays</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pagination.html">18. Pagination</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="player.html">19. Player</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="slider.html">20. Slider</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="slideshow.html">21. Slideshow</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="table.html">22. Table</a>
+            </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link" href="#">23. Response Effect</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">24. Transitions</a>
+            </li> -->
+        </ul>
+    </aside>
+    <main class="main">
+        <div class="d-flex align-items-center page-header" id="page-header">
+          <h1 class="color-palette--title mb-0">Images</h1>
+          <a href="#" class="btn btn-primary ms-auto">Download More</a>
+          <a class="btn btn-outline-primary ms-4" href="https://www.figma.com/proto/BNspPo1UTQoTvEyBgp5kAY/Commercial-Design-System?type=design&node-id=1317-6933&t=zTAFhnKrOaWxUeRp-0&scaling=min-zoom&page-id=11%3A6" target="_blank">View Figma File</a>
+        </div>
+        <p class="sub-line mb-30">
+          "Images representation" for any brand refers to the visual elements and graphics used by the brand to convey its
+          identity, values, products, and services. These visual representations play a vital role in brand communication, as they
+          help create a distinctive and memorable image of the brand in the minds of consumers. The goal of images representation
+          is to establish a strong and recognizable visual identity that sets the brand apart from its competitors and resonates
+          with its target audience.
+        </p>
+
+        <div class="image-block d-flex align-items-center">
+          <div class="image-block__content">
+            <h2 class="image-block__content--title">People</h2>
+            <p class="sub-line mb-4">Indian | confident | diverse | cultured | understated</p>
+            <p class="sub-line mb-0">
+              The cast is expressive and positive. They have a well-cared-for, natural appearance. They are cultured, stylish and know
+              what life is about. And if kids are shown, they should be curious and bright. Diversity plays an important role and does
+              not feel forced.
+            </p>
+          </div>
+          <div class="image-block__image ms-auto grid row-gap-3">
+            <img src="images/people-image-large.png" alt="">
+            <div class="d-flex column-gap-3">
+              <img src="images/people-image-thmub1.png" alt="">
+              <img src="images/people-image-thmub2.png" alt="">
+            </div>
+          </div>
+        </div>
+
+        <div class="image-block d-flex align-items-center mt-4">
+          <div class="image-block__image grid row-gap-3">
+            <img src="images/place-img1.png" alt="">
+            <img src="images/place-img2.png" alt="">
+          </div>
+          <div class="image-block__content ms-auto">
+            <h2 class="image-block__content--title">Places</h2>
+            <p class="sub-line mb-4">India | valuable | fascinating | graphic | epic</p>
+            <p class="sub-line mb-0">
+              Our locations are unique and exclusive places which meet the brand’s premium standards. They are intriguing places and
+              have an epic quality that arouses deep desire in the viewer. Thanks to their clean graphic composition, the focus
+              remains on the car. In all their epicness and graphicness, they will nevertheless always feel warm and inviting.
+            </p>
+          </div>
+        </div>
+
+        <div class="image-block d-flex align-items-center mt-4">
+          <div class="image-block__content">
+            <h2 class="image-block__content--title">Light & contrast</h2>
+            <p class="sub-line mb-4">emotional | natural | pleasant | exciting</p>
+            <p class="sub-line mb-0">
+              The lighting mood in which we shoot symbolises a spirit of optimism. It creates an atmosphere that you would like to be
+              part of. Natural light sources ensure images have an authentic, unembellished look.
+            </p>
+            <p class="sub-line mb-0">
+              If light sources are enhanced, the authenticity of the image should not be compromised. The light emphasises and
+              visually complements the distinctive design highlights of the car while ingeniously reinforcing the message we want to
+              communicate. The use of contrast creates suspense. The car is integrated into the natural lighting conditions and is not
+              artificially highlighted.
+            </p>
+          </div>
+          <div class="image-block__image ms-auto">
+            <img src="images/light-and-contrast-img.png" alt="">
+          </div>
+        </div>
+
+        <div class="image-block mt-4">
+          <div class="image-block__content" style="max-width:100%;">
+            <h2 class="image-block__content--title">Perspectives</h2>
+            <p class="sub-line mb-4">desirable | dynamic | iconic</p>
+            <p class="sub-line mb-0">
+              The perspectives always highlight the car design features in the best way possible and showcase it perfectly. They make
+              the vehicle appear iconic and reinforce the message being communicated. The chosen angle not only guides the viewer’s
+              gaze, it also arouses desire. Each perspective creates a natural symbiosis between the car and its surroundings.
+            </p>
+          </div>
+          <div class="image-block__image mt-4 d-flex column-gap-2">
+            <img src="images/perspective-img1.png" alt="">
+            <img src="images/perspective-img2.png" alt="">
+            <img src="images/perspective-img3.png" alt="">
+            <img src="images/perspective-img4.png" alt="">
+          </div>
+        </div>
+
+
+        <div class="image-block d-flex align-items-center mt-4">
+          <div class="image-block__content">
+            <h2 class="image-block__content--title">Light & contrast</h2>
+            <p class="sub-line mb-4">emotional | natural | pleasant | exciting</p>
+            <p class="sub-line mb-0">
+              The lighting mood in which we shoot symbolises a spirit of optimism. It creates an atmosphere that you would like to be
+              part of. Natural light sources ensure images have an authentic, unembellished look.
+            </p>
+            <p class="sub-line mb-0">
+              If light sources are enhanced, the authenticity of the image should not be compromised. The light emphasises and
+              visually complements the distinctive design highlights of the car while ingeniously reinforcing the message we want to
+              communicate. The use of contrast creates suspense. The car is integrated into the natural lighting conditions and is not
+              artificially highlighted.
+            </p>
+          </div>
+          <div class="image-block__image ms-auto">
+            <img src="images/light-and-contrast-img.png" alt="">
+          </div>
+        </div>
+
+        <div class="image-block mt-4">
+          <div class="d-flex">
+            <div class="image-block__content">
+              <h2 class="image-block__content--title">Details</h2>
+              <p class="sub-line mb-4">focused | perfection | fascinating</p>
+              <p class="sub-line mb-0">
+                The detail shots convince with high precision and a love for every little detail. We play with depth of field and light
+                to give a more premium touch to the images. The textures and shapes are clearly visible and their premium quality is
+                highlighted. The precision of the photography makes the materials and surfaces come alive in the image. A visual feeling
+                is created which enables the viewer to experience how
+              </p>
+            </div>
+            <div class="image-block__image ms-auto">
+              <img src="images/detail-img1.png" alt="">
+            </div>
+          </div>
+
+          <div class="image-block__image mt-4 d-flex column-gap-5">
+            <img src="images/detail-img2.png" alt="">
+            <img src="images/detail-img3.png" alt="">
+            <img src="images/detail-img4.png" alt="">
+          </div>
+        </div>
+
+
+
+
+
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="script/bootstrap-datepicker.min.js"></script>
+    <script src="script/custom.js"></script>
+    <script>
+      const pageHeader = document.getElementById('page-header')
+      document.addEventListener("scroll", (event) => {
+          const topScroll = window.pageYOffset
+          
+          console.log(topScroll)
+          if(topScroll > 100){
+              pageHeader.classList.add('page-header-sticky')
+          }else{
+              pageHeader.classList.remove('page-header-sticky')
+          }
+      });
+  </script>
+</body>
+</html>

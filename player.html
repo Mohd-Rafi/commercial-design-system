@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Commercial Design Systems</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <aside class="left-sidebar" id="sidebar">
+        <ul class="nav flex-column left-sidebar__column">
+            <li>
+                <a class="nav-link" href="index.html">INDEX</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="color.html">1. Colors</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="typography.html">2. Typography</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="header-banner.html">3. Layout Structure</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="icons.html">4. Icons</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="button.html">5. Buttons, Radio Button</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="input-field.html">6. Input Fields</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="card.html">7. Card</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="loader.html">8. Loader</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="date-picker.html">9. Date Picker</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="checkbox.html">10. Check Box</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="drag-and-drop.html">11. Drag & Drop</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="navigation.html">12. Navigation</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="notification.html">13. Notifications</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="imagery.html">14. Imagery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="search.html">15. Search</a>
+              <!-- <ul class="list-unstyled nav-inner d-block">
+                <li class="nav-inner__list">
+                  <a href="#search-stages" class="nav-inner__list--text">Search Stages</a>
+                </li>
+                <li class="nav-inner__list">
+                  <a href="#variations" class="nav-inner__list--text">Variations</a>
+                </li>
+                <li class="nav-inner__list">
+                  <a href="#example" class="nav-inner__list--text">Example</a>
+                </li>
+              </ul> -->
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="switch.html">16. Switch</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="overlays.html">17. Overlays</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pagination.html">18. Pagination</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-link-active" href="javascript:void(0)">19. Player</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="slider.html">20. Slider</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="slideshow.html">21. Slideshow</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="table.html">22. Table</a>
+            </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link" href="#">23. Response Effect</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">24. Transitions</a>
+            </li> -->
+        </ul>
+    </aside>
+    <main class="main" data-bs-spy="scroll" data-bs-target="#sidebar" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="false">
+      <div class="d-flex align-items-center page-header" id="page-header">
+        <h1 class="color-palette--title mb-0">Player</h1>
+        <a href="#" class="btn btn-primary ms-auto">Download More</a>
+        <a class="btn btn-outline-primary ms-4" href="https://www.figma.com/proto/BNspPo1UTQoTvEyBgp5kAY/Commercial-Design-System?type=design&node-id=973-3557&t=zTAFhnKrOaWxUeRp-0&scaling=min-zoom&page-id=12%3A25" target="_blank">View Figma File</a>
+      </div>
+        <!-- <h1 class="color-palette--title mb-4">Player</h1> -->
+        <p class="sub-line">
+          Various types of player are used to play videos or audio content. The component merely shows a graphic interface and can
+          be combined with players and frameworks at will, depending on the project.
+        </p>
+        <h2 class="mt-5 product-range-title text-uppercase mb-3" id="search-stages">
+          Video Player
+        </h2>
+        <p class="sub-line">
+          Play and pause controls are a minimum requirement. Other controls can be added, e.g. for duration and elapsed time,
+          sound volume and display size, language and subtitles. Complex controls can be placed in popovers. If players feature
+          numerous controls, these can be hidden in a flyout menu on smaller viewports. Optionally, a replay button can be
+          displayed after the video has finished or a selection of recommended videos can be shown.
+        </p>
+        <p class="sub-line">
+          The preview picture features full-coverage darkening with up to 50 % black for better visibility of the controls and the loader.
+        </p>
+
+
+        <!-- <h2 class="mt-100 product-range-title text-uppercase mb-3" id="variations">
+          Variations
+        </h2>
+        <p class="sub-line">
+          There are two key variations of search — header search and independent search. Either variation can be collapsed or open by default.
+        </p> -->
+        <div class="card card-nav mb-30">
+          <div class="card-body card-nav-body">
+            <div class="video" id="videoContainer" data-fullscreen="false">
+              <video id="video" controls preload="metadata">
+                <source src="https://vjs.zencdn.net/v/oceans.mp4" type="video/mp4" />
+                <source src="https://vjs.zencdn.net/v/oceans.mp4" type="video/webm" />
+              </video>
+              <div id="video-controls" class="controls" data-state="hidden">
+                <button id="playpause" type="button" data-state="play" class="btn-play">Play/Pause</button>
+                <div class="video-timer ms-0" style="margin-right:30px;">00:00</div>
+                <span id="progress-bar" class="progress_bar"></span>
+                  <progress id="progress" class="progress" value="0" min="0">
+                    <span id="progress-bar" class="progress_bar"></span>
+                  </progress>
+                <div class="video-timer">00:00</div>
+                <button id="mute" type="button" data-state="mute" class="btn-mute">Mute/Unmute</button>
+                <button id="fs" type="button" data-state="go-fullscreen" class="btn-fullscreen">Fullscreen</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card card-nav mb-30">
+          <div class="card-body card-nav-body">
+            <div class="video">
+              <img src="images/video-poster1.png" alt="" class="d-block mx-auto">
+              <a href="#" class="position-absolute top-50 start-50 translate-middle">
+                <img src="images/replay-icon.png" alt="">
+              </a>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="card card-nav mb-50">
+          <div class="card-body card-nav-body">
+            <div class="video">
+              <img src="images/video-poster2.png" alt="" class="d-block mx-auto">
+              <a href="#" class="position-absolute video-replay">
+                <img src="images/replay-icon.png" alt="">
+              </a>
+            </div>
+            <div class="related-video d-flex position-absolute top-50 start-50 translate-middle" style="left:48% !important;">
+              <div class="related-video-thumbnail">
+                <img src="images/video-thumbnail-1.png" alt="">
+                <p class="related-video-thumbnail__text">Lorem Ipsum</p>
+              </div>
+              <div class="related-video-thumbnail">
+                <img src="images/video-thumbnail-2.png" alt="">
+                <p class="related-video-thumbnail__text">Lorem Ipsum</p>
+              </div>
+              <div class="related-video-thumbnail">
+                <img src="images/video-thumbnail-3.png" alt="">
+                <p class="related-video-thumbnail__text">Lorem Ipsum</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="audio">
+          <h2 class="product-range-title text-uppercase mb-3">
+            Audio Player
+          </h2>
+          <p class="sub-line">
+            Audio players can be used space-savingly as plain, simple players or grouped as cards with additional content like
+            images. Similarly to video players, the controls can be placed against a black transparent layer on top of an image.
+            Alternatively, the controls can be placed below or next to the image. Optional controls to skip tracks, adjust volume or
+            download audio files can be added.
+          </p>
+          <p class="sub-line mb-30">
+            The layout of audio players with many controls can be rearranged to fit smaller viewports. The layout of audio players
+            with more extensive controls can be rearranged to fit smaller viewports.
+          </p>
+          <div class="audio-block">
+            <h6 class="audio-block-title">Heading</h6>
+            <div id="video-controls" class="controls position-static" data-state="hidden">
+              <button id="playpause" type="button" data-state="play" class="btn-play">Play/Pause</button>
+              <!-- <div class="video-timer ms-0" style="margin-right:30px;">00:00</div> -->
+              <span id="progress-bar" class="progress_bar"></span>
+                <progress id="progress" class="progress" value="0" min="0">
+                  <span id="progress-bar" class="progress_bar"></span>
+                </progress>
+              <div class="video-timer">00:00</div>
+              <!-- <button id="mute" type="button" data-state="mute" class="btn-mute">Mute/Unmute</button>
+              <button id="fs" type="button" data-state="go-fullscreen" class="btn-fullscreen">Fullscreen</button> -->
+            </div>
+          </div>
+        </div>
+
+
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script>
+      (function () {
+	'use strict';
+
+	// Does the browser actually support the video element?
+	var supportsVideo = !!document.createElement('video').canPlayType;
+
+	if (supportsVideo) {
+		// Obtain handles to main elements
+		var videoContainer = document.getElementById('videoContainer');
+		var video = document.getElementById('video');
+		var videoControls = document.getElementById('video-controls');
+
+		// Hide the default controls
+		video.controls = false;
+
+		// Display the user defined video controls
+		videoControls.setAttribute('data-state', 'visible');
+
+		// Obtain handles to buttons and other elements
+		var playpause = document.getElementById('playpause');
+		var stop = document.getElementById('stop');
+		var mute = document.getElementById('mute');
+		var volinc = document.getElementById('volinc');
+		var voldec = document.getElementById('voldec');
+		var progress = document.getElementById('progress');
+		var progressBar = document.getElementById('progress-bar');
+		var fullscreen = document.getElementById('fs');
+
+		// If the browser doesn't support the progress element, set its state for some different styling
+		var supportsProgress = (document.createElement('progress').max !== undefined);
+		if (!supportsProgress) progress.setAttribute('data-state', 'fake');
+
+		// Check if the browser supports the Fullscreen API
+		var fullScreenEnabled = !!(document.fullscreenEnabled || document.mozFullScreenEnabled || document.msFullscreenEnabled || document.webkitSupportsFullscreen || document.webkitFullscreenEnabled || document.createElement('video').webkitRequestFullScreen);
+		// If the browser doesn't support the Fulscreen API then hide the fullscreen button
+		if (!fullScreenEnabled) {
+			fullscreen.style.display = 'none';
+		}
+
+		// Check the volume
+		var checkVolume = function(dir) {
+			if (dir) {
+				var currentVolume = Math.floor(video.volume * 10) / 10;
+				if (dir === '+') {
+					if (currentVolume < 1) video.volume += 0.1;
+				}
+				else if (dir === '-') {
+					if (currentVolume > 0) video.volume -= 0.1;
+				}
+				// If the volume has been turned off, also set it as muted
+				// Note: can only do this with the custom control set as when the 'volumechange' event is raised, there is no way to know if it was via a volume or a mute change
+				if (currentVolume <= 0) video.muted = true;
+				else video.muted = false;
+			}
+			changeButtonState('mute');
+		}
+
+		// Change the volume
+		var alterVolume = function(dir) {
+			checkVolume(dir);
+		}
+
+		// Set the video container's fullscreen state
+		var setFullscreenData = function(state) {
+			videoContainer.setAttribute('data-fullscreen', !!state);
+			// Set the fullscreen button's 'data-state' which allows the correct button image to be set via CSS
+			fullscreen.setAttribute('data-state', !!state ? 'cancel-fullscreen' : 'go-fullscreen');
+		}
+
+		// Checks if the document is currently in fullscreen mode
+		var isFullScreen = function() {
+			return !!(document.fullScreen || document.webkitIsFullScreen || document.mozFullScreen || document.msFullscreenElement || document.fullscreenElement);
+		}
+
+		// Fullscreen
+		var handleFullscreen = function() {
+			// If fullscreen mode is active...	
+			if (isFullScreen()) {
+					// ...exit fullscreen mode
+					// (Note: this can only be called on document)
+					if (document.exitFullscreen) document.exitFullscreen();
+					else if (document.mozCancelFullScreen) document.mozCancelFullScreen();
+					else if (document.webkitCancelFullScreen) document.webkitCancelFullScreen();
+					else if (document.msExitFullscreen) document.msExitFullscreen();
+					setFullscreenData(false);
+				}
+				else {
+					// ...otherwise enter fullscreen mode
+					// (Note: can be called on document, but here the specific element is used as it will also ensure that the element's children, e.g. the custom controls, go fullscreen also)
+					if (videoContainer.requestFullscreen) videoContainer.requestFullscreen();
+					else if (videoContainer.mozRequestFullScreen) videoContainer.mozRequestFullScreen();
+					else if (videoContainer.webkitRequestFullScreen) {
+						// Safari 5.1 only allows proper fullscreen on the video element. This also works fine on other WebKit browsers as the following CSS (set in styles.css) hides the default controls that appear again, and 
+						// ensures that our custom controls are visible:
+						// figure[data-fullscreen=true] video::-webkit-media-controls { display:none !important; }
+						// figure[data-fullscreen=true] .controls { z-index:2147483647; }
+						video.webkitRequestFullScreen();
+					}
+					else if (videoContainer.msRequestFullscreen) videoContainer.msRequestFullscreen();
+					setFullscreenData(true);
+				}
+			}
+
+		// Only add the events if addEventListener is supported (IE8 and less don't support it, but that will use Flash anyway)
+		if (document.addEventListener) {
+			// Wait for the video's meta data to be loaded, then set the progress bar's max value to the duration of the video
+			video.addEventListener('loadedmetadata', function() {
+				progress.setAttribute('max', video.duration);
+			});
+
+			// Changes the button state of certain button's so the correct visuals can be displayed with CSS
+			var changeButtonState = function(type) {
+				// Play/Pause button
+				if (type == 'playpause') {
+					if (video.paused || video.ended) {
+						playpause.setAttribute('data-state', 'play');
+					}
+					else {
+						playpause.setAttribute('data-state', 'pause');
+					}
+				}
+				// Mute button
+				else if (type == 'mute') {
+					mute.setAttribute('data-state', video.muted ? 'unmute' : 'mute');
+				}
+			}
+
+			// Add event listeners for video specific events
+			video.addEventListener('play', function() {
+				changeButtonState('playpause');
+			}, false);
+			video.addEventListener('pause', function() {
+				changeButtonState('playpause');
+			}, false);
+			video.addEventListener('volumechange', function() {
+				checkVolume();
+			}, false);
+
+			// Add events for all buttons			
+			playpause.addEventListener('click', function(e) {
+				if (video.paused || video.ended) video.play();
+				else video.pause();
+			});			
+
+			// The Media API has no 'stop()' function, so pause the video and reset its time and the progress bar
+			stop.addEventListener('click', function(e) {
+				video.pause();
+				video.currentTime = 0;
+				progress.value = 0;
+				// Update the play/pause button's 'data-state' which allows the correct button image to be set via CSS
+				changeButtonState('playpause');
+			});
+			mute.addEventListener('click', function(e) {
+				video.muted = !video.muted;
+				changeButtonState('mute');
+			});
+			volinc.addEventListener('click', function(e) {
+				alterVolume('+');
+			});
+			voldec.addEventListener('click', function(e) {
+				alterVolume('-');
+			});
+			fs.addEventListener('click', function(e) {
+				handleFullscreen();
+			});
+
+			// As the video is playing, update the progress bar
+			video.addEventListener('timeupdate', function() {
+        console.log(progress.value);
+				// For mobile browsers, ensure that the progress element's max attribute is set
+				if (!progress.getAttribute('max')) progress.setAttribute('max', video.duration);
+				progress.value = video.currentTime;
+				progressBar.style.width = Math.floor((video.currentTime / video.duration) * 100) + '%';
+			});
+
+			// React to the user clicking within the progress bar
+			progress.addEventListener('click', function(e) {
+				//var pos = (e.pageX  - this.offsetLeft) / this.offsetWidth; // Also need to take the parent into account here as .controls now has position:relative
+				var pos = (e.pageX  - (this.offsetLeft + this.offsetParent.offsetLeft)) / this.offsetWidth;
+				video.currentTime = pos * video.duration;
+			});
+
+			// Listen for fullscreen change events (from other controls, e.g. right clicking on the video itself)
+			document.addEventListener('fullscreenchange', function(e) {
+				setFullscreenData(!!(document.fullScreen || document.fullscreenElement));
+			});
+			document.addEventListener('webkitfullscreenchange', function() {
+				setFullscreenData(!!document.webkitIsFullScreen);
+			});
+			document.addEventListener('mozfullscreenchange', function() {
+				setFullscreenData(!!document.mozFullScreen);
+			});
+			document.addEventListener('msfullscreenchange', function() {
+				setFullscreenData(!!document.msFullscreenElement);
+			});
+		}
+	 }
+
+ })();
+    </script>
+        <script>
+          const pageHeader = document.getElementById('page-header')
+          document.addEventListener("scroll", (event) => {
+              const topScroll = window.pageYOffset
+              
+              console.log(topScroll)
+              if(topScroll > 100){
+                  pageHeader.classList.add('page-header-sticky')
+              }else{
+                  pageHeader.classList.remove('page-header-sticky')
+              }
+          });
+      </script>
+</body>
+</html>

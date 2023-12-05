@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Commercial Design Systems</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <aside class="left-sidebar" id="sidebar">
+        <ul class="nav flex-column left-sidebar__column">
+            <li>
+                <a class="nav-link" href="index.html">INDEX</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="color.html">1. Colors</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="typography.html">2. Typography</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="header-banner.html">3. Layout Structure</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="icons.html">4. Icons</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="button.html">5. Buttons, Radio Button</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="input-field.html">6. Input Fields</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="card.html">7. Card</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="loader.html">8. Loader</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="date-picker.html">9. Date Picker</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="checkbox.html">10. Check Box</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="drag-and-drop.html">11. Drag & Drop</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="navigation.html">12. Navigation</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="notification.html">13. Notifications</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="imagery.html">14. Imagery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="search.html">15. Search</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="switch.html">16. Switch</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-link-active" href="javascript:void(0)">17. Overlays</a>
+              <ul class="list-unstyled nav-inner">
+                <li class="nav-inner__list">
+                  <a href="#dialogue-box"  class="nav-inner__list--text">Dialogue Box</a>
+                </li>
+                <li class="nav-inner__list">
+                  <a href="#scrollable-dialogue-box" class="nav-inner__list--text">Scrollable Dialogue Box</a>
+                </li>
+                <li class="nav-inner__list">
+                  <a href="#full-screen-dialogue-box" class="nav-inner__list--text">Full-screen Dialogue Box</a>
+                </li>
+                <li class="nav-inner__list">
+                  <a href="#popover-dialogue-box" class="nav-inner__list--text">Popover Dialogue Box</a>
+                </li>
+                <li class="nav-inner__list">
+                    <a href="#tooltip" class="nav-inner__list--text">Tooltip</a>
+                </li>
+            </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pagination.html">18. Pagination</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="player.html">19. Player</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="slider.html">20. Slider</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="slideshow.html">21. Slideshow</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="table.html">22. Table</a>
+            </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link" href="#">23. Response Effect</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">24. Transitions</a>
+            </li> -->
+        </ul>
+    </aside>
+    <main class="main">
+      <div class="d-flex align-items-center page-header" id="page-header">
+        <h1 class="color-palette--title mb-0">Overlays</h1>
+        <a href="#" class="btn btn-primary ms-auto">Download More</a>
+        <a class="btn btn-outline-primary ms-4" href="https://www.figma.com/proto/BNspPo1UTQoTvEyBgp5kAY/Commercial-Design-System?type=design&node-id=1026-5759&t=zTAFhnKrOaWxUeRp-0&scaling=min-zoom&page-id=12%3A23&starting-point-node-id=1026%3A5759" target="_blank">View Figma File</a>
+      </div>
+        <!-- <h1 class="color-palette--title mb-4">Overlays</h1> -->
+        <p class="sub-line">
+          An overlay provides contextual information and options in form of an additional layer on top of the current state of the
+          interface. They are either purposefully interruptive like modals or augmenting like popovers and tooltips. The colour of
+          overlays can be chosen freely from the Audi brand colours and grey tones.
+        </p>
+        <!-- <p class="sub-line">
+          The size of the Drag & Drop components depends on the basic type size used, which adapt to the viewport width in
+          question. As such, the size of the components <br> is flexible. They are available in a dark and a light version.
+        </p> -->
+        <h2 class="mt-5 product-range-title text-uppercase mb-3" id="dialogue-box">
+          Dialogue Box
+        </h2>
+        <p class="sub-line">
+          Play and pause controls are a minimum requirement. Other controls can be added, e.g. for duration and elapsed time,
+          sound volume and display size, language and subtitles. Complex controls can be placed in popovers. If players feature
+          numerous controls, these can be hidden in a flyout menu on smaller viewports. Optionally, a replay button can be
+          displayed after the video has finished or a selection of recommended videos can be shown.
+        </p>
+        <p>
+          The preview picture features full-coverage darkening with up to 70 % black for better visibility of the controls and the loader.
+        </p>
+        <div class="card-1 mt-5 p-5 text-center">
+          <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalBoxAlert2">Open Dialogue Box Alerts</a>
+          <a href="#" class="btn btn-outline-primary ml-60" data-bs-toggle="modal" data-bs-target="#modalBoxAlert">Open Dialogue Box Center</a>
+        </div>
+
+        <!-- modal 1 -->
+        <div class="modal modal-custom"id="modalBoxAlert" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content rounded-0 border-0 modal-custom__content">
+              <button type="button" class="btn-close modal-custom__btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              <div class="modal-body modal-custom__body">
+                <h5 class="modal-title modal-custom-title">Dialogue box</h5>
+                <p class="modal-text modal-custom-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque metus arcu, convallis non turpis
+                  sed, iaculis cursus leo. Praesent sed quam nec nisi blandit ornare. Duis vel ipsum leo. </p>
+                <a href="#" class="btn btn-primary">Primary</a>
+                <a href="#" class="btn btn-outline-primary ms-2">Secondary</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- modal 2 -->
+        <div class="modal modal-custom"id="modalBoxAlert2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-fullscreen-sm-down">
+            <div class="modal-content rounded-0 border-0 modal-custom__content">
+              <button type="button" class="btn-close modal-custom__btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              <div class="modal-body modal-custom__body">
+                <h5 class="modal-title modal-custom-title">Dialogue box - alerts</h5>
+                <p class="modal-text modal-custom-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque metus arcu, convallis non turpis
+                  sed, iaculis cursus leo. Praesent sed quam nec nisi blandit ornare. Duis vel ipsum leo. </p>
+                <a href="#" class="btn btn-primary">Primary</a>
+                <a href="#" class="btn btn-outline-primary ms-2">Secondary</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- block 2 -->
+        <div class="mt-50">
+          <h2 class="product-range-title text-uppercase mb-3" id="scrollable-dialogue-box">
+            Scrollable Dialogue Box
+          </h2>
+          <p class="sub-line">
+            Dialogue box with long content fill the entire height of the viewport. The darkened background can be seen to the left
+            and right of the Dialogue box. It is possible to scroll inside the Dialogue box but not on the page behind it.
+          </p>
+          <div class="card-1 mt-4 p-5 text-center">
+            <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalBoxAlert3">Open Scrollable Dialogue Box</a>
+          </div>
+        </div>
+        <!-- modal 3 -->
+        <div class="modal modal-custom" id="modalBoxAlert3" tabindex="-1" aria-labelledby="exampleModalLabel"
+          aria-hidden="true">
+          <div class="modal-dialog modal-fullscreen-custom modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content rounded-0 border-0 modal-custom__content">
+              <button type="button" class="btn-close modal-custom__btn-close" data-bs-dismiss="modal"
+                aria-label="Close"></button>
+              <div class="modal-body modal-custom__body">
+                <h5 class="modal-title modal-custom-title">Dialogue box - Scrollable</h5>
+                <div style="height:500px;">
+                  <p class="modal-text modal-custom-text">Dialogue box - alerts
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris maximus sollicitudin fringilla. Donec luctus
+                    enim ut
+                    ligula lobortis rhoncus. Integer fermentum, nulla sed sollicitudin efficitur, justo lorem venenatis lectus,
+                    vitae
+                    iaculis dui urna id magna. Vestibulum eu posuere velit. Aliquam porttitor vestibulum lorem, ut fringilla
+                    libero porta
+                    nec. Sed volutpat, leo vitae volutpat consequat, ligula orci aliquam diam, ac auctor sapien orci sed dolor.
+                    Cras
+                    ornare, neque vitae placerat vehicula, urna risus interdum libero, in venenatis orci lectus quis dui.
+                    Suspendisse
+                    potenti. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nunc
+                    ornare
+                    porttitor venenatis.
+                  </p>
+                  <div style="width:100%;height:308px;display:block;background-color:#d9d9d9;margin-top:30px;margin-bottom:30px;"></div>
+                  <p>
+                    Nam sit amet faucibus nulla. Quisque aliquam erat enim, sit amet blandit mi ultricies sit amet. Etiam in
+                    ultrices mi.
+                    Aenean tempus odio sed pretium porta. Praesent porta velit lectus, et sagittis enim hendrerit sit amet. Aenean
+                    commodo
+                    ipsum vitae quam tristique scelerisque. Quisque metus est, rhoncus et tristique ac, eleifend quis neque.
+                    Aenean tempor
+                    felis ligula, id ultrices tortor gravida ut. Sed lobortis luctus finibus. Nulla a sem porta, placerat magna
+                    ac,
+                    venenatis ipsum. Ut et venenatis urna, ac eleifend risus. Morbi ultrices non ex eu ornare.
+          
+                    Maecenas et sagittis orci, non pellentesque nulla. In pellentesque mauris ac mauris rhoncus auctor. Sed vitae
+                    est vel
+                    odio maximus sollicitudin bibendum a nulla. Vestibulum lacinia pellentesque est vel fermentum. In tempor
+                    ultricies
+                    rhoncus. Vestibulum sodales et ex vitae elementum. Donec sodales urna ac nisl varius mattis. Sed fermentum
+                    congue
+                    lectus in vestibulum. Aliquam erat volutpat. Ut dignissim urna vel lectus viverra blandit. Pellentesque ante
+                    libero,
+                    ultricies et nulla non, faucibus molestie dolor. Integer suscipit scelerisque gravida. Sed in finibus odio,
+                    non
+                    rhoncus justo. Nulla id arcu vulputate, imperdiet urna a, malesuada justo.
+                  </p>
+                  <a href="#" class="btn btn-primary">Primary</a>
+                  <a href="#" class="btn btn-outline-primary ms-2">Secondary</a>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- block3 -->
+        <div class="mt-50">
+          <h2 class="product-range-title text-uppercase mb-3" id="full-screen-dialogue-box">
+            Full-screen Dialogue Box
+          </h2>
+          <p class="sub-line">
+            Dialogue box can cover the entire viewport, e.g. in the case of a narrow viewport
+
+          </p>
+          <div class="card-1 mt-4 p-5 text-center">
+            <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalBoxAlert4">Open Full-screen Dialogue Box</a>
+          </div>
+        </div>
+          <!-- modal 4 -->
+          <div class="modal modal-custom"id="modalBoxAlert4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-fullscreen">
+              <div class="modal-content rounded-0 border-0 modal-custom__content d-flex justify-content-center align-items-center">
+                <div style="max-width:800px;" class="position-relative">
+                  <button type="button" class="btn-close modal-custom__btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  <div class="modal-body modal-custom__body">
+                    <h5 class="modal-title modal-custom-title">Dialogue box - Full Screen</h5>
+                    <p class="modal-text modal-custom-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque metus arcu,
+                      convallis non turpis sed, iaculis cursus leo. Praesent sed quam nec nisi blandit ornare. Duis vel ipsum leo. </p>
+                    <a href="#" class="btn btn-primary">Primary</a>
+                    <a href="#" class="btn btn-outline-primary ms-2">Secondary</a>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+
+        <!-- block 4 -->
+        <div class="mt-50">
+          <h2 class="product-range-title text-uppercase mb-3" id="popover-dialogue-box">
+            Popover Dialogue Box
+          </h2>
+          <p class="sub-line">
+            Popovers are used to offer additional information or interaction options in relation to an element. They appear
+            initially or else on click or tap. Popovers can be closed by the user clicking or tapping on an area outside the popover
+            or on the triggering element.
+            Popovers can contain text, images, videos, actions and other elements as required. They can appear from any side as
+            required. The triangular arrow points to the triggering element.
+
+          </p>
+          <div class="card-1 mt-4 p-5 text-center">
+            <div class="position-relative">
+              <a href="#" class="btn btn-primary js-btn-popover">Open Full-screen Dialogue Box</a>
+              <div class="modal-popover">
+                <div class="modal-popover__body">
+                  <p class="modal-popover__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque metus arcu, convallis non turpis sed, iaculis cursus leo. Praesent sed 
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+
+        <!-- block 5 -->
+        <div class="mt-50">
+          <h2 class="product-range-title text-uppercase mb-3" id="tooltip">
+            Tooltip
+          </h2>
+          <p class="sub-line">
+            Tooltips are used to offer additional text information for an element. They appear on mouseover or tap and are not
+            initially visible. Tooltips can be closed by the user by clicking or tapping on an area outside the tooltip.
+          </p>
+          <p class="sub-line">
+            Unlike popovers, tooltips only contain text. They can appear from any side as required. The triangular arrow points to the triggering element.
+          </p>
+          <div class="card-1 mt-4 p-4 text-center">
+            <div class="tooltip-block">
+              <p class="tooltip-block-text mb-4">
+                Tooltips are used to offer additional text information for an element. They appear on mouseover or tap and are not
+                initially visible. Tooltips can be closed by the user by on <a href="#" class="tooltip-block-link">Clicking or Tapping</a> an area outside the tooltip.
+              </p>
+              <p class="tooltip-block-text">
+                Unlike popovers, tooltips only contain text. They can appear from any side as required. The triangular arrow points to the triggering element.
+              </p>
+            </div>
+
+          </div>
+        </div>
+
+
+
+
+
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <!-- <script src="script/custom.js"></script> -->
+    <script>
+      const modalPopover = document.querySelector(".modal-popover");
+      modalPopover.style.display = "none";
+      document.querySelector(".js-btn-popover").addEventListener("click", (event) => {
+        event.preventDefault();
+        if (modalPopover.style.display == "none") {
+          modalPopover.style.display = "block";
+        } else {
+          modalPopover.style.display = "none";
+        }
+
+      });
+      const pageHeader = document.getElementById('page-header')
+      document.addEventListener("scroll", (event) => {
+        const topScroll = window.pageYOffset
+
+        console.log(topScroll)
+        if (topScroll > 100) {
+          pageHeader.classList.add('page-header-sticky')
+        } else {
+          pageHeader.classList.remove('page-header-sticky')
+        }
+      });
+    </script>
+</body>
+</html>

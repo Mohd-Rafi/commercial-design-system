@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Commercial Design Systems</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+</head>
+<body>
+  <div class="sec-block sec-block__benefit grid" style="place-items:center;">
+    <div class="component" style="justify-content:center;">
+      <div class="component__column">
+        <div class="benefit-l">
+          <h2 class="benefit-l-title">Benefits of Maruti Suzuki Commercial</h2>
+          <p class="benefit-l-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do  <br>eiusmod tempor. incididunt.
+            accumsan lacus vel facilisis. </p>
+        </div>
+        <div class="msc-gallery msc-gallery--benefitFirst">
+          <div class="msc-gallery__wrapper msc-gallery__second-arrow " id="carousel-8">
+            <div class="msc-gallery__item">
+              <div class="benefit-l">
+                <picture>
+                  <source media="(min-width:1200px)" srcset="images/video.png">
+                  <source media="(max-width:767px)" srcset="images/video-placeholder-xs.png" width="330" height="201">
+                  <img src="images/video.png" alt="" width="498" height="280">
+                </picture>
+              </div>
+            </div>
+            <div class="msc-gallery__item">
+              <div class="benefit-l">
+                <picture>
+                  <source media="(min-width:1200px)" srcset="images/video.png">
+                  <source media="(max-width:767px)" srcset="images/video-placeholder-xs.png" width="330" height="201">
+                  <img src="images/video.png" alt="" width="498" height="280">
+                </picture>
+              </div>
+            </div>
+            <div class="msc-gallery__item">
+              <div class="benefit-l">
+                <picture>
+                  <source media="(min-width:1200px)" srcset="images/video.png">
+                  <source media="(max-width:767px)" srcset="images/video-placeholder-xs.png" width="330" height="201">
+                  <img src="images/video.png" alt="" width="498" height="280">
+                </picture>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="component__column">
+        <ul class="benefit">
+          <li class="benefit__list">
+              <span class="benefit__list--title">Wide Range of Vehicles</span>
+              <p class="benefit__list--text">Lorem ipsum dolor sit ametonsectetur <br> adipiscing elit, sed iusmod</p>
+          </li>
+          <li class="benefit__list benefit__list--active">
+              <span class="benefit__list--title">Wide Service Network</span>
+              <p class="benefit__list--text">Lorem ipsum dolor sit ametonsectetur <br> adipiscing elit, sed iusmod</p>
+          </li>
+          <li class="benefit__list">
+              <span class="benefit__list--title">Powerful Engine</span>
+              <p class="benefit__list--text">Lorem ipsum dolor sit ametonsectetur <br> adipiscing elit, sed iusmod</p>
+          </li>
+          <li class="benefit__list">
+              <span class="benefit__list--title">Easy Finance</span>
+              <p class="benefit__list--text">Lorem ipsum dolor sit ametonsectetur <br> adipiscing elit, sed iusmod</p>
+          </li>
+          <li class="benefit__list">
+              <span class="benefit__list--title">Genuine Spare-Parts</span>
+              <p class="benefit__list--text">Lorem ipsum dolor sit ametonsectetur <br> adipiscing elit, sed iusmod</p>
+          </li>
+      </ul>
+      </div>
+    </div>
+  </div>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+      <script>
+            const benefitLeftTitle = document.querySelector('.benefit-l-title');
+            const getText = benefitLeftTitle.textContent
+            const windowWidth = window.innerWidth
+            if (windowWidth < 600) {
+              if (getText.length) {
+                benefitLeftTitle.innerHTML = "Benefits of Maruti <br> Suzuki Commercial"
+              }
+            }
+            
+              var $slideshow = $("#carousel-8").slick({
+                dots: false,
+                arrows: true,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                focusOnSelect: true,
+                variableWidth: true,
+                infinite: true,
+                cssEase: 'linear',
+              });
+
+            let bList = document.querySelectorAll(".benefit li");
+            for (let i = 0; i < bList.length; i++) {
+              bList[i].addEventListener("click", listActive);
+            }
+            function listActive(event) {
+              for (let j = 0; j < bList.length; j++) {
+                bList[j].classList.remove("benefit__list--active");
+                event.currentTarget.className = "benefit__list benefit__list--active";
+                $slideshow.slick('slickGoTo', parseInt($slideshow.slick('slickCurrentSlide'))+1);
+              }
+            }
+
+          $(document).ready(function () {
+
+            $("#carousel-8").slick({
+              dots: false,
+              arrows: true,
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              focusOnSelect: true,
+              variableWidth: true,
+              infinite: false,
+              cssEase: 'linear',
+              mobileFirst: true,
+              responsive: [
+                {
+                  breakpoint: 1024,
+                  settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    infinite: false,
+                    variableWidth: false,
+                    dots: true,
+                  }
+                },
+                {
+                  breakpoint: 600,
+                  settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    variableWidth: false,
+                    dots: true,
+                  }
+                },
+                {
+                  breakpoint: 480,
+                  settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    variableWidth: false,
+                  }
+                }
+              ]
+            });
+          })
+      </script>
+</body>
+</html>

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Commercial Design Systems</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+</head>
+<body>
+  <div class="gallery-block">
+    <div class="gallery-image__layout-One galleryPageLayoutThree">
+      <h3 class="msc-gallery__title">Gallery</h3>
+      <p class="msc-gallery__text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis <br> nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+      </p>
+      <div class="msc-field__custom-dropdown">
+        <div class="msc-field">
+          <select name="" id="" class="msc-field__input msc-field__select">
+            <option value="">Vehicle</option>
+          </select>
+        </div>
+        <ul class="tab-list">
+          <li class="tab-list__item">
+            <a href="javascript:void(0)" class="tab-list__item--link tab__list--link-active">All</a>
+          </li>
+          <li class="tab-list__item">
+            <a href="javascript:void(0)" class="tab-list__item--link">Exterior</a>
+          </li>
+          <li class="tab-list__item">
+            <a href="javascript:void(0)" class="tab-list__item--link">Interior</a>
+          </li>
+        </ul>
+      </div>
+      <div class="tab-block" id="" data-block="true">
+        <div class="msc-gallery msc-gallery__layout-thumbail msc-gallery__range-2">
+          <div class="msc-gallery__wrapper" id="carousel-13">
+            <div class="msc-gallery__item">
+              <img src="images/img-thumbnail-large.png" width="733" height="475" alt="" class="msc-gallery__image">
+              <div class="msc-masnory-gallery__title">Lorem ipsum dolor sit amet</div>
+            </div>
+            <div class="msc-gallery__item">
+              <img src="images/img-thumbnail-large.png" width="733" height="475" alt="" class="msc-gallery__image">
+              <div class="msc-masnory-gallery__title">Lorem ipsum dolor sit amet</div>
+            </div>
+          </div>
+        </div>
+        <!-- small thumbnail -->
+        <div class="msc-gallery msc-gallery__range-2 msc-gallery__layout-thumbail msc-gallery__layout-thumbail--small">
+          <div class="msc-gallery__wrapper" id="carousel-13-nav">
+            <div class="msc-gallery__item">
+              <img src="images/carousel-thumbnail-img.png" width="164" height="126" alt="" class="msc-gallery__image">
+              <div class="msc-masnory-gallery__title">Lorem ipsum dolor <br> sit amet</div>
+            </div>
+            <div class="msc-gallery__item">
+              <img src="images/carousel-thumbnail-img.png" width="164" height="126" alt="" class="msc-gallery__image">
+              <div class="msc-masnory-gallery__title">Lorem ipsum dolor <br> sit amet</div>
+            </div>
+            <div class="msc-gallery__item">
+              <img src="images/carousel-thumbnail-img.png" width="164" height="126" alt="" class="msc-gallery__image">
+              <div class="msc-masnory-gallery__title">Lorem ipsum dolor <br> sit amet</div>
+            </div>
+            <div class="msc-gallery__item">
+              <img src="images/carousel-thumbnail-img.png" width="164" height="126" alt="" class="msc-gallery__image">
+              <div class="msc-masnory-gallery__title">Lorem ipsum dolor <br> sit amet</div>
+            </div>
+            <div class="msc-gallery__item">
+              <img src="images/carousel-thumbnail-img.png" width="164" height="126" alt="" class="msc-gallery__image">
+              <div class="msc-masnory-gallery__title">Lorem ipsum dolor <br>   sit amet</div>
+            </div>
+          </div>
+        </div>
+
+    </div>
+    </div>
+</div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+    
+        let bList = document.querySelectorAll(".benefit li");
+        for (let i = 0; i < bList.length; i++) {
+          bList[i].addEventListener("click", listActive);
+        }
+        function listActive(event) {
+          for(let j = 0; j < bList.length; j++){
+            bList[j].classList.remove("benefit__list--active");
+            event.currentTarget.className = "benefit__list benefit__list--active" ;
+          }
+        }
+
+        const zoomIcon = document.getElementsByClassName('grid-gallery__js-zoom')
+        for(var i = 0; i < zoomIcon.length; i++){
+          zoomIcon[i].onclick = function(event){
+            event.preventDefault();
+             const getHref = this.getAttribute('href');
+             const imageContainer = document.createElement('div')
+             imageContainer.setAttribute('class', "image-lightbox")
+             const imageTag = document.createElement('img')
+             imageTag.setAttribute('src', getHref)
+             imageTag.setAttribute('alt', '')
+             imageTag.setAttribute('title', '')
+             imageTag.setAttribute('class', "")
+             const imageWidth = imageTag.width
+             const imageHeight = imageTag.height
+             const imageContainerWrapper = document.createElement('div')
+             imageContainerWrapper.setAttribute('class', 'image-lightbox__container')
+             imageContainer.appendChild(imageContainerWrapper)
+             imageContainerWrapper.style.width = imageWidth + 'px'
+             imageContainerWrapper.style.height = imageHeight + 'px'
+             const lightBox = document.createElement('div')
+             lightBox.setAttribute('class', 'image-lightbox-overlay')
+             
+             document.body.appendChild(imageContainer)
+             document.body.appendChild(lightBox)
+             imageContainerWrapper.appendChild(imageTag)
+             if(document.body.childNodes.length > 1){
+              return
+             }
+          }
+        }
+
+        function lightBoxHide(){
+          const getLightBox = document.querySelectorAll('.image-lightbox-overlay')
+          for (const elem of getLightBox) {
+            elem.style.display = "none"
+          }
+          
+        }
+
+        function imageContainerHide(){
+          const getImageContainer = document.querySelectorAll('.image-lightbox')
+          for(const elem of getImageContainer){
+            elem.style.display = "none"
+          }
+          
+        }
+
+          document.body.onclick = function (event) {
+            const getImageContainer = document.querySelectorAll('.image-lightbox')
+            for (const elem of getImageContainer) {
+              if (event.target == elem) {
+                lightBoxHide()
+                imageContainerHide()
+              }
+            }
+
+          }
+
+          $('.tab-list__item--link').click(function(event){
+          $('.tab-list__item--link').removeClass('tab__list--link-active');
+          event.target.classList.add('tab__list--link-active')
+          // $(this).children().addClass('tab__list--link-active');
+        });
+
+
+    </script>
+    <script>
+
+    $("#carousel-12").slick({
+      dots: false,
+      arrows: true,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      focusOnSelect: true,
+      variableWidth: false,
+      infinite: true,
+      cssEase: 'linear',
+      centerMode: true,
+      centerPadding: '0',
+    });
+    $("#carousel-13").slick({
+      dots: false,
+      arrows: false,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      focusOnSelect: true,
+      variableWidth: false,
+      infinite: true,
+      cssEase: 'linear',
+      centerMode: true,
+      centerPadding: '0',
+      speed: 800,
+    });
+    $('#carousel-13-nav').slick({
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      asNavFor: '#carousel-13',
+      dots: false,
+      centerMode: true,
+      focusOnSelect: true,
+      centerPadding: '0',
+      speed: 800,
+      mobileFirst: true,
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 4,
+            slidesToScroll:1,
+            infinite: true,
+            dots: false
+          }
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 4,
+            slidesToScroll:1,
+            arrows:false
+          }
+        },
+        {
+          breakpoint: 320,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            arrows:false
+          }
+        }
+        // You can unslick at a given breakpoint now by adding:
+        // settings: "unslick"
+        // instead of a settings object
+      ]
+    });
+
+
+
+
+    </script>
+</body>
+</html>

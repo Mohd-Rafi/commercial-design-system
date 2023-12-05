@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Commercial Design Systems</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/bootstrap-datepicker.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <aside class="left-sidebar" id="sidebar">
+        <ul class="nav flex-column left-sidebar__column">
+            <li>
+                <a class="nav-link" href="index.html">INDEX</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="color.html">1. Colors</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="typography.html">2. Typography</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="header-banner.html">3. Layout Structure</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="icons.html">4. Icons</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="button.html">5. Buttons, Radio Button</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="input-field.html">6. Input Fields</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="card.html">7. Card</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="loader.html">8. Loader</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-link-active" href="javascript:void(0)">9. Date Picker</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="checkbox.html">10. Check Box</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="drag-and-drop.html">11. Drag & Drop</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="navigation.html">12. Navigation</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="navigation.html">13. Notifications</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="imagery.html">14. Imagery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="search.html">15. Search</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="switch.html">16. Switch</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="overlays.html">17. Overlays</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pagination.html">18. Pagination</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="player.html">19. Player</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="slider.html">20. Slider</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="slideshow.html">21. Slideshow</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="table.html">22. Table</a>
+            </li>
+        </ul>
+    </aside>
+    <main class="main">
+      <div class="d-flex align-items-center page-header" id="page-header">
+        <h1 class="color-palette--title mb-0">Date Picker</h1>
+        <a href="#" class="btn btn-primary ms-auto">Download More</a>
+        <a class="btn btn-outline-primary ms-4" href="https://www.figma.com/proto/BNspPo1UTQoTvEyBgp5kAY/Commercial-Design-System?type=design&node-id=1173-4510&t=zTAFhnKrOaWxUeRp-0&scaling=min-zoom&page-id=11%3A16" target="_blank">View Figma File</a>
+      </div>
+        
+        <p class="sub-line">
+          A date picker is a graphical control element in UI design used to enable users to easily select a date from a
+          calendar-like interface. It allows users to interact with a visual representation of a calendar and choose a specific
+          date or date range. Date pickers are commonly used in applications, websites, and software to improve the user
+          experience when entering dates in forms or other input fields.
+        </p>
+
+      <section class="date-picker">
+        <div id="date-picker" class="date-picker-block"></div>
+      </section>
+
+
+
+
+
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="script/bootstrap-datepicker.min.js"></script>
+    <script>
+      $('#date-picker').datepicker();
+    </script>
+    <!-- <script src="script/custom.js"></script> -->
+</body>
+</html>

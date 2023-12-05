@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Commercial Design Systems</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/custom.css" />
+    <!-- <link rel="stylesheet" href="css/layout.css" /> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    />
+  </head>
+  <body>
+    
+    <div class="sec-block sec-block1 sec-block1-testimonial">
+      <div class="sec-block2__content mt-0">
+        <!-- slider start -->
+        <div class="product-feature">
+
+            <div class="more-power-section">
+                <div class="pr-feature-logo"><img src="images/features-img1.png" /></div>
+                <div class="pr-featue-content">
+                    <div class="pr-featue-content-title">More Power</div>
+                    <div class="pr-featue-content-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. incididunt.
+                        accumsan lacus vel facilisis. </div>
+                </div>
+                <div class="pr-feature-carousel">
+                    <div class="msc-gallery">
+                        <div class="msc-gallery__wrapper" id="features-carousel1">
+                          <div class="msc-gallery__item">
+                            <div class="pr-feature-slier-image"><img class="pr-feature-slier-img" src="images/feature-img1.png" /></div>
+                          </div>
+                          <div class="msc-gallery__item">
+                            <div class="pr-feature-slier-image"><img class="pr-feature-slier-img" src="images/feature-img1.png" /></div>
+                          </div>
+                          <div class="msc-gallery__item">
+                            <div class="pr-feature-slier-image"><img class="pr-feature-slier-img" src="images/feature-img1.png" /></div>
+                          </div>
+                          <div class="msc-gallery__item">
+                            <div class="pr-feature-slier-image"><img class="pr-feature-slier-img" src="images/feature-img1.png" /></div>
+                          </div>
+                          <div class="msc-gallery__item">
+                            <div class="pr-feature-slier-image"><img class="pr-feature-slier-img" src="images/feature-img1.png" /></div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+
+            <div class="feature-accordion">
+                <div class="feature-acrdrow">
+                  <h3 class="feature-acrdClick selected">Lorem Ipsum</h3>
+                  <div class="feature-acrdSec" style="display:block;"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet eget nunc vitae bibendum. Cras nec diam condimentum, porttitor sapien a, pellentesque mi. Praesent quis ullamcorper mauris, id sollicitudin eros. Aliquam bibendum mi at quam iaculis interdum. Cras ac tortor quis velit volutpat dapibus.</div>
+                </div>
+                <div class="feature-acrdrow">
+                  <h3 class="feature-acrdClick">Lorem Ipsum</h3>
+                  <div class="feature-acrdSec">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet eget nunc vitae bibendum. Cras nec diam condimentum, porttitor sapien a, pellentesque mi. Praesent quis ullamcorper mauris, id sollicitudin eros. Aliquam bibendum mi at quam iaculis interdum. Cras ac tortor quis velit volutpat dapibus.</div>
+                </div>
+                <div class="feature-acrdrow">
+                  <h3 class="feature-acrdClick">Lorem Ipsum</h3>
+                  <div class="feature-acrdSec">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet eget nunc vitae bibendum. Cras nec diam condimentum, porttitor sapien a, pellentesque mi. Praesent quis ullamcorper mauris, id sollicitudin eros. Aliquam bibendum mi at quam iaculis interdum. Cras ac tortor quis velit volutpat dapibus. </div>
+                </div>
+                <div class="feature-acrdrow">
+                  <h3 class="feature-acrdClick">Lorem Ipsum</h3>
+                  <div class="feature-acrdSec">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet eget nunc vitae bibendum. Cras nec diam condimentum, porttitor sapien a, pellentesque mi. Praesent quis ullamcorper mauris, id sollicitudin eros. Aliquam bibendum mi at quam iaculis interdum. Cras ac tortor quis velit volutpat dapibus.</div>
+                </div>
+              </div>
+
+        </div>
+        <!-- slider end -->
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+    ></script>
+
+    <script>
+      if ($(".msc-js-gallery").length) {
+        $(".msc-js-gallery").slick({
+          dots: false,
+          arrows: true,
+        });
+      }
+
+      $("#features-carousel1").slick({
+          dots: true,
+          arrows: false,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          focusOnSelect: true,
+        //   variableWidth: true,
+          infinite: true,
+          // cssEase: 'linear',
+        });
+
+        $('.feature-acrdClick').click(function(e) {
+            $(this).toggleClass('selected');
+            $(this).parents('.feature-acrdrow').find('.feature-acrdSec').slideToggle();
+            $(this).parents('.feature-acrdrow').siblings().find('.feature-acrdSec').slideUp();
+            $(this).parents('.feature-acrdrow').siblings().find('.selected').removeClass('selected');
+        }); 
+
+    </script>
+  </body>
+</html>

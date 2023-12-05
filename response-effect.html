@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Commercial Design Systems</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <aside class="left-sidebar" id="sidebar">
+        <ul class="nav flex-column left-sidebar__column">
+            <li>
+                <a class="nav-link" href="index.html">INDEX</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="color.html">1. Colors</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="typography.html">2. Typography</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="layout.html">3. Layout Structure</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="icons.html">4. Icons</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="button.html">5. Buttons, Radio Button</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="input-field.html">6. Input Fields</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="card.html">7. Card</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="loader.html">8. Loader</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="date-picker.html">9. Date Picker</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="checkbox.html">10. Check Box</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="drag-and-drop.html">11. Drag & Drop</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="navigation.html">12. Navigation</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="notification.html">13. Notifications</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="imagery.html">14. Imagery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="search.html">15. Search</a>
+              <!-- <ul class="list-unstyled nav-inner d-block">
+                <li class="nav-inner__list">
+                  <a href="#search-stages" class="nav-inner__list--text">Search Stages</a>
+                </li>
+                <li class="nav-inner__list">
+                  <a href="#variations" class="nav-inner__list--text">Variations</a>
+                </li>
+                <li class="nav-inner__list">
+                  <a href="#example" class="nav-inner__list--text">Example</a>
+                </li>
+              </ul> -->
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="switch.html">16. Switch</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="overlays.html">17. Overlays</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pagination.html">18. Pagination</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="player.html">19. Player</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="slider.html">20. Slider</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">21. Slideshow</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="table.html">22. Table</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-link-active" href="#">23. Response Effect</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">24. Transitions</a>
+            </li>
+        </ul>
+    </aside>
+    <main class="main" data-bs-spy="scroll" data-bs-target="#sidebar" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="false">
+        <h1 class="color-palette--title mb-4">Response Effect</h1>
+        <p class="sub-line">
+          "Response Effect" refers to the visual, auditory, or interactive changes that occur when a user interacts with a user
+          interface element or takes a specific action. These effects are designed to provide feedback to the user, indicating
+          that their action has been recognized by the system.
+        </p>
+        <p class="sub-line">
+          The purpose of response effects is to enhance the user experience, make interactions more intuitive, and provide users
+          with a sense of control and understanding of the system's behavior. When users perform actions such as clicking a
+          button, hovering over an element, or submitting a form, they expect some form of feedback to confirm that their input
+          has been registered.
+        </p>
+
+        <strong class="sub-line fw-bold d-block mt-5 mb-3">Common examples of response effects include:</strong>
+
+        <div class="card card-nav bg-white mb-30">
+          <div class="card-body card-nav-body1">
+            <div class="row">
+              <div class="col-auto" style="max-width:460px;">
+                <h2 class="product-range-title text-uppercase mb-30">
+                  Button Click
+                </h2>
+                <p class="sub-line mb-4">
+                  When a user clicks on a button, it may visually change its appearance by highlighting, changing color, or showing a
+                  loading animation to indicate that the action is being processed.
+                </p>
+                <p class="sub-line">
+                  When a user hovers the mouse cursor over an interactive element, it may change its color, size, or display additional information through a tooltip.
+                </p>
+              </div>
+              <div class="col-auto ms-auto">
+                <a href="#" class="btn btn-primary d-flex align-items-center justify-content-center" style="min-width:300px;">
+                  <i class="btn-search-icon me-2"></i> Primary
+                </a>
+                <a href="#" class="btn btn-primary btn-hover d-flex align-items-center justify-content-center mt-4"
+                  style="min-width:300px;">
+                  <i class="btn-search-icon me-2"></i> Primary
+                </a>
+                <a href="#" class="btn btn-primary btn-disabled d-flex align-items-center justify-content-center mt-4"
+                  style="min-width:300px;">
+                  <i class="btn-search-icon me-2"></i> Call to action
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="card card-nav mb-30">
+          <div class="card-body card-nav-body1">
+            <h2 class="product-range-title text-uppercase mb-4">
+              Menu Selection
+            </h2>
+            <p class="sub-line mb-30">
+              When a user clicks on a button, it may visually change its appearance by highlighting, changing color, or showing a
+              loading animation to indicate that the action is being processed.
+            </p>
+            <nav class="navbar bg-white py-3" style="padding-left:30px;padding-right:30px;">
+              <a class="navbar-brand p-0" href="#">
+                <img src="images/ms-commercial-logo.png" alt="logo" title="logo" width="314" height="41">
+              </a>
+              <ul class="navbar-nav ms-auto flex-row navbar-custom">
+                <li class="nav-item">
+                  <a class="nav-link dropdown-toggle  ps-0" href="#">Menu 1</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link dropdown-toggle nav-link-hover2" href="#">Menu 2</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link dropdown-toggle" href="#">Menu 3</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Menu 4</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">
+                    <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M8.80534 17.2071C13.0395 17.2071 16.472 13.7751 16.472 9.54156C16.472 5.30798 13.0395 1.87598 8.80534 1.87598C4.57116 1.87598 1.13867 5.30798 1.13867 9.54156C1.13867 13.7751 4.57116 17.2071 8.80534 17.2071Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                      <path d="M18.3885 19.1242L14.2197 14.9561" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link px-0">
+                    <svg width="26" height="17" viewBox="0 0 26 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M25.555 16.7837H0.8338C0.588056 16.7837 0.388672 16.5843 0.388672 16.3385V15.0942C0.388672 14.8485 0.588056 14.6495 0.8338 14.6495H25.555C25.8008 14.6495 26.0002 14.8485 26.0002 15.0942V16.3385C26.0002 16.5843 25.8008 16.7837 25.555 16.7837ZM25.555 9.8971H0.8338C0.588056 9.8971 0.388672 9.69772 0.388672 9.45198V8.20767C0.388672 7.96193 0.588056 7.76254 0.8338 7.76254H25.555C25.8008 7.76254 26.0002 7.96193 26.0002 8.20767V9.45198C26.0002 9.69772 25.8008 9.8971 25.555 9.8971ZM25.555 3.01013H0.8338C0.588056 3.01013 0.388672 2.81075 0.388672 2.565V1.32069C0.388672 1.07495 0.588056 0.875977 0.8338 0.875977H25.555C25.8008 0.875977 26.0002 1.07495 26.0002 1.32069V2.565C26.0002 2.81075 25.8008 3.01013 25.555 3.01013Z" fill="black"></path>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+
+        <div class="card card-nav mb-30">
+          <div class="card-body card-nav-body1">
+            <h2 class="product-range-title text-uppercase mb-4">
+              Form Submission
+            </h2>
+            <p class="sub-line mb-30">
+              After submitting a form, the UI may display a success message or an error message if the submission was unsuccessful.
+            </p>
+            <div class="bg-white form">
+              <div class="form-body">
+                <h2 class="product-range-title text-uppercase text-center">Enquire now</h2>
+                <p class="text-center bc-content text-black">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. incididunt. <br>
+                  accumsan lacus vel facilisis.
+                </p>
+                <div class="row g-0" style="column-gap:30px;">
+                  <div class="col">
+                    <input type="text" class="form-control form-control-custom form-control-lg" placeholder="Name*">
+                  </div>
+                  <div class="col">
+                    <input type="text" class="form-control form-control-custom form-control-lg" placeholder="Vehicle*">
+                  </div>
+                  <div class="col">
+                    <div class="position-relative">
+                      <input type="text" class="form-control form-control-custom form-control-lg" placeholder="Vehicle*">
+                      <a href="#" class="send-otp">Send Otp</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-check form-check-custom mt-1">
+                  <input class="form-check-input form-check-input-custom" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label form-check-custom-label ms-2" for="flexCheckDefault">
+                    I agree that by clicking the ‘Continue’ button below, I am explicitly soliciting a call from Maruti <br> Suzuki India Ltd. Or its partners on my ‘Mobile’.
+                  </label>
+                  <span class="invalid-feedback d-block ms-2" style="color:rgba(0,0,0,0.50);">The fields marked as * are mandatory</span>
+                </div>
+                <div class="text-center">
+                  <a href="#" class="btn btn-primary mt-4">Submit</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="card card-nav bg-white mb-30">
+          <div class="card-body card-nav-body1">
+            <div class="row">
+              <div class="col-auto align-self-center" style="max-width:460px;">
+                <h2 class="product-range-title text-uppercase mb-30">
+                  Drag and Drop
+                </h2>
+                <p class="sub-line">
+                  When dragging an element, it may follow the mouse cursor, change its opacity, or show a placeholder to indicate where it can be dropped.
+                </p>
+                <!-- <p class="sub-line">
+                  When a user hovers the mouse cursor over an interactive element, it may change its color, size, or display additional information through a tooltip.
+                </p> -->
+              </div>
+              <div class="col-auto ms-auto" style="min-width:300px;">
+                <ul class="list-group">
+                  <li class="list-group-item draggable-list__list d-flex align-items-center">
+                    <div class="draggable-list__list--item d-flex align-items-center">
+                      <img src="images/shopping-cart-dark.png" alt="" class="me-2">
+                      Item 1
+                    </div>
+                    <div class="draggable-list__list--icon ms-auto">
+                      <svg width="27" height="16" viewBox="0 0 27 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M25.8607 15.9536H1.13946C0.893721 15.9536 0.694336 15.7542 0.694336 15.5085V14.2642C0.694336 14.0184 0.893721 13.8194 1.13946 13.8194H25.8607C26.1064 13.8194 26.3058 14.0184 26.3058 14.2642V15.5085C26.3058 15.7542 26.1064 15.9536 25.8607 15.9536ZM25.8607 9.06703H1.13946C0.893721 9.06703 0.694336 8.86764 0.694336 8.6219V7.37759C0.694336 7.13185 0.893721 6.93246 1.13946 6.93246H25.8607C26.1064 6.93246 26.3058 7.13185 26.3058 7.37759V8.6219C26.3058 8.86764 26.1064 9.06703 25.8607 9.06703ZM25.8607 2.18005H1.13946C0.893721 2.18005 0.694336 1.98067 0.694336 1.73492V0.490616C0.694336 0.244873 0.893721 0.0458984 1.13946 0.0458984H25.8607C26.1064 0.0458984 26.3058 0.244873 26.3058 0.490616V1.73492C26.3058 1.98067 26.1064 2.18005 25.8607 2.18005Z" fill="#7C7B80"></path>
+                      </svg>
+                    </div>
+                  </li>
+                  <li class="list-group-item draggable-list__list d-flex align-items-center">
+                    <div class="draggable-list__list--item d-flex align-items-center">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="me-2">
+                        <path d="M22 11.0799V11.9999C21.9988 14.1563 21.3005 16.2545 20.0093 17.9817C18.7182 19.7088 16.9033 20.9723 14.8354 21.5838C12.7674 22.1952 10.5573 22.1218 8.53447 21.3744C6.51168 20.6271 4.78465 19.246 3.61096 17.4369C2.43727 15.6279 1.87979 13.4879 2.02168 11.3362C2.16356 9.18443 2.99721 7.13619 4.39828 5.49694C5.79935 3.85768 7.69279 2.71525 9.79619 2.24001C11.8996 1.76477 14.1003 1.9822 16.07 2.85986" stroke="#7C7B80" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M22 4L12 14.01L9 11.01" stroke="#7C7B80" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                      </svg>
+                      Item 2
+                    </div>
+                    <div class="draggable-list__list--icon ms-auto">
+                      <svg width="27" height="16" viewBox="0 0 27 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M25.8607 15.9536H1.13946C0.893721 15.9536 0.694336 15.7542 0.694336 15.5085V14.2642C0.694336 14.0184 0.893721 13.8194 1.13946 13.8194H25.8607C26.1064 13.8194 26.3058 14.0184 26.3058 14.2642V15.5085C26.3058 15.7542 26.1064 15.9536 25.8607 15.9536ZM25.8607 9.06703H1.13946C0.893721 9.06703 0.694336 8.86764 0.694336 8.6219V7.37759C0.694336 7.13185 0.893721 6.93246 1.13946 6.93246H25.8607C26.1064 6.93246 26.3058 7.13185 26.3058 7.37759V8.6219C26.3058 8.86764 26.1064 9.06703 25.8607 9.06703ZM25.8607 2.18005H1.13946C0.893721 2.18005 0.694336 1.98067 0.694336 1.73492V0.490616C0.694336 0.244873 0.893721 0.0458984 1.13946 0.0458984H25.8607C26.1064 0.0458984 26.3058 0.244873 26.3058 0.490616V1.73492C26.3058 1.98067 26.1064 2.18005 25.8607 2.18005Z" fill="#7C7B80"></path>
+                      </svg>
+                    </div>
+                  </li>
+                  <li class="list-group-item draggable-list__list d-flex align-items-center bg-light draggable-list__list--shadow">
+                    <div class="draggable-list__list--item d-flex align-items-center">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="me-2">
+                      <path d="M12 17V3" stroke="#7C7B80" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                      <path d="M6 11L12 17L18 11" stroke="#7C7B80" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                      <path d="M19 21H5" stroke="#7C7B80" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                      </svg>
+                      Item 3
+                    </div>
+                    <div class="draggable-list__list--icon ms-auto">
+                      <svg width="27" height="16" viewBox="0 0 27 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M25.8607 15.9536H1.13946C0.893721 15.9536 0.694336 15.7542 0.694336 15.5085V14.2642C0.694336 14.0184 0.893721 13.8194 1.13946 13.8194H25.8607C26.1064 13.8194 26.3058 14.0184 26.3058 14.2642V15.5085C26.3058 15.7542 26.1064 15.9536 25.8607 15.9536ZM25.8607 9.06703H1.13946C0.893721 9.06703 0.694336 8.86764 0.694336 8.6219V7.37759C0.694336 7.13185 0.893721 6.93246 1.13946 6.93246H25.8607C26.1064 6.93246 26.3058 7.13185 26.3058 7.37759V8.6219C26.3058 8.86764 26.1064 9.06703 25.8607 9.06703ZM25.8607 2.18005H1.13946C0.893721 2.18005 0.694336 1.98067 0.694336 1.73492V0.490616C0.694336 0.244873 0.893721 0.0458984 1.13946 0.0458984H25.8607C26.1064 0.0458984 26.3058 0.244873 26.3058 0.490616V1.73492C26.3058 1.98067 26.1064 2.18005 25.8607 2.18005Z" fill="#7C7B80"></path>
+                      </svg>
+                    </div>
+                  </li>
+                  <li class="list-group-item draggable-list__list d-flex align-items-center">
+                    <div class="draggable-list__list--item d-flex align-items-center">
+                      <img src="images/search-grey-dark.png" alt="" class="me-2">
+                      Item 4
+                    </div>
+                    <div class="draggable-list__list--icon ms-auto">
+                      <svg width="27" height="16" viewBox="0 0 27 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M25.8607 15.9536H1.13946C0.893721 15.9536 0.694336 15.7542 0.694336 15.5085V14.2642C0.694336 14.0184 0.893721 13.8194 1.13946 13.8194H25.8607C26.1064 13.8194 26.3058 14.0184 26.3058 14.2642V15.5085C26.3058 15.7542 26.1064 15.9536 25.8607 15.9536ZM25.8607 9.06703H1.13946C0.893721 9.06703 0.694336 8.86764 0.694336 8.6219V7.37759C0.694336 7.13185 0.893721 6.93246 1.13946 6.93246H25.8607C26.1064 6.93246 26.3058 7.13185 26.3058 7.37759V8.6219C26.3058 8.86764 26.1064 9.06703 25.8607 9.06703ZM25.8607 2.18005H1.13946C0.893721 2.18005 0.694336 1.98067 0.694336 1.73492V0.490616C0.694336 0.244873 0.893721 0.0458984 1.13946 0.0458984H25.8607C26.1064 0.0458984 26.3058 0.244873 26.3058 0.490616V1.73492C26.3058 1.98067 26.1064 2.18005 25.8607 2.18005Z" fill="#7C7B80"></path>
+                      </svg>
+                    </div>
+                  </li>
+                  <li class="list-group-item draggable-list__list d-flex align-items-center">
+                    <div class="draggable-list__list--item d-flex align-items-center">
+                      <img src="images/shopping-cart-dark.png" alt="" class="me-2">
+                      Item 5
+                    </div>
+                    <div class="draggable-list__list--icon ms-auto">
+                      <svg width="27" height="16" viewBox="0 0 27 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M25.8607 15.9536H1.13946C0.893721 15.9536 0.694336 15.7542 0.694336 15.5085V14.2642C0.694336 14.0184 0.893721 13.8194 1.13946 13.8194H25.8607C26.1064 13.8194 26.3058 14.0184 26.3058 14.2642V15.5085C26.3058 15.7542 26.1064 15.9536 25.8607 15.9536ZM25.8607 9.06703H1.13946C0.893721 9.06703 0.694336 8.86764 0.694336 8.6219V7.37759C0.694336 7.13185 0.893721 6.93246 1.13946 6.93246H25.8607C26.1064 6.93246 26.3058 7.13185 26.3058 7.37759V8.6219C26.3058 8.86764 26.1064 9.06703 25.8607 9.06703ZM25.8607 2.18005H1.13946C0.893721 2.18005 0.694336 1.98067 0.694336 1.73492V0.490616C0.694336 0.244873 0.893721 0.0458984 1.13946 0.0458984H25.8607C26.1064 0.0458984 26.3058 0.244873 26.3058 0.490616V1.73492C26.3058 1.98067 26.1064 2.18005 25.8607 2.18005Z" fill="#7C7B80"></path>
+                      </svg>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="card card-nav mb-30">
+          <div class="card-body card-nav-body1">
+            <h2 class="product-range-title text-uppercase mb-4">
+              Loading Indicators
+            </h2>
+            <p class="sub-line mb-30">
+              When performing tasks that require some processing time, like loading data or fetching information, a loading indicator
+              may be displayed to show that the system is working.
+            </p>
+            <div class="bg-white form">
+              <div class="form-body">
+                <strong class="sub-line fw-bold mb-3 d-block">Account Photo</strong>
+                <div class="row">
+                  <div class="col">
+                    <p class="sub-line mb-0">
+                      Only .jpg and .png files. 500KB <br> Max file size.
+                    </p>
+                  </div>
+                  <div class="col">
+                    <div class="card-loader d-flex align-items-center">
+                      <p class="sub-line mb-0">Load Photo.png</p>
+                      <div class="custom-loader custom-loader-small ms-auto"></div>
+                    </div>
+                    <p class="sub-line mb-0 mt-3">Example of a Loading spinners in Image loading</p>
+                  </div>
+                  <div class="col-auto ms-auto">
+                    <a href="#" class="btn btn-primary">Load Photo</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card card-nav bg-white mb-30 border-0">
+          <div class="card-body card-nav-body1">
+            <h2 class="product-range-title text-uppercase mb-4">
+              Arrow Click
+            </h2>
+            <p class="sub-line">
+              When a user clicks on an Arrow, it may visually change its appearance by highlighting, changing color, or showing a
+              loading animation to indicate that the action is being processed.
+            </p>
+            <p class="sub-line">
+              When a user hovers the mouse cursor over an interactive element, it may change its color, size, or display additional
+              information through a tooltip.
+            </p>
+          </div>
+          <img src="images/product-img.png" width="1074" height="554" alt="" title="" class="img-fluid mx-auto">
+        </div>
+
+
+        <div class="card card-nav bg-white mb-30 border-0">
+          <div class="card-body card-nav-body1">
+            <h2 class="product-range-title text-uppercase mb-4">
+              Image Hover
+            </h2>
+            <p class="sub-line">
+              An "image hover show description" UI refers to a user interface design element where additional information or a
+              description is displayed when the user hovers their mouse cursor over an image. It is a form of interactive feedback
+              that enhances the user experience by providing context or details about the image without requiring a click or leaving
+              the current page.
+            </p>
+            <!-- <p class="sub-line">
+              When a user hovers the mouse cursor over an interactive element, it may change its color, size, or display additional
+              information through a tooltip.
+            </p> -->
+          </div>
+          <img src="images/product-img2.png" width="1079" height="368" alt="" title="" class="img-fluid mx-auto">
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Commercial Design Systems</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.1.2/css/ion.rangeSlider.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <aside class="left-sidebar" id="sidebar">
+        <ul class="nav flex-column left-sidebar__column">
+            <li>
+                <a class="nav-link" href="index.html">INDEX</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="color.html">1. Colors</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="typography.html">2. Typography</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="header-banner.html">3. Layout Structure</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="icons.html">4. Icons</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="button.html">5. Buttons, Radio Button</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="input-field.html">6. Input Fields</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="card.html">7. Card</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="loader.html">8. Loader</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="date-picker.html">9. Date Picker</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="checkbox.html">10. Check Box</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="drag-and-drop.html">11. Drag & Drop</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="navigation.html">12. Navigation</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="notification.html">13. Notifications</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="imagery.html">14. Imagery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="search.html">15. Search</a>
+              <!-- <ul class="list-unstyled nav-inner d-block">
+                <li class="nav-inner__list">
+                  <a href="#search-stages" class="nav-inner__list--text">Search Stages</a>
+                </li>
+                <li class="nav-inner__list">
+                  <a href="#variations" class="nav-inner__list--text">Variations</a>
+                </li>
+                <li class="nav-inner__list">
+                  <a href="#example" class="nav-inner__list--text">Example</a>
+                </li>
+              </ul> -->
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="switch.html">16. Switch</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="overlays.html">17. Overlays</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pagination.html">18. Pagination</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="player.html">19. Player</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-link-active" href="javascript:void(0)">20. Slider</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="slideshow.html">21. Slideshow</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="table.html">22. Table</a>
+            </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link" href="#">23. Response Effect</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">24. Transitions</a>
+            </li> -->
+        </ul>
+    </aside>
+    <main class="main" data-bs-spy="scroll" data-bs-target="#sidebar" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="false">
+      <div class="d-flex align-items-center page-header" id="page-header">
+        <h1 class="color-palette--title mb-0">Slider</h1>
+        <a href="#" class="btn btn-primary ms-auto">Download More</a>
+        <a class="btn btn-outline-primary ms-4" href="https://www.figma.com/proto/BNspPo1UTQoTvEyBgp5kAY/Commercial-Design-System?type=design&node-id=726-2228&t=zTAFhnKrOaWxUeRp-0&scaling=min-zoom&page-id=12%3A21" target="_blank">View Figma File</a>
+      </div>
+        <!-- <h1 class="color-palette--title mb-4">Slider</h1> -->
+        <p class="sub-line">
+          Sliders allow the selection of a value or a value range on a given scale. The scale can contain steps or allow
+          continuously variable selection. Values for selection on the scale can be communicated numerically or else by means of a
+          text label.
+        </p>
+        <p class="sub-line">
+          The size of the slider depends on the basic type size used, which can adapt to the viewport width in question. As such,
+          the size of the sliders is flexible. Sliders are available in black and white.
+        </p>
+        <h2 class="mt-5 product-range-title text-uppercase text-center mb-3">
+          Light Theme
+        </h2>
+        <div class="card card-nav" style="border-color:#f5f5f5;">
+          <div class="card-body card-nav-body py-4">
+            <div class="input-width mx-auto">
+              <div class="input-block d-flex align-items-center">
+                <span class="input-block-title">Heading Here</span>
+                <span class="ms-auto input-block-title">00</span>
+              </div>
+              <input type="text" class="range-slider-available" id="{{id}}" name="{{name}}" data-name="{{data-name}}" value=" " />
+              <div class="range-slider-content d-flex align-items-center">
+                <span>00</span>
+                <span class="ms-auto">1000</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- dark theme -->
+        <h2 class="product-range-title text-uppercase text-center mb-3 mt-100">
+          Dark Theme
+        </h2>
+        <div class="card card-nav card-slider-dark">
+          <div class="card-body card-nav-body py-4">
+            <div class="input-width mx-auto">
+              <div class="input-block d-flex align-items-center">
+                <span class="input-block-title text-white">Heading Here</span>
+                <span class="ms-auto input-block-title text-white">00</span>
+              </div>
+              <input type="text" class="range-slider-available" id="{{id}}" name="{{name}}" data-name="{{data-name}}" value=" " />
+              <div class="range-slider-content d-flex align-items-center">
+                <span class="text-white">00</span>
+                <span class="ms-auto text-white">1000</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <h2 class="product-range-title text-uppercase mb-2 mt-100 text-dark-emphasis">
+          Example
+        </h2>
+        <p class="sub-line text-dark-emphasis" style="margin-bottom:80px;">
+          In web forms, sliders are commonly used as a user interface element for selecting a value within a predefined range.
+          Sliders provide an interactive way for users to input data by sliding a handle along a track, representing the range of
+          values available. Here's how you can use sliders in a form section:
+        </p>
+
+        <div style="opacity:0.30;">
+          <h5 class="dropzone-title-small">Drop zone Example</h5>
+          <h4 class="product-range-title text-uppercase mb-3">Calculate Your Vehicle Loan EMI</h4>
+          <p class="dropzone-text" style="margin-bottom:30px;">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. incididunt.
+            accumsan lacus vel facilisis.
+          </p>
+          <div class="row">
+            <div class="col-6 mb-30">
+              <input type="text" class="form-control form-control-custom form-control-lg" placeholder="Your Name*">
+            </div>
+            <div class="col-6 mb-30">
+              <input type="text" class="form-control form-control-custom form-control-lg" placeholder="Your Name*">
+            </div>
+            <div class="col-6">
+                <div class="input-block d-flex align-items-center">
+                  <span class="input-block-title" style="color:#7C7B80;">Loan Amount</span>
+                  <span class="ms-auto input-block-title">00</span>
+                </div>
+                <input type="text" class="range-slider-available" id="{{id}}" name="{{name}}" data-name="{{data-name}}" value=" " />
+                <div class="range-slider-content d-flex align-items-center">
+                  <span>00</span>
+                  <span class="ms-auto">1 00 000</span>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="input-block d-flex align-items-center">
+                  <span class="input-block-title" style="color:#7C7B80;">ROI</span>
+                  <span class="ms-auto input-block-title">04%</span>
+                </div>
+                <input type="text" class="range-slider-available" id="{{id}}" name="{{name}}" data-name="{{data-name}}" value=" " />
+                <div class="range-slider-content d-flex align-items-center">
+                  <span>00</span>
+                  <span class="ms-auto">15%</span>
+                </div>
+            </div>
+          </div>
+          <div class="form-check form-check-custom">
+            <input class="form-check-input form-check-input-custom" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label form-check-custom-label ms-2" for="flexCheckDefault">
+              I agree that by clicking the ‘Continue’ button below, I am explicitly soliciting a call from Maruti Suzuki India Ltd. Or
+              its partners on my ‘Mobile’. <br> The fields marked as * are mandatory
+            </label>
+          </div>
+          <a href="#" class="btn btn-primary btn-sm mt-4">Submit</a>
+        </div>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.1.2/js/ion.rangeSlider.min.js"></script>
+    <script src="script/custom.js"></script>
+    <script>
+      const pageHeader = document.getElementById('page-header')
+      document.addEventListener("scroll", (event) => {
+          const topScroll = window.pageYOffset
+          
+          console.log(topScroll)
+          if(topScroll > 100){
+              pageHeader.classList.add('page-header-sticky')
+          }else{
+              pageHeader.classList.remove('page-header-sticky')
+          }
+      });
+  </script>
+</body>
+</html>

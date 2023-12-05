@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Commercial Design Systems</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <aside class="left-sidebar" id="sidebar">
+        <ul class="nav flex-column left-sidebar__column">
+            <li>
+                <a class="nav-link" href="index.html">INDEX</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="color.html">1. Colors</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="typography.html">2. Typography</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="header-banner.html">3. Layout Structure</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="icons.html">4. Icons</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="button.html">5. Buttons, Radio Button</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="input-field.html">6. Input Fields</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="card.html">7. Card</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="loader.html">8. Loader</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="date-picker.html">9. Date Picker</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="checkbox.html">10. Check Box</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-link-active" href="javascript:void(0)">11. Drag & Drop</a>
+              <ul class="list-unstyled nav-inner">
+                <li class="nav-inner__list">
+                  <a href="#id-dropzone"  class="nav-inner__list--text">Dropzone</a>
+                </li>
+                <li class="nav-inner__list">
+                  <a href="#draggable-list" class="nav-inner__list--text">Draggable List</a>
+                </li>
+                <li class="nav-inner__list">
+                  <a href="#dropzone-example" class="nav-inner__list--text">Drop Zone Example</a>
+                </li>
+            </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="navigation.html">12. Navigation</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="notification.html">13. Notifications</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="imagery.html">14. Imagery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="search.html">15. Search</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="switch.html">16. Switch</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="overlays.html">17. Overlays</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pagination.html">18. Pagination</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="player.html">19. Player</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="slider.html">20. Slider</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="slideshow.html">21. Slideshow</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="table.html">22. Table</a>
+            </li>
+        </ul>
+    </aside>
+    <main class="main">
+      <div class="d-flex align-items-center page-header" id="page-header">
+        <h1 class="color-palette--title mb-0">Drag & Drop</h1>
+        <a href="#" class="btn btn-primary ms-auto">Download More</a>
+        <a class="btn btn-outline-primary ms-4" href="https://www.figma.com/proto/BNspPo1UTQoTvEyBgp5kAY/Commercial-Design-System?type=design&node-id=645-2079&t=zTAFhnKrOaWxUeRp-0&scaling=min-zoom&page-id=11%3A13" target="_blank">View Figma File</a>
+      </div>
+        
+        <p class="sub-line">
+          The Drag & Drop mechanism enables the user to shift elements, change a sorting order or put an element in a particular place.
+        </p>
+        <p class="sub-line">
+          The size of the Drag & Drop components depends on the basic type size used, which adapt to the viewport width in
+          question. As such, the size of the components <br> is flexible. They are available in a dark and a light version.
+        </p>
+        <h2 class="mt-5 product-range-title text-uppercase mb-3" id="id-dropzone">
+          Dropzone
+        </h2>
+        <p class="sub-line">
+          The dropzone allows files to be uploaded intuitively. When shifting a file by means of Drag & Drop, the area in which it can be deposited can be graphically highlighted.
+        </p>
+        <p class="sub-line">
+          The dropzone should only be applied if Drag & Drop shifting of files is possible in the system.
+        </p>
+
+        <div class="row g-0 column-gap-4 mt-5">
+          <div class="col-auto">
+            <div class="upload-block">
+              <span class="upload-block-title mb-2">Default</span>
+              <div class="upload-block-body d-flex flex-column align-items-center justify-content-center">
+                <a href="#" class="d-block mb-4">
+                  <svg width="69" height="68" viewBox="0 0 69 68" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g opacity="0.3">
+                      <path
+                        d="M34.5003 62.3337C50.1484 62.3337 62.8337 49.6484 62.8337 34.0003C62.8337 18.3523 50.1484 5.66699 34.5003 5.66699C18.8523 5.66699 6.16699 18.3523 6.16699 34.0003C6.16699 49.6484 18.8523 62.3337 34.5003 62.3337Z"
+                        stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                      <path d="M45.833 36.834L34.4997 25.5007L23.1663 36.834" stroke="black" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                      <path d="M34.5 48.167V25.5003" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                      <path d="M45.833 17H23.1663" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </g>
+                  </svg>
+                </a>
+                <p class="upload-block-body-text">Drop file Here or <br> Click to upload </p>
+                <p class="upload-block-body-text">Max 5 MB</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-auto">
+            <div class="upload-block">
+              <span class="upload-block-title mb-2">Hover</span>
+              <div class="upload-block-body d-flex flex-column align-items-center justify-content-center border-black">
+                <a href="#" class="d-block mb-4">
+                  <svg width="69" height="68" viewBox="0 0 69 68" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M34.4997 5.66634C18.8516 5.66634 6.16634 18.3516 6.16634 33.9997C6.16634 49.6477 18.8516 62.333 34.4997 62.333C50.1477 62.333 62.833 49.6477 62.833 33.9997C62.833 18.3516 50.1477 5.66634 34.4997 5.66634Z"
+                      stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M45.833 34L34.4997 22.6667L23.1663 34" stroke="black" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                    <path d="M34.5 45.333V22.6663" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </a>
+                <p class="upload-block-body-text text-black">Drop file Here or <br> Click to upload </p>
+                <p class="upload-block-body-text text-black">Max 5 MB</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-auto">
+            <div class="upload-block">
+              <span class="upload-block-title mb-2">Active</span>
+              <div class="upload-block-body d-flex flex-column align-items-center justify-content-center border-black">
+                <a href="#" class="d-block mb-4">
+                  <svg width="69" height="68" viewBox="0 0 69 68" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M34.5003 62.3337C50.1488 62.3337 62.8337 49.6488 62.8337 34.0003C62.8337 18.3518 50.1488 5.66699 34.5003 5.66699C18.8518 5.66699 6.16699 18.3518 6.16699 34.0003C6.16699 49.6488 18.8518 62.3337 34.5003 62.3337Z"
+                      stroke="#009900" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M26 33.9997L31.6667 39.6663L43 28.333" stroke="#009900" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+                </a>
+                <p class="upload-block-body-text text-black text-center">SomeFile.png <br> 2 MB</p>
+                <p class="upload-block-body-text text-black">upload Complicate</p>
+              </div>
+            </div>
+          </div>
+        </div>
+ 
+        <div class="bg-black p-5 mt-5">
+          <div class="row g-0 column-gap-4">
+            <div class="col-auto">
+              <div class="upload-block">
+                <span class="upload-block-title mb-2 text-white">Default</span>
+                <div class="upload-block-body d-flex flex-column align-items-center justify-content-center upload-block-body-reverse">
+                  <a href="#" class="d-block mb-4">
+                    <svg width="69" height="68" viewBox="0 0 69 68" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g opacity="0.3">
+                        <path
+                          d="M34.5003 62.3337C50.1484 62.3337 62.8337 49.6484 62.8337 34.0003C62.8337 18.3523 50.1484 5.66699 34.5003 5.66699C18.8523 5.66699 6.16699 18.3523 6.16699 34.0003C6.16699 49.6484 18.8523 62.3337 34.5003 62.3337Z"
+                          stroke="#E6E7E8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M45.833 36.834L34.4997 25.5007L23.1663 36.834" stroke="#E6E7E8" stroke-width="2" stroke-linecap="round"
+                          stroke-linejoin="round" />
+                        <path d="M34.5 48.167V25.5003" stroke="#E6E7E8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M45.833 17H23.1663" stroke="#E6E7E8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                      </g>
+                    </svg>
+                  </a>
+                  <p class="upload-block-body-text upload-block-body-text-reverse mb-3">Drop file Here or <br> Click to upload </p>
+                  <p class="upload-block-body-text upload-block-body-text-reverse mb-0">Max 5 MB</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-auto">
+              <div class="upload-block">
+                <span class="upload-block-title mb-2 text-white">Hover</span>
+                <div class="upload-block-body d-flex flex-column align-items-center justify-content-center upload-block-body-reverse">
+                  <a href="#" class="d-block mb-4">
+                    <svg width="69" height="68" viewBox="0 0 69 68" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M34.4997 5.66634C18.8516 5.66634 6.16634 18.3516 6.16634 33.9997C6.16634 49.6477 18.8516 62.333 34.4997 62.333C50.1477 62.333 62.833 49.6477 62.833 33.9997C62.833 18.3516 50.1477 5.66634 34.4997 5.66634Z"
+                        stroke="#E6E7E8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                      <path d="M45.833 34L34.4997 22.6667L23.1663 34" stroke="#E6E7E8" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                      <path d="M34.5 45.333V22.6663" stroke="#E6E7E8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </a>
+                  <p class="upload-block-body-text upload-block-body-text-reverse mb-3">Drop file Here or <br> Click to upload </p>
+                  <p class="upload-block-body-text upload-block-body-text-reverse">Max 5 MB</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-auto">
+              <div class="upload-block">
+                <span class="upload-block-title mb-2 text-white">Active</span>
+                <div class="upload-block-body d-flex flex-column align-items-center justify-content-center upload-block-body-reverse">
+                  <a href="#" class="d-block mb-4">
+                    <svg width="69" height="68" viewBox="0 0 69 68" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M34.5003 62.3337C50.1488 62.3337 62.8337 49.6488 62.8337 34.0003C62.8337 18.3518 50.1488 5.66699 34.5003 5.66699C18.8518 5.66699 6.16699 18.3518 6.16699 34.0003C6.16699 49.6488 18.8518 62.3337 34.5003 62.3337Z"
+                        stroke="#009900" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                      <path d="M26 33.9997L31.6667 39.6663L43 28.333" stroke="#009900" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    </svg>
+                  </a>
+                  <p class="upload-block-body-text text-center mb-3 upload-block-body-text-reverse-1">SomeFile.png <br> 2 MB</p>
+                  <p class="upload-block-body-text upload-block-body-text-reverse-1 mb-0">upload Complicate</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h2 class="mt-5 product-range-title text-uppercase mb-3" id="draggable-list">
+          Draggable List
+        </h2>
+        <p class="sub-line">
+          Elements of the sortable list can be shifted in terms of their positioning relative to each other. When an entry is moved, possible destinations are shown graphically.
+        </p>
+
+        <div class="row g-0 draggable-list">
+          <div class="col">
+            <div class="draggable-list-title">
+              Default
+            </div>
+            <ul class="list-group">
+              <li class="list-group-item draggable-list__list d-flex align-items-center">
+                <div class="draggable-list__list--item d-flex align-items-center">
+                  <img src="images/shopping-cart-dark.png" alt="" class="me-2">
+                  Item 1
+                </div>
+                <div class="draggable-list__list--icon ms-auto">
+                  <svg width="27" height="16" viewBox="0 0 27 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M25.8607 15.9536H1.13946C0.893721 15.9536 0.694336 15.7542 0.694336 15.5085V14.2642C0.694336 14.0184 0.893721 13.8194 1.13946 13.8194H25.8607C26.1064 13.8194 26.3058 14.0184 26.3058 14.2642V15.5085C26.3058 15.7542 26.1064 15.9536 25.8607 15.9536ZM25.8607 9.06703H1.13946C0.893721 9.06703 0.694336 8.86764 0.694336 8.6219V7.37759C0.694336 7.13185 0.893721 6.93246 1.13946 6.93246H25.8607C26.1064 6.93246 26.3058 7.13185 26.3058 7.37759V8.6219C26.3058 8.86764 26.1064 9.06703 25.8607 9.06703ZM25.8607 2.18005H1.13946C0.893721 2.18005 0.694336 1.98067 0.694336 1.73492V0.490616C0.694336 0.244873 0.893721 0.0458984 1.13946 0.0458984H25.8607C26.1064 0.0458984 26.3058 0.244873 26.3058 0.490616V1.73492C26.3058 1.98067 26.1064 2.18005 25.8607 2.18005Z"
+                      fill="#7C7B80" />
+                  </svg>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="col">
+            <div class="draggable-list-title">
+              Hover
+            </div>
+            <ul class="list-group">
+              <li class="list-group-item draggable-list__list d-flex align-items-center">
+                <div class="draggable-list__list--item d-flex align-items-center">
+                  <img src="images/shopping-cart-dark.png" alt="" class="me-2">
+                  Item 1
+                </div>
+                <div class="draggable-list__list--icon ms-auto">
+                  <svg width="27" height="16" viewBox="0 0 27 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M25.8607 15.9536H1.13946C0.893721 15.9536 0.694336 15.7542 0.694336 15.5085V14.2642C0.694336 14.0184 0.893721 13.8194 1.13946 13.8194H25.8607C26.1064 13.8194 26.3058 14.0184 26.3058 14.2642V15.5085C26.3058 15.7542 26.1064 15.9536 25.8607 15.9536ZM25.8607 9.06703H1.13946C0.893721 9.06703 0.694336 8.86764 0.694336 8.6219V7.37759C0.694336 7.13185 0.893721 6.93246 1.13946 6.93246H25.8607C26.1064 6.93246 26.3058 7.13185 26.3058 7.37759V8.6219C26.3058 8.86764 26.1064 9.06703 25.8607 9.06703ZM25.8607 2.18005H1.13946C0.893721 2.18005 0.694336 1.98067 0.694336 1.73492V0.490616C0.694336 0.244873 0.893721 0.0458984 1.13946 0.0458984H25.8607C26.1064 0.0458984 26.3058 0.244873 26.3058 0.490616V1.73492C26.3058 1.98067 26.1064 2.18005 25.8607 2.18005Z"
+                      fill="#7C7B80" />
+                  </svg>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="col">
+            <ul class="list-group">
+              <div class="draggable-list-title">
+                Active
+              </div>
+              <ul class="list-group">
+                <li class="list-group-item draggable-list__list d-flex align-items-center draggable-list__list--active">
+                  <div class="draggable-list__list--item d-flex align-items-center">
+                    <img src="images/shopping-cart-dark.png" alt="" class="me-2">
+                    Item 1
+                  </div>
+                  <div class="draggable-list__list--icon ms-auto">
+                    <svg width="27" height="16" viewBox="0 0 27 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M25.8607 15.9536H1.13946C0.893721 15.9536 0.694336 15.7542 0.694336 15.5085V14.2642C0.694336 14.0184 0.893721 13.8194 1.13946 13.8194H25.8607C26.1064 13.8194 26.3058 14.0184 26.3058 14.2642V15.5085C26.3058 15.7542 26.1064 15.9536 25.8607 15.9536ZM25.8607 9.06703H1.13946C0.893721 9.06703 0.694336 8.86764 0.694336 8.6219V7.37759C0.694336 7.13185 0.893721 6.93246 1.13946 6.93246H25.8607C26.1064 6.93246 26.3058 7.13185 26.3058 7.37759V8.6219C26.3058 8.86764 26.1064 9.06703 25.8607 9.06703ZM25.8607 2.18005H1.13946C0.893721 2.18005 0.694336 1.98067 0.694336 1.73492V0.490616C0.694336 0.244873 0.893721 0.0458984 1.13946 0.0458984H25.8607C26.1064 0.0458984 26.3058 0.244873 26.3058 0.490616V1.73492C26.3058 1.98067 26.1064 2.18005 25.8607 2.18005Z"
+                        fill="#7C7B80" />
+                    </svg>
+                  </div>
+                </li>
+              </ul>
+            </ul>
+          </div>
+        </div>
+        <div class="bg-black mt-4 p-4">
+          <div class="row g-0 draggable-list">
+            <div class="col">
+              <ul class="list-group">
+                <li class="list-group-item draggable-list__list draggable-list__list-reverse d-flex align-items-center">
+                  <div class="draggable-list__list--item draggable-list__list--item-reverse d-flex align-items-center">
+                    <img src="images/shopping-cart-white.png" alt="" class="me-2">
+                    Item 1
+                  </div>
+                  <div class="draggable-list__list--icon ms-auto">
+                    <svg width="27" height="16" viewBox="0 0 27 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M25.8607 15.9536H1.13946C0.893721 15.9536 0.694336 15.7542 0.694336 15.5085V14.2642C0.694336 14.0184 0.893721 13.8194 1.13946 13.8194H25.8607C26.1064 13.8194 26.3058 14.0184 26.3058 14.2642V15.5085C26.3058 15.7542 26.1064 15.9536 25.8607 15.9536ZM25.8607 9.06703H1.13946C0.893721 9.06703 0.694336 8.86764 0.694336 8.6219V7.37759C0.694336 7.13185 0.893721 6.93246 1.13946 6.93246H25.8607C26.1064 6.93246 26.3058 7.13185 26.3058 7.37759V8.6219C26.3058 8.86764 26.1064 9.06703 25.8607 9.06703ZM25.8607 2.18005H1.13946C0.893721 2.18005 0.694336 1.98067 0.694336 1.73492V0.490616C0.694336 0.244873 0.893721 0.0458984 1.13946 0.0458984H25.8607C26.1064 0.0458984 26.3058 0.244873 26.3058 0.490616V1.73492C26.3058 1.98067 26.1064 2.18005 25.8607 2.18005Z"
+                        fill="#fff" />
+                    </svg>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="col">
+              <ul class="list-group">
+                <li class="list-group-item draggable-list__list draggable-list__list-reverse d-flex align-items-center">
+                  <div class="draggable-list__list--item draggable-list__list--item-reverse d-flex align-items-center">
+                    <img src="images/shopping-cart-white.png" alt="" class="me-2">
+                    Item 1
+                  </div>
+                  <div class="draggable-list__list--icon ms-auto">
+                    <svg width="27" height="16" viewBox="0 0 27 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M25.8607 15.9536H1.13946C0.893721 15.9536 0.694336 15.7542 0.694336 15.5085V14.2642C0.694336 14.0184 0.893721 13.8194 1.13946 13.8194H25.8607C26.1064 13.8194 26.3058 14.0184 26.3058 14.2642V15.5085C26.3058 15.7542 26.1064 15.9536 25.8607 15.9536ZM25.8607 9.06703H1.13946C0.893721 9.06703 0.694336 8.86764 0.694336 8.6219V7.37759C0.694336 7.13185 0.893721 6.93246 1.13946 6.93246H25.8607C26.1064 6.93246 26.3058 7.13185 26.3058 7.37759V8.6219C26.3058 8.86764 26.1064 9.06703 25.8607 9.06703ZM25.8607 2.18005H1.13946C0.893721 2.18005 0.694336 1.98067 0.694336 1.73492V0.490616C0.694336 0.244873 0.893721 0.0458984 1.13946 0.0458984H25.8607C26.1064 0.0458984 26.3058 0.244873 26.3058 0.490616V1.73492C26.3058 1.98067 26.1064 2.18005 25.8607 2.18005Z"
+                        fill="#fff" />
+                    </svg>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="col">
+              <ul class="list-group">
+                <ul class="list-group">
+                  <li class="list-group-item draggable-list__list d-flex draggable-list__list-reverse align-items-center draggable-list__list--active-reverse">
+                    <div class="draggable-list__list--item draggable-list__list--item-reverse d-flex align-items-center">
+                      <img src="images/shopping-cart-white.png" alt="" class="me-2">
+                      Item 1
+                    </div>
+                    <div class="draggable-list__list--icon ms-auto">
+                      <svg width="27" height="16" viewBox="0 0 27 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M25.8607 15.9536H1.13946C0.893721 15.9536 0.694336 15.7542 0.694336 15.5085V14.2642C0.694336 14.0184 0.893721 13.8194 1.13946 13.8194H25.8607C26.1064 13.8194 26.3058 14.0184 26.3058 14.2642V15.5085C26.3058 15.7542 26.1064 15.9536 25.8607 15.9536ZM25.8607 9.06703H1.13946C0.893721 9.06703 0.694336 8.86764 0.694336 8.6219V7.37759C0.694336 7.13185 0.893721 6.93246 1.13946 6.93246H25.8607C26.1064 6.93246 26.3058 7.13185 26.3058 7.37759V8.6219C26.3058 8.86764 26.1064 9.06703 25.8607 9.06703ZM25.8607 2.18005H1.13946C0.893721 2.18005 0.694336 1.98067 0.694336 1.73492V0.490616C0.694336 0.244873 0.893721 0.0458984 1.13946 0.0458984H25.8607C26.1064 0.0458984 26.3058 0.244873 26.3058 0.490616V1.73492C26.3058 1.98067 26.1064 2.18005 25.8607 2.18005Z"
+                          fill="#fff" />
+                      </svg>
+                    </div>
+                  </li>
+                </ul>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="row g-0 draggable-list-1">
+          <div class="col">
+            <div class="draggable-list1-title">List Example with icon</div>
+            <ul class="list-group">
+              <li class="list-group-item draggable-list__list d-flex align-items-center">
+                <div class="draggable-list__list--item d-flex align-items-center">
+                  <img src="images/shopping-cart-dark.png" alt="" class="me-2">
+                  Item 1
+                </div>
+                <div class="draggable-list__list--icon ms-auto">
+                  <svg width="27" height="16" viewBox="0 0 27 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M25.8607 15.9536H1.13946C0.893721 15.9536 0.694336 15.7542 0.694336 15.5085V14.2642C0.694336 14.0184 0.893721 13.8194 1.13946 13.8194H25.8607C26.1064 13.8194 26.3058 14.0184 26.3058 14.2642V15.5085C26.3058 15.7542 26.1064 15.9536 25.8607 15.9536ZM25.8607 9.06703H1.13946C0.893721 9.06703 0.694336 8.86764 0.694336 8.6219V7.37759C0.694336 7.13185 0.893721 6.93246 1.13946 6.93246H25.8607C26.1064 6.93246 26.3058 7.13185 26.3058 7.37759V8.6219C26.3058 8.86764 26.1064 9.06703 25.8607 9.06703ZM25.8607 2.18005H1.13946C0.893721 2.18005 0.694336 1.98067 0.694336 1.73492V0.490616C0.694336 0.244873 0.893721 0.0458984 1.13946 0.0458984H25.8607C26.1064 0.0458984 26.3058 0.244873 26.3058 0.490616V1.73492C26.3058 1.98067 26.1064 2.18005 25.8607 2.18005Z"
+                      fill="#7C7B80" />
+                  </svg>
+                </div>
+              </li>
+              <li class="list-group-item draggable-list__list d-flex align-items-center">
+                <div class="draggable-list__list--item d-flex align-items-center">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="me-2">
+                    <path
+                      d="M22 11.0799V11.9999C21.9988 14.1563 21.3005 16.2545 20.0093 17.9817C18.7182 19.7088 16.9033 20.9723 14.8354 21.5838C12.7674 22.1952 10.5573 22.1218 8.53447 21.3744C6.51168 20.6271 4.78465 19.246 3.61096 17.4369C2.43727 15.6279 1.87979 13.4879 2.02168 11.3362C2.16356 9.18443 2.99721 7.13619 4.39828 5.49694C5.79935 3.85768 7.69279 2.71525 9.79619 2.24001C11.8996 1.76477 14.1003 1.9822 16.07 2.85986"
+                      stroke="#7C7B80" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M22 4L12 14.01L9 11.01" stroke="#7C7B80" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                  Item 2
+                </div>
+                <div class="draggable-list__list--icon ms-auto">
+                  <svg width="27" height="16" viewBox="0 0 27 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M25.8607 15.9536H1.13946C0.893721 15.9536 0.694336 15.7542 0.694336 15.5085V14.2642C0.694336 14.0184 0.893721 13.8194 1.13946 13.8194H25.8607C26.1064 13.8194 26.3058 14.0184 26.3058 14.2642V15.5085C26.3058 15.7542 26.1064 15.9536 25.8607 15.9536ZM25.8607 9.06703H1.13946C0.893721 9.06703 0.694336 8.86764 0.694336 8.6219V7.37759C0.694336 7.13185 0.893721 6.93246 1.13946 6.93246H25.8607C26.1064 6.93246 26.3058 7.13185 26.3058 7.37759V8.6219C26.3058 8.86764 26.1064 9.06703 25.8607 9.06703ZM25.8607 2.18005H1.13946C0.893721 2.18005 0.694336 1.98067 0.694336 1.73492V0.490616C0.694336 0.244873 0.893721 0.0458984 1.13946 0.0458984H25.8607C26.1064 0.0458984 26.3058 0.244873 26.3058 0.490616V1.73492C26.3058 1.98067 26.1064 2.18005 25.8607 2.18005Z"
+                      fill="#7C7B80" />
+                  </svg>
+                </div>
+              </li>
+              <li class="list-group-item draggable-list__list d-flex align-items-center bg-light draggable-list__list--shadow">
+                <div class="draggable-list__list--item d-flex align-items-center">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="me-2">
+                  <path d="M12 17V3" stroke="#7C7B80" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M6 11L12 17L18 11" stroke="#7C7B80" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M19 21H5" stroke="#7C7B80" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  Item 3
+                </div>
+                <div class="draggable-list__list--icon ms-auto">
+                  <svg width="27" height="16" viewBox="0 0 27 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M25.8607 15.9536H1.13946C0.893721 15.9536 0.694336 15.7542 0.694336 15.5085V14.2642C0.694336 14.0184 0.893721 13.8194 1.13946 13.8194H25.8607C26.1064 13.8194 26.3058 14.0184 26.3058 14.2642V15.5085C26.3058 15.7542 26.1064 15.9536 25.8607 15.9536ZM25.8607 9.06703H1.13946C0.893721 9.06703 0.694336 8.86764 0.694336 8.6219V7.37759C0.694336 7.13185 0.893721 6.93246 1.13946 6.93246H25.8607C26.1064 6.93246 26.3058 7.13185 26.3058 7.37759V8.6219C26.3058 8.86764 26.1064 9.06703 25.8607 9.06703ZM25.8607 2.18005H1.13946C0.893721 2.18005 0.694336 1.98067 0.694336 1.73492V0.490616C0.694336 0.244873 0.893721 0.0458984 1.13946 0.0458984H25.8607C26.1064 0.0458984 26.3058 0.244873 26.3058 0.490616V1.73492C26.3058 1.98067 26.1064 2.18005 25.8607 2.18005Z"
+                      fill="#7C7B80" />
+                  </svg>
+                </div>
+              </li>
+              <li class="list-group-item draggable-list__list d-flex align-items-center">
+                <div class="draggable-list__list--item d-flex align-items-center">
+                  <img src="images/search-grey-dark.png" alt="" class="me-2">
+                  Item 4
+                </div>
+                <div class="draggable-list__list--icon ms-auto">
+                  <svg width="27" height="16" viewBox="0 0 27 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M25.8607 15.9536H1.13946C0.893721 15.9536 0.694336 15.7542 0.694336 15.5085V14.2642C0.694336 14.0184 0.893721 13.8194 1.13946 13.8194H25.8607C26.1064 13.8194 26.3058 14.0184 26.3058 14.2642V15.5085C26.3058 15.7542 26.1064 15.9536 25.8607 15.9536ZM25.8607 9.06703H1.13946C0.893721 9.06703 0.694336 8.86764 0.694336 8.6219V7.37759C0.694336 7.13185 0.893721 6.93246 1.13946 6.93246H25.8607C26.1064 6.93246 26.3058 7.13185 26.3058 7.37759V8.6219C26.3058 8.86764 26.1064 9.06703 25.8607 9.06703ZM25.8607 2.18005H1.13946C0.893721 2.18005 0.694336 1.98067 0.694336 1.73492V0.490616C0.694336 0.244873 0.893721 0.0458984 1.13946 0.0458984H25.8607C26.1064 0.0458984 26.3058 0.244873 26.3058 0.490616V1.73492C26.3058 1.98067 26.1064 2.18005 25.8607 2.18005Z"
+                      fill="#7C7B80" />
+                  </svg>
+                </div>
+              </li>
+              <li class="list-group-item draggable-list__list d-flex align-items-center">
+                <div class="draggable-list__list--item d-flex align-items-center">
+                  <img src="images/shopping-cart-dark.png" alt="" class="me-2">
+                  Item 5
+                </div>
+                <div class="draggable-list__list--icon ms-auto">
+                  <svg width="27" height="16" viewBox="0 0 27 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M25.8607 15.9536H1.13946C0.893721 15.9536 0.694336 15.7542 0.694336 15.5085V14.2642C0.694336 14.0184 0.893721 13.8194 1.13946 13.8194H25.8607C26.1064 13.8194 26.3058 14.0184 26.3058 14.2642V15.5085C26.3058 15.7542 26.1064 15.9536 25.8607 15.9536ZM25.8607 9.06703H1.13946C0.893721 9.06703 0.694336 8.86764 0.694336 8.6219V7.37759C0.694336 7.13185 0.893721 6.93246 1.13946 6.93246H25.8607C26.1064 6.93246 26.3058 7.13185 26.3058 7.37759V8.6219C26.3058 8.86764 26.1064 9.06703 25.8607 9.06703ZM25.8607 2.18005H1.13946C0.893721 2.18005 0.694336 1.98067 0.694336 1.73492V0.490616C0.694336 0.244873 0.893721 0.0458984 1.13946 0.0458984H25.8607C26.1064 0.0458984 26.3058 0.244873 26.3058 0.490616V1.73492C26.3058 1.98067 26.1064 2.18005 25.8607 2.18005Z"
+                      fill="#7C7B80" />
+                  </svg>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="col">
+            <div class="draggable-list1-title">List Example without icon</div>
+            <ul class="list-group">
+              <li class="list-group-item draggable-list__list d-flex align-items-center">
+                <div class="draggable-list__list--item d-flex align-items-center">
+                  Item 1
+                </div>
+                <div class="draggable-list__list--icon ms-auto">
+                  <svg width="27" height="16" viewBox="0 0 27 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M25.8607 15.9536H1.13946C0.893721 15.9536 0.694336 15.7542 0.694336 15.5085V14.2642C0.694336 14.0184 0.893721 13.8194 1.13946 13.8194H25.8607C26.1064 13.8194 26.3058 14.0184 26.3058 14.2642V15.5085C26.3058 15.7542 26.1064 15.9536 25.8607 15.9536ZM25.8607 9.06703H1.13946C0.893721 9.06703 0.694336 8.86764 0.694336 8.6219V7.37759C0.694336 7.13185 0.893721 6.93246 1.13946 6.93246H25.8607C26.1064 6.93246 26.3058 7.13185 26.3058 7.37759V8.6219C26.3058 8.86764 26.1064 9.06703 25.8607 9.06703ZM25.8607 2.18005H1.13946C0.893721 2.18005 0.694336 1.98067 0.694336 1.73492V0.490616C0.694336 0.244873 0.893721 0.0458984 1.13946 0.0458984H25.8607C26.1064 0.0458984 26.3058 0.244873 26.3058 0.490616V1.73492C26.3058 1.98067 26.1064 2.18005 25.8607 2.18005Z"
+                      fill="#7C7B80" />
+                  </svg>
+                </div>
+              </li>
+              <li class="list-group-item draggable-list__list d-flex align-items-center">
+                <div class="draggable-list__list--item d-flex align-items-center">
+                  Item 2
+                </div>
+                <div class="draggable-list__list--icon ms-auto">
+                  <svg width="27" height="16" viewBox="0 0 27 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M25.8607 15.9536H1.13946C0.893721 15.9536 0.694336 15.7542 0.694336 15.5085V14.2642C0.694336 14.0184 0.893721 13.8194 1.13946 13.8194H25.8607C26.1064 13.8194 26.3058 14.0184 26.3058 14.2642V15.5085C26.3058 15.7542 26.1064 15.9536 25.8607 15.9536ZM25.8607 9.06703H1.13946C0.893721 9.06703 0.694336 8.86764 0.694336 8.6219V7.37759C0.694336 7.13185 0.893721 6.93246 1.13946 6.93246H25.8607C26.1064 6.93246 26.3058 7.13185 26.3058 7.37759V8.6219C26.3058 8.86764 26.1064 9.06703 25.8607 9.06703ZM25.8607 2.18005H1.13946C0.893721 2.18005 0.694336 1.98067 0.694336 1.73492V0.490616C0.694336 0.244873 0.893721 0.0458984 1.13946 0.0458984H25.8607C26.1064 0.0458984 26.3058 0.244873 26.3058 0.490616V1.73492C26.3058 1.98067 26.1064 2.18005 25.8607 2.18005Z"
+                      fill="#7C7B80" />
+                  </svg>
+                </div>
+              </li>
+              <li class="list-group-item draggable-list__list d-flex align-items-center draggable-list__list--shadow bg-light">
+                <div class="draggable-list__list--item d-flex align-items-center">
+                  Item 3
+                </div>
+                <div class="draggable-list__list--icon ms-auto">
+                  <svg width="27" height="16" viewBox="0 0 27 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M25.8607 15.9536H1.13946C0.893721 15.9536 0.694336 15.7542 0.694336 15.5085V14.2642C0.694336 14.0184 0.893721 13.8194 1.13946 13.8194H25.8607C26.1064 13.8194 26.3058 14.0184 26.3058 14.2642V15.5085C26.3058 15.7542 26.1064 15.9536 25.8607 15.9536ZM25.8607 9.06703H1.13946C0.893721 9.06703 0.694336 8.86764 0.694336 8.6219V7.37759C0.694336 7.13185 0.893721 6.93246 1.13946 6.93246H25.8607C26.1064 6.93246 26.3058 7.13185 26.3058 7.37759V8.6219C26.3058 8.86764 26.1064 9.06703 25.8607 9.06703ZM25.8607 2.18005H1.13946C0.893721 2.18005 0.694336 1.98067 0.694336 1.73492V0.490616C0.694336 0.244873 0.893721 0.0458984 1.13946 0.0458984H25.8607C26.1064 0.0458984 26.3058 0.244873 26.3058 0.490616V1.73492C26.3058 1.98067 26.1064 2.18005 25.8607 2.18005Z"
+                      fill="#7C7B80" />
+                  </svg>
+                </div>
+              </li>
+              <li class="list-group-item draggable-list__list d-flex align-items-center">
+                <div class="draggable-list__list--item d-flex align-items-center">
+                  Item 4
+                </div>
+                <div class="draggable-list__list--icon ms-auto">
+                  <svg width="27" height="16" viewBox="0 0 27 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M25.8607 15.9536H1.13946C0.893721 15.9536 0.694336 15.7542 0.694336 15.5085V14.2642C0.694336 14.0184 0.893721 13.8194 1.13946 13.8194H25.8607C26.1064 13.8194 26.3058 14.0184 26.3058 14.2642V15.5085C26.3058 15.7542 26.1064 15.9536 25.8607 15.9536ZM25.8607 9.06703H1.13946C0.893721 9.06703 0.694336 8.86764 0.694336 8.6219V7.37759C0.694336 7.13185 0.893721 6.93246 1.13946 6.93246H25.8607C26.1064 6.93246 26.3058 7.13185 26.3058 7.37759V8.6219C26.3058 8.86764 26.1064 9.06703 25.8607 9.06703ZM25.8607 2.18005H1.13946C0.893721 2.18005 0.694336 1.98067 0.694336 1.73492V0.490616C0.694336 0.244873 0.893721 0.0458984 1.13946 0.0458984H25.8607C26.1064 0.0458984 26.3058 0.244873 26.3058 0.490616V1.73492C26.3058 1.98067 26.1064 2.18005 25.8607 2.18005Z"
+                      fill="#7C7B80" />
+                  </svg>
+                </div>
+              </li>
+              <li class="list-group-item draggable-list__list d-flex align-items-center">
+                <div class="draggable-list__list--item d-flex align-items-center">
+                  Item 5
+                </div>
+                <div class="draggable-list__list--icon ms-auto">
+                  <svg width="27" height="16" viewBox="0 0 27 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M25.8607 15.9536H1.13946C0.893721 15.9536 0.694336 15.7542 0.694336 15.5085V14.2642C0.694336 14.0184 0.893721 13.8194 1.13946 13.8194H25.8607C26.1064 13.8194 26.3058 14.0184 26.3058 14.2642V15.5085C26.3058 15.7542 26.1064 15.9536 25.8607 15.9536ZM25.8607 9.06703H1.13946C0.893721 9.06703 0.694336 8.86764 0.694336 8.6219V7.37759C0.694336 7.13185 0.893721 6.93246 1.13946 6.93246H25.8607C26.1064 6.93246 26.3058 7.13185 26.3058 7.37759V8.6219C26.3058 8.86764 26.1064 9.06703 25.8607 9.06703ZM25.8607 2.18005H1.13946C0.893721 2.18005 0.694336 1.98067 0.694336 1.73492V0.490616C0.694336 0.244873 0.893721 0.0458984 1.13946 0.0458984H25.8607C26.1064 0.0458984 26.3058 0.244873 26.3058 0.490616V1.73492C26.3058 1.98067 26.1064 2.18005 25.8607 2.18005Z"
+                      fill="#7C7B80" />
+                  </svg>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="col">
+            <div class="draggable-list1-title">List Example without Bars</div>
+            <ul class="list-group">
+              <li class="list-group-item draggable-list__list d-flex align-items-center">
+                <div class="draggable-list__list--item d-flex align-items-center">
+                  Item 1
+                </div>
+              </li>
+              <li class="list-group-item draggable-list__list d-flex align-items-center">
+                <div class="draggable-list__list--item d-flex align-items-center">
+                  Item 2
+                </div>
+              </li>
+              <li class="list-group-item draggable-list__list d-flex align-items-center">
+                <div class="draggable-list__list--item d-flex align-items-center">
+                  Item 3
+                </div>
+              </li>
+              <li class="list-group-item draggable-list__list d-flex align-items-center">
+                <div class="draggable-list__list--item d-flex align-items-center">
+                  Item 4
+                </div>
+              </li>
+              <li class="list-group-item draggable-list__list d-flex align-items-center">
+                <div class="draggable-list__list--item d-flex align-items-center">
+                  Item 5
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Drop zone Example -->
+
+        <div class="dropzone mt-5">
+          <h6 class="dropzone-title-small" id="dropzone-example">Drop zone Example</h6>
+          <h3 class="dropzone-title opacity-25">File Transfer</h3>
+          <p class="dropzone-text opacity-25">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. incididunt. accumsan lacus vel facilisis. </p>
+          <div class="row g-0 g-35">
+            <div class="col">
+              <div class="dropzone__from opacity-25">
+                <input type="text" class="form-control mb-1" placeholder="Respected Email*">
+                <textarea name="" id="" cols="30" rows="5" class="form-control form-control--textarea" placeholder="Message"></textarea>
+              </div>
+            </div>
+            <div class="col">
+              <div class="upload-block opacity-25">
+                <div class="upload-block-body d-flex flex-column align-items-center justify-content-center w-100" style="height:228px;">
+                  <a href="#" class="d-block mb-3">
+                    <svg width="69" height="68" viewBox="0 0 69 68" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g opacity="0.3">
+                        <path d="M34.5003 62.3337C50.1484 62.3337 62.8337 49.6484 62.8337 34.0003C62.8337 18.3523 50.1484 5.66699 34.5003 5.66699C18.8523 5.66699 6.16699 18.3523 6.16699 34.0003C6.16699 49.6484 18.8523 62.3337 34.5003 62.3337Z" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M45.833 36.834L34.4997 25.5007L23.1663 36.834" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M34.5 48.167V25.5003" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M45.833 17H23.1663" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                      </g>
+                    </svg>
+                  </a>
+                  <p class="upload-block-body-text mb-3">Drop file Here or <br> Click to upload </p>
+                  <p class="upload-block-body-text mb-0">Max 5 MB</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="form-check form-check__custom opacity-25">
+            <input class="form-check-input form-check__custom--input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label form-check__custom--label" for="flexCheckDefault">
+              I agree that by clicking the ‘Continue’ button below, I am explicitly soliciting a call from Maruti Suzuki India Ltd. Or its partners on my ‘Mobile’.
+              <span class="form-check__custom--label-small">The fields marked as * are mandatory</span>
+            </label>
+          </div>
+          <a href="#" class="btn btn-primary btn-sm opacity-25">Submit</a>
+        </div>
+
+
+
+
+
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="script/custom.js"></script>
+    <script>
+      const pageHeader = document.getElementById('page-header')
+      document.addEventListener("scroll", (event) => {
+          const topScroll = window.pageYOffset
+          
+          console.log(topScroll)
+          if(topScroll > 100){
+              pageHeader.classList.add('page-header-sticky')
+          }else{
+              pageHeader.classList.remove('page-header-sticky')
+          }
+      });
+  </script>
+</body>
+</html>

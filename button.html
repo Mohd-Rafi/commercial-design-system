@@ -1,0 +1,1360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Commercial Design Systems</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <aside class="left-sidebar" id="sidebar">
+        <ul class="nav flex-column left-sidebar__column">
+            <li>
+                <a class="nav-link" href="index.html">INDEX</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="color.html">1. Colors</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="typography.html">2. Typography</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="header-banner.html">3. Layout Structure</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="icons.html">4. Icons</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link nav-link-active" href="javascript:void(0)">5. Buttons, Radio Button</a>
+                <ul class="list-unstyled nav-inner" style="display: block;">
+                    <li class="nav-inner__list">
+                      <a href="#primary-button"  class="nav-inner__list--text">Primary Button</a>
+                    </li>
+                    <li class="nav-inner__list">
+                      <a href="#secondary-button" class="nav-inner__list--text">Secondary Button</a>
+                    </li>
+                    <li class="nav-inner__list">
+                      <a href="#button-group" class="nav-inner__list--text">Button Groups</a>
+                    </li>
+                    <li class="nav-inner__list">
+                      <a href="#secondary-button-group" class="nav-inner__list--text">Secondary button group</a>
+                    </li>
+                    <li class="nav-inner__list">
+                        <a href="#text-button" class="nav-inner__list--text">Text Button</a>
+                    </li>
+                    <li class="nav-inner__list">
+                        <a href="#text-button-group" class="nav-inner__list--text">Text Button Group</a>
+                    </li>
+                    <li class="nav-inner__list">
+                        <a href="#system-icon-button" class="nav-inner__list--text">System Icon Button</a>
+                    </li>
+                    <li class="nav-inner__list">
+                        <a href="#system-icon-button-group" class="nav-inner__list--text">System Icon Button Groups</a>
+                    </li>
+                    <li class="nav-inner__list">
+                        <a href="#floating-button" class="nav-inner__list--text">Floating Button</a>
+                    </li>
+                    <li class="nav-inner__list">
+                        <a href="#stretched-primary-button" class="nav-inner__list--text">Stretched Primary Button</a>
+                    </li>
+                    <li class="nav-inner__list">
+                        <a href="#stretched-secondary-button" class="nav-inner__list--text">Stretched Secondary Button</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="input-field.html">6. Input Fields</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="card.html">7. Card</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="loader.html">8. Loader</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="date-picker.html">9. Date Picker</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="checkbox.html">10. Check Box</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="drag-and-drop.html">11. Drag & Drop</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="navigation.html">12. Navigation</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="notification.html">13. Notifications</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="imagery.html">14. Imagery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="search.html">15. Search</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="switch.html">16. Switch</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="overlays.html">17. Overlays</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pagination.html">18. Pagination</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="player.html">19. Player</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="slider.html">20. Slider</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="slideshow.html">21. Slideshow</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="table.html">22. Table</a>
+            </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link" href="#">23. Response Effect</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">24. Transitions</a>
+            </li> -->
+        </ul>
+    </aside>
+    <main class="main" data-bs-spy="scroll" data-bs-target="#sidebar" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true">
+        
+        <div class="d-flex align-items-center page-header" id="page-header">
+            <h1 class="color-palette--title mb-0">Buttons</h1>
+            <a href="#" class="btn btn-primary ms-auto">Download More</a>
+            <a class="btn btn-outline-primary ms-4" href="https://www.figma.com/proto/BNspPo1UTQoTvEyBgp5kAY/Commercial-Design-System?type=design&node-id=1178-3285&t=zTAFhnKrOaWxUeRp-0&scaling=min-zoom&page-id=11%3A9" target="_blank">View Figma File</a>
+        </div>
+        <div class="d-flex btn-content">
+            <div class="flex-shrink-0">
+              <h5 class="btn-content-title">Description</h5>
+            </div>
+            <div class="flex-grow-1 ms-5 ps-3">
+             <p class="btn-content-text">
+                Buttons can be used to show the user’s choice of options for actions and assign these to a clear hierarchy. The target page to be accessed or the action to be triggered is shown on the buttons by means of a label in Roboto Regular or else by an icon, or a combination of the two.
+             </p>
+             <p class="btn-content-text">
+                Buttons are either black or white. Buttons can be grouped.
+             </p>
+            </div>
+        </div>
+        <div class="d-flex btn-content">
+            <div class="flex-shrink-0">
+              <h5 class="btn-content-title">Button Sizes</h5>
+            </div>
+            <div class="flex-grow-1 ms-5 ps-3">
+             <p class="btn-content-text btn-content-text--y-gap">
+                The size of buttons depends on the base font size used which can be adapted to the viewport width. 
+             </p>
+             <ul class="list-unstyled list-btn-size">
+                <li class="list-btn-size__list">Small button at a base font size of 12 px</li>
+                <li class="list-btn-size__list">Medium sized button at a base font size of 16 px</li>
+             </ul>
+             <p class="btn-content-text">
+                The minimum width of primary and secondary buttons is defined as nine times the base font size. Thus, with a base font size of 16 px, the minimum button width is 9 × 16 px = 144 px.
+             </p>
+            </div>
+        </div>
+
+        <div id="primary-button">
+            <div class="button-block mt-0">
+                <h5 class="button-block-title">Primary Button</h5>
+                <p class="button-block-text">The primary button is used for the most important action on a page or in a view.
+                </p>
+                <div class="button-block__medium">
+                    <div class="row g-0 mb-4">
+                        <div class="col-auto col-80">
+                            <p class="button-block__medium--text mt-2">Default</p>
+                        </div>
+                        <div class="col-auto">
+                            <a href="" class="btn btn-primary button-block__medium--btn1">Primary</a>
+                        </div>
+                        <div class="col-auto">
+                            <a href="" class="btn btn-primary button-block__medium--btn2 d-flex align-items-center"> <i
+                                    class="search-icon"></i> Primary</a>
+                        </div>
+                        <div class="col-auto align-self-center">
+                            <a href="" class="btn btn-primary btn-sm button-block__medium--btn3">Call to action</a>
+                        </div>
+                        <div class="col-auto align-self-center">
+                            <a href="" class="btn btn-primary btn-sm d-flex align-items-center"> <i
+                                    class="search-icon-sm"></i>Call to action</a>
+                        </div>
+                    </div>
+                    <div class="row g-0 mb-4">
+                        <div class="col-auto col-80">
+                            <p class="button-block__medium--text mt-2">Hover</p>
+                        </div>
+                        <div class="col-auto">
+                            <a href="" class="btn btn-primary button-block__medium--btn1 btn-hover">Primary</a>
+                        </div>
+                        <div class="col-auto">
+                            <a href="" class="btn btn-primary button-block__medium--btn2 d-flex align-items-center btn-hover">
+                                <i class="search-icon"></i> Primary</a>
+                        </div>
+                        <div class="col-auto align-self-center">
+                            <a href="" class="btn btn-primary btn-sm button-block__medium--btn3 btn-hover">Call to action</a>
+                        </div>
+                        <div class="col-auto align-self-center">
+                            <a href="" class="btn btn-primary btn-sm d-flex align-items-center btn-hover"> <i
+                                    class="search-icon-sm"></i>Call to action</a>
+                        </div>
+                    </div>
+                    <div class="row g-0">
+                        <div class="col-auto col-80">
+                            <p class="button-block__medium--text mt-2">Disabled</p>
+                        </div>
+                        <div class="col-auto">
+                            <a href="" class="btn btn-primary button-block__medium--btn1 btn-disabled">Primary</a>
+                        </div>
+                        <div class="col-auto">
+                            <a href=""
+                                class="btn btn-primary button-block__medium--btn2 d-flex align-items-center btn-disabled"> <i
+                                    class="search-icon"></i> Primary</a>
+                        </div>
+                        <div class="col-auto align-self-center">
+                            <a href="" class="btn btn-primary btn-sm button-block__medium--btn3  btn-disabled">Call to
+                                action</a>
+                        </div>
+                        <div class="col-auto align-self-center">
+                            <a href="" class="btn btn-primary btn-sm d-flex align-items-center  btn-disabled"> <i
+                                    class="search-icon-sm"></i>Call to action</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="button-block mt-5 bg-black py-5 ps-3">
+                <div class="button-block__medium">
+                    <div class="row g-0 mb-4">
+                        <div class="col-auto col-80">
+                            <p class="button-block__medium--text mt-2 text-white">Default</p>
+                        </div>
+                        <div class="col-auto">
+                            <a href="" class="btn btn-light button-block__medium--btn1">Primary</a>
+                        </div>
+                        <div class="col-auto">
+                            <a href="" class="btn btn-light button-block__medium--btn2 d-flex align-items-center">
+                                <i class="search-icon-reverse"></i> Primary
+                            </a>
+                        </div>
+                        <div class="col-auto align-self-center">
+                            <a href="" class="btn btn-light btn-sm button-block__medium--btn3">Call to action</a>
+                        </div>
+                        <div class="col-auto align-self-center">
+                            <a href="" class="btn btn-light btn-sm d-flex align-items-center"> <i
+                                    class="search-icon-sm-reverse"></i>Call to action</a>
+                        </div>
+                    </div>
+                    <div class="row g-0 mb-4">
+                        <div class="col-auto col-80">
+                            <p class="button-block__medium--text mt-2 text-white">Hover</p>
+                        </div>
+                        <div class="col-auto">
+                            <a href="" class="btn btn-secondary button-block__medium--btn1">Primary</a>
+                        </div>
+                        <div class="col-auto">
+                            <a href="" class="btn btn-secondary button-block__medium--btn2 d-flex align-items-center"> <i
+                                    class="search-icon"></i> Primary</a>
+                        </div>
+                        <div class="col-auto align-self-center">
+                            <a href="" class="btn btn-secondary btn-sm button-block__medium--btn3">Call to action</a>
+                        </div>
+                        <div class="col-auto align-self-center">
+                            <a href="" class="btn btn-secondary btn-sm d-flex align-items-center"> <i
+                                    class="search-icon-sm"></i>Call to action</a>
+                        </div>
+                    </div>
+                    <div class="row g-0">
+                        <div class="col-auto col-80">
+                            <p class="button-block__medium--text mt-2 text-white">Disabled</p>
+                        </div>
+                        <div class="col-auto">
+                            <a href="" class="btn btn-disabled-reverse button-block__medium--btn1">Primary</a>
+                        </div>
+                        <div class="col-auto">
+                            <a href="" class="btn btn-disabled-reverse button-block__medium--btn2 d-flex align-items-center"> <i
+                                    class="search-icon-dark-gray"></i> Primary</a>
+                        </div>
+                        <div class="col-auto align-self-center">
+                            <a href="" class="btn btn-disabled-reverse btn-sm button-block__medium--btn3">Call to action</a>
+                        </div>
+                        <div class="col-auto align-self-center">
+                            <a href="" class="btn btn-disabled-reverse btn-sm d-flex align-items-center"> <i
+                                    class="search-icon-dark-gray-sm"></i>Call to action</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="secondary-button">
+            <div class="button-block">
+                <h5 class="button-block-title">Secondary Button</h5>
+                <p class="button-block-text">The primary button is used for the most important action on a page or in a view.
+                </p>
+                <div class="button-block__medium">
+                    <div class="row g-0 mb-4">
+                        <div class="col-auto col-80">
+                            <p class="button-block__medium--text mt-2">Default</p>
+                        </div>
+                        <div class="col-auto">
+                            <a href="" class="btn btn-outline-primary button-block__medium--btn1">Primary</a>
+                        </div>
+                        <div class="col-auto">
+                            <a href="" class="btn btn-outline-primary button-block__medium--btn2 d-flex align-items-center"> <i
+                                    class="search-icon-reverse"></i> Primary</a>
+                        </div>
+                        <div class="col-auto align-self-center">
+                            <a href="" class="btn btn-outline-primary btn-sm button-block__medium--btn3">Call to action</a>
+                        </div>
+                        <div class="col-auto align-self-center">
+                            <a href="" class="btn btn-outline-primary btn-sm d-flex align-items-center"> <i
+                                    class="search-icon-sm-reverse"></i>Call to action</a>
+                        </div>
+                    </div>
+                    <div class="row g-0 mb-4">
+                        <div class="col-auto col-80">
+                            <p class="button-block__medium--text mt-2">Hover</p>
+                        </div>
+                        <div class="col-auto">
+                            <a href="" class="btn btn-outline-primary button-block__medium--btn1 btn-outline-hover">Primary</a>
+                        </div>
+                        <div class="col-auto">
+                            <a href=""
+                                class="btn btn-outline-primary button-block__medium--btn2 d-flex align-items-center btn-outline-hover">
+                                <i class="search-icon-reverse"></i> Primary
+                            </a>
+                        </div>
+                        <div class="col-auto align-self-center">
+                            <a href="" class="btn btn-outline-primary btn-sm button-block__medium--btn3 btn-outline-hover">Call
+                                to action</a>
+                        </div>
+                        <div class="col-auto align-self-center">
+                            <a href="" class="btn btn-outline-primary btn-sm d-flex align-items-center btn-outline-hover"> <i
+                                    class="search-icon-sm-reverse"></i>Call to action</a>
+                        </div>
+                    </div>
+                    <div class="row g-0">
+                        <div class="col-auto col-80">
+                            <p class="button-block__medium--text mt-2">Disabled</p>
+                        </div>
+                        <div class="col-auto">
+                            <a href=""
+                                class="btn btn-outline-primary button-block__medium--btn1 btn-outline-disabled">Primary</a>
+                        </div>
+                        <div class="col-auto">
+                            <a href=""
+                                class="btn btn-outline-primary button-block__medium--btn2 d-flex align-items-center btn-outline-disabled">
+                                <i class="search-icon-grey"></i> Primary</a>
+                        </div>
+                        <div class="col-auto align-self-center">
+                            <a href=""
+                                class="btn btn-outline-primary btn-sm button-block__medium--btn3  btn-outline-disabled">Call to
+                                action</a>
+                        </div>
+                        <div class="col-auto align-self-center">
+                            <a href="" class="btn btn-outline-primary btn-sm d-flex align-items-center  btn-outline-disabled">
+                                <i class="search-icon-sm-grey"></i>Call to action</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="button-block mt-5 bg-black py-5 ps-3">
+                <!-- <h5 class="button-block-title">Secondary Button</h5>
+                      <p class="button-block-text">The primary button is used for the most important action on a page or in a view.</p> -->
+                <div class="button-block__medium">
+                    <div class="row g-0 mb-4">
+                        <div class="col-auto col-80">
+                            <p class="button-block__medium--text mt-2 text-white">Default</p>
+                        </div>
+                        <div class="col-auto">
+                            <a href="" class="btn btn-outline-light button-block__medium--btn1">Primary</a>
+                        </div>
+                        <div class="col-auto">
+                            <a href="" class="btn btn-outline-light button-block__medium--btn2 d-flex align-items-center"> <i
+                                    class="search-icon"></i> Primary</a>
+                        </div>
+                        <div class="col-auto align-self-center">
+                            <a href="" class="btn btn-outline-light btn-sm button-block__medium--btn3">Call to action</a>
+                        </div>
+                        <div class="col-auto align-self-center">
+                            <a href="" class="btn btn-outline-light btn-sm d-flex align-items-center"> <i
+                                    class="search-icon-sm"></i>Call to action</a>
+                        </div>
+                    </div>
+                    <div class="row g-0 mb-4">
+                        <div class="col-auto col-80">
+                            <p class="button-block__medium--text mt-2 text-white">Hover</p>
+                        </div>
+                        <div class="col-auto">
+                            <a href="" class="btn btn-outline-secondary button-block__medium--btn1">Primary</a>
+                        </div>
+                        <div class="col-auto">
+                            <a href="" class="btn btn-outline-secondary button-block__medium--btn2 d-flex align-items-center">
+                                <i class="search-icon"></i> Primary
+                            </a>
+                        </div>
+                        <div class="col-auto align-self-center">
+                            <a href="" class="btn btn-outline-secondary btn-sm button-block__medium--btn3">Call to action</a>
+                        </div>
+                        <div class="col-auto align-self-center">
+                            <a href="" class="btn btn-outline-secondary btn-sm d-flex align-items-center"> <i
+                                    class="search-icon-sm"></i>Call to action</a>
+                        </div>
+                    </div>
+                    <div class="row g-0">
+                        <div class="col-auto col-80">
+                            <p class="button-block__medium--text mt-2 text-white">Disabled</p>
+                        </div>
+                        <div class="col-auto">
+                            <a href="" class="btn btn-outline-dark button-block__medium--btn1">Primary</a>
+                        </div>
+                        <div class="col-auto">
+                            <a href="" class="btn btn-outline-dark button-block__medium--btn2 d-flex align-items-center"> <i
+                                    class="search-icon-dark-gray"></i> Primary</a>
+                        </div>
+                        <div class="col-auto align-self-center">
+                            <a href="" class="btn btn-outline-dark btn-sm button-block__medium--btn3">Call to action</a>
+                        </div>
+                        <div class="col-auto align-self-center">
+                            <a href="" class="btn btn-outline-dark btn-sm d-flex align-items-center"> <i
+                                    class="search-icon-dark-gray-sm"></i>Call to action</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    <div class="button-block button-block-group">
+      <h5 class="button-block-title" id="button-group">Button Groups</h5>
+      <p class="button-block-text mb-30">Primary and secondary button group</p>
+      <p class="button-block-text">The primary button emphasises a more important action as compared to the secondary button. Only one primary button is used per view, but this can be combined with several secondary buttons. The gap between the buttons is small (recommendation: 0.25 rem, i.e. one quarter of the basic type size).</p>
+      <div class="button-block__medium">
+          <div class="mb-5 pb-1 d-flex align-items-center">
+              <div class="col-80" style="min-width:115px;">
+                  <p class="button-block__medium--text mt-2">Horizontal <br> (Primary)</p>
+              </div>
+              <div class="">
+                  <a href="" class="btn btn-primary">Primary</a>
+                  <a href="" class="btn btn-outline-primary ms-1"> Secondary</a>
+              </div>
+              <div class="ms-5 ps-5">
+                  <a href="" class="btn btn-primary btn-sm">Call to action</a>
+                  <a href="" class="btn btn-outline-primary btn-sm ms-1">Call to action</a>
+              </div>
+
+          </div>
+          <div class="d-flex align-items-center">
+            <div class="col-auto col-80" style="min-width:115px;">
+                <p class="button-block__medium--text mt-2">Horizonhtal <br> (Secondary)</p>
+            </div>
+            <div class="">
+                <a href="" class="btn btn-outline-primary">Secondary</a>
+                <a href="" class="btn btn-outline-primary ms-1">Secondary</a>
+            </div>
+            <div class="ms-5 ps-5">
+                <a href="" class="btn btn-outline-primary btn-sm">Call to action</a>
+                <a href="" class="btn btn-outline-primary btn-sm ms-1">Call to action</a>
+            </div>
+        </div>
+      </div>
+        <div class="button-block__medium mt-5 bg-black py-5 ps-3">
+          <div class="d-flex align-items-center mb-5 pb-1">
+              <div class="col-80" style="min-width:115px;">
+                  <p class="button-block__medium--text mt-2 text-white">Horizontal <br> (Primary)</p>
+              </div>
+              <div class="">
+                  <a href="" class="btn btn-light">Primary</a>
+                  <a href="" class="btn btn-outline-light ms-1"> Secondary</a>
+              </div>
+              <div class="ms-5 ps-5">
+                  <a href="" class="btn btn-light btn-sm">Call to action</a>
+                  <a href="" class="btn btn-outline-light btn-sm ms-1">Call to action</a>
+              </div>
+
+          </div>
+          <div class="d-flex align-items-center mb-4">
+            <div class="col-auto col-80" style="min-width:115px;">
+                <p class="button-block__medium--text mt-2 text-white">Horizonhtal <br> (Secondary)</p>
+            </div>
+            <div class="">
+                <a href="" class="btn btn-outline-light">Secondary</a>
+                <a href="" class="btn btn-outline-light ms-1">Secondary</a>
+            </div>
+            <div class="ms-5 ps-5">
+                <a href="" class="btn btn-outline-light btn-sm">Call to action</a>
+                <a href="" class="btn btn-outline-light btn-sm ms-1">Call to action</a>
+            </div>
+        </div>
+      </div>
+
+      <div class="button-block__inner">
+        <h5 class="button-block-title" id="secondary-button-group">Secondary button group</h5>
+          <!-- <p class="button-block-text mb-30" id="secondary-button-group">Secondary button group</p> -->
+          <p class="button-block-text">
+              Unlike primary buttons, secondary buttons can be combined directly adjacent to one another if the options
+              for action offered are equivalent. The gap between the buttons is small (recommendation: 0.25 rem, i.e.
+              one quarter of the basic type size).
+          </p>
+          <div class="button-block__medium">
+              <div class="mb-5 pb-1 d-flex align-items-center">
+                  <div class="col-80" style="min-width:115px;">
+                      <p class="button-block__medium--text mt-2">Vertical <br> (Primary)</p>
+                  </div>
+                  <div class="d-grid">
+                      <a href="" class="btn btn-primary" style="width:300px;">Primary</a>
+                      <a href="" class="btn btn-outline-primary mt-2"> Secondary</a>
+                  </div>
+                  <div class="ms-5 ps-5 d-grid">
+                      <a href="" class="btn btn-primary btn-sm" style="width:300px;">Primary</a>
+                      <a href="" class="btn btn-outline-primary btn-sm mt-2">Secondary</a>
+                  </div>
+
+              </div>
+              <div class="d-flex align-items-center">
+                  <div class="col-auto col-80" style="min-width:115px;">
+                      <p class="button-block__medium--text mt-2">Horizonhtal <br> (Secondary)</p>
+                  </div>
+                  <div class="d-grid">
+                      <a href="" class="btn btn-outline-primary" style="width:300px;">Secondary</a>
+                      <a href="" class="btn btn-outline-primary mt-2">Secondary</a>
+                  </div>
+                  <div class="ms-5 ps-5 d-grid">
+                      <a href="" class="btn btn-outline-primary btn-sm" style="width:300px;">Call to action</a>
+                      <a href="" class="btn btn-outline-primary btn-sm mt-2">Call to action</a>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <!-- dark -->
+      <div class="bg-black mt-5 py-5 ps-3">
+        <div class="button-block__medium">
+            <div class="mb-5 pb-1 d-flex align-items-center">
+                <div class="col-80" style="min-width:115px;">
+                    <p class="button-block__medium--text mt-2 text-white">Vertical <br> (Primary)</p>
+                </div>
+                <div class="d-grid">
+                    <a href="" class="btn btn-light" style="width:300px;">Primary</a>
+                    <a href="" class="btn btn-outline-light mt-2"> Secondary</a>
+                </div>
+                <div class="ms-5 ps-5 d-grid">
+                    <a href="" class="btn btn-light btn-sm" style="width:300px;">Primary</a>
+                    <a href="" class="btn btn-outline-light btn-sm mt-2">Secondary</a>
+                </div>
+
+            </div>
+            <div class="d-flex align-items-center">
+                <div class="col-auto col-80" style="min-width:115px;">
+                    <p class="button-block__medium--text mt-2 text-white">Horizonhtal <br> (Secondary)</p>
+                </div>
+                <div class="d-grid">
+                    <a href="" class="btn btn-outline-light" style="width:300px;">Secondary</a>
+                    <a href="" class="btn btn-outline-light mt-2">Secondary</a>
+                </div>
+                <div class="ms-5 ps-5 d-grid">
+                    <a href="" class="btn btn-outline-light btn-sm" style="width:300px;">Call to action</a>
+                    <a href="" class="btn btn-outline-light btn-sm mt-2">Call to action</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    </div>
+
+
+    <!-- text button block -->
+    <div class="button-block button-block-group" id="text-button">
+        <h5 class="button-block-title mb-30">Text Button</h5>
+        <p class="button-block-text">
+            The text button is applied as a subtle call to action. The standard variant is a combination of text and arrow.
+            It is possible to combine a text button with an icon or else omit an icon. If an additional hierarchy level is
+            required for a text button, its variant can be applied in Roboto Bold.
+        </p>
+        <div class="button-block__medium">
+            <div class="mb-5 d-flex align-items-center">
+                <div class="col-80" style="min-width:115px;">
+                    <p class="button-block__medium--text">Default</p>
+                </div>
+                <div class="d-flex align-items-center">
+                    <a href="" class="btn btn-link rounded-0 border-0 p-0">Call to action</a>
+                    <a href="" class="btn btn-link rounded-0 border-0 p-0 ms-5 d-flex align-items-center">
+                        Call to action <i class="btn-arrow-icon ms-2"></i>
+                    </a>
+                </div>
+                <div class="d-flex align-items-center ml-200">
+                    <a href="" class="btn btn-link btn-sm border-0 rounded-0 p-0">Call to action</a>
+                    <a href="" class="btn btn-link btn-sm border-0 rounded-0 p-0 ms-5 d-flex align-items-center">
+                        Call to action
+                        <i class="btn-arrow-icon--small ms-1"></i>
+                    </a>
+                </div>
+    
+            </div>
+            <div class="mb-5 d-flex align-items-center">
+                <div class="col-auto col-80" style="min-width:115px;">
+                    <p class="button-block__medium--text">Hover</p>
+                </div>
+                <div class="d-flex align-items-center">
+                    <a href="" class="btn btn-link btn-link-hover rounded-0 border-0 p-0">Call to action</a>
+                    <a href="" class="btn btn-link btn-link-hover rounded-0 border-0 p-0 ms-5 d-flex align-items-center">
+                        Call to action <i class="btn-arrow-icon btn-arrow-icon-hover ms-2"></i>
+                    </a>
+                </div>
+                <div class="d-flex align-items-center ml-200">
+                    <a href="" class="btn btn-link btn-link-hover btn-sm border-0 rounded-0 p-0">Call to action</a>
+                    <a href=""
+                        class="btn btn-link btn-link-hover btn-sm border-0 rounded-0 p-0 ms-5 d-flex align-items-center">
+                        Call to action
+                        <i class="btn-arrow-icon--small btn-arrow-icon--small-hover ms-1"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="mb-5 d-flex align-items-center">
+                <div class="col-auto col-80" style="min-width:115px;">
+                    <p class="button-block__medium--text">Disabled</p>
+                </div>
+                <div class="d-flex align-items-center">
+                    <a href="" class="btn btn-link btn-link-disabled rounded-0 border-0 p-0">Call to action</a>
+                    <a href="" class="btn btn-link btn-link-disabled rounded-0 border-0 p-0 ms-5 d-flex align-items-center">
+                        Call to action <i class="btn-arrow-icon btn-arrow-icon-disabled ms-2"></i>
+                    </a>
+                </div>
+                <div class="d-flex align-items-center ml-200">
+                    <a href="" class="btn btn-link btn-link-disabled btn-sm border-0 rounded-0 p-0">Call to action</a>
+                    <a href=""
+                        class="btn btn-link btn-link-disabled btn-sm border-0 rounded-0 p-0 ms-5 d-flex align-items-center">
+                        Call to action
+                        <i class="btn-arrow-icon--small btn-arrow-icon--small-disabled ms-1"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="button-block__medium mt-5 bg-black py-5 ps-3">
+            <div class="mb-5 d-flex align-items-center">
+                <div class="col-80" style="min-width:115px;">
+                    <p class="button-block__medium--text text-white">Default</p>
+                </div>
+                <div class="d-flex align-items-center">
+                    <a href="" class="btn btn-link rounded-0 border-0 p-0 text-white">Call to action</a>
+                    <a href="" class="btn btn-link rounded-0 border-0 p-0 ms-5 d-flex align-items-center text-white">
+                        Call to action <i class="btn-arrow-icon-reverse ms-2"></i>
+                    </a>
+                </div>
+                <div class="d-flex align-items-center ml-200">
+                    <a href="" class="btn btn-link btn-sm border-0 rounded-0 p-0 text-white">Call to action</a>
+                    <a href="" class="btn btn-link btn-sm border-0 rounded-0 p-0 ms-5 d-flex align-items-center text-white">
+                        Call to action
+                        <i class="btn-arrow-icon--small-reverse ms-1"></i>
+                    </a>
+                </div>
+    
+            </div>
+            <div class="mb-5 d-flex align-items-center">
+                <div class="col-auto col-80" style="min-width:115px;">
+                    <p class="button-block__medium--text text-white">Hover</p>
+                </div>
+                <div class="d-flex align-items-center">
+                    <a href="" class="btn btn-link btn-link-hover rounded-0 border-0 p-0 text-white">Call to action</a>
+                    <a href=""
+                        class="btn btn-link btn-link-hover rounded-0 border-0 p-0 ms-5 d-flex align-items-center text-white">
+                        Call to action <i class="btn-arrow-icon-reverse ms-2"></i>
+                    </a>
+                </div>
+                <div class="d-flex align-items-center ml-200">
+                    <a href="" class="btn btn-link btn-link-hover btn-sm border-0 rounded-0 p-0 text-white">Call to
+                        action</a>
+                    <a href=""
+                        class="btn btn-link btn-link-hover btn-sm border-0 rounded-0 p-0 ms-5 d-flex align-items-center text-white">
+                        Call to action
+                        <i class="btn-arrow-icon--small-reverse ms-1"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="mb-5 d-flex align-items-center">
+                <div class="col-auto col-80" style="min-width:115px;">
+                    <p class="button-block__medium--text text-white">Disabled</p>
+                </div>
+                <div class="d-flex align-items-center">
+                    <a href="" class="btn btn-link btn-link-disabled-dark rounded-0 border-0 p-0">Call to action</a>
+                    <a href=""
+                        class="btn btn-link btn-link-disabled-dark rounded-0 border-0 p-0 ms-5 d-flex align-items-center">
+                        Call to action <i class="btn-arrow-icon-disabled-dark ms-2"></i>
+                    </a>
+                </div>
+                <div class="d-flex align-items-center ml-200">
+                    <a href="" class="btn btn-link btn-link-disabled-dark btn-sm border-0 rounded-0 p-0">Call to action</a>
+                    <a href=""
+                        class="btn btn-link btn-link-disabled-dark btn-sm border-0 rounded-0 p-0 ms-5 d-flex align-items-center">
+                        Call to action
+                        <i class="btn-arrow-icon--small-disabled-dark ms-1"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- text button group block -->
+    <div class="button-block button-block-group" id="text-button-group">
+        <h5 class="button-block-title mb-30">Text Button Group</h5>
+        <p class="button-block-text">
+            Text buttons can also be grouped directly adjacent to one another. However, text button groups are not mixed with primary or secondary buttons.
+        </p>
+        <div class="button-block__medium">
+            <div class="mb-5 row g-0">
+                <div class="col-auto col-80" style="min-width:115px;">
+                    <p class="button-block__medium--text">Text Button <br> Group <br> (Horizontal)</p>
+                </div>
+                <div class="d-flex align-items-center col-4">
+                    <a href="" class="btn btn-link rounded-0 border-0 p-0">
+                        Call to action <i class="btn-arrow-icon ms-2"></i>
+                    </a>
+                    <a href="" class="btn btn-link rounded-0 border-0 p-0 ms-5 d-flex align-items-center">
+                        Call to action <i class="btn-arrow-icon ms-2"></i>
+                    </a>
+                </div>
+                <div class="d-flex align-items-center col-4">
+                    <a href="" class="btn btn-link btn-sm border-0 rounded-0 p-0 d-flex align-items-center">
+                        Call to action
+                        <i class="btn-arrow-icon--small ms-1"></i>
+                    </a>
+                    <a href="" class="btn btn-link btn-sm border-0 rounded-0 p-0 ms-5 d-flex align-items-center">
+                        Call to action
+                        <i class="btn-arrow-icon--small ms-1"></i>
+                    </a>
+                </div>
+    
+            </div>
+            <div class="mb-5 row g-0">
+                <div class="col-auto col-80" style="min-width:115px;">
+                    <p class="button-block__medium--text">Text Button <br> Group <br> (Vertical)</p>
+                </div>
+                <div class="d-grid col-4">
+                    <a href="" class="btn btn-link rounded-0 border-0 p-0 d-flex align-items-center">
+                        Call to action <i class="btn-arrow-icon ms-2"></i>
+                    </a>
+                    <a href="" class="btn btn-link rounded-0 border-0 p-0 d-flex align-items-center">
+                        Call to action <i class="btn-arrow-icon ms-2"></i>
+                    </a>
+                </div>
+                <div class="d-grid col-4">
+                    <a href="" class="btn btn-link btn-sm border-0 rounded-0 p-0 d-flex align-items-center">
+                        Call to action
+                        <i class="btn-arrow-icon--small ms-1"></i>
+                    </a>
+                    <a href=""
+                        class="btn btn-link btn-sm border-0 rounded-0 p-0 d-flex align-items-center">
+                        Call to action
+                        <i class="btn-arrow-icon--small ms-1"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="button-block__medium mt-5 bg-black py-5 ps-3">
+            <div class="mb-5 row g-0">
+                <div class="col-auto col-80" style="min-width:115px;">
+                    <p class="button-block__medium--text text-white">Text Button <br> Group <br> (Horizontal)</p>
+                </div>
+                <div class="d-flex align-items-center col-4">
+                    <a href="" class="btn btn-link rounded-0 border-0 p-0 text-white d-flex align-items-center">
+                        Call to action <i class="btn-arrow-icon-reverse ms-2"></i>
+                    </a>
+                    <a href="" class="btn btn-link rounded-0 border-0 p-0 ms-5 text-white d-flex align-items-center">
+                        Call to action <i class="btn-arrow-icon-reverse ms-2"></i>
+                    </a>
+                </div>
+                <div class="d-flex align-items-center col-4">
+                    <a href="" class="btn btn-link btn-sm border-0 rounded-0 p-0 d-flex align-items-center text-white">
+                        Call to action
+                        <i class="btn-arrow-icon--small-reverse ms-1"></i>
+                    </a>
+                    <a href="" class="btn btn-link btn-sm border-0 rounded-0 p-0 ms-5 d-flex align-items-center text-white">
+                        Call to action
+                        <i class="btn-arrow-icon--small-reverse ms-1"></i>
+                    </a>
+                </div>
+    
+            </div>
+            <div class="mb-5 row g-0">
+                <div class="col-auto col-80" style="min-width:115px;">
+                    <p class="button-block__medium--text text-white">Text Button <br> Group <br> (Vertical)</p>
+                </div>
+                <div class="d-grid col-4">
+                    <a href="" class="btn btn-link rounded-0 border-0 p-0 d-flex align-items-center text-white">
+                        Call to action <i class="btn-arrow-icon-reverse ms-2"></i>
+                    </a>
+                    <a href="" class="btn btn-link rounded-0 border-0 p-0 d-flex align-items-center text-white">
+                        Call to action <i class="btn-arrow-icon-reverse ms-2"></i>
+                    </a>
+                </div>
+                <div class="d-grid col-4">
+                    <a href="" class="btn btn-link btn-sm border-0 rounded-0 p-0 d-flex align-items-center text-white">
+                        Call to action
+                        <i class="btn-arrow-icon--small-reverse ms-1"></i>
+                    </a>
+                    <a href=""
+                        class="btn btn-link btn-sm border-0 rounded-0 p-0 d-flex align-items-center text-white">
+                        Call to action
+                        <i class="btn-arrow-icon--small-reverse ms-1"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- system icon system -->
+    <div class="button-block button-block-group" id="system-icon-button">
+        <h5 class="button-block-title mb-30">System Icon Button</h5>
+        <p class="button-block-text">
+            System icon buttons are used to trigger specific system interactions (e.g. save, print, download, etc.) System icons can be used in the two sizes available. The system icon button is transparent and should be used without a label.
+        </p>
+        <div class="button-block__medium py-5">
+            <div class="mb-5 row g-0">
+                <div class="col-auto col-80" style="min-width:115px;">
+                    <p class="button-block__medium--text">Default</p>
+                </div>
+                <div class="d-flex align-items-center col-4">
+                    <a href="" class="border border-primary btn-icon-large d-flex align-items-center justify-content-center rounded-circle">
+                     <i class="btn-plus-icon"></i>
+                    </a>
+                </div>
+                <div class="d-flex align-items-center col-4">
+                    <a href="" class="border border-primary d-flex align-items-center justify-content-center rounded-circle btn-icon-small">
+                        <i class="btn-plus-icon-small"></i>
+                    </a>
+                </div>
+    
+            </div>
+        </div>
+        <div class="button-block__medium mt-0 bg-black py-5 ps-3">
+            <div class="row g-0">
+                <div class="col-auto col-80" style="min-width:115px;">
+                    <p class="button-block__medium--text text-white">Default</p>
+                </div>
+                <div class="d-flex align-items-center col-4">
+                    <a href="" class="border border-white btn-icon-large d-flex align-items-center justify-content-center rounded-circle">
+                     <i class="btn-plus-icon btn-plus-icon-reverse"></i>
+                    </a>
+                </div>
+                <div class="d-flex align-items-center col-4">
+                    <a href="" class="border border-white d-flex align-items-center justify-content-center rounded-circle btn-icon-small">
+                        <i class="btn-plus-icon-small btn-plus-icon-small-reverse"></i>
+                    </a>
+                </div>
+    
+            </div>
+        </div>
+    </div>
+
+
+     <!-- System Icon Button Groups -->
+     <div class="button-block button-block-group" id="system-icon-button-group">
+        <h5 class="button-block-title mb-30">System Icon Button Groups</h5>
+        <p class="button-block-text">
+            Equivalent system actions can be indicated by the combination of system icon buttons.
+        </p>
+        <div class="button-block__medium py-5">
+            <div class="row g-0">
+                <div class="col-auto col-80" style="min-width:115px;">
+                    <p class="button-block__medium--text">System Icon <br> Button Group <br> (Horizontal)</p>
+                </div>
+                <div class="d-flex align-items-center col-4">
+                    <a href="" class="border border-black btn-icon-large d-flex align-items-center justify-content-center rounded-circle">
+                     <i class="btn-plus-icon-black"></i>
+                    </a>
+                    <a href="" class="border border-black btn-icon-large d-flex align-items-center justify-content-center rounded-circle mx-3">
+                        <i class="btn-down-black"></i>
+                    </a>
+                    <a href="" class="border border-black btn-icon-large d-flex align-items-center justify-content-center rounded-circle">
+                        <i class="btn-down-arrow-left-black"></i>
+                    </a>
+                </div>
+                <div class="d-flex align-items-center col-4">
+                    <a href="" class="border border-black d-flex align-items-center justify-content-center rounded-circle btn-icon-small">
+                        <i class="btn-plus-icon-black-small"></i>
+                    </a>
+                    <a href="" class="border border-black d-flex align-items-center justify-content-center rounded-circle btn-icon-small mx-3">
+                        <i class="btn-down-black-small"></i>
+                    </a>
+                    <a href="" class="border border-black d-flex align-items-center justify-content-center rounded-circle btn-icon-small">
+                        <i class="btn-down-arrow-left-black-small"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="button-block__medium mt-0 bg-black py-5 ps-3">
+            <div class="row g-0">
+                <div class="col-auto col-80" style="min-width:115px;">
+                    <p class="button-block__medium--text text-white">System Icon <br> Button Group <br> (Horizontal)</p>
+                </div>
+                <div class="d-flex align-items-center col-4">
+                    <a href="" class="border border-white btn-icon-large d-flex align-items-center justify-content-center rounded-circle">
+                     <i class="btn-plus-icon btn-plus-icon-reverse"></i>
+                    </a>
+                    <a href="" class="border border-white btn-icon-large d-flex align-items-center justify-content-center rounded-circle mx-3">
+                        <i class="btn-down-white"></i>
+                    </a>
+                    <a href="" class="border border-white btn-icon-large d-flex align-items-center justify-content-center rounded-circle">
+                        <i class="btn-down-arrow-left-white"></i>
+                    </a>
+                </div>
+                <div class="d-flex align-items-center col-4">
+                    <a href="" class="border border-white d-flex align-items-center justify-content-center rounded-circle btn-icon-small">
+                        <i class="btn-plus-icon-small btn-plus-icon-small-reverse"></i>
+                    </a>
+                    <a href="" class="border border-white d-flex align-items-center justify-content-center rounded-circle btn-icon-small mx-3">
+                        <i class="btn-down-small-white"></i>
+                    </a>
+                    <a href="" class="border border-white d-flex align-items-center justify-content-center rounded-circle btn-icon-small">
+                        <i class="btn-down-arrow-left-small-white"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Floating Button -->
+    <div class="button-block button-block-group" id="floating-button">
+        <h5 class="button-block-title mb-30">Floating Button</h5>
+        <p class="button-block-text">
+            The floating button is used for any action if it is to be highlighted in a level above the layout. It has a fixed position in the viewport. Depending on the context it can be hidden or shown, either automatically or through user interaction.
+        </p>
+        <div class="button-block__medium py-5">
+            <div class="row g-0 mb-5">
+                <div class="col-auto col-80" style="min-width:115px;">
+                    <p class="button-block__medium--text">Default</p>
+                </div>
+                <div class="d-flex align-items-center col-4">
+                    <a href="" class="bg-black btn-icon-large d-flex align-items-center justify-content-center">
+                     <i class="btn-cart-icon-white"></i>
+                    </a>
+                </div>
+                <div class="d-flex align-items-center col-4">
+                    <a href="" class="bg-black d-flex align-items-center justify-content-center btn-icon-small">
+                        <i class="btn-cart-icon-white-small"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="row g-0 mb-5">
+                <div class="col-auto col-80" style="min-width:115px;">
+                    <p class="button-block__medium--text">Hover</p>
+                </div>
+                <div class="d-flex align-items-center col-4">
+                    <a href="" class="bg-secondary btn-icon-large d-flex align-items-center justify-content-center">
+                     <i class="btn-cart-icon-white"></i>
+                    </a>
+                </div>
+                <div class="d-flex align-items-center col-4">
+                    <a href="" class="bg-secondary d-flex align-items-center justify-content-center btn-icon-small">
+                        <i class="btn-cart-icon-white-small"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="row g-0">
+                <div class="col-auto col-80" style="min-width:115px;">
+                    <p class="button-block__medium--text">Disabled</p>
+                </div>
+                <div class="d-flex align-items-center col-4">
+                    <a href="" class="bg-secondary-subtle btn-icon-large d-flex align-items-center justify-content-center">
+                     <i class="btn-cart-icon-dark"></i>
+                    </a>
+                </div>
+                <div class="d-flex align-items-center col-4">
+                    <a href="" class="bg-secondary-subtle d-flex align-items-center justify-content-center btn-icon-small">
+                        <i class="btn-cart-icon-dark-small"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="button-block__medium mt-0 bg-black py-5 ps-3">
+            <div class="row g-0 mb-5">
+                <div class="col-auto col-80" style="min-width:115px;">
+                    <p class="button-block__medium--text text-white">Default</p>
+                </div>
+                <div class="d-flex align-items-center col-4">
+                    <a href="" class="bg-white btn-icon-large d-flex align-items-center justify-content-center">
+                     <i class="btn-cart-icon-black"></i>
+                    </a>
+                </div>
+                <div class="d-flex align-items-center col-4">
+                    <a href="" class="bg-white d-flex align-items-center justify-content-center btn-icon-small">
+                        <i class="btn-cart-icon-black-small"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="row g-0 mb-5">
+                <div class="col-auto col-80" style="min-width:115px;">
+                    <p class="button-block__medium--text text-white">Hover</p>
+                </div>
+                <div class="d-flex align-items-center col-4">
+                    <a href="" class="bg-secondary btn-icon-large d-flex align-items-center justify-content-center">
+                     <i class="btn-cart-icon-black"></i>
+                    </a>
+                </div>
+                <div class="d-flex align-items-center col-4">
+                    <a href="" class="bg-secondary d-flex align-items-center justify-content-center btn-icon-small">
+                        <i class="btn-cart-icon-black-small"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="row g-0">
+                <div class="col-auto col-80" style="min-width:115px;">
+                    <p class="button-block__medium--text text-white">Disabled</p>
+                </div>
+                <div class="d-flex align-items-center col-4">
+                    <a href="" class="bg-secondary-subtle btn-icon-large d-flex align-items-center justify-content-center">
+                     <i class="btn-cart-icon-dark"></i>
+                    </a>
+                </div>
+                <div class="d-flex align-items-center col-4">
+                    <a href="" class="bg-secondary-subtle d-flex align-items-center justify-content-center btn-icon-small">
+                        <i class="btn-cart-icon-dark-small"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Stretched Primary Button -->
+    <div class="button-block button-block-group" id="stretched-primary-button">
+        <h5 class="button-block-title mb-30">Stretched Primary Button</h5>
+        <p class="button-block-text">
+            Like the primary button, the stretched button can be used for the most important function of a page or view. Unlike the primary button, it does not follow the L/R edge spacing rules and stretches the width of the viewport (or container) it occupies. All primary buttons in viewports below 440px are stretched.
+        </p>
+        <div class="button-block__medium py-5">
+            <div class="d-flex align-items-center mb-30">
+                <div class="col-80" style="min-width:115px;">
+                    <p class="button-block__medium--text">Default</p>
+                </div>
+                <a href="#" class="btn btn-primary mr-30" style="min-width:285px;">
+                    Call to action
+                </a>
+                <a href="#" class="btn btn-primary d-flex align-items-center justify-content-center" style="min-width:285px;">
+                   <i class="btn-search-icon me-2"></i> Call to action
+                </a>
+            </div>
+            <div class="d-flex align-items-center mb-30">
+                <div class="col-80" style="min-width:115px;">
+                    <p class="button-block__medium--text">Hover</p>
+                </div>
+                <a href="#" class="btn btn-primary btn-hover mr-30" style="min-width:285px;">
+                    Call to action
+                </a>
+                <a href="#" class="btn btn-primary btn-hover d-flex align-items-center justify-content-center" style="min-width:285px;">
+                   <i class="btn-search-icon me-2"></i> Call to action
+                </a>
+            </div>
+            <div class="d-flex align-items-center">
+                <div class="col-80" style="min-width:115px;">
+                    <p class="button-block__medium--text">Disabled</p>
+                </div>
+                <a href="#" class="btn btn-primary btn-disabled mr-30" style="min-width:285px;">
+                    Call to action
+                </a>
+                <a href="#" class="btn btn-primary btn-disabled d-flex align-items-center justify-content-center" style="min-width:285px;">
+                   <i class="btn-search-icon me-2"></i> Call to action
+                </a>
+            </div>
+        </div>
+        <div class="button-block__medium mt-0 bg-black py-5 ps-3">
+            <div class="d-flex align-items-center mb-30">
+                <div class="col-80" style="min-width:115px;">
+                    <p class="button-block__medium--text text-white">Default</p>
+                </div>
+                <a href="#" class="btn btn-light mr-30" style="min-width:285px;">
+                    Call to action
+                </a>
+                <a href="#" class="btn btn-light d-flex align-items-center justify-content-center" style="min-width:285px;">
+                   <i class="btn-search-icon me-2"></i> Call to action
+                </a>
+            </div>
+            <div class="d-flex align-items-center mb-30">
+                <div class="col-80" style="min-width:115px;">
+                    <p class="button-block__medium--text text-white">Hover</p>
+                </div>
+                <a href="#" class="btn btn-secondary mr-30" style="min-width:285px;">
+                    Call to action
+                </a>
+                <a href="#" class="btn btn-secondary d-flex align-items-center justify-content-center" style="min-width:285px;">
+                   <i class="btn-search-icon me-2"></i> Call to action
+                </a>
+            </div>
+            <div class="d-flex align-items-center">
+                <div class="col-80" style="min-width:115px;">
+                    <p class="button-block__medium--text text-white">Disabled</p>
+                </div>
+                <a href="#" class="btn btn-disabled mr-30 disabled" style="min-width:285px;">
+                    Call to action
+                </a>
+                <a href="#" class="btn btn-disabled d-flex align-items-center justify-content-center disabled" style="min-width:285px;">
+                   <i class="btn-search-icon me-2"></i> Call to action
+                </a>
+            </div>
+        </div>
+        <div class="button-block__medium py-5">
+            <div class="d-flex align-items-center mb-30">
+                <div class="col-80" style="min-width:115px;">
+                    <p class="button-block__medium--text">Default</p>
+                </div>
+                <a href="#" class="btn btn-primary btn-sm mr-30" style="min-width:285px;">
+                    Call to action
+                </a>
+                <a href="#" class="btn btn-primary btn-sm d-flex align-items-center justify-content-center" style="min-width:285px;">
+                   <i class="search-icon-sm me-2"></i> Call to action
+                </a>
+            </div>
+            <div class="d-flex align-items-center mb-30">
+                <div class="col-80" style="min-width:115px;">
+                    <p class="button-block__medium--text">Hover</p>
+                </div>
+                <a href="#" class="btn btn-primary btn-sm btn-hover mr-30" style="min-width:285px;">
+                    Call to action
+                </a>
+                <a href="#" class="btn btn-primary btn-sm btn-hover d-flex align-items-center justify-content-center" style="min-width:285px;">
+                   <i class="search-icon-sm me-2"></i> Call to action
+                </a>
+            </div>
+            <div class="d-flex align-items-center">
+                <div class="col-80" style="min-width:115px;">
+                    <p class="button-block__medium--text">Disabled</p>
+                </div>
+                <a href="#" class="btn btn-primary btn-sm btn-disabled mr-30" style="min-width:285px;">
+                    Call to action
+                </a>
+                <a href="#" class="btn btn-primary btn-disabled btn-sm d-flex align-items-center justify-content-center" style="min-width:285px;">
+                   <i class="search-icon-sm me-2"></i> Call to action
+                </a>
+            </div>
+        </div>
+        <div class="button-block__medium mt-0 bg-black py-5 ps-3">
+            <div class="d-flex align-items-center mb-30">
+                <div class="col-80" style="min-width:115px;">
+                    <p class="button-block__medium--text text-white">Default</p>
+                </div>
+                <a href="#" class="btn btn-light btn-sm mr-30" style="min-width:285px;">
+                    Call to action
+                </a>
+                <a href="#" class="btn btn-light btn-sm d-flex align-items-center justify-content-center" style="min-width:285px;">
+                   <i class="search-icon-sm me-2"></i> Call to action
+                </a>
+            </div>
+            <div class="d-flex align-items-center mb-30">
+                <div class="col-80" style="min-width:115px;">
+                    <p class="button-block__medium--text text-white">Hover</p>
+                </div>
+                <a href="#" class="btn btn-secondary btn-sm mr-30" style="min-width:285px;">
+                    Call to action
+                </a>
+                <a href="#" class="btn btn-secondary btn-sm d-flex align-items-center justify-content-center" style="min-width:285px;">
+                   <i class="search-icon-sm me-2"></i> Call to action
+                </a>
+            </div>
+            <div class="d-flex align-items-center">
+                <div class="col-80" style="min-width:115px;">
+                    <p class="button-block__medium--text text-white">Disabled</p>
+                </div>
+                <a href="#" class="btn btn-disabled btn-sm mr-30 disabled" style="min-width:285px;">
+                    Call to action
+                </a>
+                <a href="#" class="btn btn-disabled btn-sm d-flex align-items-center justify-content-center disabled" style="min-width:285px;">
+                   <i class="search-icon-sm me-2"></i> Call to action
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Stretched Secondary Button -->
+    <div class="button-block button-block-group" id="stretched-secondary-button">
+        <h5 class="button-block-title mb-30">Stretched Secondary Button</h5>
+        <p class="button-block-text">
+            Like the secondary button, the stretched button is used for subordinate actions within a page or view. Unlike the secondary button, it does not follow the L/R edge spacing rules and stretches the width of the viewport (or container) it occupies. All secondary buttons in viewports below 440px are stretched.
+        </p>
+        <div class="button-block__medium py-5">
+            <div class="d-flex align-items-center mb-30">
+                <div class="col-80" style="min-width:115px;">
+                    <p class="button-block__medium--text">Default</p>
+                </div>
+                <a href="#" class="btn btn-outline-primary mr-30" style="min-width:285px;">
+                    Call to action
+                </a>
+                <a href="#" class="btn btn-outline-primary d-flex align-items-center justify-content-center" style="min-width:285px;">
+                   <i class="btn-search-icon-alt me-2"></i> Call to action
+                </a>
+            </div>
+            <div class="d-flex align-items-center mb-30">
+                <div class="col-80" style="min-width:115px;">
+                    <p class="button-block__medium--text">Hover</p>
+                </div>
+                <a href="#" class="btn btn-outline-primary btn-outline-hover mr-30" style="min-width:285px;">
+                    Call to action
+                </a>
+                <a href="#" class="btn btn-outline-primary btn-outline-hover d-flex align-items-center justify-content-center" style="min-width:285px;">
+                   <i class="btn-search-icon-alt me-2"></i> Call to action
+                </a>
+            </div>
+            <div class="d-flex align-items-center">
+                <div class="col-80" style="min-width:115px;">
+                    <p class="button-block__medium--text">Disabled</p>
+                </div>
+                <a href="#" class="btn btn-outline-disabled mr-30" style="min-width:285px;">
+                    Call to action
+                </a>
+                <a href="#" class="btn btn-outline-disabled d-flex align-items-center justify-content-center" style="min-width:285px;">
+                   <i class="btn-search-icon me-2"></i> Call to action
+                </a>
+            </div>
+        </div>
+        <div class="button-block__medium mt-0 bg-black py-5 ps-3">
+            <div class="d-flex align-items-center mb-30">
+                <div class="col-80" style="min-width:115px;">
+                    <p class="button-block__medium--text text-white">Default</p>
+                </div>
+                <a href="#" class="btn btn-outline-light mr-30" style="min-width:285px;">
+                    Call to action
+                </a>
+                <a href="#" class="btn btn-outline-light d-flex align-items-center justify-content-center" style="min-width:285px;">
+                   <i class="btn-search-icon me-2"></i> Call to action
+                </a>
+            </div>
+            <div class="d-flex align-items-center mb-30">
+                <div class="col-80" style="min-width:115px;">
+                    <p class="button-block__medium--text text-white">Hover</p>
+                </div>
+                <a href="#" class="btn btn-outline-secondary mr-30" style="min-width:285px;">
+                    Call to action
+                </a>
+                <a href="#" class="btn btn-outline-secondary d-flex align-items-center justify-content-center" style="min-width:285px;">
+                   <i class="btn-search-icon me-2"></i> Call to action
+                </a>
+            </div>
+            <div class="d-flex align-items-center">
+                <div class="col-80" style="min-width:115px;">
+                    <p class="button-block__medium--text text-white">Disabled</p>
+                </div>
+                <a href="#" class="btn btn-outline-disabled-dark mr-30 disabled" style="min-width:285px;">
+                    Call to action
+                </a>
+                <a href="#" class="btn btn-outline-disabled-dark disabled d-flex align-items-center justify-content-center" style="min-width:285px;">
+                   <i class="btn-search-icon me-2"></i> Call to action
+                </a>
+            </div>
+        </div>
+        <div class="button-block__medium py-5">
+            <div class="d-flex align-items-center mb-30">
+                <div class="col-80" style="min-width:115px;">
+                    <p class="button-block__medium--text">Default</p>
+                </div>
+                <a href="#" class="btn btn-outline-primary btn-sm mr-30" style="min-width:285px;">
+                    Call to action
+                </a>
+                <a href="#" class="btn btn-outline-primary btn-sm d-flex align-items-center justify-content-center" style="min-width:285px;">
+                   <i class="search-icon-sm-reverse me-2"></i> Call to action
+                </a>
+            </div>
+            <div class="d-flex align-items-center mb-30">
+                <div class="col-80" style="min-width:115px;">
+                    <p class="button-block__medium--text">Hover</p>
+                </div>
+                <a href="#" class="btn btn-outline-hover btn-sm mr-30" style="min-width:285px;">
+                    Call to action
+                </a>
+                <a href="#" class="btn btn-outline-hover btn-sm d-flex align-items-center justify-content-center" style="min-width:285px;">
+                   <i class="search-icon-sm-reverse me-2"></i> Call to action
+                </a>
+            </div>
+            <div class="d-flex align-items-center">
+                <div class="col-80" style="min-width:115px;">
+                    <p class="button-block__medium--text">Disabled</p>
+                </div>
+                <a href="#" class="btn btn-outline-disabled btn-sm disabled mr-30" style="min-width:285px;">
+                    Call to action
+                </a>
+                <a href="#" class="btn btn-outline-disabled btn-sm disabled d-flex align-items-center justify-content-center" style="min-width:285px;">
+                   <i class="search-icon-sm me-2"></i> Call to action
+                </a>
+            </div>
+        </div>
+        <div class="button-block__medium mt-0 bg-black py-5 ps-3">
+            <div class="d-flex align-items-center mb-30">
+                <div class="col-80" style="min-width:115px;">
+                    <p class="button-block__medium--text text-white">Default</p>
+                </div>
+                <a href="#" class="btn btn-outline-light btn-sm mr-30" style="min-width:285px;">
+                    Call to action
+                </a>
+                <a href="#" class="btn btn-outline-light btn-sm d-flex align-items-center justify-content-center" style="min-width:285px;">
+                   <i class="search-icon-sm me-2"></i> Call to action
+                </a>
+            </div>
+            <div class="d-flex align-items-center mb-30">
+                <div class="col-80" style="min-width:115px;">
+                    <p class="button-block__medium--text text-white">Hover</p>
+                </div>
+                <a href="#" class="btn btn-outline-secondary btn-sm mr-30" style="min-width:285px;">
+                    Call to action
+                </a>
+                <a href="#" class="btn btn-outline-secondary btn-sm d-flex align-items-center justify-content-center" style="min-width:285px;">
+                   <i class="search-icon-sm me-2"></i> Call to action
+                </a>
+            </div>
+            <div class="d-flex align-items-center">
+                <div class="col-80" style="min-width:115px;">
+                    <p class="button-block__medium--text text-white">Disabled</p>
+                </div>
+                <a href="#" class="btn btn-outline-disabled-dark btn-sm mr-30 disabled" style="min-width:285px;">
+                    Call to action
+                </a>
+                <a href="#" class="btn btn-outline-disabled-dark btn-sm d-flex align-items-center justify-content-center disabled" style="min-width:285px;">
+                   <i class="search-icon-sm me-2"></i> Call to action
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+    </div>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script>
+        const pageHeader = document.getElementById('page-header')
+        const mainTag = document.getElementsByTagName('main')[0]
+        const leftSidebarInnerLink = document.querySelectorAll('.nav-inner li')
+        document.addEventListener("scroll", (event) => {
+            const topScroll = window.pageYOffset
+            
+            console.log(topScroll)
+            if(topScroll > 100){
+                pageHeader.classList.add('page-header-sticky')
+            }else{
+                pageHeader.classList.remove('page-header-sticky')
+                mainTag.style.marginTop = '0px'
+            }
+        });
+        leftSidebarInnerLink.forEach(function (element) {
+            element.addEventListener('click', function (e) {
+                e.preventDefault()
+                if(pageHeader.classList.contains('page-header-sticky')){
+                    mainTag.style.marginTop = '100px'
+                }else{
+                    mainTag.style.marginTop = '0px'
+                }
+                
+            })
+        })
+    </script>
+</body>
+</html>

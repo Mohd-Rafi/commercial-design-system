@@ -1,0 +1,1396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Commercial Design Systems</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <aside class="left-sidebar" id="sidebar">
+        <ul class="nav flex-column left-sidebar__column">
+            <li>
+                <a class="nav-link" href="index.html">INDEX</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="color.html">1. Colors</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="typography.html">2. Typography</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="header-banner.html">3. Layout Structure</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="icons.html">4. Icons</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="button.html">5. Buttons, Radio Button</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="input-field.html">6. Input Fields</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="card.html">7. Card</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="loader.html">8. Loader</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="date-picker.html">9. Date Picker</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="checkbox.html">10. Check Box</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="drag-and-drop.html">11. Drag & Drop</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-link-active" href="javascript:void(0)">12. Navigation</a>
+              <ul class="list-unstyled nav-inner d-block">
+                <!-- <li class="nav-inner__list">
+                  <a href="#navigation-desktop"  class="nav-inner__list--text">Navigation Desktop</a>
+                </li> -->
+                <li class="nav-inner__list">
+                  <a href="#navigation-desktop-option2" class="nav-inner__list--text">Navigation Desktop option 2</a>
+                </li>
+                <li class="nav-inner__list">
+                  <a href="#navigation-desktop-option3" class="nav-inner__list--text">Navigation Desktop option 3</a>
+                </li>
+                <li class="nav-inner__list">
+                  <a href="#navigation-desktop-dark" class="nav-inner__list--text">Navigation Desktop Dark</a>
+                </li>
+                <li class="nav-inner__list">
+                    <a href="#navigation-desktop-option2-dark" class="nav-inner__list--text">Navigation Desktop option 2 Dark</a>
+                </li>
+                <li class="nav-inner__list">
+                    <a href="#navigation-desktop-option3-dark" class="nav-inner__list--text">Navigation Desktop option 3 Dark</a>
+                </li>
+            </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="notification.html">13. Notifications</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="imagery.html">14. Imagery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="search.html">15. Search</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="switch.html">16. Switch</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="overlays.html">17. Overlays</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pagination.html">18. Pagination</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="player.html">19. Player</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="slider.html">20. Slider</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="slideshow.html">21. Slideshow</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="table.html">22. Table</a>
+            </li>
+        </ul>
+    </aside>
+    <main class="main" data-bs-spy="scroll" data-bs-target="#sidebar" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true">
+        <div class="d-flex align-items-center page-header" id="page-header">
+          <h1 class="color-palette--title mb-0" id="navigation-desktop">Navigation Desktop</h1>
+          <a href="#" class="btn btn-primary ms-auto">Download More</a>
+          <a class="btn btn-outline-primary ms-4" href="https://www.figma.com/proto/BNspPo1UTQoTvEyBgp5kAY/Commercial-Design-System?type=design&node-id=409-1721&t=zTAFhnKrOaWxUeRp-0&scaling=min-zoom&page-id=11%3A17" target="_blank">View Figma File</a>
+        </div>
+        <nav class="navbar">
+              <a class="navbar-brand p-0" href="#">
+                <img src="images/ms-commercial-logo.png" alt="logo" title="logo" width="314" height="41">
+              </a>
+                <ul class="navbar-nav ms-auto flex-row navbar-custom">
+                  <li class="nav-item">
+                    <a class="nav-link dropdown-toggle ps-0" href="#">Menu 1</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link dropdown-toggle" href="#">Menu 2</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link dropdown-toggle" href="#">Menu 3</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">Menu 4</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">Menu 5</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">Menu 6</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">Menu 7</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">Menu 8</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M8.80534 17.2071C13.0395 17.2071 16.472 13.7751 16.472 9.54156C16.472 5.30798 13.0395 1.87598 8.80534 1.87598C4.57116 1.87598 1.13867 5.30798 1.13867 9.54156C1.13867 13.7751 4.57116 17.2071 8.80534 17.2071Z"
+                                stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M18.3885 19.1242L14.2197 14.9561" stroke="black" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link px-0">
+                        <svg width="26" height="17" viewBox="0 0 26 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M25.555 16.7837H0.8338C0.588056 16.7837 0.388672 16.5843 0.388672 16.3385V15.0942C0.388672 14.8485 0.588056 14.6495 0.8338 14.6495H25.555C25.8008 14.6495 26.0002 14.8485 26.0002 15.0942V16.3385C26.0002 16.5843 25.8008 16.7837 25.555 16.7837ZM25.555 9.8971H0.8338C0.588056 9.8971 0.388672 9.69772 0.388672 9.45198V8.20767C0.388672 7.96193 0.588056 7.76254 0.8338 7.76254H25.555C25.8008 7.76254 26.0002 7.96193 26.0002 8.20767V9.45198C26.0002 9.69772 25.8008 9.8971 25.555 9.8971ZM25.555 3.01013H0.8338C0.588056 3.01013 0.388672 2.81075 0.388672 2.565V1.32069C0.388672 1.07495 0.588056 0.875977 0.8338 0.875977H25.555C25.8008 0.875977 26.0002 1.07495 26.0002 1.32069V2.565C26.0002 2.81075 25.8008 3.01013 25.555 3.01013Z"
+                                fill="black" />
+                        </svg>
+                    </a>
+                  </li>
+                </ul>
+        </nav>
+        <nav class="navbar mt-60">
+          <a class="navbar-brand p-0" href="#">
+            <img src="images/ms-commercial-logo.png" alt="logo" title="logo" width="314" height="41">
+          </a>
+          <ul class="navbar-nav ms-auto flex-row navbar-custom">
+            <li class="nav-item">
+              <a class="nav-link dropdown-toggle  ps-0" href="#">Menu 1</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link dropdown-toggle nav-link-hover" href="#">Menu 2</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link dropdown-toggle" href="#">Menu 3</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Menu 4</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Menu 5</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Menu 6</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Menu 7</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Menu 8</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M8.80534 17.2071C13.0395 17.2071 16.472 13.7751 16.472 9.54156C16.472 5.30798 13.0395 1.87598 8.80534 1.87598C4.57116 1.87598 1.13867 5.30798 1.13867 9.54156C1.13867 13.7751 4.57116 17.2071 8.80534 17.2071Z"
+                    stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M18.3885 19.1242L14.2197 14.9561" stroke="black" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link px-0">
+                <svg width="26" height="17" viewBox="0 0 26 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M25.555 16.7837H0.8338C0.588056 16.7837 0.388672 16.5843 0.388672 16.3385V15.0942C0.388672 14.8485 0.588056 14.6495 0.8338 14.6495H25.555C25.8008 14.6495 26.0002 14.8485 26.0002 15.0942V16.3385C26.0002 16.5843 25.8008 16.7837 25.555 16.7837ZM25.555 9.8971H0.8338C0.588056 9.8971 0.388672 9.69772 0.388672 9.45198V8.20767C0.388672 7.96193 0.588056 7.76254 0.8338 7.76254H25.555C25.8008 7.76254 26.0002 7.96193 26.0002 8.20767V9.45198C26.0002 9.69772 25.8008 9.8971 25.555 9.8971ZM25.555 3.01013H0.8338C0.588056 3.01013 0.388672 2.81075 0.388672 2.565V1.32069C0.388672 1.07495 0.588056 0.875977 0.8338 0.875977H25.555C25.8008 0.875977 26.0002 1.07495 26.0002 1.32069V2.565C26.0002 2.81075 25.8008 3.01013 25.555 3.01013Z"
+                    fill="black" />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <nav class="navbar mt-60">
+          <a class="navbar-brand p-0" href="#">
+            <img src="images/ms-commercial-logo.png" alt="logo" title="logo" width="314" height="41">
+          </a>
+          <ul class="navbar-nav ms-auto flex-row navbar-custom">
+            <li class="nav-item">
+              <a class="nav-link dropdown-toggle  ps-0" href="#">Menu 1</a>
+            </li>
+            <li class="nav-item dropdown-custom">
+              <a class="nav-link dropdown-toggle nav-link-hover" href="#">Menu 2</a>
+              <ul class="dropdown-menu d-flex dropdown-menu-custom">
+                <li><a class="dropdown-item" href="#">Menu 1</a></li>
+                <li><a class="dropdown-item" href="#">Menu 2</a></li>
+                <li><a class="dropdown-item" href="#">Menu 3</a></li>
+                <li><a class="dropdown-item" href="#">Menu 4</a></li>
+                <li><a class="dropdown-item" href="#">Menu 5</a></li>
+                <li><a class="dropdown-item" href="#">Menu 6</a></li>
+                <li><a class="dropdown-item" href="#">Menu 3</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link dropdown-toggle" href="#">Menu 3</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Menu 4</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Menu 5</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Menu 6</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Menu 7</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Menu 8</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M8.80534 17.2071C13.0395 17.2071 16.472 13.7751 16.472 9.54156C16.472 5.30798 13.0395 1.87598 8.80534 1.87598C4.57116 1.87598 1.13867 5.30798 1.13867 9.54156C1.13867 13.7751 4.57116 17.2071 8.80534 17.2071Z"
+                    stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M18.3885 19.1242L14.2197 14.9561" stroke="black" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link px-0">
+                <svg width="26" height="17" viewBox="0 0 26 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M25.555 16.7837H0.8338C0.588056 16.7837 0.388672 16.5843 0.388672 16.3385V15.0942C0.388672 14.8485 0.588056 14.6495 0.8338 14.6495H25.555C25.8008 14.6495 26.0002 14.8485 26.0002 15.0942V16.3385C26.0002 16.5843 25.8008 16.7837 25.555 16.7837ZM25.555 9.8971H0.8338C0.588056 9.8971 0.388672 9.69772 0.388672 9.45198V8.20767C0.388672 7.96193 0.588056 7.76254 0.8338 7.76254H25.555C25.8008 7.76254 26.0002 7.96193 26.0002 8.20767V9.45198C26.0002 9.69772 25.8008 9.8971 25.555 9.8971ZM25.555 3.01013H0.8338C0.588056 3.01013 0.388672 2.81075 0.388672 2.565V1.32069C0.388672 1.07495 0.588056 0.875977 0.8338 0.875977H25.555C25.8008 0.875977 26.0002 1.07495 26.0002 1.32069V2.565C26.0002 2.81075 25.8008 3.01013 25.555 3.01013Z"
+                    fill="black" />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <nav class="navbar" style="margin-top:150px;">
+          <a class="navbar-brand p-0" href="#">
+            <img src="images/ms-commercial-logo.png" alt="logo" title="logo" width="314" height="41">
+          </a>
+          <ul class="navbar-nav ms-auto flex-row navbar-custom">
+            <li class="nav-item">
+              <a class="nav-link dropdown-toggle  ps-0" href="#">Menu 1</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link dropdown-toggle nav-link-hover2" href="#">Menu 2</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link dropdown-toggle" href="#">Menu 3</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Menu 4</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Menu 5</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Menu 6</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Menu 7</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Menu 8</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M8.80534 17.2071C13.0395 17.2071 16.472 13.7751 16.472 9.54156C16.472 5.30798 13.0395 1.87598 8.80534 1.87598C4.57116 1.87598 1.13867 5.30798 1.13867 9.54156C1.13867 13.7751 4.57116 17.2071 8.80534 17.2071Z"
+                    stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M18.3885 19.1242L14.2197 14.9561" stroke="black" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link px-0">
+                <svg width="26" height="17" viewBox="0 0 26 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M25.555 16.7837H0.8338C0.588056 16.7837 0.388672 16.5843 0.388672 16.3385V15.0942C0.388672 14.8485 0.588056 14.6495 0.8338 14.6495H25.555C25.8008 14.6495 26.0002 14.8485 26.0002 15.0942V16.3385C26.0002 16.5843 25.8008 16.7837 25.555 16.7837ZM25.555 9.8971H0.8338C0.588056 9.8971 0.388672 9.69772 0.388672 9.45198V8.20767C0.388672 7.96193 0.588056 7.76254 0.8338 7.76254H25.555C25.8008 7.76254 26.0002 7.96193 26.0002 8.20767V9.45198C26.0002 9.69772 25.8008 9.8971 25.555 9.8971ZM25.555 3.01013H0.8338C0.588056 3.01013 0.388672 2.81075 0.388672 2.565V1.32069C0.388672 1.07495 0.588056 0.875977 0.8338 0.875977H25.555C25.8008 0.875977 26.0002 1.07495 26.0002 1.32069V2.565C26.0002 2.81075 25.8008 3.01013 25.555 3.01013Z"
+                    fill="black" />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <nav class="navbar mt-60">
+          <a class="navbar-brand p-0" href="#">
+            <img src="images/ms-commercial-logo.png" alt="logo" title="logo" width="314" height="41">
+          </a>
+          <ul class="navbar-nav ms-auto flex-row navbar-custom">
+            <li class="nav-item">
+              <a class="nav-link dropdown-toggle  ps-0" href="#">Menu 1</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link dropdown-toggle nav-link-hover2" href="#">Menu 2</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link dropdown-toggle" href="#">Menu 3</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Menu 4</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Menu 5</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Menu 6</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Menu 7</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Menu 8</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M8.80534 17.2071C13.0395 17.2071 16.472 13.7751 16.472 9.54156C16.472 5.30798 13.0395 1.87598 8.80534 1.87598C4.57116 1.87598 1.13867 5.30798 1.13867 9.54156C1.13867 13.7751 4.57116 17.2071 8.80534 17.2071Z"
+                    stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M18.3885 19.1242L14.2197 14.9561" stroke="black" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link px-0">
+                <svg width="26" height="17" viewBox="0 0 26 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M25.555 16.7837H0.8338C0.588056 16.7837 0.388672 16.5843 0.388672 16.3385V15.0942C0.388672 14.8485 0.588056 14.6495 0.8338 14.6495H25.555C25.8008 14.6495 26.0002 14.8485 26.0002 15.0942V16.3385C26.0002 16.5843 25.8008 16.7837 25.555 16.7837ZM25.555 9.8971H0.8338C0.588056 9.8971 0.388672 9.69772 0.388672 9.45198V8.20767C0.388672 7.96193 0.588056 7.76254 0.8338 7.76254H25.555C25.8008 7.76254 26.0002 7.96193 26.0002 8.20767V9.45198C26.0002 9.69772 25.8008 9.8971 25.555 9.8971ZM25.555 3.01013H0.8338C0.588056 3.01013 0.388672 2.81075 0.388672 2.565V1.32069C0.388672 1.07495 0.588056 0.875977 0.8338 0.875977H25.555C25.8008 0.875977 26.0002 1.07495 26.0002 1.32069V2.565C26.0002 2.81075 25.8008 3.01013 25.555 3.01013Z"
+                    fill="black" />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <nav class="navbar mt-60">
+          <a class="navbar-brand p-0" href="#">
+            <img src="images/ms-commercial-logo.png" alt="logo" title="logo" width="314" height="41">
+          </a>
+          <ul class="navbar-nav ms-auto flex-row navbar-custom">
+            <li class="nav-item">
+              <a class="nav-link dropdown-toggle  ps-0" href="#">Menu 1</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link dropdown-toggle nav-link-hover2 bg-black" href="#">Menu 2</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link dropdown-toggle" href="#">Menu 3</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Menu 4</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Menu 5</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Menu 6</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Menu 7</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Menu 8</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M8.80534 17.2071C13.0395 17.2071 16.472 13.7751 16.472 9.54156C16.472 5.30798 13.0395 1.87598 8.80534 1.87598C4.57116 1.87598 1.13867 5.30798 1.13867 9.54156C1.13867 13.7751 4.57116 17.2071 8.80534 17.2071Z"
+                    stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M18.3885 19.1242L14.2197 14.9561" stroke="black" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link px-0">
+                <svg width="26" height="17" viewBox="0 0 26 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M25.555 16.7837H0.8338C0.588056 16.7837 0.388672 16.5843 0.388672 16.3385V15.0942C0.388672 14.8485 0.588056 14.6495 0.8338 14.6495H25.555C25.8008 14.6495 26.0002 14.8485 26.0002 15.0942V16.3385C26.0002 16.5843 25.8008 16.7837 25.555 16.7837ZM25.555 9.8971H0.8338C0.588056 9.8971 0.388672 9.69772 0.388672 9.45198V8.20767C0.388672 7.96193 0.588056 7.76254 0.8338 7.76254H25.555C25.8008 7.76254 26.0002 7.96193 26.0002 8.20767V9.45198C26.0002 9.69772 25.8008 9.8971 25.555 9.8971ZM25.555 3.01013H0.8338C0.588056 3.01013 0.388672 2.81075 0.388672 2.565V1.32069C0.388672 1.07495 0.588056 0.875977 0.8338 0.875977H25.555C25.8008 0.875977 26.0002 1.07495 26.0002 1.32069V2.565C26.0002 2.81075 25.8008 3.01013 25.555 3.01013Z"
+                    fill="black" />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- Navigation Desktop option 2 -->
+        <div class="navigation-bloack2">
+          <h2 class="color-palette--title mb-5" id="navigation-desktop-option2">Navigation Desktop option 2</h2>
+          <nav class="navbar">
+            <a class="navbar-brand p-0" href="#">
+              <img src="images/ms-commercial-logo.png" alt="logo" title="logo" width="314" height="41">
+            </a>
+            <ul class="navbar-nav mx-auto flex-row navbar-custom">
+              <li class="nav-item">
+                <a class="nav-link dropdown-toggle ps-0" href="#">Menu 1</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link dropdown-toggle" href="#">Menu 2</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link dropdown-toggle" href="#">Menu 3</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Menu 4</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Menu 5</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Menu 6</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Menu 7</a>
+              </li>
+            </ul>
+            <ul class="navbar-nav flex-row navbar-custom">
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M8.80534 17.2071C13.0395 17.2071 16.472 13.7751 16.472 9.54156C16.472 5.30798 13.0395 1.87598 8.80534 1.87598C4.57116 1.87598 1.13867 5.30798 1.13867 9.54156C1.13867 13.7751 4.57116 17.2071 8.80534 17.2071Z"
+                      stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M18.3885 19.1242L14.2197 14.9561" stroke="black" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link px-0">
+                  <svg width="26" height="17" viewBox="0 0 26 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M25.555 16.7837H0.8338C0.588056 16.7837 0.388672 16.5843 0.388672 16.3385V15.0942C0.388672 14.8485 0.588056 14.6495 0.8338 14.6495H25.555C25.8008 14.6495 26.0002 14.8485 26.0002 15.0942V16.3385C26.0002 16.5843 25.8008 16.7837 25.555 16.7837ZM25.555 9.8971H0.8338C0.588056 9.8971 0.388672 9.69772 0.388672 9.45198V8.20767C0.388672 7.96193 0.588056 7.76254 0.8338 7.76254H25.555C25.8008 7.76254 26.0002 7.96193 26.0002 8.20767V9.45198C26.0002 9.69772 25.8008 9.8971 25.555 9.8971ZM25.555 3.01013H0.8338C0.588056 3.01013 0.388672 2.81075 0.388672 2.565V1.32069C0.388672 1.07495 0.588056 0.875977 0.8338 0.875977H25.555C25.8008 0.875977 26.0002 1.07495 26.0002 1.32069V2.565C26.0002 2.81075 25.8008 3.01013 25.555 3.01013Z"
+                      fill="black" />
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <nav class="navbar mt-60">
+            <a class="navbar-brand p-0" href="#">
+              <img src="images/ms-commercial-logo.png" alt="logo" title="logo" width="314" height="41">
+            </a>
+            <ul class="navbar-nav mx-auto flex-row navbar-custom">
+              <li class="nav-item">
+                <a class="nav-link dropdown-toggle  ps-0" href="#">Menu 1</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link dropdown-toggle nav-link-hover" href="#">Menu 2</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link dropdown-toggle" href="#">Menu 3</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Menu 4</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Menu 5</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Menu 6</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Menu 7</a>
+              </li>
+            </ul>
+            <ul class="navbar-nav flex-row navbar-custom">
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M8.80534 17.2071C13.0395 17.2071 16.472 13.7751 16.472 9.54156C16.472 5.30798 13.0395 1.87598 8.80534 1.87598C4.57116 1.87598 1.13867 5.30798 1.13867 9.54156C1.13867 13.7751 4.57116 17.2071 8.80534 17.2071Z"
+                      stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M18.3885 19.1242L14.2197 14.9561" stroke="black" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link px-0">
+                  <svg width="26" height="17" viewBox="0 0 26 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M25.555 16.7837H0.8338C0.588056 16.7837 0.388672 16.5843 0.388672 16.3385V15.0942C0.388672 14.8485 0.588056 14.6495 0.8338 14.6495H25.555C25.8008 14.6495 26.0002 14.8485 26.0002 15.0942V16.3385C26.0002 16.5843 25.8008 16.7837 25.555 16.7837ZM25.555 9.8971H0.8338C0.588056 9.8971 0.388672 9.69772 0.388672 9.45198V8.20767C0.388672 7.96193 0.588056 7.76254 0.8338 7.76254H25.555C25.8008 7.76254 26.0002 7.96193 26.0002 8.20767V9.45198C26.0002 9.69772 25.8008 9.8971 25.555 9.8971ZM25.555 3.01013H0.8338C0.588056 3.01013 0.388672 2.81075 0.388672 2.565V1.32069C0.388672 1.07495 0.588056 0.875977 0.8338 0.875977H25.555C25.8008 0.875977 26.0002 1.07495 26.0002 1.32069V2.565C26.0002 2.81075 25.8008 3.01013 25.555 3.01013Z"
+                      fill="black" />
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <nav class="navbar mt-60">
+            <a class="navbar-brand p-0" href="#">
+              <img src="images/ms-commercial-logo.png" alt="logo" title="logo" width="314" height="41">
+            </a>
+            <ul class="navbar-nav mx-auto flex-row navbar-custom">
+              <li class="nav-item">
+                <a class="nav-link dropdown-toggle  ps-0" href="#">Menu 1</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link dropdown-toggle nav-link-hover2" href="#">Menu 2</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link dropdown-toggle" href="#">Menu 3</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Menu 4</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Menu 5</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Menu 6</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Menu 7</a>
+              </li>
+            </ul>
+            <ul class="navbar-nav flex-row navbar-custom">
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M8.80534 17.2071C13.0395 17.2071 16.472 13.7751 16.472 9.54156C16.472 5.30798 13.0395 1.87598 8.80534 1.87598C4.57116 1.87598 1.13867 5.30798 1.13867 9.54156C1.13867 13.7751 4.57116 17.2071 8.80534 17.2071Z"
+                      stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M18.3885 19.1242L14.2197 14.9561" stroke="black" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link px-0">
+                  <svg width="26" height="17" viewBox="0 0 26 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M25.555 16.7837H0.8338C0.588056 16.7837 0.388672 16.5843 0.388672 16.3385V15.0942C0.388672 14.8485 0.588056 14.6495 0.8338 14.6495H25.555C25.8008 14.6495 26.0002 14.8485 26.0002 15.0942V16.3385C26.0002 16.5843 25.8008 16.7837 25.555 16.7837ZM25.555 9.8971H0.8338C0.588056 9.8971 0.388672 9.69772 0.388672 9.45198V8.20767C0.388672 7.96193 0.588056 7.76254 0.8338 7.76254H25.555C25.8008 7.76254 26.0002 7.96193 26.0002 8.20767V9.45198C26.0002 9.69772 25.8008 9.8971 25.555 9.8971ZM25.555 3.01013H0.8338C0.588056 3.01013 0.388672 2.81075 0.388672 2.565V1.32069C0.388672 1.07495 0.588056 0.875977 0.8338 0.875977H25.555C25.8008 0.875977 26.0002 1.07495 26.0002 1.32069V2.565C26.0002 2.81075 25.8008 3.01013 25.555 3.01013Z"
+                      fill="black" />
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <!-- Navigation Desktop option 3 -->
+        <div class="navigation-bloack2">
+          <h2 class="color-palette--title mb-5" id="navigation-desktop-option3">Navigation Desktop option 3</h2>
+          <div class="row g-0 column-gap-5">
+            <div class="col">
+              <div class="d-flex">
+                <ul class="list-unstyled list-nav mb-0 align-self-center pe-5">
+                  <li class="list-nav__item">
+                    <a href="#" class="list-nav-text text-nowrap list-nav-text-active">Menu Item One</a>
+                  </li>
+                  <li class="list-nav__item">
+                    <a href="#" class="list-nav-text text-nowrap">Menu Item Two</a>
+                  </li>
+                  <li class="list-nav__item">
+                    <a href="#" class="list-nav-text text-nowrap">Menu Item Three</a>
+                  </li>
+                  <li class="list-nav__item">
+                    <a href="#" class="list-nav-text text-nowrap">Menu Item Fourth </a>
+                  </li>
+                </ul>
+                <div>
+                  <img src="images/navigation-img1.png" alt="" title="" class="img-fluid">
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="d-flex">
+                <ul class="list-unstyled list-nav mb-0 align-self-center pe-5">
+                  <li class="list-nav__item">
+                    <a href="#" class="list-nav-text text-nowrap list-nav-text-active">Menu Item One</a>
+                  </li>
+                  <li class="list-nav__item">
+                    <a href="#" class="list-nav-text text-nowrap">Menu Item Two</a>
+                  </li>
+                  <li class="list-nav__item">
+                    <a href="#" class="list-nav-text text-nowrap">Menu Item Three</a>
+                  </li>
+                  <li class="list-nav__item">
+                    <a href="#" class="list-nav-text text-nowrap">Menu Item Fourth </a>
+                  </li>
+                </ul>
+                <div>
+                  <img src="images/navigation-img2.png" alt="" title="" class="img-fluid">
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="d-flex">
+                <ul class="list-unstyled list-nav mb-0 align-self-center pe-5">
+                  <li class="list-nav__item">
+                    <a href="#" class="list-nav-text text-nowrap list-nav-text-active">Menu Item One</a>
+                  </li>
+                  <li class="list-nav__item">
+                    <a href="#" class="list-nav-text text-nowrap">Menu Item Two</a>
+                  </li>
+                  <li class="list-nav__item">
+                    <a href="#" class="list-nav-text text-nowrap">Menu Item Three</a>
+                  </li>
+                  <li class="list-nav__item">
+                    <a href="#" class="list-nav-text text-nowrap">Menu Item Fourth </a>
+                  </li>
+                </ul>
+                <div>
+                  <img src="images/navigation-img3.png" alt="" title="" class="img-fluid">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="navigation-bloack2">
+          <div class="row g-0 column-gap-5">
+            <div class="col">
+                <ul class="list-unstyled list-nav mb-0 align-self-center pe-5 list-flat-nav">
+                  <li class="list-nav__item">
+                    <a href="#" class="list-nav-text list-flat-nav-link list-flat-nav-link-active">Menu Item One</a>
+                  </li>
+                  <li class="list-nav__item">
+                    <a href="#" class="list-nav-text list-flat-nav-link">Menu Item Two</a>
+                  </li>
+                  <li class="list-nav__item">
+                    <a href="#" class="list-nav-text list-flat-nav-link">Menu Item Three</a>
+                  </li>
+                  <li class="list-nav__item">
+                    <a href="#" class="list-nav-text list-flat-nav-link">Menu Item Fourth </a>
+                  </li>
+                </ul>
+            </div>
+            <div class="col">
+                <ul class="list-unstyled list-nav mb-0 align-self-center pe-5">
+                  <li class="list-nav__item">
+                    <a href="#" class="list-nav-text list-flat-nav-link">Menu Item One</a>
+                  </li>
+                  <li class="list-nav__item">
+                    <a href="#" class="list-nav-text list-flat-nav-link">Menu Item Two</a>
+                  </li>
+                  <li class="list-nav__item">
+                    <a href="#" class="list-nav-text list-flat-nav-link">Menu Item Three</a>
+                  </li>
+                  <li class="list-nav__item">
+                    <a href="#" class="list-nav-text list-flat-nav-link">Menu Item Fourth </a>
+                  </li>
+                </ul>
+            </div>
+            <div class="col">
+                <ul class="list-unstyled list-nav mb-0 align-self-center pe-5">
+                  <li class="list-nav__item">
+                    <a href="#" class="list-nav-text list-flat-nav-link">Menu Item One</a>
+                  </li>
+                  <li class="list-nav__item">
+                    <a href="#" class="list-nav-text list-flat-nav-link">Menu Item Two</a>
+                  </li>
+                  <li class="list-nav__item">
+                    <a href="#" class="list-nav-text list-flat-nav-link">Menu Item Three</a>
+                  </li>
+                  <li class="list-nav__item">
+                    <a href="#" class="list-nav-text list-flat-nav-link">Menu Item Fourth </a>
+                  </li>
+                </ul>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="navigation-bloack2">
+          <div class="row g-0 column-gap-5">
+            <div class="col">
+                <ul class="list-unstyled list-nav mb-0 align-self-center pe-5 list-flat-nav list-flat-nav-check">
+                  <li class="list-nav__item">
+                    <a href="#" class="list-nav-text list-flat-nav-link list-flat-nav-link-active">Menu Item One</a>
+                  </li>
+                  <li class="list-nav__item">
+                    <a href="#" class="list-nav-text list-flat-nav-link">Menu Item Two</a>
+                  </li>
+                  <li class="list-nav__item">
+                    <a href="#" class="list-nav-text list-flat-nav-link">Menu Item Three</a>
+                  </li>
+                  <li class="list-nav__item">
+                    <a href="#" class="list-nav-text list-flat-nav-link">Menu Item Fourth </a>
+                  </li>
+                </ul>
+            </div>
+            <div class="col">
+                <ul class="list-unstyled list-nav mb-0 align-self-center pe-5 list-flat-nav list-flat-nav-check">
+                  <li class="list-nav__item">
+                    <a href="#" class="list-nav-text list-flat-nav-link">Menu Item One</a>
+                  </li>
+                  <li class="list-nav__item">
+                    <a href="#" class="list-nav-text list-flat-nav-link">Menu Item Two</a>
+                  </li>
+                  <li class="list-nav__item">
+                    <a href="#" class="list-nav-text list-flat-nav-link">Menu Item Three</a>
+                  </li>
+                  <li class="list-nav__item">
+                    <a href="#" class="list-nav-text list-flat-nav-link">Menu Item Fourth </a>
+                  </li>
+                </ul>
+            </div>
+            <div class="col">
+                <ul class="list-unstyled list-nav mb-0 align-self-center pe-5 list-flat-nav list-flat-nav-check">
+                  <li class="list-nav__item">
+                    <a href="#" class="list-nav-text list-flat-nav-link">Menu Item One</a>
+                  </li>
+                  <li class="list-nav__item">
+                    <a href="#" class="list-nav-text list-flat-nav-link">Menu Item Two</a>
+                  </li>
+                  <li class="list-nav__item">
+                    <a href="#" class="list-nav-text list-flat-nav-link">Menu Item Three</a>
+                  </li>
+                  <li class="list-nav__item">
+                    <a href="#" class="list-nav-text list-flat-nav-link">Menu Item Fourth </a>
+                  </li>
+                </ul>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- dark screen -->
+        <h1 class="color-palette--title mb-5 mt-200" id="navigation-desktop-dark">Navigation Desktop</h1>
+        <nav class="navbar bg-black navbar-reverse pe-2">
+              <a class="navbar-brand p-0" href="#">
+                <img src="images/ms-commercial-logo-white.png" alt="logo" title="logo" width="314" height="41">
+              </a>
+                <ul class="navbar-nav ms-auto flex-row navbar-custom">
+                  <li class="nav-item">
+                    <a class="nav-link dropdown-toggle ps-0" href="#">Menu 1</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link dropdown-toggle" href="#">Menu 2</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link dropdown-toggle" href="#">Menu 3</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">Menu 4</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">Menu 5</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">Menu 6</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">Menu 7</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">Menu 8</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M8.80534 17.2071C13.0395 17.2071 16.472 13.7751 16.472 9.54156C16.472 5.30798 13.0395 1.87598 8.80534 1.87598C4.57116 1.87598 1.13867 5.30798 1.13867 9.54156C1.13867 13.7751 4.57116 17.2071 8.80534 17.2071Z"
+                                stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M18.3885 19.1242L14.2197 14.9561" stroke="white" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link px-0">
+                        <svg width="26" height="17" viewBox="0 0 26 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M25.555 16.7837H0.8338C0.588056 16.7837 0.388672 16.5843 0.388672 16.3385V15.0942C0.388672 14.8485 0.588056 14.6495 0.8338 14.6495H25.555C25.8008 14.6495 26.0002 14.8485 26.0002 15.0942V16.3385C26.0002 16.5843 25.8008 16.7837 25.555 16.7837ZM25.555 9.8971H0.8338C0.588056 9.8971 0.388672 9.69772 0.388672 9.45198V8.20767C0.388672 7.96193 0.588056 7.76254 0.8338 7.76254H25.555C25.8008 7.76254 26.0002 7.96193 26.0002 8.20767V9.45198C26.0002 9.69772 25.8008 9.8971 25.555 9.8971ZM25.555 3.01013H0.8338C0.588056 3.01013 0.388672 2.81075 0.388672 2.565V1.32069C0.388672 1.07495 0.588056 0.875977 0.8338 0.875977H25.555C25.8008 0.875977 26.0002 1.07495 26.0002 1.32069V2.565C26.0002 2.81075 25.8008 3.01013 25.555 3.01013Z"
+                            fill="white" />
+                        </svg>
+                    </a>
+                  </li>
+                </ul>
+        </nav>
+        <nav class="navbar mt-60 bg-black navbar-reverse pe-2">
+          <a class="navbar-brand p-0" href="#">
+            <img src="images/ms-commercial-logo-white.png" alt="logo" title="logo" width="314" height="41">
+          </a>
+          <ul class="navbar-nav ms-auto flex-row navbar-custom">
+            <li class="nav-item">
+              <a class="nav-link dropdown-toggle  ps-0" href="#">Menu 1</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link dropdown-toggle nav-link-hover text-primary dropdown-primary" href="#">Menu 2</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link dropdown-toggle" href="#">Menu 3</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Menu 4</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Menu 5</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Menu 6</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Menu 7</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Menu 8</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M8.80534 17.2071C13.0395 17.2071 16.472 13.7751 16.472 9.54156C16.472 5.30798 13.0395 1.87598 8.80534 1.87598C4.57116 1.87598 1.13867 5.30798 1.13867 9.54156C1.13867 13.7751 4.57116 17.2071 8.80534 17.2071Z"
+                    stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M18.3885 19.1242L14.2197 14.9561" stroke="white" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link px-0">
+                <svg width="26" height="17" viewBox="0 0 26 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M25.555 16.7837H0.8338C0.588056 16.7837 0.388672 16.5843 0.388672 16.3385V15.0942C0.388672 14.8485 0.588056 14.6495 0.8338 14.6495H25.555C25.8008 14.6495 26.0002 14.8485 26.0002 15.0942V16.3385C26.0002 16.5843 25.8008 16.7837 25.555 16.7837ZM25.555 9.8971H0.8338C0.588056 9.8971 0.388672 9.69772 0.388672 9.45198V8.20767C0.388672 7.96193 0.588056 7.76254 0.8338 7.76254H25.555C25.8008 7.76254 26.0002 7.96193 26.0002 8.20767V9.45198C26.0002 9.69772 25.8008 9.8971 25.555 9.8971ZM25.555 3.01013H0.8338C0.588056 3.01013 0.388672 2.81075 0.388672 2.565V1.32069C0.388672 1.07495 0.588056 0.875977 0.8338 0.875977H25.555C25.8008 0.875977 26.0002 1.07495 26.0002 1.32069V2.565C26.0002 2.81075 25.8008 3.01013 25.555 3.01013Z"
+                    fill="white" />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <nav class="navbar mt-60 bg-black navbar-reverse pe-2">
+          <a class="navbar-brand p-0" href="#">
+            <img src="images/ms-commercial-logo-white.png" alt="logo" title="logo" width="314" height="41">
+          </a>
+          <ul class="navbar-nav ms-auto flex-row navbar-custom">
+            <li class="nav-item">
+              <a class="nav-link dropdown-toggle ps-0" href="#">Menu 1</a>
+            </li>
+            <li class="nav-item dropdown-custom">
+              <a class="nav-link dropdown-toggle nav-link-hover text-primary dropdown-primary" href="#">Menu 2</a>
+              <ul class="dropdown-menu d-flex dropdown-menu-custom bg-black">
+                <li><a class="dropdown-item text-primary" href="#">Menu 1</a></li>
+                <li><a class="dropdown-item text-white" href="#">Menu 2</a></li>
+                <li><a class="dropdown-item text-white" href="#">Menu 3</a></li>
+                <li><a class="dropdown-item text-white" href="#">Menu 4</a></li>
+                <li><a class="dropdown-item text-white" href="#">Menu 5</a></li>
+                <li><a class="dropdown-item text-white" href="#">Menu 6</a></li>
+                <li><a class="dropdown-item text-white" href="#">Menu 3</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link dropdown-toggle" href="#">Menu 3</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Menu 4</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Menu 5</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Menu 6</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Menu 7</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Menu 8</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M8.80534 17.2071C13.0395 17.2071 16.472 13.7751 16.472 9.54156C16.472 5.30798 13.0395 1.87598 8.80534 1.87598C4.57116 1.87598 1.13867 5.30798 1.13867 9.54156C1.13867 13.7751 4.57116 17.2071 8.80534 17.2071Z"
+                    stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M18.3885 19.1242L14.2197 14.9561" stroke="white" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link px-0">
+                <svg width="26" height="17" viewBox="0 0 26 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M25.555 16.7837H0.8338C0.588056 16.7837 0.388672 16.5843 0.388672 16.3385V15.0942C0.388672 14.8485 0.588056 14.6495 0.8338 14.6495H25.555C25.8008 14.6495 26.0002 14.8485 26.0002 15.0942V16.3385C26.0002 16.5843 25.8008 16.7837 25.555 16.7837ZM25.555 9.8971H0.8338C0.588056 9.8971 0.388672 9.69772 0.388672 9.45198V8.20767C0.388672 7.96193 0.588056 7.76254 0.8338 7.76254H25.555C25.8008 7.76254 26.0002 7.96193 26.0002 8.20767V9.45198C26.0002 9.69772 25.8008 9.8971 25.555 9.8971ZM25.555 3.01013H0.8338C0.588056 3.01013 0.388672 2.81075 0.388672 2.565V1.32069C0.388672 1.07495 0.588056 0.875977 0.8338 0.875977H25.555C25.8008 0.875977 26.0002 1.07495 26.0002 1.32069V2.565C26.0002 2.81075 25.8008 3.01013 25.555 3.01013Z"
+                    fill="white" />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <nav class="navbar navbar-reverse bg-black pe-2" style="margin-top:150px;">
+          <a class="navbar-brand p-0" href="#">
+            <img src="images/ms-commercial-logo-white.png" alt="logo" title="logo" width="314" height="41">
+          </a>
+          <ul class="navbar-nav ms-auto flex-row navbar-custom">
+            <li class="nav-item">
+              <a class="nav-link dropdown-toggle  ps-0" href="#">Menu 1</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link dropdown-toggle nav-link-hover2" href="#">Menu 2</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link dropdown-toggle" href="#">Menu 3</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Menu 4</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Menu 5</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Menu 6</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Menu 7</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Menu 8</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M8.80534 17.2071C13.0395 17.2071 16.472 13.7751 16.472 9.54156C16.472 5.30798 13.0395 1.87598 8.80534 1.87598C4.57116 1.87598 1.13867 5.30798 1.13867 9.54156C1.13867 13.7751 4.57116 17.2071 8.80534 17.2071Z"
+                    stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M18.3885 19.1242L14.2197 14.9561" stroke="white" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link px-0">
+                <svg width="26" height="17" viewBox="0 0 26 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M25.555 16.7837H0.8338C0.588056 16.7837 0.388672 16.5843 0.388672 16.3385V15.0942C0.388672 14.8485 0.588056 14.6495 0.8338 14.6495H25.555C25.8008 14.6495 26.0002 14.8485 26.0002 15.0942V16.3385C26.0002 16.5843 25.8008 16.7837 25.555 16.7837ZM25.555 9.8971H0.8338C0.588056 9.8971 0.388672 9.69772 0.388672 9.45198V8.20767C0.388672 7.96193 0.588056 7.76254 0.8338 7.76254H25.555C25.8008 7.76254 26.0002 7.96193 26.0002 8.20767V9.45198C26.0002 9.69772 25.8008 9.8971 25.555 9.8971ZM25.555 3.01013H0.8338C0.588056 3.01013 0.388672 2.81075 0.388672 2.565V1.32069C0.388672 1.07495 0.588056 0.875977 0.8338 0.875977H25.555C25.8008 0.875977 26.0002 1.07495 26.0002 1.32069V2.565C26.0002 2.81075 25.8008 3.01013 25.555 3.01013Z"
+                    fill="white" />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <nav class="navbar mt-60 navbar-reverse bg-black pe-2">
+          <a class="navbar-brand p-0" href="#">
+            <img src="images/ms-commercial-logo-white.png" alt="logo" title="logo" width="314" height="41">
+          </a>
+          <ul class="navbar-nav ms-auto flex-row navbar-custom">
+            <li class="nav-item">
+              <a class="nav-link dropdown-toggle  ps-0" href="#">Menu 1</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link dropdown-toggle nav-link-hover2 bg-white" href="#" style="color:black !important;">Menu 2</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link dropdown-toggle" href="#">Menu 3</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Menu 4</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Menu 5</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Menu 6</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Menu 7</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Menu 8</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M8.80534 17.2071C13.0395 17.2071 16.472 13.7751 16.472 9.54156C16.472 5.30798 13.0395 1.87598 8.80534 1.87598C4.57116 1.87598 1.13867 5.30798 1.13867 9.54156C1.13867 13.7751 4.57116 17.2071 8.80534 17.2071Z"
+                    stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M18.3885 19.1242L14.2197 14.9561" stroke="white" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link px-0">
+                <svg width="26" height="17" viewBox="0 0 26 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M25.555 16.7837H0.8338C0.588056 16.7837 0.388672 16.5843 0.388672 16.3385V15.0942C0.388672 14.8485 0.588056 14.6495 0.8338 14.6495H25.555C25.8008 14.6495 26.0002 14.8485 26.0002 15.0942V16.3385C26.0002 16.5843 25.8008 16.7837 25.555 16.7837ZM25.555 9.8971H0.8338C0.588056 9.8971 0.388672 9.69772 0.388672 9.45198V8.20767C0.388672 7.96193 0.588056 7.76254 0.8338 7.76254H25.555C25.8008 7.76254 26.0002 7.96193 26.0002 8.20767V9.45198C26.0002 9.69772 25.8008 9.8971 25.555 9.8971ZM25.555 3.01013H0.8338C0.588056 3.01013 0.388672 2.81075 0.388672 2.565V1.32069C0.388672 1.07495 0.588056 0.875977 0.8338 0.875977H25.555C25.8008 0.875977 26.0002 1.07495 26.0002 1.32069V2.565C26.0002 2.81075 25.8008 3.01013 25.555 3.01013Z"
+                    fill="white" />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+
+        <!-- Navigation Desktop option 2 -->
+        <div class="navigation-bloack2">
+          <h2 class="color-palette--title mb-5" id="navigation-desktop-option2-dark">Navigation Desktop option 2</h2>
+          <nav class="navbar navbar-reverse bg-black">
+            <a class="navbar-brand p-0" href="#">
+              <img src="images/ms-commercial-logo-white.png" alt="logo" title="logo" width="314" height="41">
+            </a>
+            <ul class="navbar-nav mx-auto flex-row navbar-custom">
+              <li class="nav-item">
+                <a class="nav-link dropdown-toggle ps-0" href="#">Menu 1</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link dropdown-toggle" href="#">Menu 2</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link dropdown-toggle" href="#">Menu 3</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Menu 4</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Menu 5</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Menu 6</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Menu 7</a>
+              </li>
+            </ul>
+            <ul class="navbar-nav flex-row navbar-custom pe-2">
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M8.80534 17.2071C13.0395 17.2071 16.472 13.7751 16.472 9.54156C16.472 5.30798 13.0395 1.87598 8.80534 1.87598C4.57116 1.87598 1.13867 5.30798 1.13867 9.54156C1.13867 13.7751 4.57116 17.2071 8.80534 17.2071Z"
+                      stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M18.3885 19.1242L14.2197 14.9561" stroke="white" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link px-0">
+                  <svg width="26" height="17" viewBox="0 0 26 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M25.555 16.7837H0.8338C0.588056 16.7837 0.388672 16.5843 0.388672 16.3385V15.0942C0.388672 14.8485 0.588056 14.6495 0.8338 14.6495H25.555C25.8008 14.6495 26.0002 14.8485 26.0002 15.0942V16.3385C26.0002 16.5843 25.8008 16.7837 25.555 16.7837ZM25.555 9.8971H0.8338C0.588056 9.8971 0.388672 9.69772 0.388672 9.45198V8.20767C0.388672 7.96193 0.588056 7.76254 0.8338 7.76254H25.555C25.8008 7.76254 26.0002 7.96193 26.0002 8.20767V9.45198C26.0002 9.69772 25.8008 9.8971 25.555 9.8971ZM25.555 3.01013H0.8338C0.588056 3.01013 0.388672 2.81075 0.388672 2.565V1.32069C0.388672 1.07495 0.588056 0.875977 0.8338 0.875977H25.555C25.8008 0.875977 26.0002 1.07495 26.0002 1.32069V2.565C26.0002 2.81075 25.8008 3.01013 25.555 3.01013Z"
+                      fill="white" />
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <nav class="navbar navbar-reverse bg-black mt-60 pe-2">
+            <a class="navbar-brand p-0" href="#">
+              <img src="images/ms-commercial-logo-white.png" alt="logo" title="logo" width="314" height="41">
+            </a>
+            <ul class="navbar-nav mx-auto flex-row navbar-custom">
+              <li class="nav-item">
+                <a class="nav-link dropdown-toggle  ps-0" href="#">Menu 1</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link dropdown-toggle nav-link-hover" href="#">Menu 2</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link dropdown-toggle" href="#">Menu 3</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Menu 4</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Menu 5</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Menu 6</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Menu 7</a>
+              </li>
+            </ul>
+            <ul class="navbar-nav flex-row navbar-custom">
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M8.80534 17.2071C13.0395 17.2071 16.472 13.7751 16.472 9.54156C16.472 5.30798 13.0395 1.87598 8.80534 1.87598C4.57116 1.87598 1.13867 5.30798 1.13867 9.54156C1.13867 13.7751 4.57116 17.2071 8.80534 17.2071Z"
+                      stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M18.3885 19.1242L14.2197 14.9561" stroke="white" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link px-0">
+                  <svg width="26" height="17" viewBox="0 0 26 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M25.555 16.7837H0.8338C0.588056 16.7837 0.388672 16.5843 0.388672 16.3385V15.0942C0.388672 14.8485 0.588056 14.6495 0.8338 14.6495H25.555C25.8008 14.6495 26.0002 14.8485 26.0002 15.0942V16.3385C26.0002 16.5843 25.8008 16.7837 25.555 16.7837ZM25.555 9.8971H0.8338C0.588056 9.8971 0.388672 9.69772 0.388672 9.45198V8.20767C0.388672 7.96193 0.588056 7.76254 0.8338 7.76254H25.555C25.8008 7.76254 26.0002 7.96193 26.0002 8.20767V9.45198C26.0002 9.69772 25.8008 9.8971 25.555 9.8971ZM25.555 3.01013H0.8338C0.588056 3.01013 0.388672 2.81075 0.388672 2.565V1.32069C0.388672 1.07495 0.588056 0.875977 0.8338 0.875977H25.555C25.8008 0.875977 26.0002 1.07495 26.0002 1.32069V2.565C26.0002 2.81075 25.8008 3.01013 25.555 3.01013Z"
+                      fill="white" />
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <nav class="navbar navbar-reverse bg-black mt-60 pe-2">
+            <a class="navbar-brand p-0" href="#">
+              <img src="images/ms-commercial-logo-white.png" alt="logo" title="logo" width="314" height="41">
+            </a>
+            <ul class="navbar-nav mx-auto flex-row navbar-custom">
+              <li class="nav-item">
+                <a class="nav-link dropdown-toggle  ps-0" href="#">Menu 1</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link dropdown-toggle nav-link-hover2" href="#">Menu 2</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link dropdown-toggle" href="#">Menu 3</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Menu 4</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Menu 5</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Menu 6</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Menu 7</a>
+              </li>
+            </ul>
+            <ul class="navbar-nav flex-row navbar-custom">
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M8.80534 17.2071C13.0395 17.2071 16.472 13.7751 16.472 9.54156C16.472 5.30798 13.0395 1.87598 8.80534 1.87598C4.57116 1.87598 1.13867 5.30798 1.13867 9.54156C1.13867 13.7751 4.57116 17.2071 8.80534 17.2071Z"
+                      stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M18.3885 19.1242L14.2197 14.9561" stroke="white" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link px-0">
+                  <svg width="26" height="17" viewBox="0 0 26 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M25.555 16.7837H0.8338C0.588056 16.7837 0.388672 16.5843 0.388672 16.3385V15.0942C0.388672 14.8485 0.588056 14.6495 0.8338 14.6495H25.555C25.8008 14.6495 26.0002 14.8485 26.0002 15.0942V16.3385C26.0002 16.5843 25.8008 16.7837 25.555 16.7837ZM25.555 9.8971H0.8338C0.588056 9.8971 0.388672 9.69772 0.388672 9.45198V8.20767C0.388672 7.96193 0.588056 7.76254 0.8338 7.76254H25.555C25.8008 7.76254 26.0002 7.96193 26.0002 8.20767V9.45198C26.0002 9.69772 25.8008 9.8971 25.555 9.8971ZM25.555 3.01013H0.8338C0.588056 3.01013 0.388672 2.81075 0.388672 2.565V1.32069C0.388672 1.07495 0.588056 0.875977 0.8338 0.875977H25.555C25.8008 0.875977 26.0002 1.07495 26.0002 1.32069V2.565C26.0002 2.81075 25.8008 3.01013 25.555 3.01013Z"
+                      fill="white" />
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <!-- Navigation Desktop option 3 -->
+        <div class="navigation-bloack2">
+          <h2 class="color-palette--title mb-5" id="navigation-desktop-option3-dark">Navigation Desktop option 3</h2>
+          <div class="row g-0 column-gap-5 bg-black ps-4">
+            <div class="col">
+              <div class="d-flex">
+                <ul class="list-unstyled list-nav mb-0 align-self-center pe-5">
+                  <li class="list-nav__item">
+                    <a href="#" class="list-nav-text text-nowrap list-nav-text-active">Menu Item One</a>
+                  </li>
+                  <li class="list-nav__item">
+                    <a href="#" class="list-nav-text text-nowrap text-white">Menu Item Two</a>
+                  </li>
+                  <li class="list-nav__item">
+                    <a href="#" class="list-nav-text text-nowrap text-white">Menu Item Three</a>
+                  </li>
+                  <li class="list-nav__item">
+                    <a href="#" class="list-nav-text text-nowrap text-white">Menu Item Fourth </a>
+                  </li>
+                </ul>
+                <div>
+                  <img src="images/navigation-img1.png" alt="" title="" class="img-fluid">
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="d-flex">
+                <ul class="list-unstyled list-nav mb-0 align-self-center pe-5">
+                  <li class="list-nav__item">
+                    <a href="#" class="list-nav-text text-nowrap list-nav-text-active">Menu Item One</a>
+                  </li>
+                  <li class="list-nav__item">
+                    <a href="#" class="list-nav-text text-nowrap  text-white">Menu Item Two</a>
+                  </li>
+                  <li class="list-nav__item">
+                    <a href="#" class="list-nav-text text-nowrap text-white">Menu Item Three</a>
+                  </li>
+                  <li class="list-nav__item">
+                    <a href="#" class="list-nav-text text-nowrap text-white">Menu Item Fourth </a>
+                  </li>
+                </ul>
+                <div>
+                  <img src="images/navigation-img2.png" alt="" title="" class="img-fluid">
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="d-flex">
+                <ul class="list-unstyled list-nav mb-0 align-self-center pe-5">
+                  <li class="list-nav__item">
+                    <a href="#" class="list-nav-text text-nowrap list-nav-text-active">Menu Item One</a>
+                  </li>
+                  <li class="list-nav__item">
+                    <a href="#" class="list-nav-text text-nowrap text-white">Menu Item Two</a>
+                  </li>
+                  <li class="list-nav__item">
+                    <a href="#" class="list-nav-text text-nowrap text-white">Menu Item Three</a>
+                  </li>
+                  <li class="list-nav__item">
+                    <a href="#" class="list-nav-text text-nowrap text-white">Menu Item Fourth </a>
+                  </li>
+                </ul>
+                <div>
+                  <img src="images/navigation-img3.png" alt="" title="" class="img-fluid">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="navigation-bloack2">
+          <div class="row g-0 column-gap-5 bg-black p-5">
+            <div class="col">
+                <ul class="list-unstyled list-nav mb-0 align-self-center pe-5 list-flat-nav">
+                  <li class="list-nav__item">
+                    <a href="#" class="list-nav-text list-flat-nav-link list-flat-nav-link-active">Menu Item One</a>
+                  </li>
+                  <li class="list-nav__item">
+                    <a href="#" class="list-nav-text list-flat-nav-link text-white">Menu Item Two</a>
+                  </li>
+                  <li class="list-nav__item">
+                    <a href="#" class="list-nav-text list-flat-nav-link text-white">Menu Item Three</a>
+                  </li>
+                  <li class="list-nav__item">
+                    <a href="#" class="list-nav-text list-flat-nav-link text-white">Menu Item Fourth </a>
+                  </li>
+                </ul>
+            </div>
+            <div class="col">
+                <ul class="list-unstyled list-nav mb-0 align-self-center pe-5">
+                  <li class="list-nav__item">
+                    <a href="#" class="list-nav-text list-flat-nav-link text-white">Menu Item One</a>
+                  </li>
+                  <li class="list-nav__item">
+                    <a href="#" class="list-nav-text list-flat-nav-link text-white">Menu Item Two</a>
+                  </li>
+                  <li class="list-nav__item">
+                    <a href="#" class="list-nav-text list-flat-nav-link text-white">Menu Item Three</a>
+                  </li>
+                  <li class="list-nav__item">
+                    <a href="#" class="list-nav-text list-flat-nav-link text-white">Menu Item Fourth </a>
+                  </li>
+                </ul>
+            </div>
+            <div class="col">
+                <ul class="list-unstyled list-nav mb-0 align-self-center pe-5">
+                  <li class="list-nav__item">
+                    <a href="#" class="list-nav-text list-flat-nav-link text-white">Menu Item One</a>
+                  </li>
+                  <li class="list-nav__item">
+                    <a href="#" class="list-nav-text list-flat-nav-link text-white">Menu Item Two</a>
+                  </li>
+                  <li class="list-nav__item">
+                    <a href="#" class="list-nav-text list-flat-nav-link text-white">Menu Item Three</a>
+                  </li>
+                  <li class="list-nav__item">
+                    <a href="#" class="list-nav-text list-flat-nav-link text-white">Menu Item Fourth </a>
+                  </li>
+                </ul>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="navigation-bloack2">
+          <div class="row g-0 column-gap-5 bg-black p-5">
+            <div class="col">
+                <ul class="list-unstyled list-nav mb-0 align-self-center pe-5 list-flat-nav list-flat-nav-check">
+                  <li class="list-nav__item">
+                    <a href="#" class="list-nav-text list-flat-nav-link list-flat-nav-link-active">Menu Item One</a>
+                  </li>
+                  <li class="list-nav__item">
+                    <a href="#" class="list-nav-text list-flat-nav-link text-white">Menu Item Two</a>
+                  </li>
+                  <li class="list-nav__item">
+                    <a href="#" class="list-nav-text list-flat-nav-link text-white">Menu Item Three</a>
+                  </li>
+                  <li class="list-nav__item">
+                    <a href="#" class="list-nav-text list-flat-nav-link text-white">Menu Item Fourth </a>
+                  </li>
+                </ul>
+            </div>
+            <div class="col">
+                <ul class="list-unstyled list-nav mb-0 align-self-center pe-5 list-flat-nav list-flat-nav-check">
+                  <li class="list-nav__item">
+                    <a href="#" class="list-nav-text list-flat-nav-link text-white">Menu Item One</a>
+                  </li>
+                  <li class="list-nav__item">
+                    <a href="#" class="list-nav-text list-flat-nav-link text-white">Menu Item Two</a>
+                  </li>
+                  <li class="list-nav__item">
+                    <a href="#" class="list-nav-text list-flat-nav-link text-white">Menu Item Three</a>
+                  </li>
+                  <li class="list-nav__item">
+                    <a href="#" class="list-nav-text list-flat-nav-link text-white">Menu Item Fourth </a>
+                  </li>
+                </ul>
+            </div>
+            <div class="col">
+                <ul class="list-unstyled list-nav mb-0 align-self-center pe-5 list-flat-nav list-flat-nav-check">
+                  <li class="list-nav__item">
+                    <a href="#" class="list-nav-text list-flat-nav-link text-white">Menu Item One</a>
+                  </li>
+                  <li class="list-nav__item">
+                    <a href="#" class="list-nav-text list-flat-nav-link text-white">Menu Item Two</a>
+                  </li>
+                  <li class="list-nav__item">
+                    <a href="#" class="list-nav-text list-flat-nav-link text-white">Menu Item Three</a>
+                  </li>
+                  <li class="list-nav__item">
+                    <a href="#" class="list-nav-text list-flat-nav-link text-white">Menu Item Fourth </a>
+                  </li>
+                </ul>
+            </div>
+          </div>
+        </div>
+
+
+
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script>
+      const pageHeader = document.getElementById('page-header')
+      const mainTag = document.getElementsByTagName('main')[0]
+      const leftSidebarInnerLink = document.querySelectorAll('.nav-inner li')
+      document.addEventListener("scroll", (event) => {
+          const topScroll = window.pageYOffset
+          
+          console.log(topScroll)
+          if(topScroll > 100){
+              pageHeader.classList.add('page-header-sticky')
+          }else{
+              pageHeader.classList.remove('page-header-sticky')
+              mainTag.style.marginTop = '0px'
+          }
+      });
+      leftSidebarInnerLink.forEach(function (element) {
+        element.addEventListener('click', function (e) {
+          e.preventDefault()
+          if (pageHeader.classList.contains('page-header-sticky')) {
+            mainTag.style.marginTop = '100px'
+          } else {
+            mainTag.style.marginTop = '0px'
+          }
+        })
+      })
+  </script>
+</body>
+</html>

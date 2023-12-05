@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Commercial Design Systems</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/custom.css" />
+  <link rel="stylesheet" href="css/about.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+</head>
+
+<body>
+  <div class="sec-block sec-block1-about">
+    <div class="text-center">
+      <h2 class="text-uppercase">Awards </h2>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas, quos. Ea repudiandae inventore
+        debitis </p>
+    </div>
+
+    <div class="sec-block2__content">
+      <div class="msc-gallery msc-gallery__awards-slider">
+        <div class="msc-gallery__item">
+          <div class="award-card">
+            <img src="images/car-imag1.png" class="img-fluid award-img" alt="core-img">
+            <div class="award-content">
+              <h5 class="award-title">Lorem ipsum dolor sit amet </h5>
+              <p class="award-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. incididunt ut
+                labore.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+              </p>
+              <p><a href="#" class="award-link">read more</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="msc-gallery__item">
+          <div class="award-card">
+            <img src="images/car-imag1.png" class="img-fluid award-img" alt="core-img">
+            <div class="award-content">
+              <h5 class="award-title">Lorem ipsum dolor sit amet </h5>
+              <p class="award-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. incididunt ut
+                labore.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+              </p>
+              <p><a href="#" class="award-link">read more</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="msc-gallery__item">
+          <div class="award-card">
+            <img src="images/car-imag1.png" class="img-fluid award-img" alt="core-img">
+            <div class="award-content">
+              <h5 class="award-title">Lorem ipsum dolor sit amet </h5>
+              <p class="award-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. incididunt ut
+                labore.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+              </p>
+              <p><a href="#" class="award-link">read more</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+  <script>
+    $(".msc-gallery__awards-slider").slick({
+      slidesToShow: 3,
+      dots:false,
+      arrows:false,
+      speed: 200,
+      responsive: [
+        {
+          breakpoint: 800,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1,
+          }
+        },
+        {
+          breakpoint: 560,
+          settings: {
+            slidesToShow: 1.25,
+            infinite: false,
+          }
+        }
+      ]
+    });
+
+
+  </script>
+</body>
+
+</html>

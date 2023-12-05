@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Commercial Design Systems</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/custom.css" />
+    <!-- <link rel="stylesheet" href="css/layout.css" /> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    />
+  </head>
+  <body>
+    
+    <div class="sec-block sec-wwe sec-block1-testimonial">
+      <div class="text-center">
+        <h2 class="text-uppercase">Testimonials</h2>
+      </div>
+
+      <div class="sec-block2__content">
+        <!-- slider start -->
+        <div class="msc-gallery">
+          <div
+            class="msc-gallery__wrapper msc-gallery__arrow" id="tesimonial-carousel2">
+            <div class="msc-gallery__item">
+              <div class="msc-testimonial msc-testimonial-block">
+                <div class="msc-testimonial__image">
+                  <img src="images/testimonial-icon.png" />
+                </div>
+                <h3 class="msc-testimonial__title">Rakesh Thakur</h3>
+                <p class="msc-testimonial__text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Praesent non tempor turpis. Sed sodales dapibus velit. In
+                  ut metus et enim finibus interdum. Maecenas vehicula elit
+                  neque, eu dictum lorem consequat eu. Cras suscipit massa
+                  at finibus suscipit. Aenean non urna ac lorem efficitur
+                  bibendum. Ut a diam efficitur, rhoncus.
+                </p>
+              </div>
+            </div>
+            <div class="msc-gallery__item">
+              <div class="msc-testimonial msc-testimonial-block">
+                <div class="msc-testimonial__image">
+                  <span class="msc-testimonial__video"><img src="images/testimonial-video.png" /></span>
+                  <img src="images/testimonial-icon.png" />
+                </div>
+                <h3 class="msc-testimonial__title">Rakesh Thakur</h3>
+                <p class="msc-testimonial__text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Praesent non tempor turpis. Sed sodales dapibus velit. In
+                  ut metus et enim finibus interdum. Maecenas vehicula elit
+                  neque, eu dictum lorem consequat eu. Cras suscipit massa
+                  at finibus suscipit. Aenean non urna ac lorem efficitur
+                  bibendum. Ut a diam efficitur, rhoncus.
+                </p>
+              </div>
+            </div>
+            <div class="msc-gallery__item">
+              <div class="msc-testimonial msc-testimonial-block">
+                <div class="msc-testimonial__image">
+                  <img src="images/testimonial-icon.png" />
+                </div>
+                <h3 class="msc-testimonial__title">Rakesh Thakur</h3>
+                <p class="msc-testimonial__text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Praesent non tempor turpis. Sed sodales dapibus velit. In
+                  ut metus et enim finibus interdum. Maecenas vehicula elit
+                  neque, eu dictum lorem consequat eu. Cras suscipit massa
+                  at finibus suscipit. Aenean non urna ac lorem efficitur
+                  bibendum. Ut a diam efficitur, rhoncus.
+                </p>
+              </div>
+            </div>
+            <div class="msc-gallery__item">
+              <div class="msc-testimonial msc-testimonial-block">
+                <div class="msc-testimonial__image">
+                  <span class="msc-testimonial__video"><img src="images/testimonial-video.png" /></span>
+                  <img src="images/testimonial-icon.png" />
+                </div>
+                <h3 class="msc-testimonial__title">Rakesh Thakur</h3>
+                <p class="msc-testimonial__text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Praesent non tempor turpis. Sed sodales dapibus velit. In
+                  ut metus et enim finibus interdum. Maecenas vehicula elit
+                  neque, eu dictum lorem consequat eu. Cras suscipit massa
+                  at finibus suscipit. Aenean non urna ac lorem efficitur
+                  bibendum. Ut a diam efficitur, rhoncus.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- slider end -->
+      </div>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+    ></script>
+
+    <script>
+      if ($(".msc-js-gallery").length) {
+        $(".msc-js-gallery").slick({
+          dots: false,
+          arrows: true,
+        });
+      }
+
+
+      $("#tesimonial-carousel2").slick({
+        dots: false,
+        arrows: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        focusOnSelect: true,
+        //   variableWidth: true,
+        infinite: true,
+        cssEase: "linear",
+      });
+
+    </script>
+  </body>
+</html>

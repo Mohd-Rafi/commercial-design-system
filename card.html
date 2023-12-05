@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Commercial Design Systems</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <aside class="left-sidebar" id="sidebar">
+        <ul class="nav flex-column left-sidebar__column">
+            <li>
+                <a class="nav-link" href="index.html">INDEX</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="color.html">1. Colors</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="typography.html">2. Typography</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="header-banner.html">3. Layout Structure</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="icons.html">4. Icons</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="button.html">5. Buttons, Radio Button</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="input-field.html">6. Input Fields</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link nav-link-active" href="javascript:void(0)">7. Card</a>
+                <ul class="list-unstyled nav-inner d-block">
+                  <li class="nav-inner__list">
+                    <a href="#card-as-an-interactive-block"  class="nav-inner__list--text">Card as an Interactive Block</a>
+                  </li>
+                  <li class="nav-inner__list">
+                    <a href="#card-with-interactions" class="nav-inner__list--text">Card with Interactions</a>
+                  </li>
+                  <li class="nav-inner__list">
+                    <a href="#card-with-background-image" class="nav-inner__list--text">Card with Background Image</a>
+                  </li>
+                  <li class="nav-inner__list">
+                    <a href="#card-grid-example" class="nav-inner__list--text">Card Grid Example</a>
+                  </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="loader.html">8. Loader</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="date-picker.html">9. Date Picker</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="checkbox.html">10. Check Box</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="drag-and-drop.html">11. Drag & Drop</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="navigation.html">12. Navigation</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="notification.html">13. Notifications</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="imagery.html">14. Imagery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="search.html">15. Search</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="switch.html">16. Switch</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="overlays.html">17. Overlays</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pagination.html">18. Pagination</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="player.html">19. Player</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="slider.html">20. Slider</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="slideshow.html">21. Slideshow</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="table.html">22. Table</a>
+            </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link" href="#">23. Response Effect</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">24. Transitions</a>
+            </li> -->
+        </ul>
+    </aside>
+    <main class="main" data-bs-spy="scroll" data-bs-target="#sidebar" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true">
+      <div class="d-flex align-items-center page-header" id="page-header">
+        <h1 class="color-palette--title mb-0">Card</h1>
+        <a href="#" class="btn btn-primary ms-auto">Download More</a>
+        <a class="btn btn-outline-primary ms-4" href="https://www.figma.com/proto/BNspPo1UTQoTvEyBgp5kAY/Commercial-Design-System?type=design&node-id=1240-6386&t=zTAFhnKrOaWxUeRp-0&scaling=min-zoom&page-id=11%3A10" target="_blank">View Figma File</a>
+      </div>
+        
+        <p class="sub-line">
+          Cards contain elements and functions on a single topic and can be used as teasers for further content. They optionally show text, icons, an image or a video, links and triggers – either alone or in combination. The format, size and layout of a card are flexible within the layout structure. Cards can contain the brand colours as defined in the basics.
+        </p>
+        <div id="card-as-an-interactive-block">
+          <h2 class="mt-5 product-range-title text-uppercase mb-3">
+            Card as an Interactive Block
+          </h2>
+          <p class="sub-line">
+            An entire card can be created as an interactive block if it does not contain any other interactive elements. In this case it has a hover effect.
+          </p>
+          <div class="card-1 mt-5">
+            <div class="row">
+              <div class="col">
+                <div class="card border-0 bg-white card-1__custom">
+                  <div class="card-body card-1__custom--body">
+                    <p class="fw-bold card-1-text mb-2">Lorem ipsum dolor sit amet</p>
+                    <div class="d-flex align-items-end">
+                      <p class="card-1-text mb-0">
+                        Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit. Aliquam efficitur urna diam, quis 
+                      </p>
+                      <a href="#" class="ms-auto">
+                        <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M5.1582 12.3359H19.1582" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                          <path d="M12.1582 5.33594L19.1582 12.3359L12.1582 19.3359" stroke="black" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card border-0 bg-black card-1__custom">
+                  <div class="card-body card-1__custom--body">
+                    <p class="fw-bold card-1-text mb-2 text-white">Lorem ipsum dolor sit amet</p>
+                    <div class="d-flex align-items-end">
+                      <p class="card-1-text mb-0 text-white">
+                        Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit. Aliquam efficitur urna diam, quis 
+                      </p>
+                      <a href="#" class="ms-auto">
+                        <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M5.1582 12.3359H19.1582" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                          <path d="M12.1582 5.33594L19.1582 12.3359L12.1582 19.3359" stroke="white" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- block 2 -->
+        <div class="mt-50" id="card-with-interactions">
+          <h2 class="product-range-title text-uppercase mb-3">
+            Card with Interactions
+          </h2>
+          <p class="sub-line">
+            In addition to text and images, cards can contain interactive elements such as buttons, icon buttons and text links. A hover effect across the entire card is omitted in this case.
+          </p>
+          <div class="card-1 mt-5" style="padding-bottom:85px;">
+            <div class="row g-0 card-column">
+              <div class="col">
+                <div class="card border-0 bg-white card-1__custom">
+                  <div class="card-body card-2__custom--body">
+                    <p class="fw-bold card-1-text mb-2">Lorem ipsum dolor sit amet</p>
+                      <p class="card-1-text mb-0">
+                        Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit. Aliquam efficitur urna diam, quis 
+                      </p>
+                    <div class="mt-35">
+                      <a href="#" class="btn btn-primary btn-sm">Call to action</a>
+                      <a href="#" class="btn btn-outline-primary btn-sm ms-4">Call to action</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card border-0 bg-black card-1__custom">
+                  <div class="card-body card-2__custom--body">
+                    <p class="fw-bold card-1-text mb-2 text-white">Lorem ipsum dolor sit amet</p>
+                      <p class="card-1-text mb-0 text-white">
+                        Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit. Aliquam efficitur urna diam, quis 
+                      </p>
+                      <div class="mt-35">
+                        <a href="#" class="btn btn-primary btn-sm">Call to action</a>
+                        <a href="#" class="btn btn-outline-light btn-sm ms-4">Call to action</a>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- block3 -->
+        <div class="mt-50" id="card-with-background-image">
+          <h2 class="product-range-title text-uppercase mb-3">
+            Card with Background Image
+          </h2>
+          <p class="sub-line">
+            Visuals are bled to the edge in cards. For improved readability of the content items placed on them, the image can be darkened with a transparent area by up to 30%. <br> The differing display sizes of the card in varying viewport sizes has to be accounted for.
+          </p>
+          <div class="card-1 p-0 mt-5 position-relative card-image">
+            <div class="card-1-body card-image__body">
+              <img src="images/card-img3.png" alt="" class="img-fluid d-block mx-auto w-100">
+              <div class="card-img-overlay card-image__body--overlay d-flex flex-column">
+                <div class="d-flex align-items-start">
+                  <img src="images/facebook-icon.svg" alt="" title="">
+                  <img src="images/pragati-logo.png" alt="" title="" class="ms-auto">
+                </div>
+                <div class="d-flex flex-column mt-auto card-image__content">
+                  <h5 class="card-image__content--title">Lorem ipsum dolor sit amet</h5>
+                  <p class="card-image__content--text mb-30">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam efficitur urna diam, quis Lorem ipsum dolor sit amet, <br> consectetur adipiscing elit. Aliquam efficitur urna diam, quis Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br> Aliquam efficitur urna diam, quis
+                  </p>
+                  <div class="d-flex align-items-center">
+                    <a href="#" class="btn btn-primary btn-sm">Call to action</a>
+                    <a href="#" class="btn btn-outline-light btn-sm ms-4">Call to action</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- block 4 -->
+        <div class="mt-50" id="card-grid-example">
+          <h2 class="product-range-title text-uppercase mb-3">
+            Card Grid Example
+          </h2>
+          <p class="sub-line">
+            Cards can be combined in identical or differing formats in grids or lists. They are placed at a narrow spacing from one another. For this reason, the recommend value for a defined basic unit is 0.25 rem (on this point, see Layout structure).
+          </p>
+          <div class="card-1 p-0 mt-5">
+            <div class="card-image__body">
+              <div class="row g-0 masnory-grid">
+                <div class="col-auto" style="max-width:623px;height:428px;">
+                  <div class="position-relative card-image">
+                    <div class="card-1-body">
+                      <img src="images/card-img4.png" width="623" height="428" alt="" class="img-fluid d-block mx-auto">
+                      <div class="card-img-overlay card-image__body--overlay1 d-flex flex-column">
+                        <div class="d-flex align-items-start">
+                          <img src="images/facebook-icon.svg" alt="" title="">
+                          <img src="images/pragati-logo.png" alt="" title="" class="ms-auto">
+                        </div>
+                        <div class="d-flex flex-column mt-auto card-image__content">
+                          <h5 class="card-image__content--title">Lorem ipsum dolor sit amet</h5>
+                          <p class="card-image__content--text mb-30">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam efficitur <br> urna diam, quis Lorem ipsum dolor sit amet
+                          </p>
+                          <div class="d-flex align-items-center">
+                            <a href="#" class="btn btn-primary btn-sm">Call to action</a>
+                            <a href="#" class="btn btn-outline-light btn-sm ms-4">Call to action</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-auto" style="max-width:329px;">
+                  <div class="card border-0 bg-black card-1__custom" style="height:428px;">
+                    <div class="card-body card-1__custom--body">
+                      <img src="images/facebook-icon.svg" alt="" title="" class="mb-50">
+                      <p class="fw-bold card-1-text mb-2 text-white">Lorem ipsum dolor sit amet</p>
+                      <div class="d-flex align-items-end">
+                        <p class="card-1-text mb-0 text-white">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam efficitur urnaLorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam efficitur urnaLorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam efficitur urnaLorem ipsum dolor sit
+                        </p>
+                        <a href="#" class="ms-auto">
+                          <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5.1582 12.3359H19.1582" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M12.1582 5.33594L19.1582 12.3359L12.1582 19.3359" stroke="white" stroke-width="2" stroke-linecap="round"
+                              stroke-linejoin="round" />
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-auto" style="max-width:328px;">
+                  <div class="card border-0 card-1__custom" style="height:246px;background-color:#1a1a1a;">
+                    <div class="card-body card-1__custom--body">
+                      <div class="d-flex align-items-start mb-50">
+                        <img src="images/facebook-icon.svg" alt="" title="">
+                        <img src="images/pragati-logo.png" alt="" title="" class="ms-auto">
+                      </div>
+                      <p class="fw-bold card-1-text mb-2 text-white">Lorem ipsum dolor sit amet</p>
+                      <div class="d-flex align-items-end">
+                        <p class="card-1-text mb-0 text-white">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam efficitur urna diam, quis 
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-auto" style="max-width:623px;">
+                  <div class="position-relative card-image">
+                    <div class="card-1-body">
+                      <img src="images/card-img5.png" width="623" height="246" alt="" class="img-fluid d-block mx-auto">
+                      <div class="card-img-overlay card-image__body--overlay1 d-flex flex-column">
+                        <!-- <div class="d-flex align-items-start">
+                          <img src="images/facebook-icon.svg" alt="" title="">
+                          <img src="images/pragati-logo.png" alt="" title="" class="ms-auto">
+                        </div> -->
+                        <div class="d-flex flex-column mt-auto card-image__content">
+                          <h5 class="card-image__content--title">Lorem ipsum dolor sit amet</h5>
+                          <p class="card-image__content--text mb-30">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam efficitur <br> urna diam, quis
+                          </p>
+                          <div class="d-flex align-items-center">
+                            <a href="#" class="btn btn-primary btn-sm">Call to action</a>
+                            <a href="#" class="btn btn-outline-light btn-sm ms-4">Call to action</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+
+        </div>
+
+
+
+
+
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script>
+      const pageHeader = document.getElementById('page-header')
+      document.addEventListener("scroll", (event) => {
+          const topScroll = window.pageYOffset
+          
+          console.log(topScroll)
+          if(topScroll > 100){
+              pageHeader.classList.add('page-header-sticky')
+          }else{
+              pageHeader.classList.remove('page-header-sticky')
+          }
+      });
+  </script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Commercial Design Systems</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/custom.css" />
+    <link rel="stylesheet" href="css/about.css" />
+    <link rel="stylesheet" href="css/layout.css"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+</head>
+
+<body>
+    <div class="sec-block sec-block1-about">
+        <div class="text-center">
+            <!-- <h2 class="text-uppercase">Know More About Commercial Channel</h2> -->
+            <ul class="filter-navs x-scroller"> 
+              <li class="filter-navs-li"><button class="filter-navs-link active" id="filter-mision" >our mision</button></li>
+              <li class="filter-navs-li"><button class="filter-navs-link" id="filter-vision" >our vision</button></li> 
+            </ul>
+          </div>
+        <div class="sec-block2__content misvis-col-view">
+            <div class="misvis-col-item filter-mision">
+                <div class="misvis-col-item-box">
+                    <div class="misvis-img-holder">
+                        <img class="misvis-img" src="images/car-imag1.png" alt="mision img">
+                    </div>
+                    <div class="misvis-col-caption">
+                        <h3 class="misvis-title">Mission</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae veritatis, at
+                            voluptate saepe quasi tenetur ducimus sed. Quaerat unde architecto nostrum
+                            similique, ipsam nobis dolor asperiores. Officia veritatis repudiandae odio?</p>
+                    </div>
+                </div>
+            </div>
+            <div class="misvis-col-item filter-vision">
+                <div class="misvis-col-item-box">
+                    <div class="misvis-img-holder">
+                        <img class="misvis-img" src="images/car-imag1.png" alt="mision img">
+                    </div>
+                    <div class="misvis-col-caption">
+                        <h3 class="misvis-title">Vision</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error sed labore quod in, cum consequatur? Fuga consequatur, vel beatae laudantium, ex fugiat totam corrupti repudiandae, voluptatibus placeat earum? Laudantium, repellat.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            var $btns = $('.filter-navs-link').click(function () {
+                if (this.id == 'all') {
+                    $('.misvis-col-view > div').fadeIn(450);
+                } else {
+                    var $el = $('.' + this.id).fadeIn(450);
+                    $('.misvis-col-view > div').not($el).hide();
+                }
+                $btns.removeClass('active');
+                $(this).addClass('active');
+            })
+        });
+    </script>
+</body>
+
+</html>

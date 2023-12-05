@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Commercial Design Systems</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <aside class="left-sidebar" id="sidebar">
+        <ul class="nav flex-column left-sidebar__column">
+            <li>
+                <a class="nav-link" href="index.html">INDEX</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="color.html">1. Colors</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="typography.html">2. Typography</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="header-banner.html">3. Layout Structure</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="icons.html">4. Icons</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="button.html">5. Buttons, Radio Button</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="input-field.html">6. Input Fields</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="card.html">7. Card</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-link-active" href="javascript:void(0)">8. Loader</a>
+              <ul class="list-unstyled nav-inner d-block">
+                <li class="nav-inner__list">
+                  <a href="#spinner-continuous" class="nav-inner__list--text">Spinner Continuous</a>
+                </li>
+                <li class="nav-inner__list">
+                  <a href="#spinner-progress" class="nav-inner__list--text">Spinner Progress</a>
+                </li>
+                <li class="nav-inner__list">
+                  <a href="#bar-continuous" class="nav-inner__list--text">Bar Continuous</a>
+                </li>
+                <li class="nav-inner__list">
+                  <a href="#bar-progress" class="nav-inner__list--text">Bar Progress</a>
+                </li>
+                <li class="nav-inner__list">
+                  <a href="#fullscreen-loader" class="nav-inner__list--text">Full-screen loading</a>
+                </li>
+                <li class="nav-inner__list">
+                  <a href="#when-to-use" class="nav-inner__list--text">When to use</a>
+                </li>
+                <li class="nav-inner__list">
+                  <a href="#loading-spinners" class="nav-inner__list--text">Loading spinners</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="date-picker.html">9. Date Picker</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="checkbox.html">10. Check Box</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="drag-and-drop.html">11. Drag & Drop</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="navigation.html">12. Navigation</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="notification.html">13. Notifications</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="imagery.html">14. Imagery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="search.html">15. Search</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="switch.html">16. Switch</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="overlays.html">17. Overlays</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pagination.html">18. Pagination</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="player.html">19. Player</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="slider.html">20. Slider</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="slideshow.html">21. Slideshow</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="table.html">22. Table</a>
+            </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link" href="#">23. Response Effect</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">24. Transitions</a>
+            </li> -->
+        </ul>
+    </aside>
+    <main class="main" data-bs-spy="scroll" data-bs-target="#sidebar" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="false">
+      <div class="d-flex align-items-center page-header" id="page-header">
+        <h1 class="color-palette--title mb-0">Loaders</h1>
+        <a href="#" class="btn btn-primary ms-auto">Download More</a>
+        <a class="btn btn-outline-primary ms-4" href="https://www.figma.com/proto/BNspPo1UTQoTvEyBgp5kAY/Commercial-Design-System?type=design&node-id=42-1372&t=zTAFhnKrOaWxUeRp-0&scaling=min-zoom&page-id=11%3A15" target="_blank">View Figma File</a>
+      </div>
+        
+        <p class="sub-line">
+          Loading indicators signal a user action is processing. Unlike progress bars, loading indicators only signal that loading
+          is occurring and do not give any indication of progress. If a process will take more than a moment or two to complete,
+          use a progress indicator instead.
+        </p>
+        <h2 class="mt-5 product-range-title text-uppercase mb-3" id="spinner-continuous">
+          Spinner Continuous
+        </h2>
+        <p class="sub-line">
+          A spinner continuously rotates, indicating ongoing activity or loading progress. It serves as a visual cue, providing
+          feedback during waiting periods and informing users that a process is taking place in the background.
+        </p>
+
+        <section class="spinner-continous">
+          <div class="row g-0 justify-content-center">
+            <div class="col-6 d-flex justify-content-between align-items-center">
+              <div class="custom-loader">
+                <span class="custom-loader-text">20</span>
+              </div>
+              <div class="custom-loader custom-loader-small">
+                <span class="custom-loader-text custom-loader-text-small">20</span>
+              </div>
+              <div class="custom-loader">
+                <span class="custom-loader-text text-black">20</span>
+              </div>
+              <div class="custom-loader custom-loader-small">
+                <span class="custom-loader-text custom-loader-text-small text-black">20</span>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="spinner-continous bg-black mt-4">
+          <div class="row g-0 justify-content-center">
+            <div class="col-6 d-flex justify-content-between align-items-center">
+              <div class="custom-loader">
+                <span class="custom-loader-text">20</span>
+              </div>
+              <div class="custom-loader custom-loader-small">
+                <span class="custom-loader-text custom-loader-text-small">20</span>
+              </div>
+              <div class="custom-loader">
+                <span class="custom-loader-text text-white">20</span>
+              </div>
+              <div class="custom-loader custom-loader-small">
+                <span class="custom-loader-text custom-loader-text-small text-white">20</span>
+              </div>
+            </div>
+          </div>
+
+        </section>
+
+        <!-- block 2 -->
+        <section class="spinner-block mt-60">
+          <h2 class="mt-5 product-range-title text-uppercase mb-3" id="spinner-progress">
+            Spinner Progress
+          </h2>
+          <p class="sub-line">
+            Spinner progress visually indicates task completion, with a circular shape filling up or rotating. It provides feedback
+            on tasks and estimates remaining time, enhancing the user experience.
+          </p>
+          <div class="spinner-continous">
+            <div class="row g-0 justify-content-center">
+              <div class="col-6 d-flex justify-content-between align-items-center">
+                <div class="custom-loader">
+                </div>
+                <div class="custom-loader custom-loader-small">
+                </div>
+                <div class="custom-loader custom-loader-black">
+                </div>
+                <div class="custom-loader custom-loader-small custom-loader-black">
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="spinner-block mt-4">
+          <div class="spinner-continous bg-black">
+            <div class="row g-0 justify-content-center">
+              <div class="col-6 d-flex justify-content-between align-items-center">
+                <div class="custom-loader custom-loader-reverse">
+                </div>
+                <div class="custom-loader custom-loader-small custom-loader-reverse">
+                </div>
+                <div class="custom-loader custom-loader-white">
+                </div>
+                <div class="custom-loader custom-loader-small custom-loader-white">
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+
+
+        <!-- block3 -->
+        <section class="spinner-block mt-60">
+          <h2 class="mt-5 product-range-title text-uppercase mb-3" id="bar-continuous">
+            Bar Continuous
+          </h2>
+          <p class="sub-line">
+            A continuous bar visually represents ongoing activity or progress. It fills or moves across a horizontal or vertical
+            bar, indicating that a process is in progress. It serves as a visual indicator, providing feedback to users during tasks
+            or operations.
+          </p>
+          <div class="spinner-continous">
+            <div class="progress progress-continuous" style="width:40%;">
+              <div class="progress-bar progress-continuous-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                <span class="progress-continuous-tooltip">10%</span>
+              </div>
+            </div>
+            <div class="progress progress-continuous mt-5 progress-continuous-black" style="width:40%;">
+              <div class="progress-bar progress-continuous-bar progress-continuous-bar-black" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                <span class="progress-continuous-tooltip progress-continuous-tooltip-black">10%</span>
+              </div>
+            </div>
+          </div>
+          <div class="spinner-continous mt-4 bg-black">
+            <div class="progress progress-continuous progress-continuous-reverse" style="width:40%;">
+              <div class="progress-bar progress-continuous-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                <span class="progress-continuous-tooltip">10%</span>
+              </div>
+            </div>
+            <div class="progress progress-continuous mt-5 progress-continuous-reverse" style="width:40%;">
+              <div class="progress-bar progress-continuous-bar progress-continuous-bar-reverse" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                <span class="progress-continuous-tooltip progress-continuous-tooltip-reverse">10%</span>
+              </div>
+            </div>
+          </div>
+
+        </section>
+
+
+        <!-- block 4 -->
+        <section class="spinner-block mt-60">
+          <h2 class="mt-5 product-range-title text-uppercase mb-3" id="bar-progress">
+            Bar Progress
+          </h2>
+          <p class="sub-line">
+            A progress bar visually represents the completion of a task or process. It fills or moves across a horizontal or
+            vertical bar, indicating the progress made. It provides visual feedback and allows users to estimate the remaining work
+            or time.
+          </p>
+          <div class="spinner-continous">
+            <div class="progress progress-continuous" style="width:40%;">
+              <div class="progress-bar progress-continuous-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="left:20%;">
+              </div>
+            </div>
+            <div class="progress progress-continuous mt-5 progress-continuous-black" style="width:40%;">
+              <div class="progress-bar progress-continuous-bar progress-continuous-bar-black" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="left:20%;">
+              </div>
+            </div>
+          </div>
+          <div class="spinner-continous mt-4 bg-black">
+            <div class="progress progress-continuous progress-continuous-reverse" style="width:40%;">
+              <div class="progress-bar progress-continuous-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="left:20%;">
+              </div>
+            </div>
+            <div class="progress progress-continuous mt-5 progress-continuous-reverse" style="width:40%;">
+              <div class="progress-bar progress-continuous-bar progress-continuous-bar-reverse" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="left:20%;">
+              </div>
+            </div>
+          </div>
+          <p class="sub-line mt-50">
+            Loading indicators signal a user action is processing. Unlike progress bars, loading indicators only signal that loading
+            is occurring and do not give any indication of <br> progress. If a process will take more than a moment or two to complete,
+            use a progress indicator instead.
+          </p>
+
+        </section>
+
+
+        <!-- block 5 -->
+        <section class="spinner-block mt-60">
+          <h2 class="card-typo__title-lg fw-light fst-italic mt-5 text-uppercase mb-35" id="fullscreen-loader">
+            Full-screen loading
+          </h2>
+          <p class="sub-line mb-30">
+            The loading component should be used when the entire page is processing. This is often applied after data is submitted
+            or saved by the user. If the process is going <br> to take more than a few minutes, consider including a notification.
+          </p>
+
+          <div class="row g-0 g-90">
+            <div class="col-auto">
+              <div class="card card-progres border-0">
+                <div class="card-body p-0 card-progres__body">
+                  <img src="images/card-progress-img.png" alt="">
+                  <div class="custom-loader card-progres__bar">
+                  </div>
+                </div>
+                <div class="card-title card-progres__title mt-4">Example of a progress indicator in a section</div>
+              </div>
+            </div>
+            <div class="col-auto">
+              <div class="card card-progres border-0">
+                <div class="card-body p-0 card-progres__body">
+                  <img src="images/card-progress-img.png" alt="">
+                  <div class="progress progress-continuous progress-continuous-reverse card-progres__continuous" style="width:90%;">
+                    <div class="progress-bar progress-continuous-bar progress-continuous-bar-reverse" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width:5%;">
+                      <span class="progress-continuous-tooltip progress-continuous-tooltip-reverse">00%</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-title card-progres__title mt-4">Example of a progress indicator in a section</div>
+              </div>
+            </div>
+          </div>
+
+        </section>
+
+
+        <!-- block 6 -->
+        <section class="spinner-block mt-60">
+          <h2 class="mt-5 product-range-title text-uppercase mb-30" id="when-to-use">
+            When to use
+          </h2>
+          <ul class="list-unstyled row g-0 g-90 list-qa">
+            <li class="col-auto mb-30 list-qa__list">
+              <h6 class="list-qa-title">An action temporarily disables the application</h6>
+              <p class="list-qa-text">
+                If a user’s action temporarily disables the application while processing occurs, use a loading indicator and a
+                full-screen overlay.
+              </p>
+            </li>
+            <li class="col-auto mb-30 list-qa__list">
+              <h6 class="list-qa-title">Data from user input is being saved or submitted</h6>
+              <p class="list-qa-text">
+                Saving data following with user input often takes a few moments. Using a loading indicator allows the application
+                to
+                finish processing before allowing the user to continue.
+              </p>
+            </li>
+            <li class="col-auto list-qa__list">
+              <h6 class="list-qa-title">Processing takes more than a few seconds</h6>
+              <p class="list-qa-text">
+                If a loading process will require the application’s full resources and will take longer than a moment or two, use
+                a full-screen loading indicator.
+              </p>
+            </li>
+          </ul>
+        </section>
+
+
+        <!-- block 7 -->
+        <section class="spinner-block mt-60">
+          <h2 class="card-typo__title-lg fw-light fst-italic mt-5 text-uppercase mb-4" id="loading-spinners">
+            Loading spinners
+          </h2>
+          <p class="sub-line mb-30">
+            Loading spinners may be scaled down if the loading experience is contextual to a certain item on the page.
+          </p>
+          <div class="row">
+            <div class="col">
+              <h6 class="list-qa-title">Account Photo</h6>
+              <p class="sub-line mb-3">
+                Only .jpg and .png files. 500KB <br> Max file size.
+              </p>
+              <a href="#" class="btn btn-primary btn-sm mb-35">Load File</a>
+              <div class="photo-loader p-4 d-flex align-items-center">
+                <p class="sub-line mb-0">Load Photo.png</p>
+                <div class="custom-loader custom-loader-small photo-loader__loader ms-auto">
+                </div>
+              </div>
+              <p class="sub-line mt-60">Example of a Loading spinners in Image loading</p>
+            </div>
+            <div class="col">
+              <h6 class="list-qa-title">Load More</h6>
+              <div class="d-flex">
+                <ul class="list-group list-option">
+                  <li class="list-group-item list-option-item list-option-item-active">Option Heading</li>
+                  <li class="list-group-item list-option-item">Option 1</li>
+                  <li class="list-group-item list-option-item">Option 2</li>
+                  <li class="list-group-item list-option-item">Load More...</li>
+                </ul>
+                <ul class="list-group list-option">
+                  <li class="list-group-item list-option-item list-option-item-active">Option Heading</li>
+                  <li class="list-group-item list-option-item">Option 1</li>
+                  <li class="list-group-item list-option-item">Option 2</li>
+                  <li class="list-group-item list-option-item d-flex align-items-center list-option-item-bg">
+                    Load More... 
+                    <div class="custom-loader custom-loader-white custom-loader-small photo-loader__loader ms-auto"></div>
+                  </li>
+                </ul>
+              </div>
+
+              <p class="sub-line mt-35">Example of a Loading spinners in Image loading</p>
+            </div>
+          </div>
+
+        </section>
+
+
+
+
+
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script>
+      const pageHeader = document.getElementById('page-header')
+      document.addEventListener("scroll", (event) => {
+          const topScroll = window.pageYOffset
+          
+          console.log(topScroll)
+          if(topScroll > 100){
+              pageHeader.classList.add('page-header-sticky')
+          }else{
+              pageHeader.classList.remove('page-header-sticky')
+          }
+      });
+  </script>
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Commercial Design Systems</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/custom.css" />
+  <!-- <link rel="stylesheet" href="css/social-media.css" /> -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+</head>
+
+<body>
+  <div class="social-media-block social-media-block-2 py-lg-0">
+    <div class="text-center">
+      <h2 class="text-uppercase">Know More About Commercial Channel</h2>
+      <!-- <div class="x-scroller"> -->
+      <ul class="filter-navs x-scroller">
+        <li class="filter-navs-li"><button class="filter-navs-link active" id="all" >All</button></li>
+        <li class="filter-navs-li"><button class="filter-navs-link" id="facebook" >Facebook</button></li>
+        <li class="filter-navs-li"><button class="filter-navs-link" id="twitter" >Twitter</button></li>
+        <li class="filter-navs-li"><button class="filter-navs-link" id="youtube" >Youtube</button></li>
+        <li class="filter-navs-li"><button class="filter-navs-link" id="instagram" >Instagram</button></li>
+      </ul>
+    <!-- </div> -->
+    </div>
+
+    <div class="sec-block2__content sec-block2__content-filter">
+      <div class="social-meds-grids-filter">
+        
+        <div class="social-med-card youtube facebook">
+          <span class="social-media-icon social-media-icon_fb"></span>
+          <img src="images/car-imag1.png" class=" social-med-img " alt="core-img">
+          <div class="social-med-content social-med-content_overlay social-med-content__light">
+            <h5 class="social-med-title">Lorem ipsum dolor sit amet </h5>
+          </div>
+        </div>
+        <div class="social-med-card facebook instagram">
+          <span class="social-media-icon social-media-icon_yt"></span>
+          <img src="images/car-imag-small.png" class=" social-med-img " alt="core-img">
+          <div class="social-med-content social-med-content_overlay social-med-content__light">
+            <h5 class="social-med-title">Lorem ipsum dolor sit amet </h5>
+          </div>
+        </div>
+        <div class="social-med-card instagram youtube">
+          <span class="social-media-icon social-media-icon_fb"></span>
+          <img src="images/car-imag1.png" class=" social-med-img " alt="core-img">
+          <div class="social-med-content social-med-content_overlay social-med-content__light">
+            <h5 class="social-med-title">Lorem ipsum dolor sit amet </h5>
+          </div>
+        </div>
+        <div class="social-med-card instagram twitter">
+          <span class="social-media-icon social-media-icon_yt"></span>
+          <img src="images/car-imag-small.png" class=" social-med-img " alt="core-img">
+          <div class="social-med-content social-med-content_overlay social-med-content__light">
+            <h5 class="social-med-title">Lorem ipsum dolor sit amet </h5>
+          </div>
+        </div>
+        <div class="social-med-card twitter youtube">
+          <span class="social-media-icon social-media-icon_yt"></span>
+          <img src="images/car-imag.png" class=" social-med-img " alt="core-img">
+          <div class="social-med-content social-med-content_overlay social-med-content__light">
+            <h5 class="social-med-title">Lorem ipsum dolor sit amet </h5>
+          </div>
+        </div>
+        <div class="social-med-card instagram facebook twitter">
+          <span class="social-media-icon social-media-icon_fb"></span>
+          <img src="images/car-imag1.png" class=" social-med-img " alt="core-img">
+          <div class="social-med-content social-med-content_overlay social-med-content__light">
+            <h5 class="social-med-title">Lorem ipsum dolor sit amet </h5>
+          </div>
+        </div>
+      </div>
+      <div class="cta-center cta-center_load-more">
+        <a href="" class="btn-explore">Explore More</a>
+      </div>
+    </div>
+
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+  <script>
+    $(document).ready(function () {
+      var $btns = $('.filter-navs-link').click(function () {
+        if (this.id == 'all') {
+          $('.social-meds-grids-filter > div').fadeIn(450);
+        } else {
+          var $el = $('.' + this.id).fadeIn(450);
+          $('.social-meds-grids-filter > div').not($el).hide();
+        }
+        $btns.removeClass('active');
+        $(this).addClass('active');
+      })
+    });
+  </script>
+</body>
+
+</html>

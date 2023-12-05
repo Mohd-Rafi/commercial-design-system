@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Commercial Design Systems</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/custom.css" />
+    <!-- <link rel="stylesheet" href="css/layout.css" /> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    />
+  </head>
+  <body>
+   
+    <div class="sec-block sec-wwe news-article-option-one">
+      <h2 class="text-center text-uppercase">News & Articles</h2>
+      <p class="text-center">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+        eiusmod tempor. incididunt accumsan lacus vel facilisis.
+      </p>
+      <div class="sec-block2__content">
+        <!-- slider start -->
+        <div class="msc-gallery">
+          <div class="msc-gallery__wrapper news-article-center">
+            <div class="msc-gallery__item">
+              <div class="msc-article-col">
+                <div class="msc-article-col__date">04/08/2021</div>
+                <div class="msc-article-col__placeholder"></div>
+                <h4 class="msc-article-col__title">Lorem ipsum dolor sit amet</h4>
+                <p class="msc-article-col__text">Donec massa tortor, tincidunt in tristique nec,vestibulum et ante.</p>
+              </div>
+            </div>
+            <div class="msc-gallery__item">
+              <div class="msc-article-col">
+                <div class="msc-article-col__date">04/08/2021</div>
+                <div class="msc-article-col__placeholder"></div>
+                <h4 class="msc-article-col__title">Lorem ipsum dolor sit amet</h4>
+                <p class="msc-article-col__text">Donec massa tortor, tincidunt in tristique nec,vestibulum et ante.</p>
+              </div>
+            </div>
+            <div class="msc-gallery__item">
+              <div class="msc-article-col">
+                <div class="msc-article-col__date">04/08/2021</div>
+                <div class="msc-article-col__placeholder"></div>
+                <h4 class="msc-article-col__title">Lorem ipsum dolor sit amet</h4>
+                <p class="msc-article-col__text">Donec massa tortor, tincidunt in tristique nec,vestibulum et ante.</p>
+              </div>
+            </div>
+            <div class="msc-gallery__item">
+              <div class="msc-article-col">
+                <div class="msc-article-col__date">04/08/2021</div>
+                <div class="msc-article-col__placeholder"></div>
+                <h4 class="msc-article-col__title">Lorem ipsum dolor sit amet</h4>
+                <p class="msc-article-col__text">Donec massa tortor, tincidunt in tristique nec,vestibulum et ante.</p>
+              </div>
+            </div>
+            <div class="msc-gallery__item">
+              <div class="msc-article-col">
+                <div class="msc-article-col__date">04/08/2021</div>
+                <div class="msc-article-col__placeholder"></div>
+                <h4 class="msc-article-col__title">Lorem ipsum dolor sit amet</h4>
+                <p class="msc-article-col__text">Donec massa tortor, tincidunt in tristique nec,vestibulum et ante.</p>
+              </div>
+            </div>
+            <div class="msc-gallery__item">
+              <div class="msc-article-col">
+                <div class="msc-article-col__date">04/08/2021</div>
+                <div class="msc-article-col__placeholder"></div>
+                <h4 class="msc-article-col__title">Lorem ipsum dolor sit amet</h4>
+                <p class="msc-article-col__text">Donec massa tortor, tincidunt in tristique nec,vestibulum et ante.</p>
+              </div>
+            </div>
+            <div class="msc-gallery__item">
+              <div class="msc-article-col">
+                <div class="msc-article-col__date">04/08/2021</div>
+                <div class="msc-article-col__placeholder"></div>
+                <h4 class="msc-article-col__title">Lorem ipsum dolor sit amet</h4>
+                <p class="msc-article-col__text">Donec massa tortor, tincidunt in tristique nec,vestibulum et ante.</p>
+              </div>
+            </div>
+            <div class="msc-gallery__item">
+              <div class="msc-article-col">
+                <div class="msc-article-col__date">04/08/2021</div>
+                <div class="msc-article-col__placeholder"></div>
+                <h4 class="msc-article-col__title">Lorem ipsum dolor sit amet</h4>
+                <p class="msc-article-col__text">Donec massa tortor, tincidunt in tristique nec,vestibulum et ante.</p>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="dragbar-line">
+            <div class="dragbar"></div>
+          </div> -->
+        </div>
+        <!-- slider end -->
+      </div>
+    </div>
+    
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+      integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script>
+      if ($(".msc-js-gallery").length) {
+        $(".msc-js-gallery").slick({
+          dots: false,
+          arrows: true,
+        });
+      }
+
+      setTimeout(() => {
+        $('iframe .news-article-center').slick( "reinit" ); 
+      }, 1000);
+
+      $(".news-article-center").slick({
+        centerMode: true,
+        centerPadding: "0",
+        infinite: true,
+        slidesToShow: 5,
+        arrows: false,
+        // variableWidth: true,
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1,
+              infinite: true,
+              dots: false
+            }
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              centerPadding: "4rem",
+            }
+          }
+        ]
+      });
+
+      
+
+    </script>
+  </body>
+</html>

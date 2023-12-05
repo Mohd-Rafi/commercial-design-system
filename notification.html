@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Commercial Design Systems</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/bootstrap-datepicker.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <aside class="left-sidebar" id="sidebar">
+        <ul class="nav flex-column left-sidebar__column">
+            <li>
+                <a class="nav-link" href="index.html">INDEX</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="color.html">1. Colors</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="typography.html">2. Typography</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="header-banner.html">3. Layout Structure</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="icons.html">4. Icons</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="button.html">5. Buttons, Radio Button</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="input-field.html">6. Input Fields</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="card.html">7. Card</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="loader.html">8. Loader</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="date-picker.html">9. Date Picker</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="checkbox.html">10. Check Box</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="drag-and-drop.html">11. Drag & Drop</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="navigation.html">12. Navigation</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-link-active" href="javascript:void(0)">13. Notifications</a>
+              <ul class="list-unstyled nav-inner d-block">
+                <!-- <li class="nav-inner__list">
+                  <a href="#"  class="nav-inner__list--text">Notifications</a>
+                </li> -->
+                <li class="nav-inner__list">
+                  <a href="#notification-status" class="nav-inner__list--text">Notification status</a>
+                </li>
+                <li class="nav-inner__list">
+                  <a href="#inline-notification" class="nav-inner__list--text">Inline notification</a>
+                </li>
+                <li class="nav-inner__list">
+                  <a href="#toast" class="nav-inner__list--text">Toast</a>
+                </li>
+                <li class="nav-inner__list">
+                    <a href="#actionable" class="nav-inner__list--text">Actionable</a>
+                </li>
+            </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="imagery.html">14. Imagery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="search.html">15. Search</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="switch.html">16. Switch</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="overlays.html">17. Overlays</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pagination.html">18. Pagination</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="player.html">19. Player</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="slider.html">20. Slider</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="slideshow.html">21. Slideshow</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="table.html">22. Table</a>
+            </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link" href="#">23. Response Effect</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">24. Transitions</a>
+            </li> -->
+        </ul>
+    </aside>
+    <main class="main" data-bs-spy="scroll" data-bs-target="#sidebar" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true">
+        <div class="d-flex align-items-center page-header" id="page-header">
+          <h1 class="color-palette--title mb-0">Notifications</h1>
+          <a href="#" class="btn btn-primary ms-auto">Download More</a>
+          <a class="btn btn-outline-primary ms-4" href="https://www.figma.com/proto/BNspPo1UTQoTvEyBgp5kAY/Commercial-Design-System?type=design&node-id=79-1233&t=zTAFhnKrOaWxUeRp-0&scaling=min-zoom&page-id=12%3A18" target="_blank">View Figma File</a>
+        </div>
+        <p class="sub-line">
+          Loading indicators signal a user action is processing. Unlike progress bars, loading indicators only signal that loading
+          is occurring and do not give any indication of progress. If a process will take more than a moment or two to complete,
+          use a progress indicator instead.
+        </p>
+        <div class="card p-5 rounded">
+          <div class="row align-items-center">
+            <div class="col-auto">
+              <p class="mb-0 toast-title">Success</p>
+            </div>
+            <div class="col-auto">
+              <div class="toast show toast-custom">
+                <button type="button" class="btn-close btn-close-custom" data-bs-dismiss="toast" aria-label="Close"></button>
+                <div class="toast-body p-0">
+                  <div class="d-flex align-items-center">
+                    <div class="toast-success me-3">
+                      <img src="images/tick-icon.png" class="" alt="">
+                    </div>
+                    <p class="toast-text mb-0">
+                      This is a successful notification
+                    </p>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card p-5 rounded bg-black mt-4">
+          <div class="row align-items-center">
+            <div class="col-auto">
+              <p class="mb-0 toast-title text-white">Success</p>
+            </div>
+            <div class="col-auto">
+              <div class="toast show toast-custom toast-custom-reverse">
+                <button type="button" class="btn-close btn-close-custom" data-bs-dismiss="toast" aria-label="Close"></button>
+                <div class="toast-body p-0">
+                  <div class="d-flex align-items-center">
+                    <div class="toast-success me-3">
+                      <img src="images/tick-icon.png" class="" alt="">
+                    </div>
+                    <p class="toast-text mb-0 text-white">
+                      This is a successful notification
+                    </p>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card p-5 rounded mt-60">
+          <div class="row align-items-center">
+            <div class="col-auto">
+              <p class="mb-0 toast-title">Error</p>
+            </div>
+            <div class="col-auto">
+              <div class="toast show toast-custom">
+                <button type="button" class="btn-close btn-close-custom" data-bs-dismiss="toast" aria-label="Close"></button>
+                <div class="toast-body p-0">
+                  <div class="d-flex align-items-center">
+                    <div class="toast-success me-3 toast-warning">
+                      <img src="images/alert-icon.png" class="" alt="">
+                    </div>
+                    <p class="toast-text mb-0">
+                      This is an error notification message.
+                    </p>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card p-5 rounded mt-4 bg-black">
+          <div class="row align-items-center">
+            <div class="col-auto">
+              <p class="mb-0 toast-title text-white">Error</p>
+            </div>
+            <div class="col-auto">
+              <div class="toast show toast-custom toast-custom-reverse">
+                <button type="button" class="btn-close btn-close-custom" data-bs-dismiss="toast" aria-label="Close"></button>
+                <div class="toast-body p-0">
+                  <div class="d-flex align-items-center">
+                    <div class="toast-success me-3 toast-warning">
+                      <img src="images/alert-icon.png" class="" alt="">
+                    </div>
+                    <p class="toast-text mb-0 text-white">
+                      This is an error notification message.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card p-5 rounded mt-60">
+          <div class="row align-items-center">
+            <div class="col-auto">
+              <p class="mb-0 toast-title">Generic</p>
+            </div>
+            <div class="col-auto">
+              <div class="toast show toast-custom">
+                <button type="button" class="btn-close btn-close-custom" data-bs-dismiss="toast" aria-label="Close"></button>
+                <div class="toast-body p-0">
+                  <div class="d-flex align-items-center">
+                    <div class="me-3">
+                      <img src="images/shopping-cart-black.png" class="" alt="">
+                    </div>
+                    <p class="toast-text mb-0">
+                      This is an error notification message.
+                    </p>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card p-5 rounded mt-4 bg-black">
+          <div class="row align-items-center">
+            <div class="col-auto">
+              <p class="mb-0 toast-title text-white">Generic</p>
+            </div>
+            <div class="col-auto">
+              <div class="toast show toast-custom toast-custom-reverse">
+                <button type="button" class="btn-close btn-close-custom" data-bs-dismiss="toast" aria-label="Close"></button>
+                <div class="toast-body p-0">
+                  <div class="d-flex align-items-center">
+                    <div class="me-3">
+                      <img src="images/shopping-cart-white.png" class="" alt="">
+                    </div>
+                    <p class="toast-text mb-0 text-white">
+                      This is an error notification message.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card p-5 rounded mt-60">
+          <div class="row align-items-center">
+            <div class="col-auto">
+              <p class="mb-0 toast-title">Text Only</p>
+            </div>
+            <div class="col-auto">
+              <div class="toast show toast-custom">
+                <button type="button" class="btn-close btn-close-custom" data-bs-dismiss="toast" aria-label="Close"></button>
+                <div class="toast-body p-0">
+                  <p class="toast-text mb-0">
+                    This is a notification that explains important information to the user. Use this  when you need to display longer text.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card p-5 rounded mt-4 bg-black">
+          <div class="row align-items-center">
+            <div class="col-auto">
+              <p class="mb-0 toast-title text-white">Text Only</p>
+            </div>
+            <div class="col-auto">
+              <div class="toast show toast-custom toast-custom-reverse">
+                <button type="button" class="btn-close btn-close-custom" data-bs-dismiss="toast" aria-label="Close"></button>
+                <div class="toast-body p-0">
+                  <p class="toast-text mb-0 text-white">
+                    This is a notification that explains important information to the user. Use this  when you need to display longer text.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="card p-5 rounded mt-60">
+          <div class="row align-items-center">
+            <div class="col-auto">
+              <p class="mb-0 toast-title">Manual close <br> Heading</p>
+            </div>
+            <div class="col-auto">
+              <div class="toast show toast-custom">
+                <button type="button" class="btn-close btn-close-custom" data-bs-dismiss="toast" aria-label="Close"></button>
+                <div class="toast-body p-0">
+                  <h5 class="toast-body__title mb-3">Notification Heading</h5>
+                  <p class="toast-text mb-0">
+                    This is a notification that explains important information to the user. Use this  when you need to display longer text.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card p-5 rounded mt-4 bg-black">
+          <div class="row align-items-center">
+            <div class="col-auto">
+              <p class="mb-0 toast-title text-white">Manual close <br> Heading</p>
+            </div>
+            <div class="col-auto">
+              <div class="toast show toast-custom toast-custom-reverse">
+                <button type="button" class="btn-close btn-close-custom" data-bs-dismiss="toast" aria-label="Close"></button>
+                <div class="toast-body p-0">
+                  <h5 class="toast-body__title mb-3 text-white">Notification Heading</h5>
+                  <p class="toast-text mb-0 text-white">
+                    This is a notification that explains important information to the user. Use this  when you need to display longer text.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="card p-5 rounded mt-60">
+          <div class="row align-items-center">
+            <div class="col-auto">
+              <p class="mb-0 toast-title">Manual close <br> Heading with Link</p>
+            </div>
+            <div class="col-auto">
+              <div class="toast show toast-custom">
+                <button type="button" class="btn-close btn-close-custom" data-bs-dismiss="toast" aria-label="Close"></button>
+                <div class="toast-body p-0">
+                  <h5 class="toast-body__title mb-3">Notification Heading</h5>
+                  <p class="toast-text mb-3">
+                    This is a notification that explains important information to the user. Use this  when you need to display longer text.
+                  </p>
+                  <a href="" class="btn btn-link rounded-0 border-0 p-0 d-flex align-items-center">
+                    Call to action <i class="btn-arrow-icon ms-2"></i>
+                </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card p-5 rounded mt-4 bg-black">
+          <div class="row align-items-center">
+            <div class="col-auto">
+              <p class="mb-0 toast-title text-white">Manual close <br> Heading with Link</p>
+            </div>
+            <div class="col-auto">
+              <div class="toast show toast-custom toast-custom-reverse">
+                <button type="button" class="btn-close btn-close-custom" data-bs-dismiss="toast" aria-label="Close"></button>
+                <div class="toast-body p-0">
+                  <h5 class="toast-body__title mb-3 text-white">Notification Heading</h5>
+                  <p class="toast-text mb-3 text-white">
+                    This is a notification that explains important information to the user. Use this  when you need to display longer text.
+                  </p>
+                  <a href="" class="btn btn-link rounded-0 border-0 p-0 d-flex align-items-center text-white">
+                    Call to action <i class="btn-arrow-icon-reverse ms-2"></i>
+                </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- Notification status -->
+        <section class="mt-60">
+          <h1 class="color-palette--title mb-3" id="notification-status">Notification status</h1>
+          <p class="sub-line">
+            Notification status helps convey the information being communicated. These statuses correspond with a color and icon to
+            provide a consistent, universal experience for users.
+          </p>
+          <div class="card rounded-0 card-notification">
+            <div class="row g-50">
+              <div class="col-4">
+                <div class="toast show toast-custom">
+                  <div class="toast-body p-0">
+                    <div class="d-flex align-items-center">
+                      <div class="toast-success me-3">
+                        <img src="images/tick-icon.png" class="" alt="">
+                      </div>
+                      <p class="toast-text mb-0">
+                        This is a successful notification
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="toast-custom-title">Success</div>
+                <p class="sub-line">
+                  Typically do not require further action and can be dismissed automatically or persist in a nonintrusive manner
+                </p>
+              </div>
+              <div class="col-4">
+                <div class="toast show toast-custom">
+                  <div class="toast-body p-0">
+                    <div class="d-flex align-items-center">
+                      <div class="toast-success me-3 toast-warning">
+                        <img src="images/alert-icon.png" class="" alt="">
+                      </div>
+                      <p class="toast-text mb-0">
+                        This is an error notification message.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="toast-custom-title">Warning/Error</div>
+                <p class="sub-line">
+                  Inform users that they are taking actions that are not desirable or might have unexpected results
+                </p>
+              </div>
+              <div class="col-4">
+                <div class="toast show toast-custom">
+                  <div class="toast-body p-0">
+                    <div class="d-flex align-items-center">
+                      <div class="me-3">
+                        <img src="images/shopping-cart-black.png" class="" alt="">
+                      </div>
+                      <p class="toast-text mb-0">
+                        This is a neutral notification message.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="toast-custom-title">Informational</div>
+                <p class="sub-line">
+                  Provide additional information to users that may not be tied to their current action or task
+                </p>
+              </div>
+            </div>
+
+          </div>
+
+        </section>
+
+        <!-- Inline notification -->
+        <section class="mt-60">
+          <h1 class="color-palette--title mb-3" id="inline-notification">Inline notification</h1>
+          <p class="sub-line">
+            Inline notifications are nondisruptive and confined to a specific area in the UI. Inline notifications display both
+            task-generated and system-generated messages and persist until they are dismissed by the user or the notification is
+            resolved. They are frequently used in conjunction with field-level messages for errors in forms or other input areas.
+          </p>
+          <p class="sub-line">
+            Carbon offers low-contrast and high-contrast inline notifications. All inline notifications use a color that corresponds
+            with their message intent and can also be accompanied by an icon to reinforce the message intent.
+          </p>
+          <div class="card rounded-0 card-form">
+            <div class="position-relative mb-30">
+              <img src="images/form-img.png" alt="">
+              <div class="position-absolute top-50 start-50 translate-middle">
+                <div class="toast show toast-custom">
+                  <button type="button" class="btn-close btn-close-custom" data-bs-dismiss="toast" aria-label="Close"></button>
+                  <div class="toast-body p-0">
+                    <div class="d-flex align-items-center">
+                      <div class="toast-success me-3">
+                        <img src="images/tick-icon.png" class="" alt="">
+                      </div>
+                      <p class="toast-text mb-0">
+                        This is a successful notification
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-6">
+                <p class="sub-line fw-bold">Best practices:</p>
+                <ul class="mb-30 list-practice">
+                  <li class="list-practice__item">Place inline notifications near their related items.</li>
+                  <li class="list-practice__item">In forms, inline notifications can be placed either at the top or bottom.</li>
+                  <li class="list-practice__item">Keep the message under two lines.</li>
+                </ul>
+              </div>
+              <div class="col-6">
+                <p class="sub-line fw-bold">&nbsp;</p>
+                <ul class="mb-30">
+                  <li class="list-practice__item">Do not cover other content with inline notifications.</li>
+                  <li class="list-practice__item">The notification width varies based on the context and page layout.</li>
+                  <li class="list-practice__item">Be descriptive and give users clear next steps.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+        <!-- Toast -->
+        <section class="mt-60">
+          <h1 class="color-palette--title mb-3" id="toast">Toast</h1>
+          <p class="sub-line">
+            Toasts are notifications that slide in and out, typically in the top right of the page. They are more disruptive than
+            inline notifications and are best used with system-generated messages that do not correspond to a specific section of
+            the UI.
+          </p>
+          <p class="sub-line">
+            Carbon toasts can be either low-contrast or high-contrast. Their color should correspond with the message intent and
+            they can also use an icon to convey the message intent.
+          </p>
+          <div class="card rounded-0">
+            <div class="position-relative mb-30">
+              <img src="images/webpage-img.png" alt="" class="img-fluid">
+              <div class="position-absolute" style="top:120px;right:25px;">
+                <div class="toast show toast-custom">
+                  <button type="button" class="btn-close btn-close-custom" data-bs-dismiss="toast" aria-label="Close"></button>
+                  <div class="toast-body p-0">
+                    <h5 class="toast-body__title mb-3">Notification Heading</h5>
+                    <p class="toast-text mb-0">
+                      This is a notification that explains important information to the user. Use this  when you need to display longer text.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row ps-5">
+              <div class="col-6">
+                <p class="sub-line fw-bold">Best practices:</p>
+                <ul class="mb-30 list-practice">
+                  <li class="list-practice__item">Multiple toasts stack vertically, with the newest appearing at the top of the list.</li>
+                  <li class="list-practice__item">Keep messages clear and concise.</li>
+                </ul>
+              </div>
+              <div class="col-6">
+                <p class="sub-line fw-bold">&nbsp;</p>
+                <ul class="mb-30">
+                  <li class="list-practice__item">The timestamp is optional and can be removed.</li>
+                  <li class="list-practice__item">Toast notifications have a fixed width and should not be expanded to fit the content area.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>        
+
+        <!-- Actionable -->
+        <section class="mt-60">
+          <h1 class="color-palette--title mb-3" id="actionable">Actionable</h1>
+          <p class="sub-line">
+            Toasts are notifications that slide in and out, typically in the top right of the page. They are more disruptive than
+            inline notifications and are best used with system-generated messages that do not correspond to a specific section of
+            the UI.
+          </p>
+          <p class="sub-line">
+            Carbon toasts can be either low-contrast or high-contrast. Their color should correspond with the message intent and
+            they can also use an icon to convey the message intent.
+          </p>
+          <div class="card rounded-0">
+            <div class="position-relative mb-30">
+              <img src="images/webpage-img.png" alt="" class="img-fluid">
+              <div class="position-absolute" style="top:120px;right:25px;">
+                <div class="toast show toast-custom">
+                  <button type="button" class="btn-close btn-close-custom" data-bs-dismiss="toast" aria-label="Close"></button>
+                  <div class="toast-body p-0">
+                    <h5 class="toast-body__title mb-3">Notification Heading</h5>
+                    <p class="toast-text mb-3">
+                      This is a notification that explains important information to the user. Use this  when you need to display longer text.
+                    </p>
+                    <a href="" class="btn btn-link rounded-0 border-0 p-0 d-flex align-items-center">
+                      Call to action <i class="btn-arrow-icon ms-2"></i>
+                  </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row ps-5">
+              <div class="col-6">
+                <p class="sub-line fw-bold">Best practices:</p>
+                <ul class="mb-30 list-practice">
+                  <li class="list-practice__item">Multiple toasts stack vertically, with the newest appearing at the top of the list.</li>
+                  <li class="list-practice__item">Keep messages clear and concise.</li>
+                </ul>
+              </div>
+              <div class="col-6">
+                <p class="sub-line fw-bold">&nbsp;</p>
+                <ul class="mb-30">
+                  <li class="list-practice__item">The timestamp is optional and can be removed.</li>
+                  <li class="list-practice__item">Toast notifications have a fixed width and should not be expanded to fit the content area.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>      
+
+
+
+
+
+
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="script/bootstrap-datepicker.min.js"></script>
+    <script>
+      const pageHeader = document.getElementById('page-header')
+      const mainTag = document.getElementsByTagName('main')[0]
+      const leftSidebarInnerLink = document.querySelectorAll('.nav-inner li')
+      document.addEventListener("scroll", (event) => {
+          const topScroll = window.pageYOffset
+          
+          console.log(topScroll)
+          if(topScroll > 100){
+              pageHeader.classList.add('page-header-sticky')
+          }else{
+              pageHeader.classList.remove('page-header-sticky')
+              mainTag.style.marginTop = '0px'
+          }
+      })
+      leftSidebarInnerLink.forEach(function (element) {
+          element.addEventListener('click', function (e) {
+            e.preventDefault()
+            if (pageHeader.classList.contains('page-header-sticky')) {
+              mainTag.style.marginTop = '100px'
+            } else {
+              mainTag.style.marginTop = '0px'
+            }
+          })
+        })
+  </script>
+</body>
+</html>
