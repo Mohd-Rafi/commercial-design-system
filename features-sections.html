@@ -189,7 +189,7 @@
 
         <section class="sec-feature mt-60" id="sec-vehicle">
           <p class="sub-line fw-bold sec-text">Option 1</p>
-          <!-- <div id="set-height"></div> -->
+          <div id="set-height"></div>
           <div class="feature-block feature-block__first pt-0">
             <img src="images/features-img.png" alt="" width="171" height="47" class="d-block">
             <h3 class="feature-block__title">
@@ -543,113 +543,103 @@
       });
 
     </script>
-        <!-- <script>
-          const secVehicle = document.getElementById('sec-vehicle')
-          secVehicle.classList.remove('sec-sticky')
-          const setHeight = document.createElement('div')
-          setHeight.id = 'set-height'
+    <script>
+      const secVehicle = document.getElementById('sec-vehicle')
+      secVehicle.classList.remove('sec-sticky')
+      $("#set-height").removeClass("setHeight-active")
+
+      function MoveScroll() {
+        var supercarry = document.querySelector('.car-line-shape');
+        var scrollY = Math.abs(0 - (window.scrollY || window.pageYOffset));
+        if (scrollY >= 100 && scrollY <= 3000) {
+          $(".feature-block__first").addClass("is-fixed")
+          $("#set-height").addClass("setHeight-active")
           
-          function MoveScroll() {
-           
-              var supercarry = document.querySelector('.car-line-shape');
-              var scrollY = Math.abs(0 - (window.scrollY || window.pageYOffset));
-              if(scrollY >= 100 && scrollY <= 3000){
-                $(".feature-block__first").addClass("is-fixed")
-                secVehicle.appendChild(setHeight)
-              }else{
-                $(".feature-block__first").removeClass("is-fixed")
-                
-              }
+        } else {
+          $(".feature-block__first").removeClass("is-fixed")
+          $("#set-height").removeClass("setHeight-active")
+        }
+        var maxScrollY = 3500
 
-            // switch (true) {
-            //   case scrollY >= 100 && scrollY <= 3000:
-            //     $(".feature-block__first").addClass("is-fixed")
-            //     secVehicle.appendChild(setHeight)
-                
-            //     break;
-            //   default:
-            //     $(".feature-block__first").removeClass("is-fixed")
+        var path = document.getElementById("mPath");
 
-            // }
-            // if(scrollY >= 3000){
-            //   const removeSetHeight = document.getElementById('set-height')
-            //     $(removeSetHeight).remove()
-            // }
-              var maxScrollY = 3500
-  
-              var path = document.getElementById("mPath");
-  
-              var pathLen = path.getTotalLength();
-              var dist = (pathLen * scrollY / maxScrollY);
-              var pos = path.getPointAtLength(dist);
-              
-              if (dist + 1 <= pathLen) {
-                  var posAhead = path.getPointAtLength(dist + 1);
-                  var angle = Math.atan2(posAhead.y - pos.y, posAhead.x - pos.x);
-              } else {
-                  var posBehind = path.getPointAtLength(dist - 1);
-                  var angle = Math.atan2(pos.y - posBehind.y, pos.x - posBehind.x);
-              }
-              // var xx = pos.x + 500;
-              // var yy = pos.y + 100;
-              pathPosition = path.getBoundingClientRect();
-             
+        var pathLen = path.getTotalLength();
+        var dist = (pathLen * scrollY / maxScrollY);
+        var pos = path.getPointAtLength(dist);
 
-              if(pos.x <= 100){
-                  supercarry.style.left = 0;
-              }
-              if (pos.x >= 190 && pos.x <= 271) {
-                  $(document).find('#firstFeature').removeClass('opacity-0');
-                  $(document).find('#feature-1').removeClass('opacity-0');
-              } else {
-                  $(document).find('#firstFeature').addClass('opacity-0');
-                  $(document).find('#feature-1').addClass('opacity-0');
-                 
-              }
-              if (pos.x >= 466 && pos.x <= 585) {
-                  $(document).find('#secondFeature').removeClass('opacity-0');
-                  $(document).find('#feature-2').removeClass('opacity-0');
-              } else {
-                  $(document).find('#secondFeature').addClass('opacity-0');
-                  $(document).find('#feature-2').addClass('opacity-0');
-              }
-              if(pos.x >= 784 && pos.x <= 863){
-                  $(document).find('#thirdFeature').removeClass('opacity-0');
-                  $(document).find('#feature-3').removeClass('opacity-0');
-              }else{
-                  $(document).find('#thirdFeature').addClass('opacity-0');
-                  $(document).find('#feature-3').addClass('opacity-0');
-              }if(pos.x >= 1066 && pos.x <= 1175){
-                  $(document).find('#fourthFeature').removeClass('opacity-0');
-                  $(document).find('#feature-4').removeClass('opacity-0');
-              }else{
-                  $(document).find('#fourthFeature').addClass('opacity-0');
-                  $(document).find('#feature-4').addClass('opacity-0');
-              }if(pos.x >= 1348 && pos.x <= 1462){
-                  $(document).find('#fifthFeature').removeClass('opacity-0');
-                  $(document).find('#feature-5').removeClass('opacity-0');
-              }else{
-                  $(document).find('#fifthFeature').addClass('opacity-0');
-                  $(document).find('#feature-5').addClass('opacity-0');
-              }
-  
-              var deg = rad2deg(angle);
-              supercarry.style.left = pos.x + "px";
-              supercarry.style.top = (pos.y) + "px";
-              supercarry.style.transform = 'rotate(' + deg + 'deg)';
-              if(pos.x === 9 || pos.x >= 1796){
-                console.log(pos.x === 9)
-                supercarry.style.left = 0 + 'px';
-                supercarry.style.top = 45 + 'px';
-              }
+        if (dist + 1 <= pathLen) {
+          var posAhead = path.getPointAtLength(dist + 1);
+          var angle = Math.atan2(posAhead.y - pos.y, posAhead.x - pos.x);
+        } else {
+          var posBehind = path.getPointAtLength(dist - 1);
+          var angle = Math.atan2(pos.y - posBehind.y, pos.x - posBehind.x);
+        }
+        pathPosition = path.getBoundingClientRect();
 
-              console.log('pos.x = ', pos.x)
-          }
-  
-          function rad2deg(rad) {
-              return 180 * rad / Math.PI;
-          }
-          window.addEventListener("scroll", MoveScroll);
-      </script> -->
+
+        if (pos.x <= 100) {
+          supercarry.style.left = 0;
+        }
+        if (pos.x >= 190 && pos.x <= 271) {
+          $(document).find('#firstFeature').removeClass('opacity-0');
+          $(document).find('#feature-1').removeClass('opacity-0');
+        } else {
+          $(document).find('#firstFeature').addClass('opacity-0');
+          $(document).find('#feature-1').addClass('opacity-0');
+
+        }
+        if (pos.x >= 466 && pos.x <= 585) {
+          $(document).find('#secondFeature').removeClass('opacity-0');
+          $(document).find('#feature-2').removeClass('opacity-0');
+        } else {
+          $(document).find('#secondFeature').addClass('opacity-0');
+          $(document).find('#feature-2').addClass('opacity-0');
+        }
+        if (pos.x >= 784 && pos.x <= 863) {
+          $(document).find('#thirdFeature').removeClass('opacity-0');
+          $(document).find('#feature-3').removeClass('opacity-0');
+        } else {
+          $(document).find('#thirdFeature').addClass('opacity-0');
+          $(document).find('#feature-3').addClass('opacity-0');
+        } if (pos.x >= 1066 && pos.x <= 1175) {
+          $(document).find('#fourthFeature').removeClass('opacity-0');
+          $(document).find('#feature-4').removeClass('opacity-0');
+        } else {
+          $(document).find('#fourthFeature').addClass('opacity-0');
+          $(document).find('#feature-4').addClass('opacity-0');
+        } if (pos.x >= 1348 && pos.x <= 1462) {
+          $(document).find('#fifthFeature').removeClass('opacity-0');
+          $(document).find('#feature-5').removeClass('opacity-0');
+        } else {
+          $(document).find('#fifthFeature').addClass('opacity-0');
+          $(document).find('#feature-5').addClass('opacity-0');
+        }
+
+        var deg = rad2deg(angle);
+        supercarry.style.left = pos.x + "px";
+        supercarry.style.top = (pos.y) + "px";
+        supercarry.style.transform = 'rotate(' + deg + 'deg)';
+        if (pos.x === 9 && pos.x >= 1700) {
+          console.log(pos.x === 9)
+          supercarry.style.left = 0 + 'px';
+          supercarry.style.top = 45 + 'px';
+        }
+      }
+
+      function rad2deg(rad) {
+        return 180 * rad / Math.PI;
+      }
+      window.addEventListener("scroll", function(){
+        const topScroll = window.pageYOffset
+        if(topScroll > 0 && topScroll <= 2999){
+          MoveScroll()
+        }else{
+          const carLineShape = document.querySelector('.car-line-shape')
+          carLineShape.style.left = "0px"
+          carLineShape.style.top = "45px"
+          $(".feature-block__first").removeClass("is-fixed")
+        }
+      });
+    </script>
 </body>
 </html>
