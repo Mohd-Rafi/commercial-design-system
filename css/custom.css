@@ -3413,11 +3413,18 @@ svg.svg-line {
     position: absolute;
     top: -35%;
     left: 19%;
-    display:none;
+    display:block;
+    opacity:0;
+    visibility:hidden;
+    z-index:1;
+}
+.card-feature--one{
+    top:-17%;
+    left:23%;
 }
 .card-feature__two{
-    left:57%;
-    top:-1%;
+    left:61%;
+    top:15%;
 }
 .card-feature__image{
     width: 300px;
@@ -3455,7 +3462,10 @@ svg.svg-line {
     padding-top: 0;
     width:100%;
 }
-
+.card-feature-active{
+    opacity:1;
+    visibility:visible;
+}
 /* form page */
 .msc-field__input{
     height: 4.25rem;

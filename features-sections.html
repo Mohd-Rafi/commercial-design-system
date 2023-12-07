@@ -216,7 +216,7 @@
                   <div class="line-text">Lorem ipsum <br> dolor</div>
                 </div>
               </div>
-              <div class="card-feature" id="firstFeature">
+              <div class="card-feature card-feature--one" id="firstFeature">
                 <div class="card-feature__image">
                   <img src="images/engine-feature-img1.svg" alt="" width="234" height="240" class="card-feature__image--img">
                 </div>
@@ -580,40 +580,50 @@
         if (pos.x <= 100) {
           supercarry.style.left = 0;
         }
-        if (pos.x >= 190 && pos.x <= 271) {
-          $(document).find('#firstFeature').removeClass('opacity-0');
-          $(document).find('#feature-1').removeClass('opacity-0');
-        } else {
-          $(document).find('#firstFeature').addClass('opacity-0');
-          $(document).find('#feature-1').addClass('opacity-0');
+        switch (true) {
+          case pos.x >= 365 && pos.x <= 551:
+            $(document).find('#firstFeature').addClass('card-feature-active');
+            break;
+            case pos.x >= 1100 && pos.x <= 1270:
+            $(document).find('#secondFeature').addClass('card-feature-active');
+            break;
+          default:
+            $(document).find('#firstFeature').removeClass('card-feature-active');
+            $(document).find('#secondFeature').removeClass('card-feature-active');
+        }
+        console.log('pos.x---', pos.x);
+        // if (pos.x >= 190 && pos.x <= 271) {
+        //   $(document).find('#firstFeature').addClass('card-feature-active');
+        // } else {
+        //   $(document).find('#firstFeature').removeClass('card-feature-active');
 
-        }
-        if (pos.x >= 466 && pos.x <= 585) {
-          $(document).find('#secondFeature').removeClass('opacity-0');
-          $(document).find('#feature-2').removeClass('opacity-0');
-        } else {
-          $(document).find('#secondFeature').addClass('opacity-0');
-          $(document).find('#feature-2').addClass('opacity-0');
-        }
-        if (pos.x >= 784 && pos.x <= 863) {
-          $(document).find('#thirdFeature').removeClass('opacity-0');
-          $(document).find('#feature-3').removeClass('opacity-0');
-        } else {
-          $(document).find('#thirdFeature').addClass('opacity-0');
-          $(document).find('#feature-3').addClass('opacity-0');
-        } if (pos.x >= 1066 && pos.x <= 1175) {
-          $(document).find('#fourthFeature').removeClass('opacity-0');
-          $(document).find('#feature-4').removeClass('opacity-0');
-        } else {
-          $(document).find('#fourthFeature').addClass('opacity-0');
-          $(document).find('#feature-4').addClass('opacity-0');
-        } if (pos.x >= 1348 && pos.x <= 1462) {
-          $(document).find('#fifthFeature').removeClass('opacity-0');
-          $(document).find('#feature-5').removeClass('opacity-0');
-        } else {
-          $(document).find('#fifthFeature').addClass('opacity-0');
-          $(document).find('#feature-5').addClass('opacity-0');
-        }
+        // }
+        // if (pos.x >= 466 && pos.x <= 585) {
+        //   $(document).find('#secondFeature').removeClass('opacity-0');
+        //   $(document).find('#feature-2').removeClass('opacity-0');
+        // } else {
+        //   $(document).find('#secondFeature').addClass('opacity-0');
+        //   $(document).find('#feature-2').addClass('opacity-0');
+        // }
+        // if (pos.x >= 784 && pos.x <= 863) {
+        //   $(document).find('#thirdFeature').removeClass('opacity-0');
+        //   $(document).find('#feature-3').removeClass('opacity-0');
+        // } else {
+        //   $(document).find('#thirdFeature').addClass('opacity-0');
+        //   $(document).find('#feature-3').addClass('opacity-0');
+        // } if (pos.x >= 1066 && pos.x <= 1175) {
+        //   $(document).find('#fourthFeature').removeClass('opacity-0');
+        //   $(document).find('#feature-4').removeClass('opacity-0');
+        // } else {
+        //   $(document).find('#fourthFeature').addClass('opacity-0');
+        //   $(document).find('#feature-4').addClass('opacity-0');
+        // } if (pos.x >= 1348 && pos.x <= 1462) {
+        //   $(document).find('#fifthFeature').removeClass('opacity-0');
+        //   $(document).find('#feature-5').removeClass('opacity-0');
+        // } else {
+        //   $(document).find('#fifthFeature').addClass('opacity-0');
+        //   $(document).find('#feature-5').addClass('opacity-0');
+        // }
 
         var deg = rad2deg(angle);
         supercarry.style.left = pos.x + "px";
